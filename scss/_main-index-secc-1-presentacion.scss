@@ -1,0 +1,100 @@
+.main-index {
+  margin: 0 0.5rem;
+  .main-index__seccion-1 {
+    margin-top: 5rem;
+    //carrusel de imagenes automatico
+    /*carrusel de imagenes automatico*/
+    .seccion-1__div-contenedor {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      .seccion-1__div-carrusel {
+        display: flex;
+        align-items: center;
+        .div-carrusel__h2-texto-carrusel {
+          font-size: 3rem;
+          text-align: center;
+        }
+      }
+      //presentacion
+      /*presentacion*/
+      .seccion-1__div-presentacion {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        width: 60%;
+        margin-right: 5rem;
+        .div-presentacion__div {
+          margin-bottom: 3rem;
+          .div__titulo-h1 {
+            color: $colorPrim;
+            letter-spacing: 5px;
+            font-weight: bolder;
+          }
+          .div__parrafo-p {
+            color: $colorTerc;
+            padding: 0.3rem;
+            margin: 0 3rem 2rem 3rem;
+            font-family: "Montserrat", sans-serif;
+            background-color: $colorSecun;
+            border-radius: 2px 12px 2px 12px;
+          }
+        }
+        .div__a {
+          @include botones(10px);
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .main-index {
+    .main-index__seccion-1 {
+      margin-top: 3rem;
+      .seccion-1__div-contenedor {
+        flex-direction: column;
+        .seccion-1__div-carrusel {
+          display: none;
+        }
+        .seccion-1__div-presentacion {
+          width: 80%;
+          margin: 0 auto;
+          .div-presentacion__div {
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-index {
+    .main-index__seccion-1 {
+      margin-top: 3rem;
+      .seccion-1__div-contenedor {
+        flex-direction: column;
+        .seccion-1__div-carrusel {
+          display: none;
+        }
+        .seccion-1__div-presentacion {
+          width: 90%;
+          margin: 0 auto;
+          .div-presentacion__div {
+            margin-bottom: 2rem;
+            .div__titulo-h1 {
+              letter-spacing: 0;
+            }
+            .div__titulo-h2 {
+              padding: 0 2rem;
+            }
+            .div__parrafo-p {
+              margin: 0 auto;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}

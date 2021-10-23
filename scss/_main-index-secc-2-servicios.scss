@@ -1,0 +1,152 @@
+//seccion -2 index.html /*seccion 2 index.html**/
+
+.main-index__seccion-2 {
+  margin-top: 5rem;
+  //titulo /*titulo*/
+  .main-index__div-titulo {
+    text-align: center;
+    .main-index__h2-Titulo {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    }
+  } //grilla de servicios /*grilla de servicios*/
+  .main-index__div-contenedor-servs {
+    display: grid;
+    grid-template-areas:
+      "afull millas almacena"
+      "entregamos empacarte almacfrio";
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-row-gap: 1rem;
+    justify-content: center;
+    margin: 0 auto;
+    //servicios, declaracion y estillos
+    /*servicios, declaracion y estilos*/
+
+    /*a-full*/
+    .div-contenedor-servs__div-servicio-aFull {
+      @include main-index-contenedor-servicios(afull, end, 70%, 60%);
+    }
+    //millas x hora /*millas x hora*/
+    .div-contenedor-servs__div-servicio-millas {
+      @include main-index-contenedor-servicios(millas, center, 70%, 60%);
+    }
+    //almacena /*almacena*/
+    .div-contenedor-servs__div-servicio-almacena {
+      @include main-index-contenedor-servicios(almacena, start, 70%, 60%);
+    }
+    //entregamos /*enregamos*/
+    .div-contenedor-servs__div-servicio-entregamos {
+      @include main-index-contenedor-servicios(entregamos, end, 70%, 60%);
+    }
+    //empacarte /*empacarte*/
+    .div-contenedor-servs__div-servicio-empacarte {
+      @include main-index-contenedor-servicios(empacarte, center, 70%, 60%);
+    }
+    //almacfrio /*almacfrio*/
+    .div-contenedor-servs__div-servicio-almacfrio {
+      @include main-index-contenedor-servicios(almacfrio, start, 70%, 60%);
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .main-index__seccion-2 {
+    margin-top: 1rem;
+    .main-index__h2-Titulo {
+      font-size: 1rem;
+    }
+    .main-index__div-contenedor-servs {
+      grid-template-areas:
+        "afull millas"
+        "almacena entregamos"
+        "empacarte almacfrio";
+      margin: 0 auto;
+      .div-contenedor-servs__div-servicio-aFull {
+        @include main-index-contenedor-servicios(afull, center, 80%, 60%);
+              }
+      //millas x hora /*millas x hora*/
+      .div-contenedor-servs__div-servicio-millas {
+        @include main-index-contenedor-servicios(millas, center, 80%, 60%);
+      }
+      //almacena /*almacena*/
+      .div-contenedor-servs__div-servicio-almacena {
+        @include main-index-contenedor-servicios(almacena, center, 80%, 60%);
+      }
+      //entregamos /*enregamos*/
+      .div-contenedor-servs__div-servicio-entregamos {
+        @include main-index-contenedor-servicios(entregamos, center, 80%, 60%);
+      }
+      //empacarte /*empacarte*/
+      .div-contenedor-servs__div-servicio-empacarte {
+        @include main-index-contenedor-servicios(empacarte, center, 80%, 60%);
+      }
+      //almacfrio /*almacfrio*/
+      .div-contenedor-servs__div-servicio-almacfrio {
+        @include main-index-contenedor-servicios(almacfrio, center, 80%, 60%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-index__seccion-2 {
+    margin-top: 1rem;
+    .main-index__div-titulo {
+      .main-index__h2-Titulo {
+        font-size: 2rem;
+      }
+    }
+    .main-index__div-contenedor-servs {
+      grid-template-areas:
+        "afull"
+        "millas"
+        "almacena"
+        "entregamos"
+        "empacarte"
+        "almacfrio";
+      margin: 0;
+      .div-contenedor-servs__div-servicio-aFull {
+        @include main-index-contenedor-servicios(afull, center, 95%, 40%);
+        .div-contenedor-servs__img  {
+          display: none;
+        }
+      }
+      //millas x hora /*millas x hora*/
+      .div-contenedor-servs__div-servicio-millas {
+        @include main-index-contenedor-servicios(millas, center, 95%, 40%);
+        .div-contenedor-servs__img  {
+          display: none;
+        }
+      }
+      //almacena /*almacena*/
+      .div-contenedor-servs__div-servicio-almacena {
+        @include main-index-contenedor-servicios(almacena, center, 95%, 40%);
+        .div-contenedor-servs__img  {
+          display: none;
+        }
+      }
+      //entregamos /*enregamos*/
+      .div-contenedor-servs__div-servicio-entregamos {
+        @include main-index-contenedor-servicios(entregamos, center, 95%, 40%);
+        .div-contenedor-servs__img  {
+          display: none;
+        }
+      }
+      //empacarte /*empacarte*/
+      .div-contenedor-servs__div-servicio-empacarte {
+        @include main-index-contenedor-servicios(empacarte, center, 95%, 40%);
+        .div-contenedor-servs__img  {
+          display: none;
+        }
+      }
+      //almacfrio /*almacfrio*/
+      .div-contenedor-servs__div-servicio-almacfrio {
+        @include main-index-contenedor-servicios(almacfrio, center, 95%, 40%);
+        .div-contenedor-servs__img  {
+          display: none;
+        }
+      }
+    }
+  }
+}

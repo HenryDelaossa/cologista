@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!--description-->
+  <meta name="description"
+    content="¿deseas tener informacion personalizada, cotizar uno de nuestros servicios, resolver una inquietud, o hacer cualquier otro tipo de consulta?; solo dejanos tus datos y un comentario opcional y te llamamos a la mayor breveda; o llamanos al +573015455361">
+  <!--keywords-->
+  <meta name="keywords"
+    content="contactar cologista, informacion cologista, cotizacion cologista, cotizar, telefono cologista, direccion cologista, llamanos cologista, cotizar servicio, llamame">
+  <!--fonts google-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&family=Stick+No+Bills&display=swap"
+    rel="stylesheet">
+  <!--link bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!--link de mi archivo css-->
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <!--link de logo de pestaña-->
+  <link class="shorimg" rel="shortcut icon" href="img/index/logo/favicon.png">
+
+  <title>pagina de contacto_cologista</title>
+</head>
+
+<body>
+  <!--logo y telefono-->
+  <header class="header">
+    <nav class="header-nav navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="header-nav__logo navbar-brand" href="index.html">⇈COLOGISTA⇊</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="header-nav__menu collapse navbar-collapse mx-right collapse show" id="navbarNavDropdown">
+          <ul class="header-nav__ulMenu navbar-nav">
+            <li class="nav-item">
+              <a class="header-nav__liItems nav-link active" aria-current="page"
+                href="index.html#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="header-nav__liItems nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="header-nav__liItems nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Nosotros
+              </a>
+              <ul class="ulMenu__ulSubMenu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="ulMenu__liSubItems dropdown-item" href="Nosotros.html#quienesSomos">¿Quienes somos?</a>
+                </li>
+                <li><a class="ulMenu__liSubItems dropdown-item" href="Nosotros.html#valores">Valores</a></li>
+                <li><a class="ulMenu__liSubItems dropdown-item" href="nosotros.html#opiniones">Opiniones</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="ulMenu__liSubItems dropdown-item" href="https://www.blogger.com/about/"
+                    target="_Blank">Blog</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="header-nav__liItems header-nav__liItems--active nav-link" href="registro.html">SigIn / LogIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-contacto">
+    <!--formulario de contacto y texto informativo-->
+    <section class="main-contacto__seccion-1">
+      <article class="main-contacto__article-contenedor">
+        <div class="main-contacto__div-tituloFormulario">
+          <div class="main-contacto__div-titulo">
+            <h2 class="div-titulo__h1-titulo">
+              Te llamaremos ⇊
+            </h2>
+          </div>
+          <div class="main-contacto__div-formulario">
+            <form class="main-contacto__formulario">
+              <div class="main-contacto__divs">
+                <label class="main-contacto__label" for="nombre">Nombre:</label>
+                <input class="main-contacto__input" name="nombre" placeholder="Nombre completo">
+              </div>
+              <div class="main-contacto__divs">
+                <label class="main-contacto__label" for="email">Email:</label>
+                <input class="main-contacto__input" id="email" name="email" type="email"
+                  placeholder="ejemplo@email.com">
+              </div>
+              <div class="main-contacto__divs">
+                <label class="main-contacto__label" for="phone">Telefono:</label>
+                <input class="main-contacto__input" id="phone" name="phone" type="phone" placeholder="123 456 7890"
+                  required>
+              </div>
+              <div class="main-contacto__divs">
+                <label class="main-contacto__label" for="tipoDeServicio">Interesado en</label>
+                <select class="main-contacto__select" name="servicios">
+                  <option class="main-contacto__option" value="empty">...</option>
+                  <option class="main-contacto__option" value="A Full">A Full</option>
+                  <option class="main-contacto__option" value="Millas X Hora">Millas X Hora</option>
+                  <option class="main-contacto__option" value="EmpacArte">EmpacArte</option>
+                  <option class="main-contacto__option" value="EntreGamos">EntreGamos</option>
+                  <option class="main-contacto__option" value="AlmacFrio">AlmacFrio</option>
+                  <option class="main-contacto__option" value="AlmaCena">AlmaCena</option>
+                  <option class="main-contacto__option" value="otrasConsultas">Otros</option>
+                </select>
+              </div>
+              <div class="main-contacto__divs">
+                <label class="main-contacto__label" for="mensaje">Mensaje:</label>
+                <textarea class="main-contacto__textarea" id="mensaje" name="mensaje"
+                  placeholder="Danos tu mensaje"></textarea>
+              </div>
+              <div class="main-contacto__divs">
+                <input class="main-contacto__submit" name="submit" type="reset" value="Borar Datos">
+                <input class="main-contacto__submit" name="submit" type="submit" value="Enviar">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="main-contacto__div-informacion">
+          <div class="main-contacto__div-p-info">
+            <p class="main-contacto__p-info">
+              Si necesitas contactarnos ya sea para solicitar una cotizacion o para realizar cualquier consulta,
+              sientete libre de hacerlo; nos pondremos en contacto contigo a la mayor brevedad.
+            </p>
+          </div>
+          <div class="main-contacto__div-cont-icon">
+            <div class="main-contacto__div-iconoContacto">
+              <img class="main-contacto__img-icono-contacto" src="img/contacto/iconEmailContacto.png"
+                alt="icono-Email-Contacto-cologista">
+              <span class="main-contacto__span-contacto">info@cologista.com.co</span>
+            </div>
+            <div class="main-contacto__div-iconoContacto">
+              <img class="main-contacto__img-icono-contacto" src="img/contacto/imgPhoneContacto.png"
+                alt="icono-telefono-Contacto-cologista">
+              <span class="main-contacto__span-contacto">+57 301 545 5361</span>
+            </div>
+            <div class="main-contacto__div-iconoContacto">
+              <img class="main-contacto__img-icono-contacto" src="img/contacto/iconUbicContacto.png"
+                alt="icono-ubicacion-direccion-cologista">
+              <span class="main-contacto__span-contacto">Bogota, cra 101 #151-33</span>
+            </div>
+          </div>
+          <div>
+            <div class="main-contacto__contenedor-modalLogin">
+              <!-- Button trigger modal -->
+              <a class="main-contacto__boton-a-contactanos" href="registro.html">Registrarme</a>
+              <button type="button" class="main-contacto__boton-YaTengo btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                Ya tengo cuenta
+              </button>
+              <!-- Modal -->
+              <div class="main-contacto__div-inSesion modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Iniciar sesion</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="main-contacto__div-contenido-modal modal-body">
+                      <div class="div-contenido-modal__div-tit">
+                        <h3 class="div-contenido-modal__h1-tit">Ingresa tus datos ⇊</h3>
+                      </div>
+                      <div class="div-contenido-modal__div-form">
+                        <form class="div-contenido-modal__form" action="">
+                          <div class="form__divs">
+                            <label class="form__label" for="usuario">Tu Usuario o email</label>
+                            <input class="form__input" type="email" required placeholder="usuario o email" />
+                          </div>
+                          <div class="form__divs">
+                            <label class="form__label" for="password">Tu contraseña</label>
+                            <input class="form__input" type="password" required placeholder="contraseña" />
+                          </div>
+                          <div class="form__divs">
+                            <input class="main-contacto-formulario__input-check" type="checkbox" name="checkbox" />
+                            <label class="main-contacto-formulario__input-check-label">Guardar datos</label>
+                          </div>
+                          <div class="form__divs submits">
+                            <input class="submit__reset submit" name="submit" type="reset" value="Borar Datos">
+                            <input class="submit__sent submit" name="submit" type="submit" value="Enviar">
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- seccion de logos flotates de redes sociales -->
+    <section class="seccion-4-main-index__log-flot">
+      <div class="seccion-4-main-index__div-log">
+        <a href="https://www.facebook.com/" target="_blank"><img class="seccion-4-main-index__log-facebook"
+            src="img/index/faceb.png" alt="logo-float-pagina-facebook"></a>
+      </div>
+      <div class="seccion-4-main-index__div-log">
+        <a href="https://www.instagram.com/" target="_blank"><img class="seccion-4-main-index__log-instagram"
+            src="img/index/instag.png" alt="logo-float-pagina-instagram"></a>
+      </div>
+      <div class="seccion-4-main-index__div-log">
+        <a href="https://twitter.com/?lang=es" target="_blank"><img class="seccion-4-main-index__log-twiter"
+            src="img/index/twitter.png" alt="logo-float-pagina-twitter"></a>
+      </div>
+      <div class="seccion-4-main-index__div-log">
+        <a href="https://www.linkedin.com/feed/" target="_blank"><img class="seccion-4-main-index__log-linkedin"
+            src="img/index/linked.png" alt="logo-float-pagina-linkedin"></a>
+      </div>
+      <div class="seccion-4-main-index__div-log">
+        <a href="https://web.whatsapp.com/" target="_blank"><img class="seccion-4-main-index__log-whatsapp"
+            src="img/index/whats.png" alt="logo-float-pagina-whatsapp"></a>
+      </div>
+    </section>
+  </main>
+  <!--pie de pagina-->
+  <footer class="footer">
+    <nav class="footer__nav">
+      <div class="footer__div-links">
+        <a class="footer_links" href="#">Terminos
+        </a>
+        <a class="footer_links" href="#">Privacidad
+        </a>
+        <a class="footer_links" href="#">Cookies
+        </a>
+      </div>
+      <div class="footer__div-derechosby">
+        <p class="footer__p-derechos">©Todos los derechos reservados. <span class="footer__by">By HenryDelaossa</span>
+        </p>
+      </div>
+      <div class="footer__div-redes">
+        <ul class="footer__ul-redes">
+          <li class="footer__li-redes">
+            <a href="https://www.facebook.com/" target="_blank"><img class="footer__img-redes"
+                src="img/footer/faclog.png" alt="logo-pagina-facebook" /></a>
+          </li>
+          <li class="footer__li-redes">
+            <a href="https://www.instagram.com/henrydlog/" target="_blank"><img class="footer__img-redes"
+                src="img/footer/inslog.png" alt="logo-pagina-instagram" /></a>
+          </li>
+          <li class="footer__li-redes">
+            <a href="https://twitter.com/?lang=es" target="_blank"><img class="footer__img-redes"
+                src="img/footer/twiter.png" alt="logo-pagina-twitter" /></a>
+          </li>
+          <li class="footer__li-redes">
+            <a href="https://www.linkedin.com/feed" target="_blank"><img class="footer__img-redes"
+                src="img/footer/linlog.png" alt="logo-pagina-linkedin" /></a>
+          </li>
+          <li class="footer__li-redes">
+            <a href="https://api.whatsapp.com/send?phone=573015455361" target="_blank"><img class="footer__img-redes"
+                src="img/footer/whalog.png" alt="logo-pagina-whatsapp" /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+    integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+    crossorigin="anonymous"></script>-
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+</body>
+
+</html>

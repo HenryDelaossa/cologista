@@ -1,0 +1,37 @@
+@import "variables";
+@import "mixins";
+@import "header-menu";
+@import "main-index-secc-1-presentacion";
+@import "main-index-secc-2-servicios";
+@import "main-index-secc-3-empresas";
+@import "logos-flotantes";
+@import "footer";
+@import "main-contacto-secc-1-form&info";
+@import "main-nosotros-secc-1";
+@import "main-registro-signinLogin";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  body {
+    background-color: $colorTerc;
+  }
+  section[id],
+  div[id] {
+    scroll-margin-top: 60px;
+  }
+  h1,
+  h2,
+  h3 {
+    color: $colorPrim;
+    font-family: $fuenteTitLink;
+  }
+  p {
+    font-family: $fuenteParrafos;
+    color: $colorSecun;
+  }
+}

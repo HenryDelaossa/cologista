@@ -1,0 +1,272 @@
+.header {
+  .btn {
+    @include botones(0px);
+    letter-spacing: 1.3px;
+    margin-right: 6.75rem;
+    &:hover {
+      transform: scale(1.03, 1.03);
+    }
+  }
+}
+.main-registro__seccion-1 {
+  margin-top: 3rem;
+  .main-resgistro__contennedor-principal {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    .main-registro__contenedor-formulario {
+      width: 50%;
+      height: auto;
+      .formulario-registro__h1-tit {
+        margin-right: 6rem;
+        text-align: center;
+      }
+      .main-registro__formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        margin-right: 6rem;
+        .main-registro-formulario__divs {
+          margin-bottom: 0.5rem;
+          .main-registro-formulario__label {
+            @include labels;
+          }
+          .main-registro-formulario__input {
+            @include inpt-slct-txtar(400px);
+          }
+          .main-registro-formulario__input-check-label {
+            color: $colorSecun;
+            text-decoration: underline;
+            &:hover {
+              color: $colorPrim;
+            }
+          }
+          .main-registro-formulario__select {
+            @include inpt-slct-txtar(400px);
+          }
+          .main-registro-formulario__option {
+            @include inpt-slct-txtar(0);
+            text-align: center;
+          }
+          .main-registro-formulario__submit {
+            @include botones(0px);
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+    .main-registro__divInfo-botones {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      margin-top: 3rem;
+      width: 50%;
+      margin-left: 6rem;
+      margin-right: 1rem;
+      margin-bottom: 0;
+      text-align: left;
+      .main-registro__div-info {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding-left: 4rem;
+        .main-registro__divs {
+          margin-bottom: 1.5rem;
+          .main-registro__h2-tit {
+            font-size: 2.2rem;
+          }
+          .main-registro__p-texto {
+            margin: 0;
+            font-size: 1.3rem;
+          }
+          .main-registro__ulmain-registro {
+            list-style: none;
+            padding: 0 2rem;
+
+            .main-registro__li::before {
+              content: "⇊";
+              align-items: center;
+              background-color: $colorPrim;
+              border-radius: 1px 5px 1px 5px;
+              margin-right: 20px;
+            }
+            .main-registro__li {
+              color: $colorSecun;
+              margin-bottom: 1rem;
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+    }
+    .main-registro__contenedor-modalLogin {
+      text-align: center;
+      .main-registro__boton-a-contactanos {
+        @include botones(0px);
+        background-color: $colorSecun;
+        &:hover {
+          color: $colorPrim;
+        }
+      }
+    }
+    .main-registro__boton-YaTengo {
+      @include botones(0px);
+      margin-left: 1rem;
+      &:hover {
+        transform: scale(1.03, 1.03);
+      }
+    }
+    .main-registro__div-inSesion {
+      width: 100%;
+      .modal-dialog {
+        .modal-content {
+          .modal-header {
+            .modal-title {
+              color: $colorTerc;
+            }
+          }
+          .main-registro__div-contenido-modal {
+            width: 100%;
+            .div-contenido-modal__div-tit {
+              margin-bottom: 2rem;
+              .div-contenido-modal__h3-tit {
+                margin: 0 auto;
+              }
+            }
+            .div-contenido-modal__div-form {
+              .div-contenido-modal__form {
+                display: flex;
+                flex-direction: column;
+                .form__divs {
+                  margin-bottom: 2rem;
+                  .form__label {
+                    @include labels;
+                  }
+                  .form__input {
+                    @include inpt-slct-txtar(70%);
+                  }
+                  .form__label-check {
+                    color: $colorTerc;
+                    font-weight: bolder;
+                    text-decoration: none;
+                  }
+                  .submit__reset {
+                    @include botones(0px);
+                  }
+                  .submit__sent {
+                    @include botones(0px);
+                    margin-left: 1rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .main-registro__seccion-1 {
+    margin: 0 auto;
+    .main-resgistro__contennedor-principal {
+      flex-direction: column;
+      .main-registro__contenedor-formulario {
+        width: 100%;
+        .formulario-registro__h1-tit {
+          margin: 0 auto;
+        }
+        .main-registro__formulario {
+          margin: 0 auto;
+          .main-registro-formulario__divs {
+            margin-bottom: 0.7rem;
+          }
+        }
+      }
+      .main-registro__divInfo-botones {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        .main-registro__div-info {
+          width: 70%;
+          margin: 0 auto;
+          padding: 0 2rem;
+          .main-registro__divs {
+            width: 100%;
+            .main-registro__p-texto {
+              text-align: justify;
+              font-size: 1.2rem;
+              margin-top: 2rem;
+            }
+            .main-registro__ulmain-registro {
+              padding: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-registro__seccion-1 {
+    margin: 0 auto;
+    .main-resgistro__contennedor-principal {
+      flex-direction: column;
+      .main-registro__contenedor-formulario {
+        width: 90%;
+        margin: 0 auto;
+        .formulario-registro__h1-tit {
+          width: 100%;
+          margin: 0 auto;
+          font-size: 1.5rem;
+        }
+        .main-registro__formulario {
+          margin: 0 auto;
+          width: 100%;
+          height: auto;
+          .main-registro-formulario__divs {
+            width: 70%;
+            margin: 0 auto;
+            margin-bottom: 0.6rem;
+            .main-registro-formulario__label,
+            .main-registro-formulario__input,
+            .main-registro-formulario__select {
+              margin: 0 auto;
+              width: 100%;
+            }
+          }
+        }
+      }
+      .main-registro__divInfo-botones {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        .main-registro__div-info {
+          width: 90%;
+          margin: 0 auto;
+          padding: 0 0.5rem;
+          .main-registro__divs {
+            width: 100%;
+            .main-registro__p-texto {
+              text-align: justify;
+              font-size: 0.8rem;
+              margin-top: 2rem;
+            }
+            .main-registro__ulmain-registro {
+              padding: 1.5rem;
+              margin-bottom: 0;
+              .main-registro__li {
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--description-->
+  <meta name="description" content="registrate con tus datos o los de tu empresa y demos juntos el primer paso, te guiaremos en todo el proceso y estaremos contigo siempre en cada momento.">
+  <!--keywords-->
+  <meta name="keywords" content="registro, cologista registro, iniciar sesion cologista, registro cologista, usuario cologista">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&family=Stick+No+Bills&display=swap"
+    rel="stylesheet">
+  <!--link de bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!--link de efectos wow-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--link de mi archivo css-->
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <!--link de logo de pestaña-->
+  <link class="shorimg" rel="shortcut icon" href="img/index/logo/favicon.png">
+
+  <title>crear cuenta-iniciar sesion_cologista</title>
+</head>
+
+<body>
+  <!--logo y telefono-->
+  <header class="header">
+    <nav class="header-nav navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="header-nav__logo navbar-brand" href="index.html">⇈COLOGISTA⇊</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="header-nav__menu collapse navbar-collapse mx-right collapse show" id="navbarNavDropdown">
+          <ul class="header-nav__ulMenu navbar-nav">
+            <li class="nav-item">
+              <a class="header-nav__liItems nav-link active" aria-current="page"
+                href="index.html#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="header-nav__liItems nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="header-nav__liItems nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Nosotros
+              </a>
+              <ul class="ulMenu__ulSubMenu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="ulMenu__liSubItems dropdown-item" href="Nosotros.html#quienesSomos">¿Quienes somos?</a>
+                </li>
+                <li><a class="ulMenu__liSubItems dropdown-item" href="Nosotros.html#valores">Valores</a></li>
+                <li><a class="ulMenu__liSubItems dropdown-item" href="nosotros.html#opiniones">Opiniones</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="ulMenu__liSubItems dropdown-item" href="https://www.blogger.com/about/"
+                    target="_Blank">Blog</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <!-- Button trigger modal -->
+              <a href="#" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">Ingresar</a>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--formulario de contacto-->
+  <main class="main-registro">
+    <section class="main-registro__seccion-1">
+      <div class="main-resgistro__contennedor-principal">
+        <div class="main-registro__contenedor-formulario">
+          <h1 class="formulario-registro__h1-tit">REGISTRO ⇊</h1>
+          <form class="main-registro__formulario" action="">
+            <div class="main-registro-formulario__divs">
+              <label class="main-registro-formulario__label" for="nombre">Nombre</label>
+              <input class="main-registro-formulario__input" type="text" name="nombre"
+                placeholder="ingresa tu nombre" />
+            </div>
+            <div class="main-registro-formulario__divs">
+              <label class="main-registro-formulario__label" for="apellido">Apellido</label>
+              <input class="main-registro-formulario__input" type="text" required placeholder="ingresa tu apellido" />
+            </div>
+            <div class="main-registro-formulario__divs">
+              <label class="main-registro-formulario__label" for="email">E-mail</label>
+              <input class="main-registro-formulario__input" type="email" required placeholder="ejemplo@gmail.com" />
+            </div>
+            <div class="main-registro-formulario__divs">
+              <label class="main-registro-formulario__label" for="usuario">Usuario</label>
+              <input class="main-registro-formulario__input" type="text" required placeholder="ingresa tu usuario" />
+            </div>
+            <div class="main-registro-formulario__divs">
+              <label class="main-registro-formulario__label" for="password">Contraseña</label>
+              <input class="main-registro-formulario__input" type="password" required placeholder="*******" />
+            </div>
+            <div class="main-registro-formulario__divs">
+              <label class="main-registro-formulario__label" for="password">Repetir contraseña</label>
+              <input class="main-registro-formulario__input" type="password" required placeholder="*******" />
+            </div>
+            <div class="main-registro-formulario__divs">
+              <label class="main-registro-formulario__label" for="pais">Pais</label>
+              <select class="main-registro-formulario__select" name="pais">
+                <option class="main-registro-formulario__option" value="Colombia">COLOMBIA</option>
+                <option class="main-registro-formulario__option" value="Argentina">ARGENTINA</option>
+                <option class="main-registro-formulario__option" value="peru">PERU</option>
+              </select>
+            </div>
+            <div class="main-registro-formulario__divs">
+              <label class="main-registro-formulario__label" for="numero">Telefono</label>
+              <input class="main-registro-formulario__input" type="phone" required placeholder="1234567890" />
+            </div>
+            <div class="main-registro-formulario__divs">
+              <input class="main-registro-formulario__input-check" type="checkbox" name="checkbox" required />
+              <label class="main-registro-formulario__input-check-label">terminos y condiciones</label>
+            </div>
+            <div class="main-registro-formulario__divs">
+              <input class="main-registro-formulario__submit" name="submit" type="reset" value="Borar Datos">
+              <input class="main-registro-formulario__submit" name="submit" type="submit" value="Enviar">
+            </div>
+          </form>
+        </div>
+        <!--div informacion-->
+        <div class="main-registro__divInfo-botones">
+          <div class="main-registro__div-info">
+            <div class="main-registro__divs">
+              <p class="main-registro__p-texto">
+                En Cologista nos encargamos de recibir tu mercancía, almacenarla, empacarla y enviarla a tiempo a tus
+                clientes. <span class="main-registro__span">¡Hacemos fácil la logística,</span> ya sea de tu local
+                fisico y tu e-commerce hasta tu organizacion
+                completa a nivel nacional!
+              </p>
+            </div>
+            <div class="main-registro__divs">
+              <ul class="main-registro__ulmain-registro">
+                <li class="main-registro__li">¡Ya no necesitas un almacén! Nosotros recibimos y almacenamos de manera
+                  segura tus productos.</li>
+                <li class="main-registro__li">
+                  Preparamos tus paquetes para que tus productos lleguen en perfectas condiciones.
+                </li>
+                <li class="main-registro__li">
+                  No importa cuántas órdenes recibas, nosotros surtimos los pedidos de todos tus clientes.
+                </li>
+                <li class="main-registro__li">
+                  Te notificamos a ti y a tus clientes sobre el estado de los pedidos.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="main-registro__contenedor-modalLogin">
+            <!-- Button trigger modal -->
+            <a class="main-registro__boton-a-contactanos" href="Contacto.html">Contactanos</a>
+            <button type="button" class="main-registro__boton-YaTengo btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop">
+              Ya tengo cuenta
+            </button>
+            <!-- Modal -->
+            <div class="main-registro__div-inSesion modal fade" id="staticBackdrop" data-bs-backdrop="static"
+              data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Iniciar sesion</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="main-registro__div-contenido-modal modal-body">
+                    <div class="div-contenido-modal__div-tit">
+                      <h3 class="div-contenido-modal__h1-tit">Ingresa tus datos ⇊</h3>
+                    </div>
+                    <div class="div-contenido-modal__div-form">
+                      <form class="div-contenido-modal__form" action="">
+                        <div class="form__divs">
+                          <label class="form__label" for="usuario">Tu Usuario o email</label>
+                          <input class="form__input" type="email" required placeholder="usuario o email" />
+                        </div>
+                        <div class="form__divs">
+                          <label class="form__label" for="password">Tu contraseña</label>
+                          <input class="form__input" type="password" required placeholder="contraseña" />
+                        </div>
+                        <div class="form__divs">
+                          <input class="main-registro-formulario__input-check" type="checkbox" name="checkbox" />
+                          <label class="main-registro-formulario__input-check-label">Guardar datos</label>
+                        </div>
+                        <div class="form__divs submits">
+                          <input class="submit__reset submit" name="submit" type="reset" value="Borar Datos">
+                          <input class="submit__sent submit" name="submit" type="submit" value="Enviar">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- seccion de logos flotates de redes sociales -->
+    <section class="seccion-4-main-index__log-flot">
+      <div class="seccion-4-main-index__div-log">
+        <a href="https://www.facebook.com/" target="_blank"><img class="seccion-4-main-index__log-facebook"
+            src="img/index/faceb.png" alt="logo-float-pagina-facebook"></a>
+      </div>
+      <div class="seccion-4-main-index__div-log">
+        <a href="https://www.instagram.com/" target="_blank"><img class="seccion-4-main-index__log-instagram"
+            src="img/index/instag.png" alt="logo-float-pagina-instagram"></a>
+      </div>
+      <div class="seccion-4-main-index__div-log">
+        <a href="https://twitter.com/?lang=es" target="_blank"><img class="seccion-4-main-index__log-twiter"
+            src="img/index/twitter.png" alt="logo-float-pagina-twitter"></a>
+      </div>
+      <div class="seccion-4-main-index__div-log">
+        <a href="https://www.linkedin.com/feed/" target="_blank"><img class="seccion-4-main-index__log-linkedin"
+            src="img/index/linked.png" alt="logo-float-pagina-linkedin"></a>
+      </div>
+      <div class="seccion-4-main-index__div-log">
+        <a href="https://web.whatsapp.com/" target="_blank"><img class="seccion-4-main-index__log-whatsapp"
+            src="img/index/whats.png" alt="logo-float-pagina-whatsapp"></a>
+      </div>
+    </section>
+  </main>
+  <!--pie de pagina-->
+  <footer class="footer">
+    <nav class="footer__nav">
+      <div class="footer__div-links">
+        <a class="footer_links" href="#">Terminos
+        </a>
+        <a class="footer_links" href="#">Privacidad
+        </a>
+        <a class="footer_links" href="#">Cookies
+        </a>
+      </div>
+      <div class="footer__div-derechosby">
+        <p class="footer__p-derechos">©Todos los derechos reservados. <span class="footer__by">By HenryDelaossa</span>
+        </p>
+      </div>
+      <div class="footer__div-redes">
+        <ul class="footer__ul-redes">
+          <li class="footer__li-redes">
+            <a href="https://www.facebook.com/" target="_blank"><img class="footer__img-redes"
+                src="img/footer/faclog.png" alt="logo-pagina-facebook" /></a>
+          </li>
+          <li class="footer__li-redes">
+            <a href="https://www.instagram.com/henrydlog/" target="_blank"><img class="footer__img-redes"
+                src="img/footer/inslog.png" alt="logo-pagina-instagram" /></a>
+          </li>
+          <li class="footer__li-redes">
+            <a href="https://twitter.com/?lang=es" target="_blank"><img class="footer__img-redes"
+                src="img/footer/twiter.png" alt="logo-pagina-twitter" /></a>
+          </li>
+          <li class="footer__li-redes">
+            <a href="https://www.linkedin.com/feed" target="_blank"><img class="footer__img-redes"
+                src="img/footer/linlog.png" alt="logo-pagina-linkedin" /></a>
+          </li>
+          <li class="footer__li-redes">
+            <a href="https://api.whatsapp.com/send?phone=573015455361" target="_blank"><img class="footer__img-redes"
+                src="img/footer/whalog.png" alt="logo-pagina-whatsapp" /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+    integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+    crossorigin="anonymous"></script>-
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  
+</body>
+
+</html>

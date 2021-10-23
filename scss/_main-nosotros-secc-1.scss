@@ -1,0 +1,312 @@
+.main-nosotros {
+  margin: 0 auto;
+  /*contenedor-grilla*/ //contenedor-grilla
+  .nosotros-seccion-1 {
+    margin-top: 3rem;
+    /*grilla*/ //grilla
+    .nosotros-seccion-1__grilla {
+      display: grid;
+      grid-template-areas:
+        "quienesSomos quienesSomos quienesSomos quienesSomos"
+        "mision mision vision vision"
+        "hr hr hr hr"
+        "titValores titValores titValores titValores"
+        "primClientes rendimiento desAmbiental respSocial"
+        "hr1 hr1 hr1 hr1"
+        "titOpiniones titOpiniones titOpiniones titOpiniones"
+        "opinion-1 opinion-1 opinion-1 opinion-1"
+        "opinion-2 opinion-2 opinion-2 opinion-2"
+        "opinion-3 opinion-3 opinion-3 opinion-3";
+      grid-template-columns: auto;
+      grid-row-gap: 1rem;
+      grid-column-gap: 1rem;
+      grid-template-rows: auto;
+      justify-content: center;
+      margin: 2rem 4rem;
+      /*quienes somos*/ //quienes-somos
+      .nosotros-seccion-1-grilla__div-quienesSomos {
+        grid-area: quienesSomos;
+        padding: 0 1rem;
+        text-align: center;
+        margin: 0 1rem 2rem 1rem;
+        .div-quienesSomos__h1-tit {
+          margin-bottom: 2rem;
+          letter-spacing: 4px;
+          padding: 0 1rem;
+          font-size: 3rem;
+        }
+        .div-quienesSomos__p {
+          margin: 0 8rem;
+          padding: 0 2rem;
+          font-size: 1.4rem;
+        }
+      } /*mision*/ //mision
+      .nosotros-seccion-1-grilla__div-mision {
+        grid-area: mision;
+        border-radius: 2px 10px 2px 10px;
+        width: 70%;
+        height: auto;
+        justify-self: end;
+        margin-right: 3rem;
+        margin-bottom: 3rem;
+        .div-mision__h2-tit-mision-vision {
+          text-align: center;
+        }
+        .div-mision__p-mision-vision {
+          text-align: justify;
+          letter-spacing: 1px;
+          padding: 0 2rem;
+          margin: 0 2rem;
+          color: $colorTerc;
+          font-weight: bolder;
+          border-radius: 2px 10px 2px 10px;
+          background-color: $colorSecun;
+        }
+        &:hover {
+          transform: scale(1.01, 1.01);
+          transition: 300ms;
+        }
+      }
+      .nosotros-seccion-1-grilla__div-vision {
+        @extend .nosotros-seccion-1-grilla__div-mision;
+        grid-area: vision;
+        justify-self: start;
+        margin-left: 3rem;
+        margin-bottom: 3rem;
+      }
+      /*hr*/ //linea divisoria-1
+      .nosotros-seccion-1-grilla__div-hr {
+        @include nosotros-hr(hr);
+      } /*hr*/ //linea divisoria-2
+      .nosotros-seccion-1-grilla__div-hr1 {
+        @include nosotros-hr(hr1);
+      } /*valores*/ //valores
+      .nosotros-seccion-1-grilla__div-titValores {
+        grid-area: titValores;
+        .nosotros-seccion-1-grilla-div-titValores__h2 {
+          font-size: 2.5rem;
+          text-align: center;
+        }
+      } /*primero-clientes*/ //primero-clientes
+      .nosotros-seccion-1-grilla__div-primClientes {
+        @include nosotros-valores(primClientes, 0);
+      } /*desarrollo-ambiental*/ //desarrollo ambiental
+      .nosotros-seccion-1-grilla__div-desAmbiental {
+        @include nosotros-valores(desAmbiental, 0);
+      } /*responsabilidad social*/ //responsabilidad social
+      .nosotros-seccion-1-grilla__div-respSocial {
+        @include nosotros-valores(respSocial, 2rem);
+      } /*rendimiento*/ //rendimiento
+      .nosotros-seccion-1-grilla__div-rendimiento {
+        @include nosotros-valores(rendimiento, 2rem);
+      } /*opiniones*/ //opiniones
+      .nosotros-seccion-1-grilla__div-titOpiniones {
+        grid-area: titOpiniones;
+        .nosotros-seccion-1-grilla-div-titOpiniones__h2 {
+          font-size: 2.5rem;
+          text-align: center;
+        }
+      } /*opinion-1*/ //opinion-1
+      .nosotros-seccion-1-grilla__div-opinion-1 {
+        @include nosotros-opiniones(opinion-1);
+      } /*opinion-2*/ //opinion-2
+      .nosotros-seccion-1-grilla__div-opinion-2 {
+        @include nosotros-opiniones(opinion-2);
+      } /*opinion-2*/ //opinion-3
+      .nosotros-seccion-1-grilla__div-opinion-3 {
+        @include nosotros-opiniones(opinion-3);
+      }
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .main-nosotros {
+    .nosotros-seccion-1 {
+      .nosotros-seccion-1__grilla {
+        grid-template-areas:
+          "quienesSomos quienesSomos"
+          "mision vision"
+          "hr hr"
+          "titValores titValores"
+          "desAmbiental primClientes"
+          "rendimiento respSocial"
+          "hr1 hr1"
+          "titOpiniones titOpiniones"
+          "opinion-1 opinion-1"
+          "opinion-2 opinion-2"
+          "opinion-3 opinion-3";
+        margin: 0 auto;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        .div-mision__p-mision-vision {
+          width: 300px;
+        }
+        .nosotros-seccion-1-grilla__div-primClientes {
+          justify-self: center;
+          margin-right: 2rem;
+        } /*desarrollo-ambiental*/ //desarrollo ambiental
+        .nosotros-seccion-1-grilla__div-desAmbiental {
+          justify-self: center;
+          margin-left: 2rem;
+        } /*responsabilidad social*/ //responsabilidad social
+        .nosotros-seccion-1-grilla__div-respSocial {
+          justify-self: center;
+          margin-right: 2rem;
+        } /*rendimiento*/ //rendimiento
+        .nosotros-seccion-1-grilla__div-rendimiento {
+          justify-self: center;
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-nosotros {
+    .nosotros-seccion-1 {
+      .nosotros-seccion-1__grilla {
+        grid-template-areas:
+          "quienesSomos"
+          "mision"
+          "vision"
+          "hr"
+          "titValores"
+          "desAmbiental"
+          "primClientes"
+          "rendimiento"
+          "respSocial"
+          "hr1"
+          "titOpiniones"
+          "opinion-1"
+          "opinion-2"
+          "opinion-3";
+        margin: 0 auto;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        .nosotros-seccion-1-grilla__div-quienesSomos {
+          margin: 0;
+          width: 100%;
+          .div-quienesSomos__h1-tit {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 0;
+            letter-spacing: 0px;
+            margin-bottom: 0.5rem;
+            width: 100%;
+          }
+          .div-quienesSomos__p {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            font-size: 1rem;
+          }
+        }
+        .nosotros-seccion-1-grilla__div-mision,
+        .nosotros-seccion-1-grilla__div-vision {
+          margin: 0 auto;
+          width: 100%;
+          .div-mision__p-mision-vision {
+            width: 90%;
+            margin: 0 auto;
+            font-size: 0.8rem;
+          }
+        }
+        .nosotros-seccion-1-grilla__div-titValores {
+          .nosotros-seccion-1-grilla-div-titValores__h2 {
+            font-size: 1.8rem;
+            padding: 0;
+          }
+        }
+        .nosotros-seccion-1-grilla__div-primClientes {
+          justify-self: center;
+          margin: 0 auto;
+          width: 90%;
+          .nosotros-seccion-1-grilla-divs-valores__h2-tit {
+            font-size: 1.4rem;
+            margin-bottom: 0;
+          }
+          .nosotros-seccion-1-grilla-divs-valores__p-parrafos {
+            font-size: 0.8rem;
+          }
+        } /*desarrollo-ambiental*/ //desarrollo ambiental
+        .nosotros-seccion-1-grilla__div-desAmbiental {
+          justify-self: center;
+          margin: 0 auto;
+          width: 90%;
+          .nosotros-seccion-1-grilla-divs-valores__h2-tit {
+            font-size: 1.4rem;
+            margin-bottom: 0;
+          }
+          .nosotros-seccion-1-grilla-divs-valores__p-parrafos {
+            font-size: 0.8rem;
+          }
+        } /*responsabilidad social*/ //responsabilidad social
+        .nosotros-seccion-1-grilla__div-respSocial {
+          justify-self: center;
+          margin: 0 auto;
+          width: 90%;
+          .nosotros-seccion-1-grilla-divs-valores__h2-tit {
+            font-size: 1.4rem;
+            margin-bottom: 0;
+          }
+          .nosotros-seccion-1-grilla-divs-valores__p-parrafos {
+            font-size: 0.8rem;
+          }
+        } /*rendimiento*/ //rendimiento
+        .nosotros-seccion-1-grilla__div-rendimiento {
+          justify-self: center;
+          margin: 0 auto;
+          width: 90%;
+          .nosotros-seccion-1-grilla-divs-valores__h2-tit {
+            font-size: 1.4rem;
+            margin-bottom: 0;
+          }
+          .nosotros-seccion-1-grilla-divs-valores__p-parrafos {
+            font-size: 0.8rem;
+          }
+        }
+        .nosotros-seccion-1-grilla__div-titOpiniones {
+          .nosotros-seccion-1-grilla-div-titOpiniones__h2 {
+            font-size: 1.8rem;
+          }
+        }
+        .nosotros-seccion-1-grilla__div-opinion-1 {
+          width: 90%;
+          border: 2px solid $colorSecun;
+          border-radius: 2px 8px 2px 8px;
+          padding: 0.5rem;
+          .nosotros-seccion-1-grilla-div-opiniones__p-opinion {
+            font-size: 0.7rem;
+          }
+          .nosotros-seccion-1-grilla-div-opiniones__p-persona {
+            font-size: 0.7rem;
+          }
+        }
+        .nosotros-seccion-1-grilla__div-opinion-2 {
+          width: 90%;
+          border: 2px solid $colorSecun;
+          border-radius: 2px 8px 2px 8px;
+          padding: 0.5rem;
+          .nosotros-seccion-1-grilla-div-opiniones__p-opinion {
+            font-size: 0.7rem;
+          }
+          .nosotros-seccion-1-grilla-div-opiniones__p-persona {
+            font-size: 0.7rem;
+          }
+        }
+        .nosotros-seccion-1-grilla__div-opinion-3 {
+          width: 90%;
+          border: 2px solid $colorSecun;
+          border-radius: 2px 8px 2px 8px;
+          padding: 0.5rem;
+          .nosotros-seccion-1-grilla-div-opiniones__p-opinion {
+            font-size: 0.7rem;
+          }
+          .nosotros-seccion-1-grilla-div-opiniones__p-persona {
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+}

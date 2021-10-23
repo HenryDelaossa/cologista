@@ -1,0 +1,113 @@
+.seccion-3-main-index {
+  text-align: center;
+  margin-top: 5rem;
+  .seccion-3-main-index__div-titulo {
+    margin-bottom: 3rem;
+    .div-titulo__h2 {
+      font-size: 3rem;
+    }
+  }
+  .seccion-3-main-index__div-cont-divs-imgs {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 5rem;
+    border: 3px solid $colorPrim;
+    border-radius: 3px 20px 3px 20px;
+    .div-cont-img {
+      width: 160px;
+      height: auto;
+      margin: 0 2rem;
+      .shoope__img,
+      .aliexpress__img,
+      .linio__img,
+      .merc-libre__img,
+      .dafiti__img {
+        width: 100%;
+        height: auto;
+        margin: 2rem 1rem;
+        &:hover {
+          opacity: 0.7;
+          transition: 300ms;
+        }
+      }
+    }
+  }
+  .carousel {
+    display: none;
+    .carousel-control-prev {
+      .carousel-control-prev-icon {
+        height: 100px;
+        background-color: $colorPrim;
+        margin: 0;
+      }
+    }
+    .carousel-control-next {
+      .carousel-control-next-icon {
+        height: 100px;
+        background-color: $colorPrim;
+        margin: 0;
+      }
+    }
+  }
+  .seccion-3-main-index__div-subir {
+    align-items: center;
+    margin-top: 4rem;
+    .div-subir__boton-a {
+      color: $colorSecun;
+      text-decoration: none;
+      font-family: $fuenteTitLink;
+      background-color: $colorPrim;
+      border-radius: 2px 8px 2px 8px;
+      padding: 0.3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .seccion-3-main-index {
+    .seccion-3-main-index__div-titulo {
+      .div-titulo__h2 {
+        font-size: 2.5rem;
+      }
+    }
+    .seccion-3-main-index__div-cont-divs-imgs {
+      display: none;
+      .div-cont-img {
+        width: 35%;
+      }
+    }
+    .carousel {
+      display: block;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .seccion-3-main-index {
+    .seccion-3-main-index__div-titulo {
+      .div-titulo__h2 {
+        font-size: 2rem;
+      }
+    }
+    .seccion-3-main-index__div-cont-divs-imgs {
+      display: none;
+      .div-cont-img {
+        width: 35%;
+      }
+    }
+    .carousel {
+      display: block;
+      .carousel-control-prev {
+        .carousel-control-prev-icon{
+          height: 50px;
+        }
+      }
+      .carousel-control-next {
+        .carousel-control-next-icon {
+          height: 50px;
+        }
+      }
+    }
+  }
+}

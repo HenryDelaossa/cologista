@@ -1,0 +1,66 @@
+.header {
+  position: sticky;
+  top: 5px;
+  z-index: 100;
+  align-items: center;
+  background-color: $colorTerc;
+  box-shadow: 0px 1px 5px 2px  gray;
+  border-radius: 2px 12px 2px 12px;
+  width: 98%;
+  margin: 0 auto;
+  .header-nav {
+    margin: 0 auto;
+    padding: 0.3rem;
+    /*logo*/ //logo
+    .header-nav__logo {
+      background-color: $colorSecun;
+      color: $colorPrim;
+      font-family: $fuenteTitLink;
+      border-radius: 2px 8px 2px 8px;
+      padding: 0.2rem 0.3rem;
+      &:hover {
+        transform: scale(1.02, 1.02);
+        transition: 300ms;
+      }
+    }
+  } //menu /*menu*/
+  .header-nav__menu {
+    justify-content: right;
+    .header-nav__ulMenu {
+      text-align: center;
+      align-items: center;
+      .header-nav__liItems {
+        color: $colorSecun;
+        font-family: $fuenteTitLink;
+        margin-right: 5rem;
+        font-size: 1.2rem;
+        &:hover {
+          color: $colorPrim;
+          text-shadow: 0px 0px 30px $colorPrim;
+          transform: scale(1.07, 1.07);
+          transition: 400ms;
+        }
+        &--active {
+          @include botones(0px);
+        }
+      }
+      //submenu /*submenu*/
+      .ulMenu__ulSubMenu {
+        background-color: $colorTerc;
+        margin-right: 0;
+        border: none;
+        .ulMenu__liSubItems {
+          color: $colorSecun;
+          background-color: transparent;
+          font-family: $fuenteTitLink;
+          &:hover {
+            color: $colorPrim;
+            text-shadow: 0px 0px 30px $colorPrim;
+            transform: scale(1.03, 1.03);
+            transition: 400ms;
+          }
+        }
+      }
+    }
+  }
+}

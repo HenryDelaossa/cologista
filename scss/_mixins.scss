@@ -1,0 +1,133 @@
+//botones
+@mixin botones($margin-bottom) {
+  text-decoration: none;
+  background-color: $colorPrim;
+  color: $colorTerc;
+  font-weight: bolder;
+  font-family: "Stick No Bills", sans-serif;
+  border: none;
+  border-radius: 1px 8px 1px 8px;
+  padding: 0.2rem 0.3rem;
+  margin-bottom: $margin-bottom;
+  box-shadow: 0px 1px 5px 0px  $colorSecun;
+  &:hover {
+    transform: scale(1.03, 1.03);
+    transition: 400ms;
+    color: $colorSecun;
+    font-weight: normal;
+  }
+}
+//index-contenedor de servicios
+@mixin main-index-contenedor-servicios(
+  $grid-area-serv,
+  $justify-self, $width, $widthimg
+) {
+  grid-area: $grid-area-serv;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-self: $justify-self;
+  width: $width;
+  box-shadow: 0px 0px 5px $colorSecun;
+  border-radius: 2px 10px 2px 10px;
+  &:hover {
+    transform: scale(1.02, 1.02);
+    box-shadow: 0px 0px 5px $colorPrim;
+    transition: 300ms;
+  }
+  .div-contenedor-servs__h3-tit {
+    text-decoration: 2px underline $colorPrim;
+  }
+  .div-contenedor-servs__img {
+    width: $widthimg;
+    height: auto;
+  }
+  .div-contenedor-servs__p {
+    font-family: "Montserrat", sans-serif;
+    padding: 0 0.5rem;
+  }
+  .div-contenedor-servs__span {
+    font-family: "Montserrat", sans-serif;
+    padding: 0 .3rem;
+    text-align: left;
+    color: $colorPrim;
+  }
+  .div-contenedor-servs__boton-a {
+    @include botones(10px);
+  }
+}
+//nosotros
+@mixin nosotros-valores($grid-area, $margin-bottom) {
+  grid-area: $grid-area;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 300px;
+  padding: 0 1rem;
+  box-shadow: 0px 0px 5px $colorSecun;
+  border-radius: 2px 10px 2px 10px;
+  .nosotros-seccion-1-grilla-divs-valores__h2-tit {
+    margin-top: 1rem;
+    margin-bottom: $margin-bottom;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  .nosotros-seccion-1-grilla-divs-valores__p-parrafos {
+    text-align: justify;
+    padding: 0;
+  }
+  &:hover {
+    box-shadow: 0px 0px 5px $colorPrim;
+    transition: 300ms;
+  }
+}
+@mixin nosotros-hr($grid-area) {
+  grid-area: $grid-area;
+  .nosotros-seccion-1-grilla-div-hr__hr {
+    border: 2px solid $colorPrim;
+  }
+}
+@mixin nosotros-opiniones($grid-area) {
+  grid-area: $grid-area;
+  margin: 0 auto;
+  text-align: center;
+  width: 70%;
+  .nosotros-seccion-1-grilla-div-opiniones__p-opinion {
+    background-color: $colorSecun;
+    color: $colorTerc;
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2px 10px 2px 10px;
+  }
+  .nosotros-seccion-1-grilla-div-opiniones__p-persona {
+    color: $colorPrim;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    width: 50%;
+    .nosotros-seccion-1-grilla-div-opiniones__span-negocio {
+      display: block;
+      color: $colorSecun;
+    }
+  }
+}
+//contacto
+@mixin inpt-slct-txtar($width) {
+  color: $colorPrim;
+  width: $width;
+  text-align: center;
+  border-radius: 2px 8px 2px 8px;
+  box-shadow: 0px 1px 5px 0px  $colorSecun;
+  resize: none;
+  &:hover {
+    transform: scale(1.02, 1.02);
+    transition: 300ms;
+  }
+}
+@mixin labels {
+  display: block;
+  color: $colorSecun;
+}
+
+

@@ -117,6 +117,12 @@
         @include nosotros-opiniones(opinion-3);
       }
     }
+    .main__contenedor-modalLogin {
+      text-align: center;
+    }
+    .main__boton-regis {
+      @include botones(0px);
+    }
   }
 }
 @media screen and (max-width: 1023px) {

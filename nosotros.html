@@ -52,10 +52,10 @@
                 Nosotros
               </a>
               <ul class="ulMenu__ulSubMenu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="ulMenu__liSubItems dropdown-item" href="#quienesSomos">¿Quienes somos?</a>
+                <li><a class="ulMenu__liSubItems dropdown-item" href="Nosotros.html#quienesSomos">¿Quienes somos?</a>
                 </li>
-                <li><a class="ulMenu__liSubItems dropdown-item" href="#valores">Valores</a></li>
-                <li><a class="ulMenu__liSubItems dropdown-item" href="#opiniones">Opiniones</a></li>
+                <li><a class="ulMenu__liSubItems dropdown-item" href="Nosotros.html#valores">Valores</a></li>
+                <li><a class="ulMenu__liSubItems dropdown-item" href="nosotros.html#opiniones">Opiniones</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
@@ -64,7 +64,24 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="header-nav__liItemBoton nav-link" href="registro.html">Sign-In / Log-In</a>
+              <!-- Button trigger modal -->
+              <a href="#" type="button" class="btn btn-primary header-nav__liItemBoton" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">Mi oficina</a>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -172,6 +189,52 @@
           <p class="nosotros-seccion-1-grilla-div-opiniones__p-persona wow animate__animated animate__fadeInRight">-Camila Gomez <span class="nosotros-seccion-1-grilla-div-opiniones__span-negocio">Director "Mercadeo.tuyo"</span>
           </p>
           <hr>
+        </div>
+      </div>
+      <div class="main__contenedor-modalLogin">
+        <!-- Button trigger modal -->
+         <a href="registro.html"><button type="button" class="main__boton-regis btn btn-primary" data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop">Quiero registrarme</button></a>
+        <!-- Modal -->
+        <div class="main__div-inSesion modal fade" id="staticBackdrop" data-bs-backdrop="static"
+          data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Iniciar sesion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="main-registro__div-contenido-modal modal-body">
+                <div class="div-contenido-modal__div-tit">
+                  <h3 class="div-contenido-modal__h1-tit">Ingresa tus datos ⇊</h3>
+                </div>
+                <div class="div-contenido-modal__div-form">
+                  <form class="div-contenido-modal__form" action="">
+                    <div class="form__divs">
+                      <label class="form__label" for="usuario">Tu Usuario o email</label>
+                      <input class="form__input" type="email" required placeholder="usuario o email" />
+                    </div>
+                    <div class="form__divs">
+                      <label class="form__label" for="password">Tu contraseña</label>
+                      <input class="form__input" type="password" required placeholder="contraseña" />
+                    </div>
+                    <div class="form__divs">
+                      <input class="main-registro-formulario__input-check" type="checkbox" name="checkbox" />
+                      <label class="main-registro-formulario__input-check-label">Guardar datos</label>
+                    </div>
+                    <div class="form__divs submits">
+                      <input class="submit__reset submit" name="submit" type="reset" value="Borar Datos">
+                      <input class="submit__sent submit" name="submit" type="submit" value="Enviar">
+                    </div>
+                    <div>
+                      <span>¿No tienes cuenta?</span>
+                      <a href="registro.html">Registrarme</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

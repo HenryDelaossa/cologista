@@ -39,6 +39,8 @@
               }
               .main-contacto__textarea {
                 @include inpt-slct-txtar(400px);
+                text-align: left;
+                height: 150px;
                 color: $colorSecun;
               }
               .main-contacto__submit {

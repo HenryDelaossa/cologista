@@ -82,71 +82,8 @@
           }
         }
       }
-      .main-contacto__contenedor-modalLogin {
-        margin-top: 2rem;
-        text-align: center;
-        .main-contacto__boton-a-contactanos {
-          @include botones(0px);
-          background-color: $colorSecun;
-          &:hover {
-            color: $colorPrim;
-          }
-        }
-      }
-      .main-contacto__boton-YaTengo {
-        @include botones(0px);
-        margin-left: 1rem;
-        &:hover {
-          transform: scale(1.02, 1.02);
-        }
-      }
-      .main-contacto__div-inSesion {
-        width: 100%;
-        .modal-dialog {
-          .modal-content {
-            .modal-header {
-              .modal-title {
-                color: $colorTerc;
-              }
-            }
-            .main-contacto__div-contenido-modal {
-              width: 100%;
-              .div-contenido-modal__div-tit {
-                margin-bottom: 2rem;
-                .div-contenido-modal__h3-tit {
-                  margin: 0 auto;
-                }
-              }
-              .div-contenido-modal__div-form {
-                .div-contenido-modal__form {
-                  display: flex;
-                  flex-direction: column;
-                  .form__divs {
-                    margin-bottom: 2rem;
-                    .form__label {
-                      @include labels;
-                    }
-                    .form__input {
-                      @include inpt-slct-txtar(70%);
-                    }
-                    .form__label-check {
-                      color: $colorTerc;
-                      font-weight: bolder;
-                      text-decoration: none;
-                    }
-                    .submit__reset {
-                      @include botones(0px);
-                    }
-                    .submit__sent {
-                      @include botones(0px);
-                      margin-left: 1rem;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
+      .main__contenedor-modalLogin {
+        @include cont-modal;
       }
     }
   }

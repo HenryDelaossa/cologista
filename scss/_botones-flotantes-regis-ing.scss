@@ -1,0 +1,27 @@
+.main-seccion__btnRegIng {
+  @include cont-modal;
+  .main__botFlot-Reg {
+    @include botones(0px);
+    background-color: $colorSecun;
+    position: fixed;
+    top: 500px;
+    right: -78px;
+    padding-left: 2rem;
+    &:hover {
+      color: $colorTerc;
+      right: 2px;
+      padding-left: 0.2rem;
+    }
+  }
+  .main__botFlot-ing {
+    @include botones(0px);
+    position: fixed;
+    top: 540px;
+    right: -120px;
+    padding-left: 2rem;
+    &:hover {
+      right: 2px;
+      padding-left: 0.2rem;
+    }
+  }
+}

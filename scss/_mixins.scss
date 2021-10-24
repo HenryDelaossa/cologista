@@ -1,5 +1,72 @@
+@mixin cont-modal {
+  text-align: center;
+  .main__botFlot-Reg {
+    @include botones(0px);
+    background-color: $colorSecun;
+    &:hover {
+      color: $colorPrim;
+    }
+  }
+  .main__botFlot-ing {
+    @include botones(0px);
+    margin-left: 1rem;
+    &:hover {
+      transform: scale(1.03, 1.03);
+    }
+  }
+  .main__div-inSesion {
+    width: 100%;
+    .modal-dialog {
+      .modal-content {
+        .modal-header {
+          .modal-title {
+            font-family: $fuenteTitLink;
+            font-size: 1.5rem;
+            color: $colorPrim;
+          }
+        }
+        .main__div-contenido-modal {
+          width: 100%;
+          .div-contenido-modal__div-tit {
+            margin-bottom: 2rem;
+            .div-contenido-modal__h3-tit {
+              margin: 0 auto;
+            }
+          }
+          .div-contenido-modal__div-form {
+            .div-contenido-modal__form {
+              display: flex;
+              flex-direction: column;
+              .form__divs {
+                margin-bottom: 2rem;
+                .form__label {
+                  @include labels;
+                }
+                .form__input {
+                  @include inpt-slct-txtar(70%);
+                }
+                .form__label-check {
+                  color: $colorTerc;
+                  font-weight: bolder;
+                  text-decoration: none;
+                }
+                .submit__reset {
+                  @include botones(0px);
+                }
+                .submit__sent {
+                  @include botones(0px);
+                  margin-left: 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
-@mixin efectos-menu ($colorAfter, $colorBefore, $colorlinkHover) {
+@mixin efectos-menu($colorAfter, $colorBefore, $colorlinkHover) {
   position: relative;
   display: block;
   color: $colorSecun;
@@ -27,7 +94,7 @@
     transition: 300ms;
   }
   &:hover {
-    color: $colorlinkHover ;
+    color: $colorlinkHover;
     &::before {
       width: 47%;
       transform: translate(105%);

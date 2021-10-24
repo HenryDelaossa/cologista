@@ -131,23 +131,23 @@
             font-family: "Montserrat", sans-serif;
             background-color: #171717;
             border-radius: 2px 12px 2px 12px; }
-        .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .div__boton {
-          text-decoration: none;
-          background-color: #da0037;
-          color: #e5e5e5;
-          font-weight: bolder;
-          font-family: "Stick No Bills", sans-serif;
-          border: none;
-          border-radius: 1px 8px 1px 8px;
-          padding: 0.2rem 0.3rem;
-          margin-bottom: 10px;
-          box-shadow: 0px 1px 5px 0px #171717; }
-          .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .div__boton:hover {
-            transform: scale(1.03, 1.03);
-            transition: 300ms;
-            color: #171717;
-            font-weight: normal;
-            text-decoration: none; }
+          .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .div-presentacion__div .div__parrafo-a {
+            text-decoration: none;
+            background-color: #da0037;
+            color: #e5e5e5;
+            font-weight: bolder;
+            font-family: "Stick No Bills", sans-serif;
+            border: none;
+            border-radius: 1px 8px 1px 8px;
+            padding: 0.2rem 0.3rem;
+            margin-bottom: 0px;
+            box-shadow: 0px 1px 5px 0px #171717; }
+            .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .div-presentacion__div .div__parrafo-a:hover {
+              transform: scale(1.03, 1.03);
+              transition: 300ms;
+              color: #171717;
+              font-weight: normal;
+              text-decoration: none; }
 
 @media screen and (max-width: 1023px) {
   .main-index .main-index__seccion-1 {
@@ -1142,6 +1142,168 @@
   .seccion-4-main-index__log-flot {
     display: none; } }
 
+.main-seccion__btnRegIng {
+  text-align: center; }
+  .main-seccion__btnRegIng .main__botFlot-Reg {
+    text-decoration: none;
+    background-color: #da0037;
+    color: #e5e5e5;
+    font-weight: bolder;
+    font-family: "Stick No Bills", sans-serif;
+    border: none;
+    border-radius: 1px 8px 1px 8px;
+    padding: 0.2rem 0.3rem;
+    margin-bottom: 0px;
+    box-shadow: 0px 1px 5px 0px #171717;
+    background-color: #171717; }
+    .main-seccion__btnRegIng .main__botFlot-Reg:hover {
+      transform: scale(1.03, 1.03);
+      transition: 300ms;
+      color: #171717;
+      font-weight: normal;
+      text-decoration: none; }
+    .main-seccion__btnRegIng .main__botFlot-Reg:hover {
+      color: #da0037; }
+  .main-seccion__btnRegIng .main__botFlot-ing {
+    text-decoration: none;
+    background-color: #da0037;
+    color: #e5e5e5;
+    font-weight: bolder;
+    font-family: "Stick No Bills", sans-serif;
+    border: none;
+    border-radius: 1px 8px 1px 8px;
+    padding: 0.2rem 0.3rem;
+    margin-bottom: 0px;
+    box-shadow: 0px 1px 5px 0px #171717;
+    margin-left: 1rem; }
+    .main-seccion__btnRegIng .main__botFlot-ing:hover {
+      transform: scale(1.03, 1.03);
+      transition: 300ms;
+      color: #171717;
+      font-weight: normal;
+      text-decoration: none; }
+    .main-seccion__btnRegIng .main__botFlot-ing:hover {
+      transform: scale(1.03, 1.03); }
+  .main-seccion__btnRegIng .main__div-inSesion {
+    width: 100%; }
+    .main-seccion__btnRegIng .main__div-inSesion .modal-dialog .modal-content .modal-header .modal-title {
+      font-family: "Stick No Bills", sans-serif;
+      font-size: 1.5rem;
+      color: #da0037; }
+    .main-seccion__btnRegIng .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal {
+      width: 100%; }
+      .main-seccion__btnRegIng .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-tit {
+        margin-bottom: 2rem; }
+        .main-seccion__btnRegIng .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-tit .div-contenido-modal__h3-tit {
+          margin: 0 auto; }
+      .main-seccion__btnRegIng .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form {
+        display: flex;
+        flex-direction: column; }
+        .main-seccion__btnRegIng .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs {
+          margin-bottom: 2rem; }
+          .main-seccion__btnRegIng .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__label {
+            display: block;
+            color: #171717; }
+          .main-seccion__btnRegIng .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__input {
+            color: #da0037;
+            width: 70%;
+            text-align: center;
+            border-radius: 2px 8px 2px 8px;
+            box-shadow: 0px 1px 5px 0px #171717;
+            resize: none; }
+            .main-seccion__btnRegIng .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__input:hover {
+              transform: scale(1.02, 1.02);
+              transition: 300ms; }
+          .main-seccion__btnRegIng .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__label-check {
+            color: #e5e5e5;
+            font-weight: bolder;
+            text-decoration: none; }
+          .main-seccion__btnRegIng .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__reset {
+            text-decoration: none;
+            background-color: #da0037;
+            color: #e5e5e5;
+            font-weight: bolder;
+            font-family: "Stick No Bills", sans-serif;
+            border: none;
+            border-radius: 1px 8px 1px 8px;
+            padding: 0.2rem 0.3rem;
+            margin-bottom: 0px;
+            box-shadow: 0px 1px 5px 0px #171717; }
+            .main-seccion__btnRegIng .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__reset:hover {
+              transform: scale(1.03, 1.03);
+              transition: 300ms;
+              color: #171717;
+              font-weight: normal;
+              text-decoration: none; }
+          .main-seccion__btnRegIng .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__sent {
+            text-decoration: none;
+            background-color: #da0037;
+            color: #e5e5e5;
+            font-weight: bolder;
+            font-family: "Stick No Bills", sans-serif;
+            border: none;
+            border-radius: 1px 8px 1px 8px;
+            padding: 0.2rem 0.3rem;
+            margin-bottom: 0px;
+            box-shadow: 0px 1px 5px 0px #171717;
+            margin-left: 1rem; }
+            .main-seccion__btnRegIng .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__sent:hover {
+              transform: scale(1.03, 1.03);
+              transition: 300ms;
+              color: #171717;
+              font-weight: normal;
+              text-decoration: none; }
+  .main-seccion__btnRegIng .main__botFlot-Reg {
+    text-decoration: none;
+    background-color: #da0037;
+    color: #e5e5e5;
+    font-weight: bolder;
+    font-family: "Stick No Bills", sans-serif;
+    border: none;
+    border-radius: 1px 8px 1px 8px;
+    padding: 0.2rem 0.3rem;
+    margin-bottom: 0px;
+    box-shadow: 0px 1px 5px 0px #171717;
+    background-color: #171717;
+    position: fixed;
+    top: 500px;
+    right: -78px;
+    padding-left: 2rem; }
+    .main-seccion__btnRegIng .main__botFlot-Reg:hover {
+      transform: scale(1.03, 1.03);
+      transition: 300ms;
+      color: #171717;
+      font-weight: normal;
+      text-decoration: none; }
+    .main-seccion__btnRegIng .main__botFlot-Reg:hover {
+      color: #e5e5e5;
+      right: 2px;
+      padding-left: 0.2rem; }
+  .main-seccion__btnRegIng .main__botFlot-ing {
+    text-decoration: none;
+    background-color: #da0037;
+    color: #e5e5e5;
+    font-weight: bolder;
+    font-family: "Stick No Bills", sans-serif;
+    border: none;
+    border-radius: 1px 8px 1px 8px;
+    padding: 0.2rem 0.3rem;
+    margin-bottom: 0px;
+    box-shadow: 0px 1px 5px 0px #171717;
+    position: fixed;
+    top: 540px;
+    right: -120px;
+    padding-left: 2rem; }
+    .main-seccion__btnRegIng .main__botFlot-ing:hover {
+      transform: scale(1.03, 1.03);
+      transition: 300ms;
+      color: #171717;
+      font-weight: normal;
+      text-decoration: none; }
+    .main-seccion__btnRegIng .main__botFlot-ing:hover {
+      right: 2px;
+      padding-left: 0.2rem; }
+
 .footer {
   background-color: #e5e5e5;
   box-shadow: 0px 1px 10px 0px #171717;
@@ -1350,10 +1512,9 @@
             height: auto; }
           .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-cont-icon .main-contacto__div-iconoContacto .main-contacto__span-contacto {
             color: #171717; }
-      .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__contenedor-modalLogin {
-        margin-top: 2rem;
+      .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin {
         text-align: center; }
-        .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__contenedor-modalLogin .main-contacto__boton-a-contactanos {
+        .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__botFlot-Reg {
           text-decoration: none;
           background-color: #da0037;
           color: #e5e5e5;
@@ -1365,101 +1526,103 @@
           margin-bottom: 0px;
           box-shadow: 0px 1px 5px 0px #171717;
           background-color: #171717; }
-          .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__contenedor-modalLogin .main-contacto__boton-a-contactanos:hover {
+          .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__botFlot-Reg:hover {
             transform: scale(1.03, 1.03);
             transition: 300ms;
             color: #171717;
             font-weight: normal;
             text-decoration: none; }
-          .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__contenedor-modalLogin .main-contacto__boton-a-contactanos:hover {
+          .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__botFlot-Reg:hover {
             color: #da0037; }
-      .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__boton-YaTengo {
-        text-decoration: none;
-        background-color: #da0037;
-        color: #e5e5e5;
-        font-weight: bolder;
-        font-family: "Stick No Bills", sans-serif;
-        border: none;
-        border-radius: 1px 8px 1px 8px;
-        padding: 0.2rem 0.3rem;
-        margin-bottom: 0px;
-        box-shadow: 0px 1px 5px 0px #171717;
-        margin-left: 1rem; }
-        .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__boton-YaTengo:hover {
-          transform: scale(1.03, 1.03);
-          transition: 300ms;
-          color: #171717;
-          font-weight: normal;
-          text-decoration: none; }
-        .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__boton-YaTengo:hover {
-          transform: scale(1.02, 1.02); }
-      .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-inSesion {
-        width: 100%; }
-        .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-inSesion .modal-dialog .modal-content .modal-header .modal-title {
-          color: #e5e5e5; }
-        .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-inSesion .modal-dialog .modal-content .main-contacto__div-contenido-modal {
+        .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__botFlot-ing {
+          text-decoration: none;
+          background-color: #da0037;
+          color: #e5e5e5;
+          font-weight: bolder;
+          font-family: "Stick No Bills", sans-serif;
+          border: none;
+          border-radius: 1px 8px 1px 8px;
+          padding: 0.2rem 0.3rem;
+          margin-bottom: 0px;
+          box-shadow: 0px 1px 5px 0px #171717;
+          margin-left: 1rem; }
+          .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__botFlot-ing:hover {
+            transform: scale(1.03, 1.03);
+            transition: 300ms;
+            color: #171717;
+            font-weight: normal;
+            text-decoration: none; }
+          .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__botFlot-ing:hover {
+            transform: scale(1.03, 1.03); }
+        .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__div-inSesion {
           width: 100%; }
-          .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-inSesion .modal-dialog .modal-content .main-contacto__div-contenido-modal .div-contenido-modal__div-tit {
-            margin-bottom: 2rem; }
-            .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-inSesion .modal-dialog .modal-content .main-contacto__div-contenido-modal .div-contenido-modal__div-tit .div-contenido-modal__h3-tit {
-              margin: 0 auto; }
-          .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-inSesion .modal-dialog .modal-content .main-contacto__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form {
-            display: flex;
-            flex-direction: column; }
-            .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-inSesion .modal-dialog .modal-content .main-contacto__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs {
+          .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .modal-header .modal-title {
+            font-family: "Stick No Bills", sans-serif;
+            font-size: 1.5rem;
+            color: #da0037; }
+          .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal {
+            width: 100%; }
+            .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-tit {
               margin-bottom: 2rem; }
-              .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-inSesion .modal-dialog .modal-content .main-contacto__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__label {
-                display: block;
-                color: #171717; }
-              .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-inSesion .modal-dialog .modal-content .main-contacto__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__input {
-                color: #da0037;
-                width: 70%;
-                text-align: center;
-                border-radius: 2px 8px 2px 8px;
-                box-shadow: 0px 1px 5px 0px #171717;
-                resize: none; }
-                .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-inSesion .modal-dialog .modal-content .main-contacto__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__input:hover {
-                  transform: scale(1.02, 1.02);
-                  transition: 300ms; }
-              .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-inSesion .modal-dialog .modal-content .main-contacto__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__label-check {
-                color: #e5e5e5;
-                font-weight: bolder;
-                text-decoration: none; }
-              .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-inSesion .modal-dialog .modal-content .main-contacto__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__reset {
-                text-decoration: none;
-                background-color: #da0037;
-                color: #e5e5e5;
-                font-weight: bolder;
-                font-family: "Stick No Bills", sans-serif;
-                border: none;
-                border-radius: 1px 8px 1px 8px;
-                padding: 0.2rem 0.3rem;
-                margin-bottom: 0px;
-                box-shadow: 0px 1px 5px 0px #171717; }
-                .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-inSesion .modal-dialog .modal-content .main-contacto__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__reset:hover {
-                  transform: scale(1.03, 1.03);
-                  transition: 300ms;
-                  color: #171717;
-                  font-weight: normal;
+              .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-tit .div-contenido-modal__h3-tit {
+                margin: 0 auto; }
+            .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form {
+              display: flex;
+              flex-direction: column; }
+              .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs {
+                margin-bottom: 2rem; }
+                .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__label {
+                  display: block;
+                  color: #171717; }
+                .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__input {
+                  color: #da0037;
+                  width: 70%;
+                  text-align: center;
+                  border-radius: 2px 8px 2px 8px;
+                  box-shadow: 0px 1px 5px 0px #171717;
+                  resize: none; }
+                  .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__input:hover {
+                    transform: scale(1.02, 1.02);
+                    transition: 300ms; }
+                .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__label-check {
+                  color: #e5e5e5;
+                  font-weight: bolder;
                   text-decoration: none; }
-              .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-inSesion .modal-dialog .modal-content .main-contacto__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__sent {
-                text-decoration: none;
-                background-color: #da0037;
-                color: #e5e5e5;
-                font-weight: bolder;
-                font-family: "Stick No Bills", sans-serif;
-                border: none;
-                border-radius: 1px 8px 1px 8px;
-                padding: 0.2rem 0.3rem;
-                margin-bottom: 0px;
-                box-shadow: 0px 1px 5px 0px #171717;
-                margin-left: 1rem; }
-                .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-inSesion .modal-dialog .modal-content .main-contacto__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__sent:hover {
-                  transform: scale(1.03, 1.03);
-                  transition: 300ms;
-                  color: #171717;
-                  font-weight: normal;
-                  text-decoration: none; }
+                .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__reset {
+                  text-decoration: none;
+                  background-color: #da0037;
+                  color: #e5e5e5;
+                  font-weight: bolder;
+                  font-family: "Stick No Bills", sans-serif;
+                  border: none;
+                  border-radius: 1px 8px 1px 8px;
+                  padding: 0.2rem 0.3rem;
+                  margin-bottom: 0px;
+                  box-shadow: 0px 1px 5px 0px #171717; }
+                  .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__reset:hover {
+                    transform: scale(1.03, 1.03);
+                    transition: 300ms;
+                    color: #171717;
+                    font-weight: normal;
+                    text-decoration: none; }
+                .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__sent {
+                  text-decoration: none;
+                  background-color: #da0037;
+                  color: #e5e5e5;
+                  font-weight: bolder;
+                  font-family: "Stick No Bills", sans-serif;
+                  border: none;
+                  border-radius: 1px 8px 1px 8px;
+                  padding: 0.2rem 0.3rem;
+                  margin-bottom: 0px;
+                  box-shadow: 0px 1px 5px 0px #171717;
+                  margin-left: 1rem; }
+                  .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__sent:hover {
+                    transform: scale(1.03, 1.03);
+                    transition: 300ms;
+                    color: #171717;
+                    font-weight: normal;
+                    text-decoration: none; }
 
 @media screen and (max-width: 1023px) {
   .main-contacto .main-contacto__seccion-1 {
@@ -1782,23 +1945,132 @@
             color: #171717; }
     .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin {
       text-align: center; }
-    .main-nosotros .nosotros-seccion-1 .main__boton-regis {
-      text-decoration: none;
-      background-color: #da0037;
-      color: #e5e5e5;
-      font-weight: bolder;
-      font-family: "Stick No Bills", sans-serif;
-      border: none;
-      border-radius: 1px 8px 1px 8px;
-      padding: 0.2rem 0.3rem;
-      margin-bottom: 0px;
-      box-shadow: 0px 1px 5px 0px #171717; }
-      .main-nosotros .nosotros-seccion-1 .main__boton-regis:hover {
-        transform: scale(1.03, 1.03);
-        transition: 300ms;
-        color: #171717;
-        font-weight: normal;
-        text-decoration: none; }
+      .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__botFlot-Reg {
+        text-decoration: none;
+        background-color: #da0037;
+        color: #e5e5e5;
+        font-weight: bolder;
+        font-family: "Stick No Bills", sans-serif;
+        border: none;
+        border-radius: 1px 8px 1px 8px;
+        padding: 0.2rem 0.3rem;
+        margin-bottom: 0px;
+        box-shadow: 0px 1px 5px 0px #171717;
+        background-color: #171717; }
+        .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__botFlot-Reg:hover {
+          transform: scale(1.03, 1.03);
+          transition: 300ms;
+          color: #171717;
+          font-weight: normal;
+          text-decoration: none; }
+        .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__botFlot-Reg:hover {
+          color: #da0037; }
+      .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__botFlot-ing {
+        text-decoration: none;
+        background-color: #da0037;
+        color: #e5e5e5;
+        font-weight: bolder;
+        font-family: "Stick No Bills", sans-serif;
+        border: none;
+        border-radius: 1px 8px 1px 8px;
+        padding: 0.2rem 0.3rem;
+        margin-bottom: 0px;
+        box-shadow: 0px 1px 5px 0px #171717;
+        margin-left: 1rem; }
+        .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__botFlot-ing:hover {
+          transform: scale(1.03, 1.03);
+          transition: 300ms;
+          color: #171717;
+          font-weight: normal;
+          text-decoration: none; }
+        .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__botFlot-ing:hover {
+          transform: scale(1.03, 1.03); }
+      .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__div-inSesion {
+        width: 100%; }
+        .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .modal-header .modal-title {
+          font-family: "Stick No Bills", sans-serif;
+          font-size: 1.5rem;
+          color: #da0037; }
+        .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal {
+          width: 100%; }
+          .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-tit {
+            margin-bottom: 2rem; }
+            .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-tit .div-contenido-modal__h3-tit {
+              margin: 0 auto; }
+          .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form {
+            display: flex;
+            flex-direction: column; }
+            .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs {
+              margin-bottom: 2rem; }
+              .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__label {
+                display: block;
+                color: #171717; }
+              .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__input {
+                color: #da0037;
+                width: 70%;
+                text-align: center;
+                border-radius: 2px 8px 2px 8px;
+                box-shadow: 0px 1px 5px 0px #171717;
+                resize: none; }
+                .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__input:hover {
+                  transform: scale(1.02, 1.02);
+                  transition: 300ms; }
+              .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__label-check {
+                color: #e5e5e5;
+                font-weight: bolder;
+                text-decoration: none; }
+              .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__reset {
+                text-decoration: none;
+                background-color: #da0037;
+                color: #e5e5e5;
+                font-weight: bolder;
+                font-family: "Stick No Bills", sans-serif;
+                border: none;
+                border-radius: 1px 8px 1px 8px;
+                padding: 0.2rem 0.3rem;
+                margin-bottom: 0px;
+                box-shadow: 0px 1px 5px 0px #171717; }
+                .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__reset:hover {
+                  transform: scale(1.03, 1.03);
+                  transition: 300ms;
+                  color: #171717;
+                  font-weight: normal;
+                  text-decoration: none; }
+              .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__sent {
+                text-decoration: none;
+                background-color: #da0037;
+                color: #e5e5e5;
+                font-weight: bolder;
+                font-family: "Stick No Bills", sans-serif;
+                border: none;
+                border-radius: 1px 8px 1px 8px;
+                padding: 0.2rem 0.3rem;
+                margin-bottom: 0px;
+                box-shadow: 0px 1px 5px 0px #171717;
+                margin-left: 1rem; }
+                .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__sent:hover {
+                  transform: scale(1.03, 1.03);
+                  transition: 300ms;
+                  color: #171717;
+                  font-weight: normal;
+                  text-decoration: none; }
+      .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__boton-a-contactanos {
+        position: fixed;
+        top: 500px;
+        right: -78px;
+        padding-left: 2rem; }
+        .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__boton-a-contactanos:hover {
+          color: #da0037;
+          right: 2px;
+          padding-left: 0.2rem; }
+      .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__boton-YaTengo {
+        position: fixed;
+        top: 540px;
+        right: -120px;
+        padding-left: 2rem; }
+        .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__boton-YaTengo:hover {
+          right: 2px;
+          padding-left: 0.2rem; }
 
 @media screen and (max-width: 1023px) {
   .main-nosotros .nosotros-seccion-1 .nosotros-seccion-1__grilla {
@@ -2040,9 +2312,9 @@
               color: #171717;
               margin-bottom: 1rem;
               font-size: 1.1rem; }
-    .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-modalLogin {
+    .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin {
       text-align: center; }
-      .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-modalLogin .main-registro__boton-a-contactanos {
+      .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__botFlot-Reg {
         text-decoration: none;
         background-color: #da0037;
         color: #e5e5e5;
@@ -2054,176 +2326,176 @@
         margin-bottom: 0px;
         box-shadow: 0px 1px 5px 0px #171717;
         background-color: #171717; }
-        .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-modalLogin .main-registro__boton-a-contactanos:hover {
+        .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__botFlot-Reg:hover {
           transform: scale(1.03, 1.03);
           transition: 300ms;
           color: #171717;
           font-weight: normal;
           text-decoration: none; }
-        .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-modalLogin .main-registro__boton-a-contactanos:hover {
+        .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__botFlot-Reg:hover {
           color: #da0037; }
-    .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__boton-YaTengo {
-      text-decoration: none;
-      background-color: #da0037;
-      color: #e5e5e5;
-      font-weight: bolder;
-      font-family: "Stick No Bills", sans-serif;
-      border: none;
-      border-radius: 1px 8px 1px 8px;
-      padding: 0.2rem 0.3rem;
-      margin-bottom: 0px;
-      box-shadow: 0px 1px 5px 0px #171717;
-      margin-left: 1rem; }
-      .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__boton-YaTengo:hover {
-        transform: scale(1.03, 1.03);
-        transition: 300ms;
-        color: #171717;
-        font-weight: normal;
-        text-decoration: none; }
-      .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__boton-YaTengo:hover {
-        transform: scale(1.03, 1.03); }
-    .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__div-inSesion {
-      width: 100%; }
-      .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__div-inSesion .modal-dialog .modal-content .modal-header .modal-title {
-        color: #e5e5e5; }
-      .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__div-inSesion .modal-dialog .modal-content .main-registro__div-contenido-modal {
+      .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__botFlot-ing {
+        text-decoration: none;
+        background-color: #da0037;
+        color: #e5e5e5;
+        font-weight: bolder;
+        font-family: "Stick No Bills", sans-serif;
+        border: none;
+        border-radius: 1px 8px 1px 8px;
+        padding: 0.2rem 0.3rem;
+        margin-bottom: 0px;
+        box-shadow: 0px 1px 5px 0px #171717;
+        margin-left: 1rem; }
+        .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__botFlot-ing:hover {
+          transform: scale(1.03, 1.03);
+          transition: 300ms;
+          color: #171717;
+          font-weight: normal;
+          text-decoration: none; }
+        .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__botFlot-ing:hover {
+          transform: scale(1.03, 1.03); }
+      .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__div-inSesion {
         width: 100%; }
-        .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__div-inSesion .modal-dialog .modal-content .main-registro__div-contenido-modal .div-contenido-modal__div-tit {
-          margin-bottom: 2rem; }
-          .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__div-inSesion .modal-dialog .modal-content .main-registro__div-contenido-modal .div-contenido-modal__div-tit .div-contenido-modal__h3-tit {
-            margin: 0 auto; }
-        .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__div-inSesion .modal-dialog .modal-content .main-registro__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form {
-          display: flex;
-          flex-direction: column; }
-          .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__div-inSesion .modal-dialog .modal-content .main-registro__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs {
+        .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .modal-header .modal-title {
+          font-family: "Stick No Bills", sans-serif;
+          font-size: 1.5rem;
+          color: #da0037; }
+        .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal {
+          width: 100%; }
+          .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-tit {
             margin-bottom: 2rem; }
-            .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__div-inSesion .modal-dialog .modal-content .main-registro__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__label {
-              display: block;
-              color: #171717; }
-            .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__div-inSesion .modal-dialog .modal-content .main-registro__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__input {
-              color: #da0037;
-              width: 70%;
-              text-align: center;
-              border-radius: 2px 8px 2px 8px;
-              box-shadow: 0px 1px 5px 0px #171717;
-              resize: none; }
-              .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__div-inSesion .modal-dialog .modal-content .main-registro__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__input:hover {
-                transform: scale(1.02, 1.02);
-                transition: 300ms; }
-            .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__div-inSesion .modal-dialog .modal-content .main-registro__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__label-check {
-              color: #e5e5e5;
-              font-weight: bolder;
-              text-decoration: none; }
-            .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__div-inSesion .modal-dialog .modal-content .main-registro__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__reset {
-              text-decoration: none;
-              background-color: #da0037;
-              color: #e5e5e5;
-              font-weight: bolder;
-              font-family: "Stick No Bills", sans-serif;
-              border: none;
-              border-radius: 1px 8px 1px 8px;
-              padding: 0.2rem 0.3rem;
-              margin-bottom: 0px;
-              box-shadow: 0px 1px 5px 0px #171717; }
-              .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__div-inSesion .modal-dialog .modal-content .main-registro__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__reset:hover {
-                transform: scale(1.03, 1.03);
-                transition: 300ms;
-                color: #171717;
-                font-weight: normal;
+            .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-tit .div-contenido-modal__h3-tit {
+              margin: 0 auto; }
+          .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form {
+            display: flex;
+            flex-direction: column; }
+            .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs {
+              margin-bottom: 2rem; }
+              .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__label {
+                display: block;
+                color: #171717; }
+              .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__input {
+                color: #da0037;
+                width: 70%;
+                text-align: center;
+                border-radius: 2px 8px 2px 8px;
+                box-shadow: 0px 1px 5px 0px #171717;
+                resize: none; }
+                .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__input:hover {
+                  transform: scale(1.02, 1.02);
+                  transition: 300ms; }
+              .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__label-check {
+                color: #e5e5e5;
+                font-weight: bolder;
                 text-decoration: none; }
-            .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__div-inSesion .modal-dialog .modal-content .main-registro__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__sent {
-              text-decoration: none;
-              background-color: #da0037;
-              color: #e5e5e5;
-              font-weight: bolder;
-              font-family: "Stick No Bills", sans-serif;
-              border: none;
-              border-radius: 1px 8px 1px 8px;
-              padding: 0.2rem 0.3rem;
-              margin-bottom: 0px;
-              box-shadow: 0px 1px 5px 0px #171717;
-              margin-left: 1rem; }
-              .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__div-inSesion .modal-dialog .modal-content .main-registro__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__sent:hover {
-                transform: scale(1.03, 1.03);
-                transition: 300ms;
-                color: #171717;
-                font-weight: normal;
-                text-decoration: none; }
-
-@media screen and (max-width: 993px) {
-  .main-registro__seccion-1 {
-    margin: 0 auto; }
-    .main-registro__seccion-1 .main-resgistro__contennedor-principal {
-      flex-direction: column; }
-      .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario {
-        width: 100%; }
-        .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .formulario-registro__h1-tit {
-          margin: 0 auto; }
-        .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario {
-          margin: 0 auto; }
-          .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs {
-            margin-bottom: 0.7rem; }
-      .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones {
-        margin: 0 auto;
-        padding: 0;
-        width: 100%; }
-        .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones .main-registro__div-info {
-          width: 70%;
-          margin: 0 auto;
-          padding: 0 2rem; }
-          .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones .main-registro__div-info .main-registro__divs {
-            width: 100%; }
-            .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones .main-registro__div-info .main-registro__divs .main-registro__p-texto {
-              text-align: justify;
-              font-size: 1.2rem;
-              margin-top: 2rem; }
-            .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones .main-registro__div-info .main-registro__divs .main-registro__ulmain-registro {
-              padding: 1.5rem; } }
-
-@media screen and (max-width: 768px) {
-  .main-registro__seccion-1 {
-    margin: 0 auto; }
-    .main-registro__seccion-1 .main-resgistro__contennedor-principal {
-      flex-direction: column; }
-      .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario {
-        width: 90%;
+              .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__reset {
+                text-decoration: none;
+                background-color: #da0037;
+                color: #e5e5e5;
+                font-weight: bolder;
+                font-family: "Stick No Bills", sans-serif;
+                border: none;
+                border-radius: 1px 8px 1px 8px;
+                padding: 0.2rem 0.3rem;
+                margin-bottom: 0px;
+                box-shadow: 0px 1px 5px 0px #171717; }
+                .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__reset:hover {
+                  transform: scale(1.03, 1.03);
+                  transition: 300ms;
+                  color: #171717;
+                  font-weight: normal;
+                  text-decoration: none; }
+              .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__sent {
+                text-decoration: none;
+                background-color: #da0037;
+                color: #e5e5e5;
+                font-weight: bolder;
+                font-family: "Stick No Bills", sans-serif;
+                border: none;
+                border-radius: 1px 8px 1px 8px;
+                padding: 0.2rem 0.3rem;
+                margin-bottom: 0px;
+                box-shadow: 0px 1px 5px 0px #171717;
+                margin-left: 1rem; }
+                .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .submit__sent:hover {
+                  transform: scale(1.03, 1.03);
+                  transition: 300ms;
+                  color: #171717;
+                  font-weight: normal;
+                  text-decoration: none; }
+    @media screen and (max-width: 993px) {
+      .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 {
         margin: 0 auto; }
-        .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .formulario-registro__h1-tit {
-          width: 100%;
-          margin: 0 auto;
-          font-size: 1.5rem; }
-        .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario {
-          margin: 0 auto;
-          width: 100%;
-          height: auto; }
-          .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs {
-            width: 70%;
-            margin: 0 auto;
-            margin-bottom: 0.6rem; }
-            .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__label,
-            .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__input,
-            .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__select {
-              margin: 0 auto;
-              width: 100%; }
-      .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones {
-        margin: 0 auto;
-        padding: 0;
-        width: 100%; }
-        .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones .main-registro__div-info {
-          width: 90%;
-          margin: 0 auto;
-          padding: 0 0.5rem; }
-          .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones .main-registro__div-info .main-registro__divs {
+        .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal {
+          flex-direction: column; }
+          .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario {
             width: 100%; }
-            .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones .main-registro__div-info .main-registro__divs .main-registro__p-texto {
-              text-align: justify;
-              font-size: 0.8rem;
-              margin-top: 2rem; }
-            .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones .main-registro__div-info .main-registro__divs .main-registro__ulmain-registro {
-              padding: 1.5rem;
-              margin-bottom: 0; }
-              .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones .main-registro__div-info .main-registro__divs .main-registro__ulmain-registro .main-registro__li {
-                font-size: 0.8rem; } }
+            .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .formulario-registro__h1-tit {
+              margin: 0 auto; }
+            .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario {
+              margin: 0 auto; }
+              .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs {
+                margin-bottom: 0.7rem; }
+          .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones {
+            margin: 0 auto;
+            padding: 0;
+            width: 100%; }
+            .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones .main-registro__div-info {
+              width: 70%;
+              margin: 0 auto;
+              padding: 0 2rem; }
+              .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones .main-registro__div-info .main-registro__divs {
+                width: 100%; }
+                .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones .main-registro__div-info .main-registro__divs .main-registro__p-texto {
+                  text-align: justify;
+                  font-size: 1.2rem;
+                  margin-top: 2rem; }
+                .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones .main-registro__div-info .main-registro__divs .main-registro__ulmain-registro {
+                  padding: 1.5rem; } }
+    @media screen and (max-width: 768px) {
+      .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 {
+        margin: 0 auto; }
+        .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal {
+          flex-direction: column; }
+          .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario {
+            width: 90%;
+            margin: 0 auto; }
+            .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .formulario-registro__h1-tit {
+              width: 100%;
+              margin: 0 auto;
+              font-size: 1.5rem; }
+            .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario {
+              margin: 0 auto;
+              width: 100%;
+              height: auto; }
+              .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs {
+                width: 70%;
+                margin: 0 auto;
+                margin-bottom: 0.6rem; }
+                .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__label,
+                .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__input,
+                .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__select {
+                  margin: 0 auto;
+                  width: 100%; }
+          .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones {
+            margin: 0 auto;
+            padding: 0;
+            width: 100%; }
+            .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones .main-registro__div-info {
+              width: 90%;
+              margin: 0 auto;
+              padding: 0 0.5rem; }
+              .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones .main-registro__div-info .main-registro__divs {
+                width: 100%; }
+                .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones .main-registro__div-info .main-registro__divs .main-registro__p-texto {
+                  text-align: justify;
+                  font-size: 0.8rem;
+                  margin-top: 2rem; }
+                .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones .main-registro__div-info .main-registro__divs .main-registro__ulmain-registro {
+                  padding: 1.5rem;
+                  margin-bottom: 0; }
+                  .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones .main-registro__div-info .main-registro__divs .main-registro__ulmain-registro .main-registro__li {
+                    font-size: 0.8rem; } }
 
 * {
   margin: 0;

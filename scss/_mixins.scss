@@ -1,4 +1,43 @@
-//botones
+
+@mixin efectos-menu ($colorAfter, $colorBefore) {
+  position: relative;
+  display: block;
+  color: $colorSecun;
+  font-family: $fuenteTitLink;
+  margin: 0 5rem 0 0;
+  font-size: 1.2rem;
+  transition: all 300ms ease;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.3rem;
+    background: $colorBefore;
+    transition: 300ms;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0.3rem;
+    background: $colorAfter;
+    transition: 300ms;
+  }
+  &:hover {
+    &::before {
+      width: 47%;
+      transform: translate(105%);
+    }
+    &::after {
+      width: 47%;
+      transform: translate(-105%);
+    }
+  }
+}
 @mixin botones($margin-bottom) {
   text-decoration: none;
   background-color: $colorPrim;
@@ -9,48 +48,22 @@
   border-radius: 1px 8px 1px 8px;
   padding: 0.2rem 0.3rem;
   margin-bottom: $margin-bottom;
-  box-shadow: 0px 1px 5px 0px  $colorSecun;
-  &::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: .3rem;
-    background: $colorSecun;
-    transition: 300ms;
-  }
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 0;
-    height: .3rem;
-    background: $colorTerc;
-    transition: 300ms;
-  }
+  box-shadow: 0px 1px 5px 0px $colorSecun;
+
   &:hover {
     transform: scale(1.03, 1.03);
     transition: 300ms;
     color: $colorSecun;
     font-weight: normal;
     text-decoration: none;
-    &::before {
-      width: 47%;
-      transform: translate(105%);
-    
-    }
-    &::after {
-      width: 47%;
-      transform: translate(-105%);
-    }
   }
 }
 //index-contenedor de servicios
 @mixin main-index-contenedor-servicios(
   $grid-area-serv,
-  $justify-self, $width, $widthimg
+  $justify-self,
+  $width,
+  $widthimg
 ) {
   grid-area: $grid-area-serv;
   display: flex;
@@ -79,7 +92,7 @@
   }
   .div-contenedor-servs__span {
     font-family: "Montserrat", sans-serif;
-    padding: 0 .3rem;
+    padding: 0 0.3rem;
     text-align: left;
     color: $colorPrim;
   }
@@ -148,7 +161,7 @@
   width: $width;
   text-align: center;
   border-radius: 2px 8px 2px 8px;
-  box-shadow: 0px 1px 5px 0px  $colorSecun;
+  box-shadow: 0px 1px 5px 0px $colorSecun;
   resize: none;
   &:hover {
     transform: scale(1.02, 1.02);
@@ -159,5 +172,3 @@
   display: block;
   color: $colorSecun;
 }
-
-

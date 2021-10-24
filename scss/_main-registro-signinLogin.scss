@@ -1,10 +1,15 @@
 .header {
-  .btn {
-    @include botones(0px);
-    letter-spacing: 1.3px;
-    margin-right: 6.75rem;
-    &:hover {
-      transform: scale(1.03, 1.03);
+  .header-nav {
+    .container-fluid {
+      .header-nav__menu {
+        .header-nav__ulMenu {
+          .nav-item {
+            .header-nav__liItemBoton {
+              @include botones (0px);
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -95,101 +95,102 @@
     .main__contenedor-modalLogin {
       @include cont-modal;
     }
+  }
+}
 
-    @media screen and (max-width: 993px) {
-      .main-registro__seccion-1 {
-        margin: 0 auto;
-        .main-resgistro__contennedor-principal {
-          flex-direction: column;
-          .main-registro__contenedor-formulario {
-            width: 100%;
-            .formulario-registro__h1-tit {
-              margin: 0 auto;
-            }
-            .main-registro__formulario {
-              margin: 0 auto;
-              .main-registro-formulario__divs {
-                margin-bottom: 0.7rem;
-              }
-            }
+@media screen and (max-width: 993px) {
+  .main-registro__seccion-1 {
+    margin: 0 auto;
+    .main-resgistro__contennedor-principal {
+      flex-direction: column;
+      .main-registro__contenedor-formulario {
+        width: 100%;
+        .formulario-registro__h1-tit {
+          margin: 0 auto;
+        }
+        .main-registro__formulario {
+          margin: 0 auto;
+          .main-registro-formulario__divs {
+            margin-bottom: 0.7rem;
           }
-          .main-registro__divInfo-botones {
-            margin: 0 auto;
-            padding: 0;
+        }
+      }
+      .main-registro__divInfo-botones {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        .main-registro__div-info {
+          width: 70%;
+          margin: 0 auto;
+          padding: 0 2rem;
+          .main-registro__divs {
             width: 100%;
-            .main-registro__div-info {
-              width: 70%;
-              margin: 0 auto;
-              padding: 0 2rem;
-              .main-registro__divs {
-                width: 100%;
-                .main-registro__p-texto {
-                  text-align: justify;
-                  font-size: 1.2rem;
-                  margin-top: 2rem;
-                }
-                .main-registro__ulmain-registro {
-                  padding: 1.5rem;
-                }
-              }
+            .main-registro__p-texto {
+              text-align: justify;
+              font-size: 1.2rem;
+              margin-top: 2rem;
+            }
+            .main-registro__ulmain-registro {
+              padding: 1.5rem;
             }
           }
         }
       }
     }
+  }
+}
 
-    @media screen and (max-width: 768px) {
-      .main-registro__seccion-1 {
+@media screen and (max-width: 768px) {
+  .main-registro__seccion-1 {
+    margin: 0 auto;
+    .main-resgistro__contennedor-principal {
+      flex-direction: column;
+      .main-registro__contenedor-formulario {
+        width: 90%;
         margin: 0 auto;
-        .main-resgistro__contennedor-principal {
-          flex-direction: column;
-          .main-registro__contenedor-formulario {
-            width: 90%;
+        margin-top: 1rem;
+        .formulario-registro__h1-tit {
+          width: 100%;
+          margin: 0 auto;
+          font-size: 1.5rem;
+        }
+        .main-registro__formulario {
+          margin: 0 auto;
+          width: 100%;
+          height: auto;
+          .main-registro-formulario__divs {
+            width: 70%;
             margin: 0 auto;
-            .formulario-registro__h1-tit {
-              width: 100%;
-              margin: 0 auto;
-              font-size: 1.5rem;
-            }
-            .main-registro__formulario {
+            margin-bottom: 0.6rem;
+            .main-registro-formulario__label,
+            .main-registro-formulario__input,
+            .main-registro-formulario__select {
               margin: 0 auto;
               width: 100%;
-              height: auto;
-              .main-registro-formulario__divs {
-                width: 70%;
-                margin: 0 auto;
-                margin-bottom: 0.6rem;
-                .main-registro-formulario__label,
-                .main-registro-formulario__input,
-                .main-registro-formulario__select {
-                  margin: 0 auto;
-                  width: 100%;
-                }
-              }
             }
           }
-          .main-registro__divInfo-botones {
-            margin: 0 auto;
-            padding: 0;
+        }
+      }
+      .main-registro__divInfo-botones {
+        margin: 0 auto;
+        padding: 0;
+        width: 100%;
+        .main-registro__div-info {
+          width: 90%;
+          margin: 0 auto;
+          padding: 0 0.5rem;
+          .main-registro__divs {
             width: 100%;
-            .main-registro__div-info {
-              width: 90%;
-              margin: 0 auto;
-              padding: 0 0.5rem;
-              .main-registro__divs {
-                width: 100%;
-                .main-registro__p-texto {
-                  text-align: justify;
-                  font-size: 0.8rem;
-                  margin-top: 2rem;
-                }
-                .main-registro__ulmain-registro {
-                  padding: 1.5rem;
-                  margin-bottom: 0;
-                  .main-registro__li {
-                    font-size: 0.8rem;
-                  }
-                }
+            .main-registro__p-texto {
+              text-align: justify;
+              font-size: 0.8rem;
+              margin-top: 2rem;
+            }
+            .main-registro__ulmain-registro {
+              padding: 1.5rem;
+              margin-bottom: 0;
+              .main-registro__li {
+                font-size: 0.8rem;
               }
             }
           }

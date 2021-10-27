@@ -139,11 +139,12 @@
   align-items: center;
   justify-self: $justify-self;
   width: $width;
-  box-shadow: 0px 0px 5px $colorSecun;
+  box-shadow: 0px 0px 5px #808080;
   border-radius: 2px 10px 2px 10px;
+  background-color: #fff;
   &:hover {
-    transform: scale(1.02, 1.02);
-    box-shadow: 0px 0px 5px $colorPrim;
+    transform: scale(1, 1.02);
+    box-shadow: 0px 0px 5px $colorSecun;
     transition: 300ms;
   }
   .div-contenedor-servs__h3-tit {

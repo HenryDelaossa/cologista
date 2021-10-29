@@ -6,11 +6,13 @@
     position: fixed;
     top: 500px;
     right: -78px;
-    padding-left: 2rem;
+    padding-left: 3rem;
+    transition: all 500ms ease;
     &:hover {
-      color: $colorTerc;
-      right: -1px;
-      padding-left: 0.2rem;
+      color: $colorPrim;
+      padding-left: .2rem;
+      transform: translate(-96%, 0);
+      transition: 600ms;
     }
   }
   .main__botFlot-ing {
@@ -18,10 +20,11 @@
     position: fixed;
     top: 540px;
     right: -120px;
-    padding-left: 2rem;
+    padding-left: 3rem;
     &:hover {
-      right: -1px;
-      padding-left: 0.2rem;
+      padding-left: .2rem;
+      transform: translate(-96%, 0);
+      transition: 600ms;
     }
   }
 }

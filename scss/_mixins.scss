@@ -66,7 +66,7 @@
   }
 }
 
-@mixin efectos-menu($colorAfter, $colorBefore, $colorlinkHover) {
+@mixin efectos-menu($colorAfter, $colorBefore, $widthefect, $bottombef, $bottomaft, $colorlinkHover) {
   position: relative;
   display: block;
   color: $colorSecun;
@@ -76,7 +76,7 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: 10px;
+    bottom: $bottombef;
     left: 0;
     width: 0;
     height: 3px;
@@ -86,7 +86,7 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 7px;
+    bottom: $bottomaft;
     right: 0;
     width: 0;
     height: 3px;
@@ -96,11 +96,11 @@
   &:hover {
     color: $colorlinkHover;
     &::before {
-      width: 47%;
+      width: $widthefect;
       transform: translate(105%);
     }
     &::after {
-      width: 47%;
+      width: $widthefect;
       transform: translate(-100%);
     }
   }
@@ -168,7 +168,7 @@
     @include botones(10px);
   }
 }
-//nosotros
+//mixin valores seccion nosotros.html
 @mixin nosotros-valores($grid-area, $margin-bottom) {
   grid-area: $grid-area;
   display: flex;
@@ -223,7 +223,7 @@
     }
   }
 }
-//contacto
+//mixin contacto y formularios
 @mixin inpt-slct-txtar($width) {
   color: $colorPrim;
   width: $width;

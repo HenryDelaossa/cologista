@@ -1175,20 +1175,26 @@
   z-index: 99;
   transition: all 500ms ease; }
   .seccion-4-main-index__log-flot .seccion-4-main-index__div-log {
-    margin-bottom: 0.3rem; }
+    margin: 0 auto;
+    margin-bottom: 0.3rem;
+    text-align: center;
+    transition: 500ms ease-in; }
+    .seccion-4-main-index__log-flot .seccion-4-main-index__div-log:hover {
+      transform: scale(1.1, 1.1) rotate(360deg);
+      transition: 500ms ease-in; }
     .seccion-4-main-index__log-flot .seccion-4-main-index__div-log .seccion-4-main-index__log-facebook,
     .seccion-4-main-index__log-flot .seccion-4-main-index__div-log .seccion-4-main-index__log-instagram,
     .seccion-4-main-index__log-flot .seccion-4-main-index__div-log .seccion-4-main-index__log-twiter,
     .seccion-4-main-index__log-flot .seccion-4-main-index__div-log .seccion-4-main-index__log-linkedin,
     .seccion-4-main-index__log-flot .seccion-4-main-index__div-log .seccion-4-main-index__log-whatsapp {
-      margin-bottom: 0.2rem;
+      margin: 0 auto;
       filter: invert(5%) sepia(6%) saturate(149%) hue-rotate(316deg) brightness(103%) contrast(91%);
       width: 80%;
       height: auto;
       transform: scale(1.1, 1.1); }
     .seccion-4-main-index__log-flot .seccion-4-main-index__div-log .seccion-4-main-index__log-facebook:hover {
       filter: invert(32%) sepia(10%) saturate(3318%) hue-rotate(183deg) brightness(100%) contrast(89%);
-      transition: 200ms; }
+      transition: 400ms; }
     .seccion-4-main-index__log-flot .seccion-4-main-index__div-log .seccion-4-main-index__log-instagram:hover {
       filter: invert(21%) sepia(93%) saturate(2333%) hue-rotate(308deg) brightness(96%) contrast(102%);
       transition: 200ms; }

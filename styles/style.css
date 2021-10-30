@@ -62,6 +62,9 @@
           .header .header-nav__menu .header-nav__ulMenu .header-nav__liItems:hover::after {
             width: 47%;
             transform: translate(-100%); }
+        @media screen and (max-width: 768px) {
+          .header .header-nav__menu .header-nav__ulMenu .header-nav__liItems {
+            font-size: 1.1rem; } }
       .header .header-nav__menu .header-nav__ulMenu .header-nav__liItemBoton {
         margin: 0 4rem;
         transform: scale(1.07, 1.07);
@@ -1102,6 +1105,9 @@
           transition: 300ms; }
   .seccion-3-main-index .carousel {
     display: none; }
+    .seccion-3-main-index .carousel .carousel-indicators {
+      margin-bottom: 0;
+      padding: 0; }
     .seccion-3-main-index .carousel .carousel-control-prev .carousel-control-prev-icon {
       height: 100px;
       background-color: #da0037;
@@ -1129,7 +1135,15 @@
     .seccion-3-main-index .seccion-3-main-index__div-cont-divs-imgs .div-cont-img {
       width: 35%; }
   .seccion-3-main-index .carousel {
-    display: block; } }
+    display: block; }
+    .seccion-3-main-index .carousel .carousel-indicators {
+      background-color: #171717;
+      width: 40%;
+      margin: 0 auto;
+      position: absolute;
+      bottom: -25px; }
+      .seccion-3-main-index .carousel .carousel-indicators button {
+        background-color: #da0037; } }
 
 @media screen and (max-width: 768px) {
   .seccion-3-main-index .seccion-3-main-index__div-titulo .div-titulo__h2 {
@@ -1140,6 +1154,15 @@
       width: 35%; }
   .seccion-3-main-index .carousel {
     display: block; }
+    .seccion-3-main-index .carousel .carousel-indicators {
+      background-color: #171717;
+      width: 40%;
+      margin: 0 auto;
+      position: absolute;
+      bottom: -25px; }
+      .seccion-3-main-index .carousel .carousel-indicators button {
+        background-color: #da0037;
+        width: 35%; }
     .seccion-3-main-index .carousel .carousel-control-prev .carousel-control-prev-icon {
       height: 50px; }
     .seccion-3-main-index .carousel .carousel-control-next .carousel-control-next-icon {
@@ -1147,9 +1170,10 @@
 
 .seccion-4-main-index__log-flot {
   position: fixed;
-  top: 450px;
+  top: 400px;
   left: 1rem;
-  z-index: 99; }
+  z-index: 99;
+  transition: all 500ms ease; }
   .seccion-4-main-index__log-flot .seccion-4-main-index__div-log {
     margin-bottom: 0.3rem; }
     .seccion-4-main-index__log-flot .seccion-4-main-index__div-log .seccion-4-main-index__log-facebook,
@@ -1180,7 +1204,7 @@
 
 @media screen and (max-width: 1023px) {
   .seccion-4-main-index__log-flot {
-    top: 380px; } }
+    top: 350px; } }
 
 @media screen and (max-width: 768px) {
   .seccion-4-main-index__log-flot {
@@ -1322,7 +1346,7 @@
       text-decoration: none; }
     .main-seccion__btnRegIng .main__botFlot-Reg:hover {
       color: #da0037;
-      padding-left: .2rem;
+      padding-left: 0.2rem;
       transform: translate(-96%, 0);
       transition: 600ms; }
   .main-seccion__btnRegIng .main__botFlot-ing {
@@ -1339,7 +1363,8 @@
     position: fixed;
     top: 540px;
     right: -120px;
-    padding-left: 3rem; }
+    padding-left: 3rem;
+    transition: all 500ms ease; }
     .main-seccion__btnRegIng .main__botFlot-ing:hover {
       transform: scale(1.03, 1.03);
       transition: 300ms;
@@ -1347,9 +1372,32 @@
       font-weight: normal;
       text-decoration: none; }
     .main-seccion__btnRegIng .main__botFlot-ing:hover {
-      padding-left: .2rem;
+      padding-left: 0.2rem;
       transform: translate(-96%, 0);
       transition: 600ms; }
+
+@media screen and (max-width: 1023px) {
+  .main-seccion__btnRegIng .main__botFlot-Reg {
+    top: 400px; }
+  .main-seccion__btnRegIng .main__botFlot-ing {
+    top: 440px; } }
+
+@media screen and (max-width: 768px) {
+  .main-seccion__btnRegIng .main__botFlot-Reg {
+    top: 200px;
+    right: 0;
+    padding-left: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: normal; }
+    .main-seccion__btnRegIng .main__botFlot-Reg:hover {
+      transform: translate(0, 0); }
+  .main-seccion__btnRegIng .main__botFlot-ing {
+    top: 240px;
+    right: 0;
+    padding-left: 0.2rem;
+    font-size: 0.8rem; }
+    .main-seccion__btnRegIng .main__botFlot-ing:hover {
+      transform: translate(0, 0); } }
 
 .footer {
   background-color: #e5e5e5;
@@ -1689,7 +1737,8 @@
           .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario {
             margin: 0 auto; }
             .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs {
-              text-align: center; }
+              text-align: center;
+              margin-bottom: .8rem; }
               .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .main-contacto__textarea {
                 width: 100%; }
       .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-informacion {
@@ -1708,11 +1757,13 @@
             margin: 0 auto; }
             .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-informacion .main-contacto__div-cont-icon .main-contacto__div-iconoContacto .main-contacto__img-icono-contacto {
               margin: 0 auto;
-              width: 20%;
+              width: 15%;
               align-items: center; }
             .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-informacion .main-contacto__div-cont-icon .main-contacto__div-iconoContacto .main-contacto__span-contacto {
               display: block;
-              margin: 0 auto; } }
+              margin: 0 auto; }
+        .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-informacion .main__contenedor-modalLogin {
+          margin-top: 2rem; } }
 
 @media screen and (max-width: 768px) {
   .main-contacto .main-contacto__seccion-1 {
@@ -1732,9 +1783,13 @@
           .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario {
             margin: 0 auto; }
             .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs {
-              text-align: center; }
+              text-align: center;
+              margin-bottom: 0; }
               .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .main-contacto__textarea {
                 width: 100%; }
+              .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .main-contacto__submit {
+                font-size: .8rem;
+                margin-bottom: 1rem; }
       .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-informacion {
         padding: 0;
         margin: 0 auto;
@@ -1744,13 +1799,14 @@
           margin-top: 0;
           padding: 0; }
           .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-informacion .main-contacto__div-p-info .main-contacto__p-info {
-            font-size: 1.2rem; }
+            font-size: .8rem; }
         .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-informacion .main-contacto__div-cont-icon {
-          flex-direction: row;
+          flex-direction: column;
           justify-content: center;
           flex-wrap: nowrap;
           width: 100%;
-          text-align: center; }
+          text-align: center;
+          margin-bottom: 1rem; }
           .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-informacion .main-contacto__div-cont-icon .main-contacto__div-iconoContacto {
             margin: 0 auto; }
             .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-informacion .main-contacto__div-cont-icon .main-contacto__div-iconoContacto .main-contacto__img-icono-contacto {
@@ -1760,7 +1816,11 @@
             .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-informacion .main-contacto__div-cont-icon .main-contacto__div-iconoContacto .main-contacto__span-contacto {
               display: block;
               margin: 0 auto;
-              font-size: .8rem; } }
+              font-size: .8rem; }
+        .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-informacion .main__contenedor-modalLogin .main__botFlot-Reg {
+          font-size: .8rem; }
+        .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-informacion .main__contenedor-modalLogin button {
+          font-size: .8rem; } }
 
 .main-nosotros {
   margin: 0 auto;
@@ -2471,7 +2531,7 @@
                   font-weight: normal;
                   text-decoration: none; }
 
-@media screen and (max-width: 993px) {
+@media screen and (max-width: 1023px) {
   .main-registro__seccion-1 {
     margin: 0 auto; }
     .main-registro__seccion-1 .main-resgistro__contennedor-principal {
@@ -2521,12 +2581,15 @@
           .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs {
             width: 70%;
             margin: 0 auto;
-            margin-bottom: 0.6rem; }
+            margin-bottom: 0; }
             .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__label,
             .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__input,
             .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__select {
               margin: 0 auto;
               width: 100%; }
+            .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__submit {
+              font-size: .8rem;
+              margin-top: 1rem; }
       .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones {
         margin: 0 auto;
         padding: 0;
@@ -2545,7 +2608,11 @@
               padding: 1.5rem;
               margin-bottom: 0; }
               .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones .main-registro__div-info .main-registro__divs .main-registro__ulmain-registro .main-registro__li {
-                font-size: 0.8rem; } }
+                font-size: 0.8rem; }
+        .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones .main__contenedor-modalLogin .main__botFlot-Reg {
+          font-size: .8rem; }
+        .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__divInfo-botones .main__contenedor-modalLogin .main__botFlot-ing {
+          font-size: .8rem; } }
 
 * {
   margin: 0;

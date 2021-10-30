@@ -33,6 +33,9 @@
         margin: 0 2rem;
         transform: scale(1.07, 1.07);
         @include efectos-menu($colorPrim, $colorSecun, 47%, 10px, 8px, $colorPrim);
+        @media screen and (max-width:768px) {
+          font-size: 1.1rem;
+        }
       }
       .header-nav__liItemBoton {
         margin: 0 4rem;

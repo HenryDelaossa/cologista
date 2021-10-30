@@ -36,6 +36,10 @@
   }
   .carousel {
     display: none;
+    .carousel-indicators {
+      margin-bottom: 0;
+      padding: 0;
+    }
     .carousel-control-prev {
       .carousel-control-prev-icon {
         height: 100px;
@@ -80,6 +84,16 @@
     }
     .carousel {
       display: block;
+      .carousel-indicators {
+        background-color: $colorSecun;
+        width: 40%;
+        margin: 0 auto;
+        position: absolute;
+        bottom: -25px;
+        button {
+          background-color: $colorPrim;
+        }
+      }
     }
   }
 }
@@ -98,6 +112,17 @@
     }
     .carousel {
       display: block;
+      .carousel-indicators {
+        background-color: $colorSecun;
+        width: 40%;
+        margin: 0 auto;
+        position: absolute;
+        bottom: -25px;
+        button {
+          background-color: $colorPrim;
+          width: 35%;
+        }
+      }
       .carousel-control-prev {
         .carousel-control-prev-icon{
           height: 50px;

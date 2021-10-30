@@ -1,8 +1,9 @@
 .seccion-4-main-index__log-flot {
   position: fixed;
-  top: 450px;
+  top: 400px;
   left: 1rem;
   z-index: 99;
+  transition: all 500ms ease;
   .seccion-4-main-index__div-log {
     margin-bottom: 0.3rem;
     .seccion-4-main-index__log-facebook,
@@ -46,7 +47,7 @@
 }
 @media screen and (max-width: 1023px) {
   .seccion-4-main-index__log-flot {
-    top: 380px;
+    top: 350px;
   }
 }
 @media screen and (max-width: 768px) {

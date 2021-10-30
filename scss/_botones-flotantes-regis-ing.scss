@@ -10,7 +10,7 @@
     transition: all 500ms ease;
     &:hover {
       color: $colorPrim;
-      padding-left: .2rem;
+      padding-left: 0.2rem;
       transform: translate(-96%, 0);
       transition: 600ms;
     }
@@ -21,10 +21,45 @@
     top: 540px;
     right: -120px;
     padding-left: 3rem;
+    transition: all 500ms ease;
     &:hover {
-      padding-left: .2rem;
+      padding-left: 0.2rem;
       transform: translate(-96%, 0);
       transition: 600ms;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .main-seccion__btnRegIng {
+    .main__botFlot-Reg {
+      top: 400px;
+    }
+    .main__botFlot-ing {
+      top: 440px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-seccion__btnRegIng {
+    .main__botFlot-Reg {
+      top: 200px;
+      right: 0;
+      padding-left: 0.2rem;
+      font-size: 0.8rem;
+      font-weight: normal;
+      &:hover {
+        transform: translate(0, 0);
+      }
+    }
+    .main__botFlot-ing {
+      top: 240px;
+      right: 0;
+      padding-left: 0.2rem;
+      font-size: 0.8rem;
+      &:hover {
+        transform: translate(0, 0);
+      }
     }
   }
 }

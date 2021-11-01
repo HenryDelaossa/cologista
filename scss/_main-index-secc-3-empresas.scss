@@ -37,35 +37,45 @@
   .carousel {
     display: none;
     .carousel-indicators {
-      margin-bottom: 0;
-      padding: 0;
+      width: 40%;
+      margin: 0 auto;
+      position: absolute;
+      bottom: -25px;
+      button {
+        background-color: $colorPrim;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+      }
     }
     .carousel-control-prev {
       .carousel-control-prev-icon {
-        height: 100px;
-        background-color: $colorPrim;
-        margin: 0;
+        width: 15px;
+      }
+      span {
+        background-image: url("../img/index/logo/prev.png");
       }
     }
     .carousel-control-next {
       .carousel-control-next-icon {
-        height: 100px;
-        background-color: $colorPrim;
-        margin: 0;
+        width: 15px;
+      }
+      span {
+        background-image: url("../img/index/logo/next.png");
       }
     }
   }
-  .seccion-3-main-index__div-subir {
-    align-items: center;
-    margin-top: 4rem;
-    .div-subir__boton-a {
-      color: $colorSecun;
-      text-decoration: none;
-      font-family: $fuenteTitLink;
-      background-color: $colorPrim;
-      border-radius: 2px 8px 2px 8px;
-      padding: 0.3rem;
-    }
+}
+.seccion-3-main-index__div-subir {
+  align-items: center;
+  margin-top: 4rem;
+  .div-subir__boton-a {
+    color: $colorSecun;
+    text-decoration: none;
+    font-family: $fuenteTitLink;
+    background-color: $colorPrim;
+    border-radius: 2px 8px 2px 8px;
+    padding: 0.3rem;
   }
 }
 
@@ -84,16 +94,6 @@
     }
     .carousel {
       display: block;
-      .carousel-indicators {
-        background-color: $colorSecun;
-        width: 40%;
-        margin: 0 auto;
-        position: absolute;
-        bottom: -25px;
-        button {
-          background-color: $colorPrim;
-        }
-      }
     }
   }
 }
@@ -113,24 +113,10 @@
     .carousel {
       display: block;
       .carousel-indicators {
-        background-color: $colorSecun;
-        width: 40%;
-        margin: 0 auto;
-        position: absolute;
-        bottom: -25px;
         button {
           background-color: $colorPrim;
-          width: 35%;
-        }
-      }
-      .carousel-control-prev {
-        .carousel-control-prev-icon{
-          height: 50px;
-        }
-      }
-      .carousel-control-next {
-        .carousel-control-next-icon {
-          height: 50px;
+          width: 30px;
+          border-radius: 0;
         }
       }
     }

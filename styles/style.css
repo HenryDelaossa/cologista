@@ -48,7 +48,7 @@
         .header .header-nav__menu .header-nav__ulMenu .header-nav__liItems::after {
           content: "";
           position: absolute;
-          bottom: 8px;
+          bottom: 7px;
           right: 0;
           width: 0;
           height: 3px;
@@ -109,7 +109,7 @@
           .header .header-nav__menu .header-nav__ulMenu .ulMenu__ulSubMenu .ulMenu__liSubItems::after {
             content: "";
             position: absolute;
-            bottom: 2px;
+            bottom: 3px;
             right: 0;
             width: 0;
             height: 3px;
@@ -1106,26 +1106,34 @@
   .seccion-3-main-index .carousel {
     display: none; }
     .seccion-3-main-index .carousel .carousel-indicators {
-      margin-bottom: 0;
-      padding: 0; }
+      width: 40%;
+      margin: 0 auto;
+      position: absolute;
+      bottom: -25px; }
+      .seccion-3-main-index .carousel .carousel-indicators button {
+        background-color: #da0037;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%; }
     .seccion-3-main-index .carousel .carousel-control-prev .carousel-control-prev-icon {
-      height: 100px;
-      background-color: #da0037;
-      margin: 0; }
+      width: 15px; }
+    .seccion-3-main-index .carousel .carousel-control-prev span {
+      background-image: url("../img/index/logo/prev.png"); }
     .seccion-3-main-index .carousel .carousel-control-next .carousel-control-next-icon {
-      height: 100px;
-      background-color: #da0037;
-      margin: 0; }
-  .seccion-3-main-index .seccion-3-main-index__div-subir {
-    align-items: center;
-    margin-top: 4rem; }
-    .seccion-3-main-index .seccion-3-main-index__div-subir .div-subir__boton-a {
-      color: #171717;
-      text-decoration: none;
-      font-family: "Stick No Bills", sans-serif;
-      background-color: #da0037;
-      border-radius: 2px 8px 2px 8px;
-      padding: 0.3rem; }
+      width: 15px; }
+    .seccion-3-main-index .carousel .carousel-control-next span {
+      background-image: url("../img/index/logo/next.png"); }
+
+.seccion-3-main-index__div-subir {
+  align-items: center;
+  margin-top: 4rem; }
+  .seccion-3-main-index__div-subir .div-subir__boton-a {
+    color: #171717;
+    text-decoration: none;
+    font-family: "Stick No Bills", sans-serif;
+    background-color: #da0037;
+    border-radius: 2px 8px 2px 8px;
+    padding: 0.3rem; }
 
 @media screen and (max-width: 1023px) {
   .seccion-3-main-index .seccion-3-main-index__div-titulo .div-titulo__h2 {
@@ -1135,15 +1143,7 @@
     .seccion-3-main-index .seccion-3-main-index__div-cont-divs-imgs .div-cont-img {
       width: 35%; }
   .seccion-3-main-index .carousel {
-    display: block; }
-    .seccion-3-main-index .carousel .carousel-indicators {
-      background-color: #171717;
-      width: 40%;
-      margin: 0 auto;
-      position: absolute;
-      bottom: -25px; }
-      .seccion-3-main-index .carousel .carousel-indicators button {
-        background-color: #da0037; } }
+    display: block; } }
 
 @media screen and (max-width: 768px) {
   .seccion-3-main-index .seccion-3-main-index__div-titulo .div-titulo__h2 {
@@ -1154,19 +1154,10 @@
       width: 35%; }
   .seccion-3-main-index .carousel {
     display: block; }
-    .seccion-3-main-index .carousel .carousel-indicators {
-      background-color: #171717;
-      width: 40%;
-      margin: 0 auto;
-      position: absolute;
-      bottom: -25px; }
-      .seccion-3-main-index .carousel .carousel-indicators button {
-        background-color: #da0037;
-        width: 35%; }
-    .seccion-3-main-index .carousel .carousel-control-prev .carousel-control-prev-icon {
-      height: 50px; }
-    .seccion-3-main-index .carousel .carousel-control-next .carousel-control-next-icon {
-      height: 50px; } }
+    .seccion-3-main-index .carousel .carousel-indicators button {
+      background-color: #da0037;
+      width: 30px;
+      border-radius: 0; } }
 
 .seccion-4-main-index__log-flot {
   position: fixed;
@@ -1179,9 +1170,6 @@
     margin-bottom: 0.3rem;
     text-align: center;
     transition: 500ms ease-in; }
-    .seccion-4-main-index__log-flot .seccion-4-main-index__div-log:hover {
-      transform: scale(1.1, 1.1) rotate(360deg);
-      transition: 500ms ease-in; }
     .seccion-4-main-index__log-flot .seccion-4-main-index__div-log .seccion-4-main-index__log-facebook,
     .seccion-4-main-index__log-flot .seccion-4-main-index__div-log .seccion-4-main-index__log-instagram,
     .seccion-4-main-index__log-flot .seccion-4-main-index__div-log .seccion-4-main-index__log-twiter,
@@ -1210,7 +1198,7 @@
 
 @media screen and (max-width: 1023px) {
   .seccion-4-main-index__log-flot {
-    top: 350px; } }
+    top: 300px; } }
 
 @media screen and (max-width: 768px) {
   .seccion-4-main-index__log-flot {
@@ -1354,7 +1342,7 @@
       color: #da0037;
       padding-left: 0.2rem;
       transform: translate(-96%, 0);
-      transition: 600ms; }
+      transition: all 500ms ease; }
   .main-seccion__btnRegIng .main__botFlot-ing {
     text-decoration: none;
     background-color: #da0037;
@@ -1380,7 +1368,7 @@
     .main-seccion__btnRegIng .main__botFlot-ing:hover {
       padding-left: 0.2rem;
       transform: translate(-96%, 0);
-      transition: 600ms; }
+      transition: all 500ms ease; }
 
 @media screen and (max-width: 1023px) {
   .main-seccion__btnRegIng .main__botFlot-Reg {

@@ -32,7 +32,7 @@
       .header-nav__liItems {
         margin: 0 2rem;
         transform: scale(1.07, 1.07);
-        @include efectos-menu($colorPrim, $colorSecun, 47%, 10px, 8px, $colorPrim);
+        @include efectos-menu($colorPrim, $colorSecun, 47%, 10px, 7px, $colorPrim);
         @media screen and (max-width:768px) {
           font-size: 1.1rem;
         }
@@ -47,7 +47,7 @@
         border: none;
         width: 100px;
         .ulMenu__liSubItems {
-          @include efectos-menu($colorPrim, $colorSecun, 25%, 0, 2px, $colorPrim);
+          @include efectos-menu($colorPrim, $colorSecun, 25%, 0, 3px, $colorPrim);
           font-size: 1rem;
           text-align: center;
         }

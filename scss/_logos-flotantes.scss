@@ -9,10 +9,6 @@
     margin-bottom: 0.3rem;
     text-align: center;
     transition: 500ms ease-in;
-    &:hover {
-      transform: scale(1.1, 1.1) rotate(360deg);
-      transition: 500ms ease-in;
-    }
     .seccion-4-main-index__log-facebook,
     .seccion-4-main-index__log-instagram,
     .seccion-4-main-index__log-twiter,
@@ -54,7 +50,7 @@
 }
 @media screen and (max-width: 1023px) {
   .seccion-4-main-index__log-flot {
-    top: 350px;
+    top: 300px;
   }
 }
 @media screen and (max-width: 768px) {

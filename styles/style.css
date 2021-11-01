@@ -295,14 +295,25 @@
         .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .div-presentacion__div {
           margin-bottom: 2rem; }
     .main-index .main-index__seccion-1 .seccion-1__div-camionAnimacion {
-      top: 120px; }
+      position: absolute;
+      top: 120px;
+      left: 20px;
+      width: 90px;
+      margin: 0;
+      z-index: 0;
+      text-align: center;
+      animation-name: animacionCamion;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
   @keyframes animacionCamion {
     0% {
-      left: 40px;
-      top: 120px; }
-    50% {
-      left: 80%;
+      left: 20px;
       top: 120px;
+      transform: scaleX(1); }
+    50% {
+      top: 120px;
+      left: 90%;
       transform: scaleX(1);
       filter: invert(0%) sepia(28%) saturate(5899%) hue-rotate(134deg) brightness(101%) contrast(82%); }
     55% {
@@ -335,16 +346,25 @@
     100% {
       transform: scaleX(1); } }
     .main-index .main-index__seccion-1 .seccion-1__div-camionAnimacion2 {
+      position: absolute;
       top: 230px;
-      left: 80%; }
+      left: 90%;
+      width: 90px;
+      margin: 0;
+      z-index: 0;
+      text-align: center;
+      animation-name: animacionCamion2;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
   @keyframes animacionCamion2 {
     0% {
-      left: 80%;
+      left: 90%;
       top: 230px;
       transform: scaleX(-1); }
     50% {
-      left: 40px;
       top: 230px;
+      left: 20px;
       transform: scaleX(-1);
       filter: invert(0%) sepia(28%) saturate(5899%) hue-rotate(134deg) brightness(101%) contrast(82%); }
     55% {
@@ -377,28 +397,28 @@
     100% {
       transform: scaleX(-1); } } }
 
-@media screen and (max-width: 768px) {
-  .main-index .main-index__seccion-1 {
+@media screen and (max-width: 1023px) and (max-width: 768px) {
+  .main-index .main-index .main-index__seccion-1 {
     margin-top: 3rem; }
-    .main-index .main-index__seccion-1 .seccion-1__div-contenedor {
+    .main-index .main-index .main-index__seccion-1 .seccion-1__div-contenedor {
       flex-direction: column; }
-      .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-carrusel {
+      .main-index .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-carrusel {
         display: none; }
-      .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion {
+      .main-index .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion {
         width: 90%;
         margin: 0 auto; }
-        .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .div-presentacion__div {
+        .main-index .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .div-presentacion__div {
           margin-bottom: 2rem; }
-          .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .div-presentacion__div .div__titulo-h1 {
+          .main-index .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .div-presentacion__div .div__titulo-h1 {
             letter-spacing: 0; }
-          .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .div-presentacion__div .div__titulo-h2 {
+          .main-index .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .div-presentacion__div .div__titulo-h2 {
             padding: 0 2rem; }
-          .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .div-presentacion__div .div__parrafo-p {
+          .main-index .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .div-presentacion__div .div__parrafo-p {
             margin: 0 auto;
             text-align: left; }
-    .main-index .main-index__seccion-1 .seccion-1__div-camionAnimacion {
+    .main-index .main-index .main-index__seccion-1 .seccion-1__div-camionAnimacion {
       display: none; }
-    .main-index .main-index__seccion-1 .seccion-1__div-camionAnimacion2 {
+    .main-index .main-index .main-index__seccion-1 .seccion-1__div-camionAnimacion2 {
       display: none; } }
 
 .main-index__seccion-2 {

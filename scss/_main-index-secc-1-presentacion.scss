@@ -47,10 +47,10 @@
       }
     }
     .seccion-1__div-camionAnimacion {
-      @include animacionCar-1-Index (275px, 40px, 35%, 1, -1 )
+      @include animacionCar-1-Index(275px, 40px, 35%, 1, -1);
     }
     .seccion-1__div-camionAnimacion2 {
-      @include animacionCar-2-Index (400px, 35%, 40px, -1, 1)
+      @include animacionCar-2-Index(400px, 35%, 40px, -1, 1);
     }
   }
 }
@@ -72,170 +72,46 @@
         }
       }
       .seccion-1__div-camionAnimacion {
-        top: 120px;
-        @keyframes animacionCamion {
-          0% {
-            left: 40px;
-            top: 120px;
-          }
-          50% {
-            left: 80%;
-            top: 120px;
-            transform: scaleX(1);
-            filter: invert(0%) sepia(28%) saturate(5899%) hue-rotate(134deg)
-              brightness(101%) contrast(82%);
-          }
-          55% {
-            transform: scaleX(-1);
-            filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
-              brightness(83%) contrast(109%);
-          }
-          60% {
-            transform: scaleX(-1);
-            filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
-              brightness(83%) contrast(109%);
-          }
-          65% {
-            transform: scaleX(-1);
-            filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
-              brightness(83%) contrast(109%);
-          }
-          70% {
-            transform: scaleX(-1);
-            filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
-              brightness(83%) contrast(109%);
-          }
-          75% {
-            transform: scaleX(-1);
-            filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
-              brightness(83%) contrast(109%);
-          }
-          80% {
-            transform: scaleX(-1);
-            filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
-              brightness(83%) contrast(109%);
-          }
-          85% {
-            transform: scaleX(-1);
-            filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
-              brightness(83%) contrast(109%);
-          }
-          90% {
-            transform: scaleX(-1);
-            filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
-              brightness(83%) contrast(109%);
-          }
-          95% {
-            transform: scaleX(-1);
-            filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
-              brightness(83%) contrast(109%);
-          }
-          100% {
-            transform: scaleX(1);
-          }
-        }
+        @include animacionCar-1-Index(120px, 20px, 90%, 1, -1);
       }
       .seccion-1__div-camionAnimacion2 {
-        top: 230px;
-        left: 80%;
-        @keyframes animacionCamion2 {
-          0% {
-            left: 80%;
-            top: 230px;
-            transform: scaleX(-1);
-          }
-          50% {
-            left: 40px;
-            top: 230px;
-            transform: scaleX(-1);
-            filter: invert(0%) sepia(28%) saturate(5899%) hue-rotate(134deg)
-              brightness(101%) contrast(82%);
-          }
-          55% {
-            transform: scaleX(1);
-            filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
-              brightness(83%) contrast(109%);
-          }
-          60% {
-            transform: scaleX(1);
-            filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
-              brightness(83%) contrast(109%);
-          }
-          65% {
-            transform: scaleX(1);
-            filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
-              brightness(83%) contrast(109%);
-          }
-          70% {
-            transform: scaleX(1);
-            filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
-              brightness(83%) contrast(109%);
-          }
-          75% {
-            transform: scaleX(1);
-            filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
-              brightness(83%) contrast(109%);
-          }
-          80% {
-            transform: scaleX(1);
-            filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
-              brightness(83%) contrast(109%);
-          }
-          85% {
-            transform: scaleX(1);
-            filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
-              brightness(83%) contrast(109%);
-          }
-          90% {
-            transform: scaleX(1);
-            filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
-              brightness(83%) contrast(109%);
-          }
-          95% {
-            transform: scaleX(1);
-            filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
-              brightness(83%) contrast(109%);
-          }
-          100% {
-            transform: scaleX(-1);
-          }
-        }
+        @include animacionCar-2-Index(230px, 90%, 20px, -1, 1);
       }
     }
-  }
-}
-@media screen and (max-width: 768px) {
-  .main-index {
-    .main-index__seccion-1 {
-      margin-top: 3rem;
-      .seccion-1__div-contenedor {
-        flex-direction: column;
-        .seccion-1__div-carrusel {
-          display: none;
-        }
-        .seccion-1__div-presentacion {
-          width: 90%;
-          margin: 0 auto;
-          .div-presentacion__div {
-            margin-bottom: 2rem;
-            .div__titulo-h1 {
-              letter-spacing: 0;
+    @media screen and (max-width: 768px) {
+      .main-index {
+        .main-index__seccion-1 {
+          margin-top: 3rem;
+          .seccion-1__div-contenedor {
+            flex-direction: column;
+            .seccion-1__div-carrusel {
+              display: none;
             }
-            .div__titulo-h2 {
-              padding: 0 2rem;
-            }
-            .div__parrafo-p {
+            .seccion-1__div-presentacion {
+              width: 90%;
               margin: 0 auto;
-              text-align: left;
+              .div-presentacion__div {
+                margin-bottom: 2rem;
+                .div__titulo-h1 {
+                  letter-spacing: 0;
+                }
+                .div__titulo-h2 {
+                  padding: 0 2rem;
+                }
+                .div__parrafo-p {
+                  margin: 0 auto;
+                  text-align: left;
+                }
+              }
             }
           }
+          .seccion-1__div-camionAnimacion {
+            display: none;
+          }
+          .seccion-1__div-camionAnimacion2 {
+            display: none;
+          }
         }
-      }
-      .seccion-1__div-camionAnimacion {
-        display: none;
-      }
-      .seccion-1__div-camionAnimacion2 {
-        display: none;
       }
     }
   }

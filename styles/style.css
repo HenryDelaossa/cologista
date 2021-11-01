@@ -177,6 +177,110 @@
               color: #171717;
               font-weight: normal;
               text-decoration: none; }
+    .main-index .main-index__seccion-1 .seccion-1__div-camionAnimacion {
+      position: absolute;
+      top: 275px;
+      left: 40px;
+      width: 90px;
+      margin: 0;
+      z-index: 0;
+      text-align: center;
+      animation-name: animacionCamion;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+
+@keyframes animacionCamion {
+  0% {
+    left: 40px;
+    top: 275px;
+    transform: scaleX(1); }
+  50% {
+    top: 275px;
+    left: 35%;
+    transform: scaleX(1);
+    filter: invert(0%) sepia(28%) saturate(5899%) hue-rotate(134deg) brightness(101%) contrast(82%); }
+  55% {
+    transform: scaleX(-1);
+    filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+  60% {
+    transform: scaleX(-1);
+    filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+  65% {
+    transform: scaleX(-1);
+    filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+  70% {
+    transform: scaleX(-1);
+    filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+  75% {
+    transform: scaleX(-1);
+    filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+  80% {
+    transform: scaleX(-1);
+    filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+  85% {
+    transform: scaleX(-1);
+    filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+  90% {
+    transform: scaleX(-1);
+    filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+  95% {
+    transform: scaleX(-1);
+    filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+  100% {
+    transform: scaleX(1); } }
+    .main-index .main-index__seccion-1 .seccion-1__div-camionAnimacion2 {
+      position: absolute;
+      top: 400px;
+      left: 35%;
+      width: 90px;
+      margin: 0;
+      z-index: 0;
+      text-align: center;
+      animation-name: animacionCamion2;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; }
+
+@keyframes animacionCamion2 {
+  0% {
+    left: 35%;
+    top: 400px;
+    transform: scaleX(-1); }
+  50% {
+    top: 400px;
+    left: 40px;
+    transform: scaleX(-1);
+    filter: invert(0%) sepia(28%) saturate(5899%) hue-rotate(134deg) brightness(101%) contrast(82%); }
+  55% {
+    transform: scaleX(1);
+    filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+  60% {
+    transform: scaleX(1);
+    filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+  65% {
+    transform: scaleX(1);
+    filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+  70% {
+    transform: scaleX(1);
+    filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+  75% {
+    transform: scaleX(1);
+    filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+  80% {
+    transform: scaleX(1);
+    filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+  85% {
+    transform: scaleX(1);
+    filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+  90% {
+    transform: scaleX(1);
+    filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+  95% {
+    transform: scaleX(1);
+    filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+  100% {
+    transform: scaleX(-1); } }
 
 @media screen and (max-width: 1023px) {
   .main-index .main-index__seccion-1 {
@@ -189,7 +293,89 @@
         width: 80%;
         margin: 0 auto; }
         .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .div-presentacion__div {
-          margin-bottom: 2rem; } }
+          margin-bottom: 2rem; }
+    .main-index .main-index__seccion-1 .seccion-1__div-camionAnimacion {
+      top: 120px; }
+  @keyframes animacionCamion {
+    0% {
+      left: 40px;
+      top: 120px; }
+    50% {
+      left: 80%;
+      top: 120px;
+      transform: scaleX(1);
+      filter: invert(0%) sepia(28%) saturate(5899%) hue-rotate(134deg) brightness(101%) contrast(82%); }
+    55% {
+      transform: scaleX(-1);
+      filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+    60% {
+      transform: scaleX(-1);
+      filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+    65% {
+      transform: scaleX(-1);
+      filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+    70% {
+      transform: scaleX(-1);
+      filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+    75% {
+      transform: scaleX(-1);
+      filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+    80% {
+      transform: scaleX(-1);
+      filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+    85% {
+      transform: scaleX(-1);
+      filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+    90% {
+      transform: scaleX(-1);
+      filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+    95% {
+      transform: scaleX(-1);
+      filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+    100% {
+      transform: scaleX(1); } }
+    .main-index .main-index__seccion-1 .seccion-1__div-camionAnimacion2 {
+      top: 230px;
+      left: 80%; }
+  @keyframes animacionCamion2 {
+    0% {
+      left: 80%;
+      top: 230px;
+      transform: scaleX(-1); }
+    50% {
+      left: 40px;
+      top: 230px;
+      transform: scaleX(-1);
+      filter: invert(0%) sepia(28%) saturate(5899%) hue-rotate(134deg) brightness(101%) contrast(82%); }
+    55% {
+      transform: scaleX(1);
+      filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+    60% {
+      transform: scaleX(1);
+      filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+    65% {
+      transform: scaleX(1);
+      filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+    70% {
+      transform: scaleX(1);
+      filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+    75% {
+      transform: scaleX(1);
+      filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+    80% {
+      transform: scaleX(1);
+      filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+    85% {
+      transform: scaleX(1);
+      filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+    90% {
+      transform: scaleX(1);
+      filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+    95% {
+      transform: scaleX(1);
+      filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
+    100% {
+      transform: scaleX(-1); } } }
 
 @media screen and (max-width: 768px) {
   .main-index .main-index__seccion-1 {
@@ -209,7 +395,11 @@
             padding: 0 2rem; }
           .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .div-presentacion__div .div__parrafo-p {
             margin: 0 auto;
-            text-align: left; } }
+            text-align: left; }
+    .main-index .main-index__seccion-1 .seccion-1__div-camionAnimacion {
+      display: none; }
+    .main-index .main-index__seccion-1 .seccion-1__div-camionAnimacion2 {
+      display: none; } }
 
 .main-index__seccion-2 {
   margin-top: 5rem; }

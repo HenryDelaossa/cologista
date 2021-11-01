@@ -78,40 +78,40 @@
         @include animacionCar-2-Index(230px, 90%, 20px, -1, 1);
       }
     }
-    @media screen and (max-width: 768px) {
-      .main-index {
-        .main-index__seccion-1 {
-          margin-top: 3rem;
-          .seccion-1__div-contenedor {
-            flex-direction: column;
-            .seccion-1__div-carrusel {
-              display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-index {
+    .main-index__seccion-1 {
+      margin-top: 3rem;
+      .seccion-1__div-contenedor {
+        flex-direction: column;
+        .seccion-1__div-carrusel {
+          display: none;
+        }
+        .seccion-1__div-presentacion {
+          width: 90%;
+          margin: 0 auto;
+          .div-presentacion__div {
+            margin-bottom: 2rem;
+            .div__titulo-h1 {
+              letter-spacing: 0;
             }
-            .seccion-1__div-presentacion {
-              width: 90%;
+            .div__titulo-h2 {
+              padding: 0 2rem;
+            }
+            .div__parrafo-p {
               margin: 0 auto;
-              .div-presentacion__div {
-                margin-bottom: 2rem;
-                .div__titulo-h1 {
-                  letter-spacing: 0;
-                }
-                .div__titulo-h2 {
-                  padding: 0 2rem;
-                }
-                .div__parrafo-p {
-                  margin: 0 auto;
-                  text-align: left;
-                }
-              }
+              text-align: left;
             }
-          }
-          .seccion-1__div-camionAnimacion {
-            display: none;
-          }
-          .seccion-1__div-camionAnimacion2 {
-            display: none;
           }
         }
+      }
+      .seccion-1__div-camionAnimacion {
+        display: none;
+      }
+      .seccion-1__div-camionAnimacion2 {
+        display: none;
       }
     }
   }

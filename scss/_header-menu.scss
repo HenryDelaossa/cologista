@@ -28,6 +28,8 @@
     background-color: $colorPrim;
     border-radius: 2px 8px 2px 8px;
     margin: .2rem;
+    @include animacionNav ;
+    
     .navbar-toggler-icon {
       background-color: $colorTerc;
       border-radius: 2px 6px 2px 6px;
@@ -50,6 +52,9 @@
         margin: 0 4rem;
         transform: scale(1.07, 1.07);
         @include botones(0px);
+      }
+      .btn-primary {
+        @include animacionNav;
       }
       .ulMenu__ulSubMenu {
         background-color: $colorTerc;

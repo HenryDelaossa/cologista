@@ -53,7 +53,7 @@
       }
     }
     .seccion-1__div-camionAnimacion {
-      @include animacionCar-1-Index(275px, 40px, 35%, 1, -1, 6s);
+      @include animacionCar-1-Index(275px, 40px, 35%, 1, -1, 8s);
     }
     .seccion-1__div-camionAnimacion2 {
       @include animacionCar-2-Index(400px, 35%, 40px, -1, 1, 8s);
@@ -78,18 +78,18 @@
         }
       }
       .seccion-1__div-motitoDelivery {
-        @include animacionMotito(540px, -3%px, 95%, 8s);
+        @include animacionMotito(550px, -3%px, 92%, 8s);
         @keyframes animacionMotito {
           0% {
             left: -3%;
-            top: 540px;
+            top: 550px;
             transform: scaleX(1);
             filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
               brightness(83%) contrast(109%);
           }
           50% {
-            top: 540px;
-            left: 95%;
+            top: 550px;
+            left: 92%;
             transform: scaleX(1) rotate(0);
             filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
               brightness(83%) contrast(109%);
@@ -107,10 +107,10 @@
         }
       }
       .seccion-1__div-camionAnimacion {
-        @include animacionCar-1-Index(120px, 20px, 90%, 1, -1, 8s);
+        @include animacionCar-1-Index(120px, 10%, 80%, 1, -1, 8s);
       }
       .seccion-1__div-camionAnimacion2 {
-        @include animacionCar-2-Index(235px, 90%, 20px, -1, 1, 8s);
+        @include animacionCar-2-Index(235px, 80%, 10%, -1, 1, 8s);
       }
     }
   }
@@ -143,7 +143,7 @@
         }
       }
       .seccion-1__div-motitoDelivery {
-        @include animacionMotito(140px, -10%px, 95%, 8s);
+        @include animacionMotito(140px, -10%px, 90%, 2s);
         width: 30px;
         height: 35px;
         @keyframes animacionMotito {
@@ -154,22 +154,12 @@
             filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
               brightness(83%) contrast(109%);
           }
-          50% {
+          100% {
             top: 140px;
-            left: 95%;
+            left: 90%;
             transform: scaleX(1) rotate(0);
             filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
               brightness(83%) contrast(109%);
-          }
-          51% {
-            transform: scaleX(-1);
-            filter: invert(0%) sepia(28%) saturate(5899%) hue-rotate(134deg)
-              brightness(101%) contrast(82%);
-          }
-          100% {
-            filter: invert(0%) sepia(28%) saturate(5899%) hue-rotate(134deg)
-              brightness(101%) contrast(82%);
-            transform: scaleX(-1);
           }
         }
       }

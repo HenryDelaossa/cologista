@@ -24,6 +24,15 @@
       }
     }
   } //menu /*menu*/
+  .navbar-toggler {
+    background-color: $colorPrim;
+    border-radius: 2px 8px 2px 8px;
+    margin: .2rem;
+    .navbar-toggler-icon {
+      background-color: $colorTerc;
+      border-radius: 2px 6px 2px 6px;
+    }
+  }
   .header-nav__menu {
     justify-content: right;
     .header-nav__ulMenu {

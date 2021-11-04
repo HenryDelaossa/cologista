@@ -47,7 +47,7 @@
       }
     }
     .seccion-1__div-motitoDelivery {
-      @include animacionMotito(80px, -10%, 102%, 10s);
+      @include animacionMotito(80px, -10%, 95%, 10s);
       .img-motito {
         width: 100%;
       }
@@ -78,7 +78,7 @@
         }
       }
       .seccion-1__div-motitoDelivery {
-        @include animacionMotito(540px, -3%px, 102%, 8s);
+        @include animacionMotito(540px, -3%px, 95%, 8s);
         @keyframes animacionMotito {
           0% {
             left: -3%;
@@ -89,7 +89,7 @@
           }
           50% {
             top: 540px;
-            left: 102%;
+            left: 95%;
             transform: scaleX(1) rotate(0);
             filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
               brightness(83%) contrast(109%);
@@ -110,7 +110,7 @@
         @include animacionCar-1-Index(120px, 20px, 90%, 1, -1, 8s);
       }
       .seccion-1__div-camionAnimacion2 {
-        @include animacionCar-2-Index(230px, 90%, 20px, -1, 1, 8s);
+        @include animacionCar-2-Index(235px, 90%, 20px, -1, 1, 8s);
       }
     }
   }
@@ -143,7 +143,7 @@
         }
       }
       .seccion-1__div-motitoDelivery {
-        @include animacionMotito(140px, -10%px, 35%, 8s);
+        @include animacionMotito(140px, -10%px, 95%, 8s);
         width: 30px;
         height: 35px;
         @keyframes animacionMotito {
@@ -156,7 +156,7 @@
           }
           50% {
             top: 140px;
-            left: 102%;
+            left: 95%;
             transform: scaleX(1) rotate(0);
             filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg)
               brightness(83%) contrast(109%);

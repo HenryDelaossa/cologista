@@ -46,12 +46,6 @@
         }
       }
     }
-    .seccion-1__div-motitoDelivery {
-      @include animacionMotito(80px, -10%, 95%, 10s);
-      .img-motito {
-        width: 100%;
-      }
-    }
     .seccion-1__div-camionAnimacion {
       @include animacionCar-1-Index(275px, 40px, 35%, 1, -1, 8s);
     }

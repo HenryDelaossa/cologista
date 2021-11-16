@@ -1,5 +1,5 @@
 //simulador contacto cotizacion servicio
-function contactPrincipal () {
+const contactPrincipal = () => {
     var nombre = window.prompt("Hola!, bienvenido a cologista colombia, ¿como te llamas?").toUpperCase ()
 
     while (nombre == null || nombre == "" || nombre == " ") {
@@ -27,7 +27,7 @@ function contactPrincipal () {
 
 //simulador para calcular promedio de servicios facturados
 
-function promediosServ() {
+const promediosServ = () => {
     let confirmar = confirm("para calcular el promedio en pesos de tus servicios durante la ultima semana da click en aceptar, de lo contrario en cancelar");
     let promFinal = 0
     let acomul = 0
@@ -49,7 +49,7 @@ function promediosServ() {
 
 //ismulador calculadora de servicios de acuerdo a distancia de recorrido 
 
-function calcValServ () {
+const calcValServ = () => {
     
     alert("Vamos a calcular el valor de un servicio de mensajeria acorde a la distancia recorrida")
     let distancia = parseInt(prompt("ingresa los kilometros aproximados del recorrido de tu envio"));
@@ -58,7 +58,7 @@ function calcValServ () {
     let direccion2;
 
     //funcion datos de direcciones (interna de calcServ).⇊
-    function datosServ() {
+    const datosServ = () => {
         direccion1 = prompt("ingresa la direccion INICIAL de recogida donde te enviaremos al mejor mensajero").toUpperCase()
         while (direccion1 == "" || direccion1 == " " || direccion1 == "  " ) {
             direccion1 = prompt("ingresa la direccion INICIAL de recogida donde te enviaremos al mejor mensajero").toUpperCase()

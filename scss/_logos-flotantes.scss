@@ -20,16 +20,15 @@
       width: 80%;
       height: auto;
       transform: scale(1.05, 1.05);
+      transition: 300ms ease-in-out;
     }
     .seccion-4-main-index__log-facebook:hover {
       filter: invert(32%) sepia(10%) saturate(3318%) hue-rotate(183deg)
         brightness(100%) contrast(89%);
-      transition: 200ms;
     }
     .seccion-4-main-index__log-instagram:hover {
       filter: invert(21%) sepia(93%) saturate(2333%) hue-rotate(308deg)
         brightness(96%) contrast(102%);
-      transition: 200ms;
     }
     .seccion-4-main-index__log-twiter:hover {
       filter: invert(49%) sepia(30%) saturate(2662%) hue-rotate(163deg)

@@ -3,11 +3,9 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  align-items: center;
   background-color: #e5e5e5;
-  box-shadow: 0px 1px 5px 0px gray;
-  border-radius: 2px 12px 2px 12px;
-  margin: 0 1rem; }
+  box-shadow: 0px 0px 10px 0px gray;
+  margin: 0 auto; }
   .header .header-nav {
     margin: 0;
     padding: 0;
@@ -205,54 +203,6 @@
               color: #171717;
               font-weight: normal;
               text-decoration: none; }
-    .main-index .main-index__seccion-1 .seccion-1__div-motitoDelivery {
-      position: absolute;
-      top: 80px;
-      left: -10%;
-      width: 50px;
-      margin: 0;
-      z-index: 0;
-      text-align: center;
-      animation-name: animacionMotito;
-      animation-duration: 10s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear; }
-
-@keyframes animacionMotito {
-  0% {
-    left: -10%;
-    top: 80px;
-    transform: scaleX(1);
-    filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
-  25% {
-    transform: rotate(0);
-    top: 80px; }
-  26% {
-    transform: rotate(45deg);
-    top: 160px; }
-  30% {
-    transform: rotate(0); }
-  50% {
-    top: 160px;
-    left: 95%;
-    transform: scaleX(1) rotate(0);
-    filter: invert(18%) sepia(100%) saturate(6705%) hue-rotate(339deg) brightness(83%) contrast(109%); }
-  51% {
-    transform: scaleX(-1);
-    filter: invert(0%) sepia(28%) saturate(5899%) hue-rotate(134deg) brightness(101%) contrast(82%); }
-  74% {
-    transform: scaleX(-1);
-    top: 160px; }
-  75% {
-    transform: scaleX(-1) rotate(-45deg);
-    top: 80px; }
-  78% {
-    transform: scaleX(-1) rotate(0); }
-  100% {
-    filter: invert(0%) sepia(28%) saturate(5899%) hue-rotate(134deg) brightness(101%) contrast(82%);
-    transform: scaleX(-1); } }
-      .main-index .main-index__seccion-1 .seccion-1__div-motitoDelivery .img-motito {
-        width: 100%; }
     .main-index .main-index__seccion-1 .seccion-1__div-camionAnimacion {
       position: absolute;
       top: 275px;
@@ -550,13 +500,13 @@
       align-items: center;
       justify-self: end;
       width: 70%;
-      box-shadow: 0px 0px 5px #808080;
       border-radius: 2px 10px 2px 10px;
-      background-color: #fff; }
+      background-color: transparent;
+      transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull:hover {
-        transform: scale(1, 1.02);
+        transform: translateY(-1%);
         box-shadow: 0px 0px 5px #171717;
-        transition: 300ms; }
+        transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__h3-tit {
         text-decoration: 2px underline #da0037; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__img {
@@ -595,13 +545,13 @@
       align-items: center;
       justify-self: center;
       width: 70%;
-      box-shadow: 0px 0px 5px #808080;
       border-radius: 2px 10px 2px 10px;
-      background-color: #fff; }
+      background-color: transparent;
+      transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas:hover {
-        transform: scale(1, 1.02);
+        transform: translateY(-1%);
         box-shadow: 0px 0px 5px #171717;
-        transition: 300ms; }
+        transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__h3-tit {
         text-decoration: 2px underline #da0037; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__img {
@@ -640,13 +590,13 @@
       align-items: center;
       justify-self: start;
       width: 70%;
-      box-shadow: 0px 0px 5px #808080;
       border-radius: 2px 10px 2px 10px;
-      background-color: #fff; }
+      background-color: transparent;
+      transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena:hover {
-        transform: scale(1, 1.02);
+        transform: translateY(-1%);
         box-shadow: 0px 0px 5px #171717;
-        transition: 300ms; }
+        transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__h3-tit {
         text-decoration: 2px underline #da0037; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__img {
@@ -685,13 +635,13 @@
       align-items: center;
       justify-self: end;
       width: 70%;
-      box-shadow: 0px 0px 5px #808080;
       border-radius: 2px 10px 2px 10px;
-      background-color: #fff; }
+      background-color: transparent;
+      transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos:hover {
-        transform: scale(1, 1.02);
+        transform: translateY(-1%);
         box-shadow: 0px 0px 5px #171717;
-        transition: 300ms; }
+        transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__h3-tit {
         text-decoration: 2px underline #da0037; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__img {
@@ -730,13 +680,13 @@
       align-items: center;
       justify-self: center;
       width: 70%;
-      box-shadow: 0px 0px 5px #808080;
       border-radius: 2px 10px 2px 10px;
-      background-color: #fff; }
+      background-color: transparent;
+      transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte:hover {
-        transform: scale(1, 1.02);
+        transform: translateY(-1%);
         box-shadow: 0px 0px 5px #171717;
-        transition: 300ms; }
+        transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__h3-tit {
         text-decoration: 2px underline #da0037; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__img {
@@ -775,13 +725,13 @@
       align-items: center;
       justify-self: start;
       width: 70%;
-      box-shadow: 0px 0px 5px #808080;
       border-radius: 2px 10px 2px 10px;
-      background-color: #fff; }
+      background-color: transparent;
+      transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio:hover {
-        transform: scale(1, 1.02);
+        transform: translateY(-1%);
         box-shadow: 0px 0px 5px #171717;
-        transition: 300ms; }
+        transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__h3-tit {
         text-decoration: 2px underline #da0037; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__img {
@@ -829,13 +779,13 @@
         align-items: center;
         justify-self: center;
         width: 80%;
-        box-shadow: 0px 0px 5px #808080;
         border-radius: 2px 10px 2px 10px;
-        background-color: #fff; }
+        background-color: transparent;
+        transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull:hover {
-          transform: scale(1, 1.02);
+          transform: translateY(-1%);
           box-shadow: 0px 0px 5px #171717;
-          transition: 300ms; }
+          transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__img {
@@ -874,13 +824,13 @@
         align-items: center;
         justify-self: center;
         width: 80%;
-        box-shadow: 0px 0px 5px #808080;
         border-radius: 2px 10px 2px 10px;
-        background-color: #fff; }
+        background-color: transparent;
+        transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas:hover {
-          transform: scale(1, 1.02);
+          transform: translateY(-1%);
           box-shadow: 0px 0px 5px #171717;
-          transition: 300ms; }
+          transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__img {
@@ -919,13 +869,13 @@
         align-items: center;
         justify-self: center;
         width: 80%;
-        box-shadow: 0px 0px 5px #808080;
         border-radius: 2px 10px 2px 10px;
-        background-color: #fff; }
+        background-color: transparent;
+        transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena:hover {
-          transform: scale(1, 1.02);
+          transform: translateY(-1%);
           box-shadow: 0px 0px 5px #171717;
-          transition: 300ms; }
+          transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__img {
@@ -964,13 +914,13 @@
         align-items: center;
         justify-self: center;
         width: 80%;
-        box-shadow: 0px 0px 5px #808080;
         border-radius: 2px 10px 2px 10px;
-        background-color: #fff; }
+        background-color: transparent;
+        transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos:hover {
-          transform: scale(1, 1.02);
+          transform: translateY(-1%);
           box-shadow: 0px 0px 5px #171717;
-          transition: 300ms; }
+          transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__img {
@@ -1009,13 +959,13 @@
         align-items: center;
         justify-self: center;
         width: 80%;
-        box-shadow: 0px 0px 5px #808080;
         border-radius: 2px 10px 2px 10px;
-        background-color: #fff; }
+        background-color: transparent;
+        transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte:hover {
-          transform: scale(1, 1.02);
+          transform: translateY(-1%);
           box-shadow: 0px 0px 5px #171717;
-          transition: 300ms; }
+          transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__img {
@@ -1054,13 +1004,13 @@
         align-items: center;
         justify-self: center;
         width: 80%;
-        box-shadow: 0px 0px 5px #808080;
         border-radius: 2px 10px 2px 10px;
-        background-color: #fff; }
+        background-color: transparent;
+        transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio:hover {
-          transform: scale(1, 1.02);
+          transform: translateY(-1%);
           box-shadow: 0px 0px 5px #171717;
-          transition: 300ms; }
+          transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__img {
@@ -1108,13 +1058,13 @@
         align-items: center;
         justify-self: center;
         width: 95%;
-        box-shadow: 0px 0px 5px #808080;
         border-radius: 2px 10px 2px 10px;
-        background-color: #fff; }
+        background-color: transparent;
+        transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull:hover {
-          transform: scale(1, 1.02);
+          transform: translateY(-1%);
           box-shadow: 0px 0px 5px #171717;
-          transition: 300ms; }
+          transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__img {
@@ -1155,13 +1105,13 @@
         align-items: center;
         justify-self: center;
         width: 95%;
-        box-shadow: 0px 0px 5px #808080;
         border-radius: 2px 10px 2px 10px;
-        background-color: #fff; }
+        background-color: transparent;
+        transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas:hover {
-          transform: scale(1, 1.02);
+          transform: translateY(-1%);
           box-shadow: 0px 0px 5px #171717;
-          transition: 300ms; }
+          transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__img {
@@ -1202,13 +1152,13 @@
         align-items: center;
         justify-self: center;
         width: 95%;
-        box-shadow: 0px 0px 5px #808080;
         border-radius: 2px 10px 2px 10px;
-        background-color: #fff; }
+        background-color: transparent;
+        transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena:hover {
-          transform: scale(1, 1.02);
+          transform: translateY(-1%);
           box-shadow: 0px 0px 5px #171717;
-          transition: 300ms; }
+          transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__img {
@@ -1249,13 +1199,13 @@
         align-items: center;
         justify-self: center;
         width: 95%;
-        box-shadow: 0px 0px 5px #808080;
         border-radius: 2px 10px 2px 10px;
-        background-color: #fff; }
+        background-color: transparent;
+        transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos:hover {
-          transform: scale(1, 1.02);
+          transform: translateY(-1%);
           box-shadow: 0px 0px 5px #171717;
-          transition: 300ms; }
+          transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__img {
@@ -1296,13 +1246,13 @@
         align-items: center;
         justify-self: center;
         width: 95%;
-        box-shadow: 0px 0px 5px #808080;
         border-radius: 2px 10px 2px 10px;
-        background-color: #fff; }
+        background-color: transparent;
+        transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte:hover {
-          transform: scale(1, 1.02);
+          transform: translateY(-1%);
           box-shadow: 0px 0px 5px #171717;
-          transition: 300ms; }
+          transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__img {
@@ -1343,13 +1293,13 @@
         align-items: center;
         justify-self: center;
         width: 95%;
-        box-shadow: 0px 0px 5px #808080;
         border-radius: 2px 10px 2px 10px;
-        background-color: #fff; }
+        background-color: transparent;
+        transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio:hover {
-          transform: scale(1, 1.02);
+          transform: translateY(-1%);
           box-shadow: 0px 0px 5px #171717;
-          transition: 300ms; }
+          transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__img {
@@ -1493,13 +1443,12 @@
       filter: invert(5%) sepia(6%) saturate(149%) hue-rotate(316deg) brightness(103%) contrast(91%);
       width: 80%;
       height: auto;
-      transform: scale(1.05, 1.05); }
+      transform: scale(1.05, 1.05);
+      transition: 300ms ease-in-out; }
     .seccion-4-main-index__log-flot .seccion-4-main-index__div-log .seccion-4-main-index__log-facebook:hover {
-      filter: invert(32%) sepia(10%) saturate(3318%) hue-rotate(183deg) brightness(100%) contrast(89%);
-      transition: 200ms; }
+      filter: invert(32%) sepia(10%) saturate(3318%) hue-rotate(183deg) brightness(100%) contrast(89%); }
     .seccion-4-main-index__log-flot .seccion-4-main-index__div-log .seccion-4-main-index__log-instagram:hover {
-      filter: invert(21%) sepia(93%) saturate(2333%) hue-rotate(308deg) brightness(96%) contrast(102%);
-      transition: 200ms; }
+      filter: invert(21%) sepia(93%) saturate(2333%) hue-rotate(308deg) brightness(96%) contrast(102%); }
     .seccion-4-main-index__log-flot .seccion-4-main-index__div-log .seccion-4-main-index__log-twiter:hover {
       filter: invert(49%) sepia(30%) saturate(2662%) hue-rotate(163deg) brightness(98%) contrast(101%);
       transition: 200ms; }

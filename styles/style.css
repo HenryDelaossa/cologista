@@ -505,7 +505,6 @@
       transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull:hover {
         transform: translateY(-1%);
-        box-shadow: 0px 0px 5px #171717;
         transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__h3-tit {
         text-decoration: 2px underline #da0037; }
@@ -550,7 +549,6 @@
       transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas:hover {
         transform: translateY(-1%);
-        box-shadow: 0px 0px 5px #171717;
         transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__h3-tit {
         text-decoration: 2px underline #da0037; }
@@ -595,7 +593,6 @@
       transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena:hover {
         transform: translateY(-1%);
-        box-shadow: 0px 0px 5px #171717;
         transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__h3-tit {
         text-decoration: 2px underline #da0037; }
@@ -640,7 +637,6 @@
       transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos:hover {
         transform: translateY(-1%);
-        box-shadow: 0px 0px 5px #171717;
         transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__h3-tit {
         text-decoration: 2px underline #da0037; }
@@ -685,7 +681,6 @@
       transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte:hover {
         transform: translateY(-1%);
-        box-shadow: 0px 0px 5px #171717;
         transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__h3-tit {
         text-decoration: 2px underline #da0037; }
@@ -730,7 +725,6 @@
       transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio:hover {
         transform: translateY(-1%);
-        box-shadow: 0px 0px 5px #171717;
         transition: 400ms ease-in-out; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__h3-tit {
         text-decoration: 2px underline #da0037; }
@@ -784,7 +778,6 @@
         transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull:hover {
           transform: translateY(-1%);
-          box-shadow: 0px 0px 5px #171717;
           transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
@@ -829,7 +822,6 @@
         transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas:hover {
           transform: translateY(-1%);
-          box-shadow: 0px 0px 5px #171717;
           transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
@@ -874,7 +866,6 @@
         transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena:hover {
           transform: translateY(-1%);
-          box-shadow: 0px 0px 5px #171717;
           transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
@@ -919,7 +910,6 @@
         transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos:hover {
           transform: translateY(-1%);
-          box-shadow: 0px 0px 5px #171717;
           transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
@@ -964,7 +954,6 @@
         transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte:hover {
           transform: translateY(-1%);
-          box-shadow: 0px 0px 5px #171717;
           transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
@@ -1009,7 +998,6 @@
         transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio:hover {
           transform: translateY(-1%);
-          box-shadow: 0px 0px 5px #171717;
           transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
@@ -1063,7 +1051,6 @@
         transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull:hover {
           transform: translateY(-1%);
-          box-shadow: 0px 0px 5px #171717;
           transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
@@ -1110,7 +1097,6 @@
         transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas:hover {
           transform: translateY(-1%);
-          box-shadow: 0px 0px 5px #171717;
           transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
@@ -1157,7 +1143,6 @@
         transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena:hover {
           transform: translateY(-1%);
-          box-shadow: 0px 0px 5px #171717;
           transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
@@ -1204,7 +1189,6 @@
         transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos:hover {
           transform: translateY(-1%);
-          box-shadow: 0px 0px 5px #171717;
           transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
@@ -1251,7 +1235,6 @@
         transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte:hover {
           transform: translateY(-1%);
-          box-shadow: 0px 0px 5px #171717;
           transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }
@@ -1298,7 +1281,6 @@
         transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio:hover {
           transform: translateY(-1%);
-          box-shadow: 0px 0px 5px #171717;
           transition: 400ms ease-in-out; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__h3-tit {
           text-decoration: 2px underline #da0037; }

@@ -28,10 +28,10 @@
   <title>contactanos | contacto cologista</title>
 </head>
 
-<body>
-  <!--logo y telefono-->
-  <header class="header">
-    <nav class="header-nav navbar navbar-expand-lg navbar-light">
+<body class="body"id="body">
+  <!--logo ymenu de navegacion-->
+  <header class="header" id="navDark">
+    <nav class="header-nav navbar navbar-expand-lg navbar-light" >
       <div class="container-fluid">
         <a class="header-nav__logo navbar-brand" href="index.html">⇈COLOGISTA⇊</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -52,8 +52,8 @@
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Nosotros
               </a>
-              <ul class="ulMenu__ulSubMenu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="ulMenu__liSubItems dropdown-item" href="nosotros.html#quienesSomos">¿Quienes somos?</a>
+              <ul class="ulMenu__ulSubMenu dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="subMenu">
+                <li><a class="ulMenu__liSubItems dropdown-item" id="subItems" href="nosotros.html#quienesSomos">¿Quienes somos?</a>
                 </li>
                 <li><a class="ulMenu__liSubItems dropdown-item" href="nosotros.html#valores">Valores</a></li>
                 <li><a class="ulMenu__liSubItems dropdown-item" href="nosotros.html#opiniones">Opiniones</a></li>
@@ -76,6 +76,9 @@
   </header>
   <!--main-->
   <main class="main-contacto">
+    <button class="buttonDark" id="buttonDark">dark</button>
+    <button class="buttonBright" id="buttonBright">light</button>
+    <aside id="contenedorMensajeContacto" class="contenedorMensajeContacto"></aside>
     <!--formulario de contacto y texto informativo-->
     <section class="main-contacto__seccion-1">
       <article class="main-contacto__article-contenedor">
@@ -86,24 +89,24 @@
             </h2>
           </div>
           <div class="main-contacto__div-formulario">
-            <form class="main-contacto__formulario">
+            <form class="main-contacto__formulario" id="formContact">
               <div class="main-contacto__divs">
-                <label class="main-contacto__label" for="nombre">Nombre:</label>
-                <input class="main-contacto__input" name="nombre" placeholder="Nombre completo">
+                <label class="main-contacto__label" for="fullNameInput">Nombre:</label>
+                <input  id="fullNameInput" class="main-contacto__input" name="nombre" placeholder="Nombre completo">
               </div>
               <div class="main-contacto__divs">
-                <label class="main-contacto__label" for="email">Email:</label>
-                <input class="main-contacto__input" id="email" name="email" type="email"
+                <label class="main-contacto__label" for="emialInput">Email:</label>
+                <input id="emialInput" class="main-contacto__input" id="email" name="email" type="email"
                   placeholder="ejemplo@email.com">
               </div>
               <div class="main-contacto__divs">
-                <label class="main-contacto__label" for="phone">Telefono:</label>
-                <input class="main-contacto__input" id="phone" name="phone" type="phone" placeholder="123 456 7890"
+                <label class="main-contacto__label" for="phoneInput">Telefono:</label>
+                <input id="phoneInput" class="main-contacto__input" id="phone" name="phone" type="phone" placeholder="123 456 7890"
                   required>
               </div>
               <div class="main-contacto__divs">
-                <label class="main-contacto__label" for="tipoDeServicio">Interesado en</label>
-                <select class="main-contacto__select" name="servicios">
+                <label class="main-contacto__label" for="serviceSelect">Interesado en</label>
+                <select  id="serviceSelect" class="main-contacto__select" name="servicios">
                   <option class="main-contacto__option" value="empty">...</option>
                   <option class="main-contacto__option" value="A Full">A Full</option>
                   <option class="main-contacto__option" value="Millas X Hora">Millas X Hora</option>
@@ -115,13 +118,13 @@
                 </select>
               </div>
               <div class="main-contacto__divs">
-                <label class="main-contacto__label" for="mensaje">Mensaje:</label>
-                <textarea class="main-contacto__textarea" id="mensaje" name="mensaje"
+                <label class="main-contacto__label" for="textAreaInput">Mensaje:</label>
+                <textarea id="textAreaInput" class="main-contacto__textarea" id="mensaje" name="mensaje"
                   placeholder="Danos tu mensaje"></textarea>
               </div>
               <div class="main-contacto__divs">
                 <input class="main-contacto__submit" name="submit" type="reset" value="Borar Datos">
-                <input class="main-contacto__submit" name="submit" type="submit" value="Enviar">
+                <input id="submitContact" class="main-contacto__submit" name="submit" type="submit" value="Enviar">
               </div>
             </form>
           </div>
@@ -204,36 +207,35 @@
           </div>
         </div>
       </article>
-      <!-- seccion de logos flotates de redes sociales -->
-    </section>
+    <!-- seccion de logos flotates de redes sociales -->
     <section class="seccion-4-main-index__log-flot">
       <div class="seccion-4-main-index__div-log">
         <a href="https://www.facebook.com/" target="_blank"><img class="seccion-4-main-index__log-facebook"
-            src="img/index/faceb.png" alt="logo-float-pagina-facebook"></a>
+            src="img/index/faceb.png" alt="logo-float-pagina-facebook" id="logFlotFace"></a>
       </div>
       <div class="seccion-4-main-index__div-log">
         <a href="https://www.instagram.com/" target="_blank"><img class="seccion-4-main-index__log-instagram"
-            src="img/index/instag.png" alt="logo-float-pagina-instagram"></a>
+            src="img/index/instag.png" alt="logo-float-pagina-instagram" id="logInstDark"></a>
       </div>
       <div class="seccion-4-main-index__div-log">
         <a href="https://twitter.com/?lang=es" target="_blank"><img class="seccion-4-main-index__log-twiter"
-            src="img/index/twitter.png" alt="logo-float-pagina-twitter"></a>
+            src="img/index/twitter.png" alt="logo-float-pagina-twitter" id="logTwitDark"></a>
       </div>
       <div class="seccion-4-main-index__div-log">
         <a href="https://www.linkedin.com/feed/" target="_blank"><img class="seccion-4-main-index__log-linkedin"
-            src="img/index/linked.png" alt="logo-float-pagina-linkedin"></a>
+            src="img/index/linked.png" alt="logo-float-pagina-linkedin" id="logLinkDark"></a>
       </div>
       <div class="seccion-4-main-index__div-log">
         <a href="https://web.whatsapp.com/" target="_blank"><img class="seccion-4-main-index__log-whatsapp"
-            src="img/index/whats.png" alt="logo-float-pagina-whatsapp"></a>
+            src="img/index/whats.png" alt="logo-float-pagina-whatsapp" id="logWhatsDark"></a>
       </div>
     </section>
   </main>
   <!--pie de pagina-->
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <nav class="footer__nav">
       <!--div links-->
-      <div class="footer__div-links">
+      <div id="footerNav" class="footer__div-links">
         <a class="footer_links" href="#">Terminos
         </a>
         <a class="footer_links" href="#">Privacidad
@@ -280,11 +282,17 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
     integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
     crossorigin="anonymous"></script>-
-  <script src="js/wow.min.js"></script>
+  <!-- <script src="js/wow.min.js"></script> -->
   <script>
     new WOW().init();
   </script>
-
+  <!-- mis scripts -->
+  <script src="js/contacto/remdar.js"></script>
+  <script src="js/contacto/DivCardContact.js"></script>
+  <script src="js/contacto/setDatedFormContact.js"></script>
+  <script src="js/contacto/DarkContact.js"></script>
+  <script src="js/contacto/objFormContact.js"></script>
+  <script src="js/contacto/contacto.js"></script>
 </body>
 
 </html>

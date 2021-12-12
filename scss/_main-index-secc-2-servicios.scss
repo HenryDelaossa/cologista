@@ -20,10 +20,12 @@
     grid-row-gap: 1rem;
     justify-content: center;
     margin: 0 auto;
+    margin-bottom: 2rem;
     //servicios, declaracion y estillos
     /*servicios, declaracion y estilos*/
 
     /*a-full*/
+    
     .div-contenedor-servs__div-servicio-aFull {
       @include main-index-contenedor-servicios(afull, end, 70%, 60%);
     }
@@ -47,6 +49,13 @@
     .div-contenedor-servs__div-servicio-almacfrio {
       @include main-index-contenedor-servicios(almacfrio, start, 70%, 60%);
     }
+  }
+}
+.secJs {
+  text-align: center;
+  .btnActiContSerJs {
+    @include botones(20px);
+    margin-top: 3rem;
   }
 }
 
@@ -84,6 +93,16 @@
       //almacfrio /*almacfrio*/
       .div-contenedor-servs__div-servicio-almacfrio {
         @include main-index-contenedor-servicios(almacfrio, center, 80%, 60%);
+      }
+    }
+  }
+  .secJs {
+    .prudiv {
+      .pArr {
+        color: $colorPrim;
+        &.pArrDark {
+          color: $colorTerc;
+        }
       }
     }
   }

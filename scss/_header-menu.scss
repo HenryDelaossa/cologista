@@ -5,6 +5,10 @@
   background-color: $colorTerc;
   box-shadow: 0px 0px 10px 0px gray;
   margin: 0 auto;
+  &.navDark {
+    background-color: $colorPrim;
+    box-shadow: 0px 0px 10px 0px $colorTerc;
+  }
   .header-nav {
     margin: 0;
     padding: 0;
@@ -45,6 +49,18 @@
         @media screen and (max-width:768px) {
           font-size: 1.1rem;
         }
+        &.itemsDark {
+          color: $colorTerc;
+          &:hover {
+            color: $colorSecun;
+          }
+          &::before {
+            background: $colorTerc;
+          }
+          &::after {
+            background: $colorSecun;
+          }
+        }
       }
       .header-nav__liItemBoton {
         margin: 0 4rem;
@@ -58,10 +74,27 @@
         background-color: $colorTerc;
         border: none;
         width: 100px;
+        &.subMenuDark {
+          background-color: $colorSecun;
+        }
         .ulMenu__liSubItems {
           @include efectos-menu($colorPrim, $colorSecun, 25%, 0, 3px, $colorPrim);
           font-size: 1rem;
           text-align: center;
+          &.subItemsDark {
+            color: $colorPrim;
+            background-color: transparent;
+            &:hover {
+              background-color: transparent;
+              color: $colorTerc;
+            }
+            &::before {
+              background: $colorTerc;
+            }
+            &::after {
+              background: $colorPrim;
+            }
+          }
         }
       }
     }

@@ -7,6 +7,9 @@
   margin: 0 auto;
   margin-bottom: 1rem;
   margin-top: 2rem;
+  &.footerDark {
+    background-color: transparent;
+  }
   .footer__nav {
     display: flex;
     justify-content: space-evenly;
@@ -21,6 +24,9 @@
         color: $colorSecun;
         font-size: 1.3rem;
         font-family: $fuenteTitLink;
+        &.footer__navDark {
+          color: $colorTerc;
+        }
       }
     }
     .footer__div-derechosby {
@@ -50,6 +56,9 @@
             height: auto;
             filter: invert(10%) sepia(24%) saturate(1989%) hue-rotate(166deg)
               brightness(96%) contrast(98%);
+            &.footer__img-redesDark {
+              filter: invert(97%) sepia(0%) saturate(3098%) hue-rotate(202deg) brightness(124%) contrast(77%);
+            }
           }
         }
       }

@@ -18,8 +18,21 @@
 }
 html {
   scroll-behavior: smooth;
-  body {
+  .body {
     background-color: $colorTerc;
+    &.bodyDark {
+      background-color: $colorSecun;
+    }
+    &.bodyModal {
+      position: static;
+      height: 100%;
+      overflow: hidden;
+    }
+    &.bodyModalAft {
+      position: inherit;
+      height: auto;
+      overflow: visible;
+    }
   }
   section[id],
   div[id] {
@@ -34,6 +47,9 @@ html {
   p {
     font-family: $fuenteParrafos;
     color: $colorSecun;
+    &.pDark {
+      color: $colorTerc;
+    }
   }
   a {
     text-decoration: none;

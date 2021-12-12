@@ -3,16 +3,76 @@
   top: 400px;
   left: 1rem;
   z-index: 99;
-  transition: all 500ms ease;
+  transition: all 300ms ease;
   .seccion-4-main-index__div-log {
     margin: 0 auto;
     margin-bottom: 0.3rem;
     text-align: center;
-    transition: 400ms ease-in;
-    .seccion-4-main-index__log-facebook,
-    .seccion-4-main-index__log-instagram,
-    .seccion-4-main-index__log-twiter,
-    .seccion-4-main-index__log-linkedin,
+    transition: 300ms ease-in;
+    .seccion-4-main-index__log-facebook {
+      margin: 0 auto;
+      filter: invert(5%) sepia(6%) saturate(149%) hue-rotate(316deg)
+        brightness(103%) contrast(91%);
+      width: 80%;
+      height: auto;
+      transform: scale(1.05, 1.05);
+      transition: 300ms ease-in-out;
+      &.logFacDark {
+        filter: invert(32%) sepia(10%) saturate(3318%) hue-rotate(183deg)
+        brightness(100%) contrast(89%);
+        &:hover {
+          transform: scale(1.08, 1.08);
+        }
+      }
+    }
+    
+    .seccion-4-main-index__log-instagram {
+      margin: 0 auto;
+      filter: invert(5%) sepia(6%) saturate(149%) hue-rotate(316deg) brightness(103%) contrast(91%);
+      width: 80%;
+      height: auto;
+      transform: scale(1.05, 1.05);
+      transition: 300ms ease-in-out;
+      &.logInstDark {
+        filter: invert(21%) sepia(93%) saturate(2333%) hue-rotate(308deg)
+        brightness(96%) contrast(102%);
+        &:hover {
+          transform: scale(1.08, 1.08);
+        }
+      }
+    }
+    .seccion-4-main-index__log-twiter {
+      margin: 0 auto;
+      filter: invert(5%) sepia(6%) saturate(149%) hue-rotate(316deg)
+        brightness(103%) contrast(91%);
+      width: 80%;
+      height: auto;
+      transform: scale(1.05, 1.05);
+      transition: 300ms ease-in-out;
+      &.logTwitDark {
+        filter: invert(49%) sepia(30%) saturate(2662%) hue-rotate(163deg)
+        brightness(98%) contrast(101%);
+        &:hover {
+          transform: scale(1.08, 1.08);
+        }
+      }
+    }
+    .seccion-4-main-index__log-linkedin {
+      margin: 0 auto;
+      filter: invert(5%) sepia(6%) saturate(149%) hue-rotate(316deg)
+        brightness(103%) contrast(91%);
+      width: 80%;
+      height: auto;
+      transform: scale(1.05, 1.05);
+      transition: 300ms ease-in-out;
+      &.logLinkDark {
+        filter: invert(35%) sepia(87%) saturate(520%) hue-rotate(152deg)
+        brightness(97%) contrast(95%);
+        &:hover {
+          transform: scale(1.08, 1.08);
+        }
+      }
+    }
     .seccion-4-main-index__log-whatsapp {
       margin: 0 auto;
       filter: invert(5%) sepia(6%) saturate(149%) hue-rotate(316deg)
@@ -21,7 +81,15 @@
       height: auto;
       transform: scale(1.05, 1.05);
       transition: 300ms ease-in-out;
+      &.logWhatsDark {
+        filter: invert(61%) sepia(71%) saturate(475%) hue-rotate(90deg)
+        brightness(94%) contrast(94%);
+        &:hover {
+          transform: scale(1.08, 1.08);
+        }
+      }
     }
+    
     .seccion-4-main-index__log-facebook:hover {
       filter: invert(32%) sepia(10%) saturate(3318%) hue-rotate(183deg)
         brightness(100%) contrast(89%);

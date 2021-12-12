@@ -8,12 +8,16 @@
     right: -78px;
     padding-left: 3rem;
     transition: all 500ms ease;
+    &.buttonRegisRightDark {
+      background-color: $colorTerc;
+    }
     &:hover {
       color: $colorPrim;
       padding-left: 0.2rem;
       transform: translate(-96%, 0);
       transition: all 500ms ease;
     }
+    
   }
   .main__botFlot-ing {
     @include botones(0px);

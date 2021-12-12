@@ -1,4 +1,4 @@
-function addDarkIndex() {
+function addDark() {
     // body
     $("#body").toggleClass("bodyDark");
     // navBar
@@ -17,7 +17,7 @@ function addDarkIndex() {
     $("p").toggleClass("pDark");
     // spans
     $(".main-contacto__span-contacto").toggleClass("spanDark");
-    $("span").toggleClass("span-negocio-dark")
+    $(".span-negocio").toggleClass("span-negocio-dark")
     // labels
     $(".main-contacto__label").toggleClass("labelsDark");
     $(".main-registro-formulario__label").toggleClass("labelsDark");

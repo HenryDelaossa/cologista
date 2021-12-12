@@ -1,7 +1,7 @@
 // modoOscuroIndex
 let buttonDark = document.getElementById("buttonDark")
 buttonDark.addEventListener("click", () => {
-    addDarkIndex()
+    addDark()
     if (document.body.classList.contains("bodyDark")) {
         localStorage.setItem("modo", "dark")
         $(".pArr").css({color: "#d2d2d2"})

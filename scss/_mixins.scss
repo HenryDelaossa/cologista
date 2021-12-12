@@ -392,9 +392,11 @@
     margin: 0 auto;
     font-size: 0.9rem;
     width: 50%;
-    .nosotros-seccion-1-grilla-div-opiniones__span-negocio {
-      display: block;
-      color: $colorSecun;
+  }
+  .span-negocio {
+    color: $colorSecun;
+    &.span-negocio-dark {
+      color: $colorTerc;
     }
   }
 }

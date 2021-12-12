@@ -2971,9 +2971,10 @@ html .body {
           margin: 0 auto;
           font-size: 0.9rem;
           width: 50%; }
-          .main-nosotros .nosotros-seccion-1 .nosotros-seccion-1__grilla .nosotros-seccion-1-grilla__div-opinion-1 .nosotros-seccion-1-grilla-div-opiniones__p-persona .nosotros-seccion-1-grilla-div-opiniones__span-negocio {
-            display: block;
-            color: #171717; }
+        .main-nosotros .nosotros-seccion-1 .nosotros-seccion-1__grilla .nosotros-seccion-1-grilla__div-opinion-1 .span-negocio {
+          color: #171717; }
+          .main-nosotros .nosotros-seccion-1 .nosotros-seccion-1__grilla .nosotros-seccion-1-grilla__div-opinion-1 .span-negocio.span-negocio-dark {
+            color: #e5e5e5; }
       .main-nosotros .nosotros-seccion-1 .nosotros-seccion-1__grilla .nosotros-seccion-1-grilla__div-opinion-2 {
         grid-area: opinion-2;
         margin: 0 auto;
@@ -2990,9 +2991,10 @@ html .body {
           margin: 0 auto;
           font-size: 0.9rem;
           width: 50%; }
-          .main-nosotros .nosotros-seccion-1 .nosotros-seccion-1__grilla .nosotros-seccion-1-grilla__div-opinion-2 .nosotros-seccion-1-grilla-div-opiniones__p-persona .nosotros-seccion-1-grilla-div-opiniones__span-negocio {
-            display: block;
-            color: #171717; }
+        .main-nosotros .nosotros-seccion-1 .nosotros-seccion-1__grilla .nosotros-seccion-1-grilla__div-opinion-2 .span-negocio {
+          color: #171717; }
+          .main-nosotros .nosotros-seccion-1 .nosotros-seccion-1__grilla .nosotros-seccion-1-grilla__div-opinion-2 .span-negocio.span-negocio-dark {
+            color: #e5e5e5; }
       .main-nosotros .nosotros-seccion-1 .nosotros-seccion-1__grilla .nosotros-seccion-1-grilla__div-opinion-3 {
         grid-area: opinion-3;
         margin: 0 auto;
@@ -3009,9 +3011,10 @@ html .body {
           margin: 0 auto;
           font-size: 0.9rem;
           width: 50%; }
-          .main-nosotros .nosotros-seccion-1 .nosotros-seccion-1__grilla .nosotros-seccion-1-grilla__div-opinion-3 .nosotros-seccion-1-grilla-div-opiniones__p-persona .nosotros-seccion-1-grilla-div-opiniones__span-negocio {
-            display: block;
-            color: #171717; }
+        .main-nosotros .nosotros-seccion-1 .nosotros-seccion-1__grilla .nosotros-seccion-1-grilla__div-opinion-3 .span-negocio {
+          color: #171717; }
+          .main-nosotros .nosotros-seccion-1 .nosotros-seccion-1__grilla .nosotros-seccion-1-grilla__div-opinion-3 .span-negocio.span-negocio-dark {
+            color: #e5e5e5; }
     .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin {
       text-align: center; }
       .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__botFlot-Reg {
@@ -3241,7 +3244,7 @@ html .body {
     .main-nosotros .nosotros-seccion-1 .nosotros-seccion-1__grilla .nosotros-seccion-1-grilla__div-titOpiniones .nosotros-seccion-1-grilla-div-titOpiniones__h2 {
       font-size: 1.8rem; }
     .main-nosotros .nosotros-seccion-1 .nosotros-seccion-1__grilla .nosotros-seccion-1-grilla__div-opinion-1 {
-      width: 50%;
+      width: 90%;
       border: 2px solid #171717;
       border-radius: 2px 8px 2px 8px;
       padding: 0.5rem; }

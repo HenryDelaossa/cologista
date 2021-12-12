@@ -6,9 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!--description-->
-  <meta name="description" content="registrate con tus datos o los de tu empresa y demos juntos el primer paso, te guiaremos en todo el proceso y estaremos contigo siempre en cada momento.">
+  <meta name="description"
+    content="registrate con tus datos o los de tu empresa y demos juntos el primer paso, te guiaremos en todo el proceso y estaremos contigo siempre en cada momento.">
   <!--keywords-->
-  <meta name="keywords" content="registro, cologista registro, iniciar sesion cologista, registro cologista, usuario cologista">
+  <meta name="keywords"
+    content="registro, cologista registro, iniciar sesion cologista, registro cologista, usuario cologista">
   <!--google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,6 +22,8 @@
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <!--link de efectos wow-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- link script fontawesome -->
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
   <!--link de mi archivo css-->
   <link rel="stylesheet" type="text/css" href="styles/style.css">
   <!--link de logo de pestaña-->
@@ -28,9 +32,9 @@
   <title>crea tu cuenta o inicia sesion | cologista</title>
 </head>
 
-<body>
+<body class="body" id="body" onload="valueLocStorDark()">
   <!--logo y telefono-->
-  <header class="header">
+  <header class="header" id="navDark">
     <nav class="header-nav navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="header-nav__logo navbar-brand" href="index.html">⇈COLOGISTA⇊</a>
@@ -52,8 +56,9 @@
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Nosotros
               </a>
-              <ul class="ulMenu__ulSubMenu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="ulMenu__liSubItems dropdown-item" href="nosotros.html#quienesSomos">¿Quienes somos?</a>
+              <ul class="ulMenu__ulSubMenu dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="subMenu">
+                <li><a class="ulMenu__liSubItems dropdown-item" id="subItems" href="nosotros.html#body">¿Quienes
+                    somos?</a>
                 </li>
                 <li><a class="ulMenu__liSubItems dropdown-item" href="nosotros.html#valores">Valores</a></li>
                 <li><a class="ulMenu__liSubItems dropdown-item" href="nosotros.html#opiniones">Opiniones</a></li>
@@ -76,6 +81,12 @@
   </header>
   <!--formulario de contacto-->
   <main class="main-registro">
+    <div class="contButtonDark" id="contButtonDark">
+      <button class="buttonDark" id="buttonDark">
+        <span><i class="far fa-sun"></i></span>
+        <span><i class="far fa-moon"></i></span>
+      </button>
+    </div>
     <section class="main-registro__seccion-1">
       <div class="main-resgistro__contennedor-principal">
         <div class="main-registro__contenedor-formulario">
@@ -119,8 +130,8 @@
               <input class="main-registro-formulario__input" type="phone" required placeholder="1234567890" />
             </div>
             <div class="main-registro-formulario__divs">
-              <input class="main-registro-formulario__input-check" type="checkbox" name="checkbox" required />
-              <label class="main-registro-formulario__input-check-label">terminos y condiciones</label>
+              <input class="main-registro-formulario__input-check" type="checkbox" id="checkbox" name="checkbox" required />
+              <label class="main-registro-formulario__input-check-label" for="checkbox">terminos y condiciones</label>
             </div>
             <div class="main-registro-formulario__divs">
               <input class="main-registro-formulario__submit" name="submit" type="reset" value="Borar Datos">
@@ -212,31 +223,31 @@
     <section class="seccion-4-main-index__log-flot">
       <div class="seccion-4-main-index__div-log">
         <a href="https://www.facebook.com/" target="_blank"><img class="seccion-4-main-index__log-facebook"
-            src="img/index/faceb.png" alt="logo-float-pagina-facebook"></a>
+            src="img/index/faceb.png" alt="logo-float-pagina-facebook" id="logFlotFace"></a>
       </div>
       <div class="seccion-4-main-index__div-log">
         <a href="https://www.instagram.com/" target="_blank"><img class="seccion-4-main-index__log-instagram"
-            src="img/index/instag.png" alt="logo-float-pagina-instagram"></a>
+            src="img/index/instag.png" alt="logo-float-pagina-instagram" id="logInstDark"></a>
       </div>
       <div class="seccion-4-main-index__div-log">
         <a href="https://twitter.com/?lang=es" target="_blank"><img class="seccion-4-main-index__log-twiter"
-            src="img/index/twitter.png" alt="logo-float-pagina-twitter"></a>
+            src="img/index/twitter.png" alt="logo-float-pagina-twitter" id="logTwitDark"></a>
       </div>
       <div class="seccion-4-main-index__div-log">
         <a href="https://www.linkedin.com/feed/" target="_blank"><img class="seccion-4-main-index__log-linkedin"
-            src="img/index/linked.png" alt="logo-float-pagina-linkedin"></a>
+            src="img/index/linked.png" alt="logo-float-pagina-linkedin" id="logLinkDark"></a>
       </div>
       <div class="seccion-4-main-index__div-log">
         <a href="https://web.whatsapp.com/" target="_blank"><img class="seccion-4-main-index__log-whatsapp"
-            src="img/index/whats.png" alt="logo-float-pagina-whatsapp"></a>
+            src="img/index/whats.png" alt="logo-float-pagina-whatsapp" id="logWhatsDark"></a>
       </div>
     </section>
   </main>
   <!--pie de pagina-->
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <nav class="footer__nav">
       <!--div links-->
-      <div class="footer__div-links">
+      <div id="footerNav" class="footer__div-links">
         <a class="footer_links" href="#">Terminos
         </a>
         <a class="footer_links" href="#">Privacidad
@@ -246,8 +257,8 @@
       </div>
       <!--div derechos-->
       <div class="footer__div-derechosby">
-        <p class="footer__p-derechos">©Todos los derechos reservados. <span class="footer__by">By HenryDelaossa</span>
-        </p>
+        <p class="footer__p-derechos"><span>©Todos los derechos reservados.</span></p> 
+      <p><span class="footer__by">By HenryDelaossa</span></p>
       </div>
       <!--div redes-->
       <div class="footer__div-redes">
@@ -276,18 +287,28 @@
       </div>
     </nav>
   </footer>
-
+  <!-- JQUERY  -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha384-rY/jv8mMhqDabXSo+UCggqKtdmBfd3qC2/KvyTDNQ6PcUJXaxK1tMepoQda4g5vB"
+    crossorigin="anonymous"></script>
+  <!-- animated wow -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
     integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
     crossorigin="anonymous"></script>
+  <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
     integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
-    crossorigin="anonymous"></script>-
+    crossorigin="anonymous"></script>
   <script src="js/wow.min.js"></script>
   <script>
     new WOW().init();
   </script>
-  
+  <!-- mis scripts -->
+  <script src="js/modoDarkLighLocStor.js"></script>
+  <script src="js/addDarkIndex.js"></script>
+  <script src="js/remdark.js"></script>
+  <script src="js/registro/registro.js"></script>
+
 </body>
 
 </html>

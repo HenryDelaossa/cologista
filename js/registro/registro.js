@@ -1,21 +1,3 @@
-let arrFin = []
-const lista = new Array()
-let fullName = null
-let email = null
-let phone = null
-let service = null
-let mssge = null
-
-let submitb = document.getElementById("submitContact")
-submitb.addEventListener("click", (e)=> {
-    e.preventDefault() 
-    setDatedFormContact()
-    console.log(arrFin)
-    document.getElementById("formContact").reset()
-    arrFin = []
-    console.log(lista)
-})
-
 let buttonDark = document.getElementById("buttonDark")
 buttonDark.addEventListener("click", () => {
     addDarkIndex()

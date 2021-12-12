@@ -5,7 +5,9 @@
   background-color: $colorTerc;
   box-shadow: 0px 0px 10px 0px gray;
   margin: 0 auto;
+  transition: .5s ease all;
   &.navDark {
+    transition: .5s ease all;
     background-color: $colorPrim;
     box-shadow: 0px 0px 10px 0px $colorTerc;
   }

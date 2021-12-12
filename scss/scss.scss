@@ -20,7 +20,9 @@ html {
   scroll-behavior: smooth;
   .body {
     background-color: $colorTerc;
+    transition: .5s ease all;
     &.bodyDark {
+      transition: .5s ease all;
       background-color: $colorSecun;
     }
     &.bodyModal {

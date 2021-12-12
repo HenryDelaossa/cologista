@@ -1,5 +1,51 @@
 .main-nosotros {
   margin: 0 auto;
+  .contButtonDark {
+    position: fixed;
+    top: 3rem;
+    right: 1rem;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s ease all;
+    .buttonDark {
+      display: flex;
+      position: relative;
+      border: none;
+      border-radius: 1000px;
+      color: $colorPrim;
+      background-color: $colorSecun;
+      transition: 0.5s ease all;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: $colorPrim;
+        border-radius: 100px;
+        top: 0;
+        left: 0;
+        right: unset;
+        transition: 0.5s ease all;
+      }
+      &.afterclick {
+        background-color: $colorTerc;
+        color: $colorPrim;
+        transition: 0.5s ease all;
+        &::after {
+          right: 0;
+          transform: translateX(100%);
+          transition: 0.5s ease all;
+        }
+      }
+      span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        background-color: none;
+      }
+    }
+  }
   /*contenedor-grilla*/ //contenedor-grilla
   .nosotros-seccion-1 {
     margin-top: 3rem;
@@ -296,7 +342,7 @@
           }
         }
         .nosotros-seccion-1-grilla__div-opinion-1 {
-          width: 90%;
+          width: 50%;
           border: 2px solid $colorSecun;
           border-radius: 2px 8px 2px 8px;
           padding: 0.5rem;
@@ -305,6 +351,10 @@
           }
           .nosotros-seccion-1-grilla-div-opiniones__p-persona {
             font-size: 0.7rem;
+          }
+          .span-negocio {
+            display: block;
+            color: $colorPrim;
           }
         }
         .nosotros-seccion-1-grilla__div-opinion-2 {
@@ -318,6 +368,10 @@
           .nosotros-seccion-1-grilla-div-opiniones__p-persona {
             font-size: 0.7rem;
           }
+          .span-negocio {
+            display: block;
+            color: $colorPrim;
+          }
         }
         .nosotros-seccion-1-grilla__div-opinion-3 {
           width: 90%;
@@ -329,6 +383,10 @@
           }
           .nosotros-seccion-1-grilla-div-opiniones__p-persona {
             font-size: 0.7rem;
+          }
+          .span-negocio {
+            display: block;
+            color: $colorPrim;
           }
         }
       }

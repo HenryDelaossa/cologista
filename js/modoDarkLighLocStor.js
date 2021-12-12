@@ -3,6 +3,6 @@ function valueLocStorDark() {
     if (localStorage.getItem("modo") === "dark") {
         addDarkIndex()
     } else {
-        remdar()
+        remdark()
     }
 }

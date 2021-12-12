@@ -11,7 +11,8 @@
   <!--keywords-->
   <meta name="keywords"
     content="que es cologista, opiniones cologista, mision cologista, vision cologista, valores corporatios, desarrollo cologista, ambiental, responsabilidad, rendimiento, transformacion">
-    <!--fuentes google-->
+  <!--fuentes google-->
+  <!--fonts google-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -22,17 +23,19 @@
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <!--link de efectos wow-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- link script fontawesome -->
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
   <!--link de mi archivo css-->
   <link rel="stylesheet" type="text/css" href="styles/style.css">
   <!--link de logo de pestaña-->
-  <link class="favicon" rel="shortcut icon" href="img/index/logo/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="img/index/logo/favicon.ico">
 
   <title>acerca de nosotros | cologista</title>
 </head>
 
-<body>
+<body class="body" id="body" onload = "valueLocStorDark()">
   <!--logo ymenu de navegacion-->
-  <header class="header">
+  <header class="header" id="navDark">
     <nav class="header-nav navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="header-nav__logo navbar-brand" href="index.html">⇈COLOGISTA⇊</a>
@@ -54,8 +57,9 @@
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Nosotros
               </a>
-              <ul class="ulMenu__ulSubMenu dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="ulMenu__liSubItems dropdown-item" href="nosotros.html#quienesSomos">¿Quienes somos?</a>
+              <ul class="ulMenu__ulSubMenu dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="subMenu">
+                <li><a class="ulMenu__liSubItems dropdown-item" id="subItems" href="nosotros.html#body">¿Quienes
+                    somos?</a>
                 </li>
                 <li><a class="ulMenu__liSubItems dropdown-item" href="nosotros.html#valores">Valores</a></li>
                 <li><a class="ulMenu__liSubItems dropdown-item" href="nosotros.html#opiniones">Opiniones</a></li>
@@ -77,6 +81,12 @@
     </nav>
   </header>
   <main class="main-nosotros">
+    <div class="contButtonDark" id="contButtonDark">
+      <button class="buttonDark" id="buttonDark">
+        <span><i class="far fa-sun"></i></span>
+        <span><i class="far fa-moon"></i></span>
+      </button>
+    </div>
     <section class="nosotros-seccion-1" id="quienesSomos">
       <!--grilla Nosotros-->
       <div class="nosotros-seccion-1__grilla">
@@ -86,7 +96,8 @@
             ⇊ ¿Quienes somos? ⇈
           </h1>
           <p class="div-quienesSomos__p">
-            Somos el mejor aliado logístico con el que podras contar, tanto si requieres de una entrega local y confiable o administrar todas tus cadenas de suministros.
+            Somos el mejor aliado logístico con el que podras contar, tanto si requieres de una entrega local y
+            confiable o administrar todas tus cadenas de suministros.
         </div>
         <!--contenedor Mision-->
         <div class="nosotros-seccion-1-grilla__div-mision">
@@ -94,7 +105,8 @@
             Nuestra Mision ⇊
           </h2>
           <p class="div-mision__p-mision-vision">
-            Ofrecer las mejores soluciones logísticas para nuestros asociados, apuntando siempre a un crecimiento exponencial e inspirando al cuidado ambiental y al desarrollo sostenible en el planeta.
+            Ofrecer las mejores soluciones logísticas para nuestros asociados, apuntando siempre a un crecimiento
+            exponencial e inspirando al cuidado ambiental y al desarrollo sostenible en el planeta.
           </p>
         </div>
         <!--contenedor Vision-->
@@ -123,8 +135,8 @@
           </h2>
           <p class="nosotros-seccion-1-grilla-divs-valores__p-parrafos">Ofrecemos grandes experiencias a nuestros
             clientes y un servicio de alta calidad. Somos proactivos en nuestras relaciones con los clientes y
-              trabajamos duro para cuidar a los clientes
-              existentes. Logramos que a los clientes les resulte fácil hacer negocios con nosotros.</p>
+            trabajamos duro para cuidar a los clientes
+            existentes. Logramos que a los clientes les resulte fácil hacer negocios con nosotros.</p>
         </div>
         <!--contenedor Desarrollo Ambiental-->
         <div class="nosotros-seccion-1-grilla__div-desAmbiental">
@@ -137,7 +149,10 @@
         <!--contenedor Responsabilidad Social-->
         <div class="nosotros-seccion-1-grilla__div-respSocial">
           <h2 class="nosotros-seccion-1-grilla-divs-valores__h2-tit">Responsabilidad social ⇊</h2>
-          <p class="nosotros-seccion-1-grilla-divs-valores__p-parrafos">Fomentamos el desarrollo en las personas, comunidades y grupos culturales para conseguir un nivel global de calidad de vida adecuado y equitativo. Conseguiremos este objetivo a través de proyectos sostenibles a medio/largo plazo donde estemos presentes. </p>
+          <p class="nosotros-seccion-1-grilla-divs-valores__p-parrafos">Fomentamos el desarrollo en las personas,
+            comunidades y grupos culturales para conseguir un nivel global de calidad de vida adecuado y equitativo.
+            Conseguiremos este objetivo a través de proyectos sostenibles a medio/largo plazo donde estemos presentes.
+          </p>
         </div>
         <!--contenedor Rendimiento-->
         <div class="nosotros-seccion-1-grilla__div-rendimiento">
@@ -158,25 +173,27 @@
           <p class="nosotros-seccion-1-grilla-div-opiniones__p-opinion wow animate__animated animate__fadeInLeft">
             "Súper! Me he ahorrado mucho tiempo y dinero con cologista, los recomiendo!"</p>
           <p class="nosotros-seccion-1-grilla-div-opiniones__p-persona wow animate__animated animate__fadeInRight">
-            -Jesus De la ossa<span class="nosotros-seccion-1-grilla-div-opiniones__span-negocio">Director
-              "Vendocosas.com"</span></p>
+            -Jesus De la ossa</p>
+          <span class="span-negocio" id="span">Director "Vendocosas.com"</span>
           <hr>
         </div>
         <!--contenedor opinion dos-->
         <div class="nosotros-seccion-1-grilla__div-opinion-2">
-          <p class="nosotros-seccion-1-grilla-div-opiniones__p-opinion wow animate__animated animate__fadeInLeft">"Me gusta que se encarguen de la logística de mi e-commerce, desde que estoy con Cologista he tenido todo el tiempo libre y la tranquilidad que había deseado"</p>
+          <p class="nosotros-seccion-1-grilla-div-opiniones__p-opinion wow animate__animated animate__fadeInLeft">"Me
+            gusta que se encarguen de la logística de mi e-commerce, desde que estoy con Cologista he tenido todo el
+            tiempo libre y la tranquilidad que había deseado"</p>
           <p class="nosotros-seccion-1-grilla-div-opiniones__p-persona wow animate__animated animate__fadeInRight">
-            -Nelcy Gomez <span class="nosotros-seccion-1-grilla-div-opiniones__span-negocio">Directora "Tienda de
-              Mascotas"</span></p>
+            -Nelcy Gomez </p>
+          <span class="span-negocio"  id="span">Directora "Tienda de Mascotas"</span>
           <hr>
         </div>
         <!--contenedor opinion tres-->
         <div class="nosotros-seccion-1-grilla__div-opinion-3">
-          <p class="nosotros-seccion-1-grilla-div-opiniones__p-opinion wow animate__animated animate__fadeInLeft">"Hemos resuelto nuestros problemas logísticos a un costo muy accesible"</p>
+          <p class="nosotros-seccion-1-grilla-div-opiniones__p-opinion wow animate__animated animate__fadeInLeft">"Hemos
+            resuelto nuestros problemas logísticos a un costo muy accesible"</p>
           <p class="nosotros-seccion-1-grilla-div-opiniones__p-persona wow animate__animated animate__fadeInRight">
-            -Camila Gomez <span class="nosotros-seccion-1-grilla-div-opiniones__span-negocio">Director
-              "Mercadeo.tuyo"</span>
-          </p>
+            -Camila Gomez</p>
+          <span class="span-negocio" id="span">Director  "Mercadeo.tuyo"</span>
           <hr>
         </div>
       </div>
@@ -185,7 +202,7 @@
     <section class="main-seccion__btnRegIng">
       <div class="main__contenedor-modalLogin">
         <!-- Button trigger modal -->
-        <a class="main__botFlot-Reg" href="registro.html">Registrarme</a>
+        <a class="main__botFlot-Reg" href="registro.html" id="buttonRegisRightDark">Registrarme</a>
         <button type="button" class="main__botFlot-ing btn btn-primary" data-bs-toggle="modal"
           data-bs-target="#staticBackdrop">
           Ya estoy registrado
@@ -237,31 +254,31 @@
     <section class="seccion-4-main-index__log-flot">
       <div class="seccion-4-main-index__div-log">
         <a href="https://www.facebook.com/" target="_blank"><img class="seccion-4-main-index__log-facebook"
-            src="img/index/faceb.png" alt="logo-float-pagina-facebook"></a>
+            src="img/index/faceb.png" alt="logo-float-pagina-facebook" id="logFlotFace"></a>
       </div>
       <div class="seccion-4-main-index__div-log">
         <a href="https://www.instagram.com/" target="_blank"><img class="seccion-4-main-index__log-instagram"
-            src="img/index/instag.png" alt="logo-float-pagina-instagram"></a>
+            src="img/index/instag.png" alt="logo-float-pagina-instagram" id="logInstDark"></a>
       </div>
       <div class="seccion-4-main-index__div-log">
         <a href="https://twitter.com/?lang=es" target="_blank"><img class="seccion-4-main-index__log-twiter"
-            src="img/index/twitter.png" alt="logo-float-pagina-twitter"></a>
+            src="img/index/twitter.png" alt="logo-float-pagina-twitter" id="logTwitDark"></a>
       </div>
       <div class="seccion-4-main-index__div-log">
         <a href="https://www.linkedin.com/feed/" target="_blank"><img class="seccion-4-main-index__log-linkedin"
-            src="img/index/linked.png" alt="logo-float-pagina-linkedin"></a>
+            src="img/index/linked.png" alt="logo-float-pagina-linkedin" id="logLinkDark"></a>
       </div>
       <div class="seccion-4-main-index__div-log">
         <a href="https://web.whatsapp.com/" target="_blank"><img class="seccion-4-main-index__log-whatsapp"
-            src="img/index/whats.png" alt="logo-float-pagina-whatsapp"></a>
+            src="img/index/whats.png" alt="logo-float-pagina-whatsapp" id="logWhatsDark"></a>
       </div>
     </section>
   </main>
   <!--pie de pagina-->
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <nav class="footer__nav">
       <!--div links-->
-      <div class="footer__div-links">
+      <div id="footerNav" class="footer__div-links">
         <a class="footer_links" href="#">Terminos
         </a>
         <a class="footer_links" href="#">Privacidad
@@ -271,8 +288,8 @@
       </div>
       <!--div derechos-->
       <div class="footer__div-derechosby">
-        <p class="footer__p-derechos">©Todos los derechos reservados. <span class="footer__by">By HenryDelaossa</span>
-        </p>
+        <p class="footer__p-derechos"><span>©Todos los derechos reservados.</span></p> 
+      <p><span class="footer__by">By HenryDelaossa</span></p>
       </div>
       <!--div redes-->
       <div class="footer__div-redes">
@@ -301,17 +318,27 @@
       </div>
     </nav>
   </footer>
-
+  <!-- JQUERY  -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha384-rY/jv8mMhqDabXSo+UCggqKtdmBfd3qC2/KvyTDNQ6PcUJXaxK1tMepoQda4g5vB"
+    crossorigin="anonymous"></script>
+    <!-- animated wow -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
     integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
     crossorigin="anonymous"></script>
+    <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
     integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
-    crossorigin="anonymous"></script>-
+    crossorigin="anonymous"></script>
   <script src="js/wow.min.js"></script>
   <script>
     new WOW().init();
   </script>
+  <!-- mis scripts -->
+  <script src="js/modoDarkLighLocStor.js"></script>
+  <script src="js/addDarkIndex.js"></script>
+  <script src="js/remdark.js"></script>
+  <script src="js/nosotros/nosotros.js"></script>
 
 </body>
 

@@ -6,6 +6,7 @@
     right: 1rem;
     margin: 0;
     padding: 0;
+    transition: .5s ease all;
     .buttonDark {
       display: flex;
       position: relative;
@@ -13,7 +14,7 @@
       border-radius: 1000px;
       color: $colorPrim;
       background-color: $colorSecun;
-      transition: 400ms ease all;
+      transition: .5s ease all;
       &::after {
         content: "";
         display: block;
@@ -25,16 +26,16 @@
         top: 0;
         left: 0;
         right: unset;
-        transition: 400ms ease all;
+        transition: .5s ease all;
       }
       &.afterclick {
         background-color: $colorTerc;
         color: $colorPrim;
-        transition: 400ms ease all;
+        transition: .5s ease all;
         &::after{
           right: 0;
-          left: unset;
-          transition: 400ms ease all;
+          transform: translateX(100%);
+          transition: .5s ease all;
         }
       }
       span{

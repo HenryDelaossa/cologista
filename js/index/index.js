@@ -5,11 +5,20 @@ buttonDark.addEventListener("click", () => {
     if (document.body.classList.contains("bodyDark")) {
         localStorage.setItem("modo", "dark")
         $(".pArr").css({color: "#d2d2d2"})
+        $("#btnActiContSerJs").css({border: "1px solid #da0039"})
     } else {
         localStorage.setItem("modo", "sunn")
         $(".pArr").css({color: "#171717"})
+        $("#btnActiContSerJs").css({border: "none"})
     }
 });
+// efecto sobre barra de navegacion principal
+let alturaInicial = window.scrollY
+window.addEventListener("scroll", () => {
+    let altura = window.scrollY
+    if(alturaInicial >= altura){$("#navDark").css({top: "0px"}); $("#contButtonDark").css({top: "48px"})} else {$("#navDark").css({top: "-70px"}); $("#contButtonDark").css({top: "10px"})}
+    alturaInicial = altura
+})
 // creando ventana modal index asignada a boton pedir primer servicio
 const btnModal = document.getElementById("btnModal")
 btnModal.addEventListener("click", (e) => {
@@ -29,19 +38,12 @@ let createbDis = document.createElement("b");
 let contValServi = document.getElementById("contValServ")
 let createbValor = document.createElement("b")
 createbValor.style.color = "#171717"
-document.getElementById("pDistMod").style.color ="#171717"
-document.getElementById("pValMod").style.color = "#171717"
+$("#pDistMod").css({color: "#171717"})
+$("#pValMod").css({color: "#171717"})
 const btnBorrarMod = document.getElementById("resetMod")
 btnBorrarMod.addEventListener("click", () => {
-    document.getElementById("contNumKmDis").style.display = "none"
-    document.getElementById("contValServ").style.display = "none"
-    document.getElementById("submitServmodCalcular").style.display = "inline-block"
-    document.getElementById("submitServmodConfirmar").style.display = "none"
-    document.getElementById("inputDirUno").disabled = false;
-    document.getElementById("inputDirDos").disabled = false;
+    outDatesCalc(contNumKmDis,contValServi,createbDis,createbValor)
     arrDist = []
-    contNumKmDis.removeChild(createbDis)
-    contValServi.removeChild(createbValor);
 }) 
 // evento en boton confirmar dentro de modal pedir primer servicio
 const btnConfirmServ = document.getElementById("submitServmodConfirmar")
@@ -50,23 +52,14 @@ btnConfirmServ.addEventListener("click", (e) => {
     let divContMensConfirm = document.getElementById("divContMensConfirm")
     divContMensConfirm.style.display = "block"
     setTimeout(() => {
-        document.querySelector("#contNumKmDis").style.display = "none"
-        document.getElementById("contValServ").style.display = "none"
-        document.getElementById("submitServmodCalcular").style.display = "inline-block"
-        document.getElementById("submitServmodConfirmar").style.display = "none"
+        outDatesCalc(contNumKmDis,contValServi,createbDis,createbValor)
         document.querySelector("#inputDirUno").value = null;
-        document.querySelector("#inputDirUno").disabled = false;
         document.getElementById("inputDirDos").value = null;
-        document.getElementById("inputDirDos").disabled = false;
-        contNumKmDis.removeChild(createbDis)
-        contValServi.removeChild(createbValor)
         document.getElementById("divContMensConfirm").style.display = "none"
     }, 3000)
 })
-
-// codigo creacion de divs a partir de un array del objeto Services
-const arrServs = new Array()
 // obteniendo valores de nuevo objetos a pushear en array assServs
+const arrServs = new Array()
 const servAfull = new Services(document.getElementById("titAfull").textContent, document.getElementById("imgAfull").getAttribute("src"), document.getElementById("textAfull").textContent)
 const servMillas = new Services(document.getElementById("titMilla").textContent, document.getElementById("imgMillas").getAttribute("src"), document.getElementById("textMillas").textContent)
 const servAlmac = new Services(document.getElementById("titAlmac").textContent, document.getElementById("imgAlmac").getAttribute("src"), document.getElementById("textAlmac").textContent)
@@ -76,8 +69,8 @@ const servAlmFrio = new Services(document.getElementById("titAlmFrio").textConte
 // push a arrServs
 arrServs.push(servAfull, servMillas, servAlmac, servEntreg, servEmpac, servAlmFrio)
 localStorage.setItem("ServicesArray", JSON.stringify(arrServs))
+// creacion de divs a partir de un array del objeto Services
 let obtArrServ = localStorage.getItem("ServicesArray")
-
 // JSON recup dates
 const arrjaja = obtenDat()
 function obtenDat () {
@@ -114,6 +107,3 @@ $("#btnActiContSerJs").on("click", () => {
         $("#btnActiContSerJs").text("click para ver nuevamente").css({color: "#d2d2d2", "background-color": "#da0039"})
     },9500)
 })
-
-
-

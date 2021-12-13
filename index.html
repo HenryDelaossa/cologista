@@ -30,8 +30,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="img/index/logo/favicon.ico">
   <title>pagina principal y servicios | cologista</title>
 </head>
-
-<body class="body" id="body" onload = "valueLocStorDark()">
+<body class="body" id="body">
   <!--logo ymenu de navegacion-->
   <header class="header" id="navDark">
     <nav class="header-nav navbar navbar-expand-lg navbar-light">
@@ -187,9 +186,9 @@
         </h2>
       </div>
       <!--contenedor serv-->
-      <div class="main-index__div-contenedor-servs container-fluid wow animate__animated animate__zoomIn">
+      <div class="main-index__div-contenedor-servs container-fluid wow animate__animated animate__zoomIn" id="contDivsServs">
         <!--a-full-->
-        <div class="div-contenedor-servs__div-servicio-aFull" id="contenAfull">
+        <div class="div-contenedor-servs__div-servicio-aFull">
           <h3 class="div-contenedor-servs__h3-tit" id="titAfull">A- Full</h3>
           <img id="imgAfull"class="div-contenedor-servs__img img-fluid" src="img/index/servicios/full.png"
             alt="img-servicio_a-Full- cologista">
@@ -198,7 +197,6 @@
           <p class="div-contenedor-servs__p">
             Seremos Tu departamento logístico a <span class="div-contenedor-servs__span">¡nivel nacional!</span>
           </p>
-          <a id="btnAfull" class="div-contenedor-servs__boton-a" href="contacto.html">Cotizar</a>
         </div>
         <!--millas x hora-->
         <div class="div-contenedor-servs__div-servicio-millas">
@@ -211,7 +209,6 @@
           <p class="div-contenedor-servs__p">
             Recogemos y entregamos donde tú nos pidas.
           </p>
-          <a class="div-contenedor-servs__boton-a" href="contacto.html" id="btnCotiz">Cotizar</a>
         </div>
         <!--empacarte-->
         <div class="div-contenedor-servs__div-servicio-empacarte">
@@ -224,7 +221,6 @@
             Contamos con materiales <span class="div-contenedor-servs__span">100% biodegradables</span> y muy amigables
             con el medio ambiente.
           </p>
-          <a class="div-contenedor-servs__boton-a" href="contacto.html">Cotizar</a>
         </div>
         <!--entregamos-->
         <div class="div-contenedor-servs__div-servicio-entregamos" >
@@ -236,7 +232,6 @@
           <span class="div-contenedor-servs__span">
             No hay tope minimo ni maximo de entregas.
           </span>
-          <a class="div-contenedor-servs__boton-a" href="contacto.html">Cotizar</a>
         </div>
         <!--almacfrio-->
         <div class="div-contenedor-servs__div-servicio-almacfrio" >
@@ -248,7 +243,6 @@
             Contamos con neveras, refrigeradores industriales y bodegas de frio para mantener y conservar cualquier
             producto a bajas temperaturas.
           </p>
-          <a class="div-contenedor-servs__boton-a" href="contacto.html">Cotizar</a>
         </div>
         <!--almacena-->
         <div class="div-contenedor-servs__div-servicio-almacena">
@@ -262,7 +256,6 @@
             productos por el tiempo que
             necesites.
           </p>
-          <a class="div-contenedor-servs__boton-a" href="contacto.html">Cotizar</a>
         </div>
     </section>
     <!-- div contenedor serv creado con array js -->
@@ -477,7 +470,6 @@
   <script src="js/index/funcionesYobjts/outDatesCalc.js"></script>
   <script src="js/index/funcionesYobjts/createDivsServs.js"></script>
   <script src="js/index/funcionesYobjts/Services.js"></script>
-  <script src="js/modoDarkLighLocStor.js"></script>
   <script src="js/addDark.js"></script>
   <script src="js/remdark.js"></script>
   <script src="js/index/funcionesYobjts/mensServ.js"></script>

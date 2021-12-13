@@ -23,9 +23,7 @@
     margin-bottom: 2rem;
     //servicios, declaracion y estillos
     /*servicios, declaracion y estilos*/
-
     /*a-full*/
-    
     .div-contenedor-servs__div-servicio-aFull {
       @include main-index-contenedor-servicios(afull, end, 70%, 60%);
     }
@@ -73,7 +71,7 @@
       margin: 0 auto;
       .div-contenedor-servs__div-servicio-aFull {
         @include main-index-contenedor-servicios(afull, center, 80%, 60%);
-              }
+      }
       //millas x hora /*millas x hora*/
       .div-contenedor-servs__div-servicio-millas {
         @include main-index-contenedor-servicios(millas, center, 80%, 60%);
@@ -127,42 +125,42 @@
       margin: 0;
       .div-contenedor-servs__div-servicio-aFull {
         @include main-index-contenedor-servicios(afull, center, 95%, 40%);
-        .div-contenedor-servs__img  {
+        .div-contenedor-servs__img {
           display: none;
         }
       }
       //millas x hora /*millas x hora*/
       .div-contenedor-servs__div-servicio-millas {
         @include main-index-contenedor-servicios(millas, center, 95%, 40%);
-        .div-contenedor-servs__img  {
+        .div-contenedor-servs__img {
           display: none;
         }
       }
       //almacena /*almacena*/
       .div-contenedor-servs__div-servicio-almacena {
         @include main-index-contenedor-servicios(almacena, center, 95%, 40%);
-        .div-contenedor-servs__img  {
+        .div-contenedor-servs__img {
           display: none;
         }
       }
       //entregamos /*enregamos*/
       .div-contenedor-servs__div-servicio-entregamos {
         @include main-index-contenedor-servicios(entregamos, center, 95%, 40%);
-        .div-contenedor-servs__img  {
+        .div-contenedor-servs__img {
           display: none;
         }
       }
       //empacarte /*empacarte*/
       .div-contenedor-servs__div-servicio-empacarte {
         @include main-index-contenedor-servicios(empacarte, center, 95%, 40%);
-        .div-contenedor-servs__img  {
+        .div-contenedor-servs__img {
           display: none;
         }
       }
       //almacfrio /*almacfrio*/
       .div-contenedor-servs__div-servicio-almacfrio {
         @include main-index-contenedor-servicios(almacfrio, center, 95%, 40%);
-        .div-contenedor-servs__img  {
+        .div-contenedor-servs__img {
           display: none;
         }
       }

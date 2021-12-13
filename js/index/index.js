@@ -12,6 +12,14 @@ buttonDark.addEventListener("click", () => {
         $("#btnActiContSerJs").css({border: "none"})
     }
 });
+// evaluar local storage para modo tema de pagina
+$(document).ready(function() {
+    if (localStorage.getItem("modo") === "dark") {
+        addDark()
+    } else {
+        remdark()
+    }
+})
 // efecto sobre barra de navegacion principal
 let alturaInicial = window.scrollY
 window.addEventListener("scroll", () => {
@@ -107,3 +115,22 @@ $("#btnActiContSerJs").on("click", () => {
         $("#btnActiContSerJs").text("click para ver nuevamente").css({color: "#d2d2d2", "background-color": "#da0039"})
     },9500)
 })
+// evento efecto boton sobre divs de servicios 
+// obtuve un array apartir de la propiedad.children del divpadre con id #contDivsServs
+const divPadreServs = document.getElementById("contDivsServs").children
+
+// no salio de esta manera como queria, intentar toggleando desde sass
+
+
+// for (const divsHijos of divPadreServs) {
+//     $(divsHijos).append(`<a class="btnCotiz" id="btnCotiz" href="#">Cotizar</a>`)
+
+//     $(".btnCotiz").css({display: "block", "background-color": "#da0039", color: "#d2d2d2","font-family": "'Stick No Bills', 'sans-serif'", border: "none","border-radius": "1px 8px 1px 8px", padding: "0.1rem","box-shadow":" 0px 1px 5px 0px $colorSecun", position: "absolute", top: "50%", left: "50%", margin:" -25px 0 0 -25px", transition: "300ms ease all", transform: "scale(2, 1.5)", opacity: "1"})
+
+//     $(".servcont").mouseover(() => {
+//         $("#btnCotiz").show("slow")
+//     })
+//     $(".servcont").mouseout(() => {
+//         $("#btnCotiz").remove()
+//     })
+// }

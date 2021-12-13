@@ -7,6 +7,14 @@ buttonDark.addEventListener("click", () => {
         localStorage.setItem("modo", "sunn")
     }
 });
+// evaluar local storage para tema de pagina
+$(document).ready(function() {
+    if (localStorage.getItem("modo") === "dark") {
+        addDark()
+    } else {
+        remdark()
+    }
+})
 // efecto sobre barra de navegacion principal
 let alturaInicial = window.scrollY
 window.addEventListener("scroll", () => {

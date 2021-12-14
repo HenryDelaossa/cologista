@@ -710,6 +710,11 @@
     .main-index__seccion-2 .main-index__div-titulo .main-index__h2-Titulo {
       font-size: 3rem;
       margin-bottom: 3rem; }
+  .main-index__seccion-2 .typed-cursor {
+    color: #da0037;
+    font-size: 2rem; }
+  .main-index__seccion-2 .typed-fade-out {
+    height: 50px; }
   .main-index__seccion-2 .main-index__div-contenedor-servs {
     display: grid;
     grid-template-areas: "afull millas almacena" "entregamos empacarte almacfrio";
@@ -764,27 +769,28 @@
         margin: 0; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .btnCotiz {
         display: none;
-        text-decoration: none;
         background-color: #da0037;
         color: #e5e5e5;
         font-family: "Stick No Bills", sans-serif;
-        border: none;
         position: absolute;
         top: 50%;
         left: 50%;
-        margin: -25px 0 0 -25px;
+        margin: 0 auto;
         border-radius: 1px 8px 1px 8px;
         padding: 0.2rem;
         box-shadow: 0px 1px 5px 0px #171717;
+        transition: .2s ease-in-out;
         animation-name: btnCotiz;
         animation-duration: .5s;
-        transform: scale(1.5, 1.2); }
+        transform: translate(-50%, -50%) scale(1.5, 1.2); }
+        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .btnCotiz:hover {
+          transform: translate(-50%, -50%) scale(1.6, 1.3); }
 
 @keyframes btnCotiz {
   0% {
-    transform: scale(3, 1.5) rotate(180deg); }
+    transform: translate(-50%, -50%) scale(4, 1.5); }
   100% {
-    transform: rotate(0deg) scale(1.5, 1.2); } }
+    transform: translate(-50%, -50%) scale(1.5, 1.2); } }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull:hover {
         transform: translateY(-1%); }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull:hover::before {
@@ -834,27 +840,28 @@
         margin: 0; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .btnCotiz {
         display: none;
-        text-decoration: none;
         background-color: #da0037;
         color: #e5e5e5;
         font-family: "Stick No Bills", sans-serif;
-        border: none;
         position: absolute;
         top: 50%;
         left: 50%;
-        margin: -25px 0 0 -25px;
+        margin: 0 auto;
         border-radius: 1px 8px 1px 8px;
         padding: 0.2rem;
         box-shadow: 0px 1px 5px 0px #171717;
+        transition: .2s ease-in-out;
         animation-name: btnCotiz;
         animation-duration: .5s;
-        transform: scale(1.5, 1.2); }
+        transform: translate(-50%, -50%) scale(1.5, 1.2); }
+        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .btnCotiz:hover {
+          transform: translate(-50%, -50%) scale(1.6, 1.3); }
 
 @keyframes btnCotiz {
   0% {
-    transform: scale(3, 1.5) rotate(180deg); }
+    transform: translate(-50%, -50%) scale(4, 1.5); }
   100% {
-    transform: rotate(0deg) scale(1.5, 1.2); } }
+    transform: translate(-50%, -50%) scale(1.5, 1.2); } }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas:hover {
         transform: translateY(-1%); }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas:hover::before {
@@ -904,27 +911,28 @@
         margin: 0; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .btnCotiz {
         display: none;
-        text-decoration: none;
         background-color: #da0037;
         color: #e5e5e5;
         font-family: "Stick No Bills", sans-serif;
-        border: none;
         position: absolute;
         top: 50%;
         left: 50%;
-        margin: -25px 0 0 -25px;
+        margin: 0 auto;
         border-radius: 1px 8px 1px 8px;
         padding: 0.2rem;
         box-shadow: 0px 1px 5px 0px #171717;
+        transition: .2s ease-in-out;
         animation-name: btnCotiz;
         animation-duration: .5s;
-        transform: scale(1.5, 1.2); }
+        transform: translate(-50%, -50%) scale(1.5, 1.2); }
+        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .btnCotiz:hover {
+          transform: translate(-50%, -50%) scale(1.6, 1.3); }
 
 @keyframes btnCotiz {
   0% {
-    transform: scale(3, 1.5) rotate(180deg); }
+    transform: translate(-50%, -50%) scale(4, 1.5); }
   100% {
-    transform: rotate(0deg) scale(1.5, 1.2); } }
+    transform: translate(-50%, -50%) scale(1.5, 1.2); } }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena:hover {
         transform: translateY(-1%); }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena:hover::before {
@@ -974,27 +982,28 @@
         margin: 0; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .btnCotiz {
         display: none;
-        text-decoration: none;
         background-color: #da0037;
         color: #e5e5e5;
         font-family: "Stick No Bills", sans-serif;
-        border: none;
         position: absolute;
         top: 50%;
         left: 50%;
-        margin: -25px 0 0 -25px;
+        margin: 0 auto;
         border-radius: 1px 8px 1px 8px;
         padding: 0.2rem;
         box-shadow: 0px 1px 5px 0px #171717;
+        transition: .2s ease-in-out;
         animation-name: btnCotiz;
         animation-duration: .5s;
-        transform: scale(1.5, 1.2); }
+        transform: translate(-50%, -50%) scale(1.5, 1.2); }
+        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .btnCotiz:hover {
+          transform: translate(-50%, -50%) scale(1.6, 1.3); }
 
 @keyframes btnCotiz {
   0% {
-    transform: scale(3, 1.5) rotate(180deg); }
+    transform: translate(-50%, -50%) scale(4, 1.5); }
   100% {
-    transform: rotate(0deg) scale(1.5, 1.2); } }
+    transform: translate(-50%, -50%) scale(1.5, 1.2); } }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos:hover {
         transform: translateY(-1%); }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos:hover::before {
@@ -1044,27 +1053,28 @@
         margin: 0; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .btnCotiz {
         display: none;
-        text-decoration: none;
         background-color: #da0037;
         color: #e5e5e5;
         font-family: "Stick No Bills", sans-serif;
-        border: none;
         position: absolute;
         top: 50%;
         left: 50%;
-        margin: -25px 0 0 -25px;
+        margin: 0 auto;
         border-radius: 1px 8px 1px 8px;
         padding: 0.2rem;
         box-shadow: 0px 1px 5px 0px #171717;
+        transition: .2s ease-in-out;
         animation-name: btnCotiz;
         animation-duration: .5s;
-        transform: scale(1.5, 1.2); }
+        transform: translate(-50%, -50%) scale(1.5, 1.2); }
+        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .btnCotiz:hover {
+          transform: translate(-50%, -50%) scale(1.6, 1.3); }
 
 @keyframes btnCotiz {
   0% {
-    transform: scale(3, 1.5) rotate(180deg); }
+    transform: translate(-50%, -50%) scale(4, 1.5); }
   100% {
-    transform: rotate(0deg) scale(1.5, 1.2); } }
+    transform: translate(-50%, -50%) scale(1.5, 1.2); } }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte:hover {
         transform: translateY(-1%); }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte:hover::before {
@@ -1114,27 +1124,28 @@
         margin: 0; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .btnCotiz {
         display: none;
-        text-decoration: none;
         background-color: #da0037;
         color: #e5e5e5;
         font-family: "Stick No Bills", sans-serif;
-        border: none;
         position: absolute;
         top: 50%;
         left: 50%;
-        margin: -25px 0 0 -25px;
+        margin: 0 auto;
         border-radius: 1px 8px 1px 8px;
         padding: 0.2rem;
         box-shadow: 0px 1px 5px 0px #171717;
+        transition: .2s ease-in-out;
         animation-name: btnCotiz;
         animation-duration: .5s;
-        transform: scale(1.5, 1.2); }
+        transform: translate(-50%, -50%) scale(1.5, 1.2); }
+        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .btnCotiz:hover {
+          transform: translate(-50%, -50%) scale(1.6, 1.3); }
 
 @keyframes btnCotiz {
   0% {
-    transform: scale(3, 1.5) rotate(180deg); }
+    transform: translate(-50%, -50%) scale(4, 1.5); }
   100% {
-    transform: rotate(0deg) scale(1.5, 1.2); } }
+    transform: translate(-50%, -50%) scale(1.5, 1.2); } }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio:hover {
         transform: translateY(-1%); }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio:hover::before {
@@ -1214,26 +1225,27 @@
           margin: 0; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .btnCotiz {
           display: none;
-          text-decoration: none;
           background-color: #da0037;
           color: #e5e5e5;
           font-family: "Stick No Bills", sans-serif;
-          border: none;
           position: absolute;
           top: 50%;
           left: 50%;
-          margin: -25px 0 0 -25px;
+          margin: 0 auto;
           border-radius: 1px 8px 1px 8px;
           padding: 0.2rem;
           box-shadow: 0px 1px 5px 0px #171717;
+          transition: .2s ease-in-out;
           animation-name: btnCotiz;
           animation-duration: .5s;
-          transform: scale(1.5, 1.2); }
+          transform: translate(-50%, -50%) scale(1.5, 1.2); }
+          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .btnCotiz:hover {
+            transform: translate(-50%, -50%) scale(1.6, 1.3); }
   @keyframes btnCotiz {
     0% {
-      transform: scale(3, 1.5) rotate(180deg); }
+      transform: translate(-50%, -50%) scale(4, 1.5); }
     100% {
-      transform: rotate(0deg) scale(1.5, 1.2); } }
+      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull:hover {
           transform: translateY(-1%); }
           .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull:hover::before {
@@ -1283,26 +1295,27 @@
           margin: 0; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .btnCotiz {
           display: none;
-          text-decoration: none;
           background-color: #da0037;
           color: #e5e5e5;
           font-family: "Stick No Bills", sans-serif;
-          border: none;
           position: absolute;
           top: 50%;
           left: 50%;
-          margin: -25px 0 0 -25px;
+          margin: 0 auto;
           border-radius: 1px 8px 1px 8px;
           padding: 0.2rem;
           box-shadow: 0px 1px 5px 0px #171717;
+          transition: .2s ease-in-out;
           animation-name: btnCotiz;
           animation-duration: .5s;
-          transform: scale(1.5, 1.2); }
+          transform: translate(-50%, -50%) scale(1.5, 1.2); }
+          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .btnCotiz:hover {
+            transform: translate(-50%, -50%) scale(1.6, 1.3); }
   @keyframes btnCotiz {
     0% {
-      transform: scale(3, 1.5) rotate(180deg); }
+      transform: translate(-50%, -50%) scale(4, 1.5); }
     100% {
-      transform: rotate(0deg) scale(1.5, 1.2); } }
+      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas:hover {
           transform: translateY(-1%); }
           .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas:hover::before {
@@ -1352,26 +1365,27 @@
           margin: 0; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .btnCotiz {
           display: none;
-          text-decoration: none;
           background-color: #da0037;
           color: #e5e5e5;
           font-family: "Stick No Bills", sans-serif;
-          border: none;
           position: absolute;
           top: 50%;
           left: 50%;
-          margin: -25px 0 0 -25px;
+          margin: 0 auto;
           border-radius: 1px 8px 1px 8px;
           padding: 0.2rem;
           box-shadow: 0px 1px 5px 0px #171717;
+          transition: .2s ease-in-out;
           animation-name: btnCotiz;
           animation-duration: .5s;
-          transform: scale(1.5, 1.2); }
+          transform: translate(-50%, -50%) scale(1.5, 1.2); }
+          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .btnCotiz:hover {
+            transform: translate(-50%, -50%) scale(1.6, 1.3); }
   @keyframes btnCotiz {
     0% {
-      transform: scale(3, 1.5) rotate(180deg); }
+      transform: translate(-50%, -50%) scale(4, 1.5); }
     100% {
-      transform: rotate(0deg) scale(1.5, 1.2); } }
+      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena:hover {
           transform: translateY(-1%); }
           .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena:hover::before {
@@ -1421,26 +1435,27 @@
           margin: 0; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .btnCotiz {
           display: none;
-          text-decoration: none;
           background-color: #da0037;
           color: #e5e5e5;
           font-family: "Stick No Bills", sans-serif;
-          border: none;
           position: absolute;
           top: 50%;
           left: 50%;
-          margin: -25px 0 0 -25px;
+          margin: 0 auto;
           border-radius: 1px 8px 1px 8px;
           padding: 0.2rem;
           box-shadow: 0px 1px 5px 0px #171717;
+          transition: .2s ease-in-out;
           animation-name: btnCotiz;
           animation-duration: .5s;
-          transform: scale(1.5, 1.2); }
+          transform: translate(-50%, -50%) scale(1.5, 1.2); }
+          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .btnCotiz:hover {
+            transform: translate(-50%, -50%) scale(1.6, 1.3); }
   @keyframes btnCotiz {
     0% {
-      transform: scale(3, 1.5) rotate(180deg); }
+      transform: translate(-50%, -50%) scale(4, 1.5); }
     100% {
-      transform: rotate(0deg) scale(1.5, 1.2); } }
+      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos:hover {
           transform: translateY(-1%); }
           .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos:hover::before {
@@ -1490,26 +1505,27 @@
           margin: 0; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .btnCotiz {
           display: none;
-          text-decoration: none;
           background-color: #da0037;
           color: #e5e5e5;
           font-family: "Stick No Bills", sans-serif;
-          border: none;
           position: absolute;
           top: 50%;
           left: 50%;
-          margin: -25px 0 0 -25px;
+          margin: 0 auto;
           border-radius: 1px 8px 1px 8px;
           padding: 0.2rem;
           box-shadow: 0px 1px 5px 0px #171717;
+          transition: .2s ease-in-out;
           animation-name: btnCotiz;
           animation-duration: .5s;
-          transform: scale(1.5, 1.2); }
+          transform: translate(-50%, -50%) scale(1.5, 1.2); }
+          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .btnCotiz:hover {
+            transform: translate(-50%, -50%) scale(1.6, 1.3); }
   @keyframes btnCotiz {
     0% {
-      transform: scale(3, 1.5) rotate(180deg); }
+      transform: translate(-50%, -50%) scale(4, 1.5); }
     100% {
-      transform: rotate(0deg) scale(1.5, 1.2); } }
+      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte:hover {
           transform: translateY(-1%); }
           .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte:hover::before {
@@ -1559,26 +1575,27 @@
           margin: 0; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .btnCotiz {
           display: none;
-          text-decoration: none;
           background-color: #da0037;
           color: #e5e5e5;
           font-family: "Stick No Bills", sans-serif;
-          border: none;
           position: absolute;
           top: 50%;
           left: 50%;
-          margin: -25px 0 0 -25px;
+          margin: 0 auto;
           border-radius: 1px 8px 1px 8px;
           padding: 0.2rem;
           box-shadow: 0px 1px 5px 0px #171717;
+          transition: .2s ease-in-out;
           animation-name: btnCotiz;
           animation-duration: .5s;
-          transform: scale(1.5, 1.2); }
+          transform: translate(-50%, -50%) scale(1.5, 1.2); }
+          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .btnCotiz:hover {
+            transform: translate(-50%, -50%) scale(1.6, 1.3); }
   @keyframes btnCotiz {
     0% {
-      transform: scale(3, 1.5) rotate(180deg); }
+      transform: translate(-50%, -50%) scale(4, 1.5); }
     100% {
-      transform: rotate(0deg) scale(1.5, 1.2); } }
+      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio:hover {
           transform: translateY(-1%); }
           .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio:hover::before {
@@ -1641,26 +1658,27 @@
           margin: 0; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .btnCotiz {
           display: none;
-          text-decoration: none;
           background-color: #da0037;
           color: #e5e5e5;
           font-family: "Stick No Bills", sans-serif;
-          border: none;
           position: absolute;
           top: 50%;
           left: 50%;
-          margin: -25px 0 0 -25px;
+          margin: 0 auto;
           border-radius: 1px 8px 1px 8px;
           padding: 0.2rem;
           box-shadow: 0px 1px 5px 0px #171717;
+          transition: .2s ease-in-out;
           animation-name: btnCotiz;
           animation-duration: .5s;
-          transform: scale(1.5, 1.2); }
+          transform: translate(-50%, -50%) scale(1.5, 1.2); }
+          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .btnCotiz:hover {
+            transform: translate(-50%, -50%) scale(1.6, 1.3); }
   @keyframes btnCotiz {
     0% {
-      transform: scale(3, 1.5) rotate(180deg); }
+      transform: translate(-50%, -50%) scale(4, 1.5); }
     100% {
-      transform: rotate(0deg) scale(1.5, 1.2); } }
+      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull:hover {
           transform: translateY(-1%); }
           .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull:hover::before {
@@ -1712,26 +1730,27 @@
           margin: 0; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .btnCotiz {
           display: none;
-          text-decoration: none;
           background-color: #da0037;
           color: #e5e5e5;
           font-family: "Stick No Bills", sans-serif;
-          border: none;
           position: absolute;
           top: 50%;
           left: 50%;
-          margin: -25px 0 0 -25px;
+          margin: 0 auto;
           border-radius: 1px 8px 1px 8px;
           padding: 0.2rem;
           box-shadow: 0px 1px 5px 0px #171717;
+          transition: .2s ease-in-out;
           animation-name: btnCotiz;
           animation-duration: .5s;
-          transform: scale(1.5, 1.2); }
+          transform: translate(-50%, -50%) scale(1.5, 1.2); }
+          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .btnCotiz:hover {
+            transform: translate(-50%, -50%) scale(1.6, 1.3); }
   @keyframes btnCotiz {
     0% {
-      transform: scale(3, 1.5) rotate(180deg); }
+      transform: translate(-50%, -50%) scale(4, 1.5); }
     100% {
-      transform: rotate(0deg) scale(1.5, 1.2); } }
+      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas:hover {
           transform: translateY(-1%); }
           .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas:hover::before {
@@ -1783,26 +1802,27 @@
           margin: 0; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .btnCotiz {
           display: none;
-          text-decoration: none;
           background-color: #da0037;
           color: #e5e5e5;
           font-family: "Stick No Bills", sans-serif;
-          border: none;
           position: absolute;
           top: 50%;
           left: 50%;
-          margin: -25px 0 0 -25px;
+          margin: 0 auto;
           border-radius: 1px 8px 1px 8px;
           padding: 0.2rem;
           box-shadow: 0px 1px 5px 0px #171717;
+          transition: .2s ease-in-out;
           animation-name: btnCotiz;
           animation-duration: .5s;
-          transform: scale(1.5, 1.2); }
+          transform: translate(-50%, -50%) scale(1.5, 1.2); }
+          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .btnCotiz:hover {
+            transform: translate(-50%, -50%) scale(1.6, 1.3); }
   @keyframes btnCotiz {
     0% {
-      transform: scale(3, 1.5) rotate(180deg); }
+      transform: translate(-50%, -50%) scale(4, 1.5); }
     100% {
-      transform: rotate(0deg) scale(1.5, 1.2); } }
+      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena:hover {
           transform: translateY(-1%); }
           .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena:hover::before {
@@ -1854,26 +1874,27 @@
           margin: 0; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .btnCotiz {
           display: none;
-          text-decoration: none;
           background-color: #da0037;
           color: #e5e5e5;
           font-family: "Stick No Bills", sans-serif;
-          border: none;
           position: absolute;
           top: 50%;
           left: 50%;
-          margin: -25px 0 0 -25px;
+          margin: 0 auto;
           border-radius: 1px 8px 1px 8px;
           padding: 0.2rem;
           box-shadow: 0px 1px 5px 0px #171717;
+          transition: .2s ease-in-out;
           animation-name: btnCotiz;
           animation-duration: .5s;
-          transform: scale(1.5, 1.2); }
+          transform: translate(-50%, -50%) scale(1.5, 1.2); }
+          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .btnCotiz:hover {
+            transform: translate(-50%, -50%) scale(1.6, 1.3); }
   @keyframes btnCotiz {
     0% {
-      transform: scale(3, 1.5) rotate(180deg); }
+      transform: translate(-50%, -50%) scale(4, 1.5); }
     100% {
-      transform: rotate(0deg) scale(1.5, 1.2); } }
+      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos:hover {
           transform: translateY(-1%); }
           .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos:hover::before {
@@ -1925,26 +1946,27 @@
           margin: 0; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .btnCotiz {
           display: none;
-          text-decoration: none;
           background-color: #da0037;
           color: #e5e5e5;
           font-family: "Stick No Bills", sans-serif;
-          border: none;
           position: absolute;
           top: 50%;
           left: 50%;
-          margin: -25px 0 0 -25px;
+          margin: 0 auto;
           border-radius: 1px 8px 1px 8px;
           padding: 0.2rem;
           box-shadow: 0px 1px 5px 0px #171717;
+          transition: .2s ease-in-out;
           animation-name: btnCotiz;
           animation-duration: .5s;
-          transform: scale(1.5, 1.2); }
+          transform: translate(-50%, -50%) scale(1.5, 1.2); }
+          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .btnCotiz:hover {
+            transform: translate(-50%, -50%) scale(1.6, 1.3); }
   @keyframes btnCotiz {
     0% {
-      transform: scale(3, 1.5) rotate(180deg); }
+      transform: translate(-50%, -50%) scale(4, 1.5); }
     100% {
-      transform: rotate(0deg) scale(1.5, 1.2); } }
+      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte:hover {
           transform: translateY(-1%); }
           .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte:hover::before {
@@ -1996,26 +2018,27 @@
           margin: 0; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .btnCotiz {
           display: none;
-          text-decoration: none;
           background-color: #da0037;
           color: #e5e5e5;
           font-family: "Stick No Bills", sans-serif;
-          border: none;
           position: absolute;
           top: 50%;
           left: 50%;
-          margin: -25px 0 0 -25px;
+          margin: 0 auto;
           border-radius: 1px 8px 1px 8px;
           padding: 0.2rem;
           box-shadow: 0px 1px 5px 0px #171717;
+          transition: .2s ease-in-out;
           animation-name: btnCotiz;
           animation-duration: .5s;
-          transform: scale(1.5, 1.2); }
+          transform: translate(-50%, -50%) scale(1.5, 1.2); }
+          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .btnCotiz:hover {
+            transform: translate(-50%, -50%) scale(1.6, 1.3); }
   @keyframes btnCotiz {
     0% {
-      transform: scale(3, 1.5) rotate(180deg); }
+      transform: translate(-50%, -50%) scale(4, 1.5); }
     100% {
-      transform: rotate(0deg) scale(1.5, 1.2); } }
+      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio:hover {
           transform: translateY(-1%); }
           .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio:hover::before {

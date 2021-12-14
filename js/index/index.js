@@ -121,6 +121,31 @@ let arrDivServs = new Array()
 const divPadreServs = document.getElementById("contDivsServs").children
 for (const divsHijos of divPadreServs) {
     arrDivServs.push(divsHijos)
-    $(divsHijos).append(`<a class="btnCotiz" id="btnCotiz" href="#">Cotizar</a>`)
+    $(divsHijos).append(`<a class="btnCotiz" id="btnCotiz">Cotizar</a>`)
 }
-console.log(arrDivServs)
+// acccion al dar click sobre boton cotizar
+$(".btnCotiz").click(() => {
+    $(".btnCotiz").text("Proximamente")
+    setTimeout(() => {
+        $(".btnCotiz").text("Cotizar")
+    }, 2000)
+})
+
+
+
+// efecto de escritura en base a libreria externa
+const typed = new Typed(".EfectEscrit", {
+    strings: ["A-full","Millas X Hora", "AlmaCena", "EntreGamos", "EmpacArte", "AlmacFrio"],
+    typeSpeed: 100,
+    startDelay: 300,
+    backSpeed: 75,
+    shuffle: true,
+    backDelay: 1500,
+    loop: true,
+    loopCount: false,
+    showCursor: true,
+    cursorChar: '↨',
+    contentType: 'html',
+    autoInsertCss: true,
+})
+$(".divCtnEfect").css({width: "100%", height: "30px", "margin-bottom": "20px", "text-align": "center"})

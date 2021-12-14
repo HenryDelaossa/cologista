@@ -9,7 +9,15 @@
       font-size: 3rem;
       margin-bottom: 3rem;
     }
-  } //grilla de servicios /*grilla de servicios*/
+  } 
+  .typed-cursor {
+    color: $colorPrim;
+    font-size: 2rem;
+  }
+  .typed-fade-out {
+    height: 50px;
+  }
+  //grilla de servicios /*grilla de servicios*/
   .main-index__div-contenedor-servs {
     display: grid;
     grid-template-areas:

@@ -4,7 +4,6 @@ buttonDark.addEventListener("click", () => {
     addDark()
     if (document.body.classList.contains("bodyDark")) {
         localStorage.setItem("modo", "dark")
-        $(".pArr").css({color: "#d2d2d2"})
         $("#btnActiContSerJs").css({border: "1px solid #da0039"})
     } else {
         localStorage.setItem("modo", "sunn")
@@ -13,23 +12,79 @@ buttonDark.addEventListener("click", () => {
     }
 });
 // evaluar local storage para modo tema de pagina
-$(document).ready(function() {
-    if (localStorage.getItem("modo") === "dark") {
+window.addEventListener("load", ()=> {
+if (localStorage.getItem("modo") === "dark") {
         addDark()
     } else {
-        remdark()
+        return false;
     }
 })
 // efecto sobre barra de navegacion principal
 let alturaInicial = window.scrollY
 window.addEventListener("scroll", () => {
     let altura = window.scrollY
-    if(alturaInicial >= altura){$("#navDark").css({top: "0px"}); $("#contButtonDark").css({top: "48px"})} else {$("#navDark").css({top: "-70px"}); $("#contButtonDark").css({top: "10px"})}
+    scrollEffect(alturaInicial, altura)
     alturaInicial = altura
 })
-// creando ventana modal index asignada a boton pedir primer servicio
+// creando modal de iniciar sesion sobre boton ingresar o iniciar sesion y boton flotente "ya estoy registrado" ⇊ (aplicare este modal en las demas paginas con la misma funcion)
+// este modal antes estaba puesto con bootstrap, ahora lo implemento dinamicamente con js (eh ahorrado muchisimas lineas en html)
+const btnIngresar = document.querySelectorAll("#btnIngresar")
+const btnFlotIniSes = document.querySelectorAll("#btnFlotInSes");
+btnFlotIniSes.forEach(function(click) {
+    click.addEventListener("click", ()=> {
+        modalIniSesion("#body", "1717178d", ".main-index")
+    }) 
+});
+btnIngresar.forEach(function(click) {
+    click.addEventListener("click", ()=> {
+        modalIniSesion("#body", "#1717178d", ".main-index")
+    }) 
+});
+// validacion localstorage para vista de datos de usuario en su zona, y ocultar los elementos no necesarios (formulario de registro y de iniciar sesion) cuando haya ingresado a "su zona"
+var arrDatesLocalstorage = new Array()
+arrDatesLocalstorage.push(JSON.parse(localStorage.getItem("users")))
+// evaludo el local storage para mostrar datos si hay o no un usuario activo dentro de su zona
+if (localStorage.getItem("users")) {
+    // activo funcion que muestra datos de usuario activo en la pagina
+    showDatesUserReg(".main-index");
+    // elimino elementos no necesarios para usuario ya activo, como botones de iniciar sesion
+    $("#btnIngresar, #btnFlotInSes, #buttonRegisRightDark, .div__parrafo-a").hide()
+    $("#btnModal").text("Pedir servicio");
+    ModalServ()
+}
+if (localStorage.getItem("usuarioActivo")){
+    // elimino elementos no necesarios para usuario ya activo, como botones de iniciar sesion
+    $("#btnIngresar, #btnFlotInSes, #buttonRegisRightDark, .div__parrafo-a").hide();
+    // activo funcion que muestra datos de usuario activo en la pagina
+    showDatesUserOld(".main-index");
+    $("#btnModal").text("Pedir servicio");
+    ModalServ()
+}
+// evento sobre imagen de saldia o de cerrar sesion, vuelvo a mostrar los elementos ocultos y borro el local storage
+$("#logoutImg").click(()=>{
+    localStorage.removeItem("users");
+    localStorage.removeItem("usuarioActivo");
+    $(".contDatesUserReg").hide();
+    $("#btnIngresar, #btnFlotInSes, #buttonRegisRightDark, .div__parrafo-a").fadeIn(400);
+    mensErrExiIniSes("#d2d2d2", `Regresa pronto, te esperamos!`, "120");
+    setTimeout(()=> {
+        window.location.reload()
+    },1000)   
+}).mouseenter(()=>{$(".psalzona").text("salir")}).mouseout(()=>{$(".psalzona").text("")})
+// escucho evento de tecla esc para cerrar modales 
+window.addEventListener('keyup',function(evt) {
+    if (evt.key == "Escape") {
+        $("#body").css({overflow:"visible"})
+        // modal de iniciar sesion
+        $(".divContFormModalIniSes").slideUp();
+        $("#contModalIniSes").slideUp();
+        // modal de servicio
+        $("#contModal").slideUp()
+    }
+});
+// creo ventana modal de calcular servicio en index apartir de evento click en boton para pedir primer servicio
 const btnModal = document.getElementById("btnModal")
-btnModal.addEventListener("click", (e) => {
+btnModal.addEventListener("click", () => {
     ModalServ()
 })
 // programando eventos y funciones dentro de modal pedir primer servicio a boton calcular
@@ -45,107 +100,76 @@ let contNumKmDis = document.getElementById("contNumKmDis")
 let createbDis = document.createElement("b");
 let contValServi = document.getElementById("contValServ")
 let createbValor = document.createElement("b")
-createbValor.style.color = "#171717"
-$("#pDistMod").css({color: "#171717"})
-$("#pValMod").css({color: "#171717"})
-const btnBorrarMod = document.getElementById("resetMod")
-btnBorrarMod.addEventListener("click", () => {
-    outDatesCalc(contNumKmDis,contValServi,createbDis,createbValor)
-    arrDist = []
+createbValor.setAttribute("id", "bValr");
+createbValor.style.color = "#da0039";
+// eventos boton borrar
+$("#resetMod").click(() => {
+    $("#contNumKmDis").hide()
+    $("#contValServ").hide()
+    $("#menDesct").hide()
+    $("#submitServmodCalcular").css({display: "inline-block"})
+    $("#submitServmodConfirmar").css({display: "none"})
+    $("#inputDirUno").prop('disabled', false);
+    $("#inputDirDos").prop('disabled', false);
+    if (contNumKmDis || contValServi ) {
+        $(createbDis).text("")
+        $(createbValor).text("")
+    }    
 }) 
 // evento en boton confirmar dentro de modal pedir primer servicio
 const btnConfirmServ = document.getElementById("submitServmodConfirmar")
 btnConfirmServ.addEventListener("click", (e) => {
-    e.preventDefault()  ;
-    let divContMensConfirm = document.getElementById("divContMensConfirm")
-    divContMensConfirm.style.display = "block"
+    e.preventDefault();
+    let infoinput1 = document.getElementById("inputDirUno").value
+    let infoinput2 = document.getElementById("inputDirUno").value
+    let vbValr = document.getElementById("bValr").textContent
+    const arrInfoUltserv = [{dir1: infoinput1, dir2: infoinput2, valor: vbValr }]
+    localStorage.setItem("UltimoServicioInfo", JSON.stringify(arrInfoUltserv));
+    // muestro datos de mensajero asignado para realizar el servicio (aleatoriamente)
+    tarjetaMensajeroAsignado("#divContMensConfirm", infoinput1 )
     setTimeout(() => {
-        outDatesCalc(contNumKmDis,contValServi,createbDis,createbValor)
-        document.querySelector("#inputDirUno").value = null;
-        document.getElementById("inputDirDos").value = null;
-        document.getElementById("divContMensConfirm").style.display = "none"
-    }, 3000)
+        $("#inputDirUno, #inputDirDos").val(null);
+        $("#inputDirUno, #inputDirDos").prop('disabled', false);
+        $("#contNumKmDis, #contValServ").text("")
+        $("#submitServmodCalcular").css({display: "inline-block"})
+        $("#submitServmodConfirmar").css({display: "none"})
+        arrDist = []
+    }, 5000)
 })
-// obteniendo valores de nuevo objetos a pushear en array assServs
-const arrServs = new Array()
-const servAfull = new Services(document.getElementById("titAfull").textContent, document.getElementById("imgAfull").getAttribute("src"), document.getElementById("textAfull").textContent)
-const servMillas = new Services(document.getElementById("titMilla").textContent, document.getElementById("imgMillas").getAttribute("src"), document.getElementById("textMillas").textContent)
-const servAlmac = new Services(document.getElementById("titAlmac").textContent, document.getElementById("imgAlmac").getAttribute("src"), document.getElementById("textAlmac").textContent)
-const servEntreg = new Services(document.getElementById("titEntreg").textContent, document.getElementById("imgEntreg").getAttribute("src"), document.getElementById("textEntreg").textContent)
-const servEmpac = new Services(document.getElementById("titEmpac").textContent, document.getElementById("imgEmpac").getAttribute("src"), document.getElementById("textEmpac").textContent)
-const servAlmFrio = new Services(document.getElementById("titAlmFrio").textContent, document.getElementById("imgAlmFrio").getAttribute("src"), document.getElementById("textAlmFrio").textContent)
-// push a arrServs
-arrServs.push(servAfull, servMillas, servAlmac, servEntreg, servEmpac, servAlmFrio)
-localStorage.setItem("ServicesArray", JSON.stringify(arrServs))
-// creacion de divs a partir de un array del objeto Services
-let obtArrServ = localStorage.getItem("ServicesArray")
-// JSON recup dates
-const arrjaja = obtenDat()
-function obtenDat () {
-    let arrja = localStorage.getItem("ServicesArray")
-    if (arrja) {
-        return JSON.parse(arrja)
+// cargo servicios dinamicamente a travez de llamado (automaticamente por ahora, a futuro a travez de evento en un nuevo boton)
+const servsJson = "/json/servicios.json"
+$.getJSON(servsJson, function(answer, status) {
+    if(status === "success") {
+        let servicios = answer
+        let f = 0
+        for(const datosServs of servicios) {
+            f++
+            $(".main-index__div-contenedor-servs").append(
+        `   <div class="div-contenedor-servs__div-servicio" style="grid-area: div${f}; justify-self: center">
+                <h3 class="div-contenedor-servs__h3-tit" id="titAfull">${datosServs.tit}</h3>
+                <img class="div-contenedor-servs__img" src=${datosServs.img} alt="img-servicio_a-Full- cologista">
+                <p >${datosServs.description}<span class="div-contenedor-servs__span" style="color: #da0039" >${datosServs.span}</span></b>
+                <a class="btnCotiz" id="btnCotiz">Cotizar</a>
+            </div>`);
+        }
+        // accion a boton cotizar
+        const btncotiz = document.querySelectorAll(".btnCotiz")
+        btncotiz.forEach((btncoti)=> {
+            $(btncoti).click(()=> {
+                $(btncoti).text("Proximamente").css({"background-color": "#d2d2d2", color: "#171717", transition: "600ms"});
+            })
+        })
     }
-}
-if (arrjaja) {
-    for (let i = 0; i < arrjaja.length; i++) {
-        let contPrinc = document.getElementById("prudiv")
-        $(contPrinc).css({display: "none"})
-        let cont1 = document.createElement("div")
-        let obj = arrjaja[i]
-        let visServs = new Services(obj.tituloServ, obj.imgServ, obj.descrServ)
-        createDivsServs(visServs, contPrinc, cont1)
+})
+// cargo imagenes de empresas aliadas dinamicamente a travez de llamado (automaticamente por ahora, a futuro a travez de evento en un nuevo boton)
+const EmpresAliadas = "/json/empresasAliadas.json"
+$.getJSON(EmpresAliadas, function(answer, status) {
+    if(status === "success") {
+        let empresasAliadas = answer
+        for(const LogoEmpresas of empresasAliadas) {
+            $(".seccion-3-main-index__div-cont-divs-imgs").append(`<div class=${LogoEmpresas.classCont}>
+                                                                <img src=${LogoEmpresas.img} class=${LogoEmpresas.classImg} alt=${LogoEmpresas.alt}>
+                                                        </div>`);
+        }        
     }
-} else {
-    for (let i = 0; i < arrServs.length; i++) {
-        let contPrinc = document.getElementById("prudiv")
-        $(contPrinc).css({display: "none"})
-        let cont1 = document.createElement("div")
-        let obj = arrServs[i]
-        let visServs = new Services(obj.tituloServ, obj.imgServ, obj.descrServ)
-        createDivsServs(visServs, contPrinc, cont1)
-    }
-}
-// evento para mostrar divs de arrays creados a partir de evento click
-$("#btnActiContSerJs").on("click", () => {
-    $("#prudiv").css({display: "flex", "justify-content": "center", "flex-wrap": "wrap"})
-    $("#btnActiContSerJs").text("desaparecere en 10 segundos").css({color: "#da0037", "background-color": "#171717"})
-    setTimeout(() => {
-        $("#prudiv").fadeOut(500)
-        $("#btnActiContSerJs").text("click para ver nuevamente").css({color: "#d2d2d2", "background-color": "#da0039"})
-    },9500)
 })
-
-// obtuve un array apartir de la propiedad.children del divpadre con id #contDivsServs
-let arrDivServs = new Array()
-const divPadreServs = document.getElementById("contDivsServs").children
-for (const divsHijos of divPadreServs) {
-    arrDivServs.push(divsHijos)
-    $(divsHijos).append(`<a class="btnCotiz" id="btnCotiz">Cotizar</a>`)
-}
-// acccion al dar click sobre boton cotizar
-$(".btnCotiz").click(() => {
-    $(".btnCotiz").text("Proximamente")
-    setTimeout(() => {
-        $(".btnCotiz").text("Cotizar")
-    }, 2000)
-})
-
-
-
-// efecto de escritura en base a libreria externa
-const typed = new Typed(".EfectEscrit", {
-    strings: ["A-full","Millas X Hora", "AlmaCena", "EntreGamos", "EmpacArte", "AlmacFrio"],
-    typeSpeed: 100,
-    startDelay: 300,
-    backSpeed: 75,
-    shuffle: true,
-    backDelay: 1500,
-    loop: true,
-    loopCount: false,
-    showCursor: true,
-    cursorChar: '↨',
-    contentType: 'html',
-    autoInsertCss: true,
-})
-$(".divCtnEfect").css({width: "100%", height: "30px", "margin-bottom": "20px", "text-align": "center"})

@@ -35,6 +35,22 @@ html {
       height: auto;
       overflow: visible;
     }
+    .contSpinerIndex { 
+      .spiner {
+        animation: spiner ;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+    }
+    @keyframes spiner {
+      0%{
+        transform: rotate(0deg);
+      }
+      100%{
+        transform: rotate(360deg);
+      }
+      
+    }
   }
   section[id],
   div[id] {
@@ -42,10 +58,11 @@ html {
   }
   h1,
   h2,
-  h3 {
+  h3, h5 {
     color: $colorPrim;
     font-family: $fuenteTitLink;
   }
+
   p {
     font-family: $fuenteParrafos;
     color: $colorSecun;

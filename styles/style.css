@@ -28,17 +28,7 @@
   .header .navbar-toggler {
     background-color: #da0037;
     border-radius: 2px 8px 2px 8px;
-    margin: .2rem;
-    animation-name: animacion2_Nav;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
-    animation-delay: 2s; }
-
-@keyframes animacion2_Nav {
-  0% {
-    transform: scaleX(-1); }
-  10% {
-    transform: scaleX(1); } }
+    margin: .2rem; }
     .header .navbar-toggler .navbar-toggler-icon {
       background-color: #e5e5e5;
       border-radius: 2px 6px 2px 6px; }
@@ -112,17 +102,6 @@
           color: #171717;
           font-weight: normal;
           text-decoration: none; }
-      .header .header-nav__menu .header-nav__ulMenu .btn-primary {
-        animation-name: animacion2_Nav;
-        animation-duration: 8s;
-        animation-iteration-count: infinite;
-        animation-delay: 2s; }
-
-@keyframes animacion2_Nav {
-  0% {
-    transform: scaleX(-1); }
-  10% {
-    transform: scaleX(1); } }
       .header .header-nav__menu .header-nav__ulMenu .ulMenu__ulSubMenu {
         background-color: #e5e5e5;
         border: none;
@@ -177,6 +156,8 @@
 
 .main-index {
   margin: 0 0.5rem; }
+  .main-index #contModInisesionn {
+    display: none; }
   .main-index .contButtonDark {
     position: fixed;
     top: 3rem;
@@ -309,7 +290,9 @@
           top: 0;
           left: 0;
           margin: 0 auto;
-          background-color: #171717c0; }
+          background-color: #1717178d; }
+          .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .contModal.contModalDark {
+            background-color: #000000e8; }
           .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .contModal .divContFormModal {
             background-color: #e5e5e5;
             width: 70%;
@@ -331,6 +314,8 @@
     transform: translate(-50%, -300%); }
   100% {
     transform: translate(-50%, -50%); } }
+            .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .contModal .divContFormModal label {
+              color: #da0039; }
             .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .contModal .divContFormModal .spanCloseModal {
               position: absolute;
               color: #171717;
@@ -348,6 +333,10 @@
                 color: #da0037;
                 text-decoration: none;
                 cursor: pointer; }
+              .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .contModal .divContFormModal .spanCloseModal.spanCloseModalDark {
+                color: #da0039; }
+                .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .contModal .divContFormModal .spanCloseModal.spanCloseModalDark:hover {
+                  color: #d2d2d2; }
             .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .contModal .divContFormModal .formModal .divInputs {
               margin-bottom: 1rem; }
               .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .contModal .divContFormModal .formModal .divInputs .submitServmodCalcular {
@@ -403,34 +392,11 @@
                   color: #171717;
                   font-weight: normal;
                   text-decoration: none; }
-        .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .divContMensConfirm {
-          display: none;
-          width: 20%;
-          height: 20%;
-          background-color: #ffffff00;
-          position: fixed;
-          z-index: 102;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          animation-name: modMensConfirm;
-          animation-duration: 1000ms;
-          transition: 300ms ease-in-out; }
-
-@keyframes modMensConfirm {
-  0% {
-    transform: translate(-50%, -200%); }
-  100% {
-    transform: translate(-50%, -50%); } }
-          .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .divContMensConfirm .divPMensaje {
-            position: absolute;
-            background-color: #da003ae0;
-            width: 100%;
-            height: auto;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            border-radius: 3px 12px 3px 12px; }
+            .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .contModal .divContFormModal.divContFormModalDark {
+              border: 1px solid #da0039;
+              background-color: #171717; }
+              .main-index .main-index__seccion-1 .seccion-1__div-contenedor .seccion-1__div-presentacion .contModal .divContFormModal.divContFormModalDark label {
+                color: "#da0039"; }
     .main-index .main-index__seccion-1 .seccion-1__div-camionAnimacion {
       position: absolute;
       top: 275px;
@@ -710,15 +676,10 @@
     .main-index__seccion-2 .main-index__div-titulo .main-index__h2-Titulo {
       font-size: 3rem;
       margin-bottom: 3rem; }
-  .main-index__seccion-2 .typed-cursor {
-    color: #da0037;
-    font-size: 2rem; }
-  .main-index__seccion-2 .typed-fade-out {
-    height: 50px; }
   .main-index__seccion-2 .main-index__div-contenedor-servs {
     display: grid;
-    grid-template-areas: "afull millas almacena" "entregamos empacarte almacfrio";
-    grid-template-columns: auto;
+    grid-template-areas: "div1 div2 div3" "div4 div5 div6";
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-row-gap: 1rem;
     justify-content: center;
@@ -726,91 +687,19 @@
     margin-bottom: 2rem;
     /*servicios, declaracion y estilos*/
     /*a-full*/ }
-    .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull {
-      grid-area: afull;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      justify-self: end;
-      width: 70%;
-      border-radius: 2px 10px 2px 10px;
-      background-color: transparent;
-      transition: 200ms ease-in-out;
-      position: relative;
-      cursor: pointer; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull::before {
-        content: " ";
-        top: 0;
-        left: 0;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: #da0039;
-        opacity: 0.05;
-        transition: 300ms ease all;
-        border-radius: 2px 10px 2px 10px; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__h3-tit {
-        text-decoration: 2px underline #da0037;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__img {
-        width: 60%;
-        height: auto;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__p {
-        font-family: "Montserrat", sans-serif;
-        padding: 0 0.5rem;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__span {
-        font-family: "Montserrat", sans-serif;
-        padding: 0 0.3rem;
-        text-align: left;
-        color: #da0037;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .btnCotiz {
-        display: none;
-        background-color: #da0037;
-        color: #e5e5e5;
-        font-family: "Stick No Bills", sans-serif;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: 0 auto;
-        border-radius: 1px 8px 1px 8px;
-        padding: 0.2rem;
-        box-shadow: 0px 1px 5px 0px #171717;
-        transition: .2s ease-in-out;
-        animation-name: btnCotiz;
-        animation-duration: .5s;
-        transform: translate(-50%, -50%) scale(1.5, 1.2); }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .btnCotiz:hover {
-          transform: translate(-50%, -50%) scale(1.6, 1.3); }
-
-@keyframes btnCotiz {
-  0% {
-    transform: translate(-50%, -50%) scale(4, 1.5); }
-  100% {
-    transform: translate(-50%, -50%) scale(1.5, 1.2); } }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull:hover {
-        transform: translateY(-1%); }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull:hover::before {
-          opacity: .1; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull:hover > .btnCotiz {
-        display: block; }
-    .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas {
-      grid-area: millas;
+    .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       justify-self: center;
-      width: 70%;
+      width: 60%;
       border-radius: 2px 10px 2px 10px;
       background-color: transparent;
       transition: 200ms ease-in-out;
       position: relative;
       cursor: pointer; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas::before {
+      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio::before {
         content: " ";
         top: 0;
         left: 0;
@@ -821,24 +710,18 @@
         opacity: 0.05;
         transition: 300ms ease all;
         border-radius: 2px 10px 2px 10px; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__h3-tit {
+      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio .div-contenedor-servs__h3-tit {
         text-decoration: 2px underline #da0037;
         margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__img {
-        width: 60%;
+      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio .div-contenedor-servs__img {
+        width: 50%;
         height: auto;
         margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__p {
-        font-family: "Montserrat", sans-serif;
-        padding: 0 0.5rem;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__span {
-        font-family: "Montserrat", sans-serif;
-        padding: 0 0.3rem;
-        text-align: left;
-        color: #da0037;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .btnCotiz {
+      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio .parrafoServs {
+        color: #171717; }
+        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio .parrafoServs.parrafoServsDark {
+          color: #e5e5e5; }
+      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio .btnCotiz {
         display: none;
         background-color: #da0037;
         color: #e5e5e5;
@@ -850,329 +733,22 @@
         border-radius: 1px 8px 1px 8px;
         padding: 0.2rem;
         box-shadow: 0px 1px 5px 0px #171717;
-        transition: .2s ease-in-out;
-        animation-name: btnCotiz;
-        animation-duration: .5s;
-        transform: translate(-50%, -50%) scale(1.5, 1.2); }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .btnCotiz:hover {
-          transform: translate(-50%, -50%) scale(1.6, 1.3); }
-
-@keyframes btnCotiz {
-  0% {
-    transform: translate(-50%, -50%) scale(4, 1.5); }
-  100% {
-    transform: translate(-50%, -50%) scale(1.5, 1.2); } }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas:hover {
-        transform: translateY(-1%); }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas:hover::before {
-          opacity: .1; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas:hover > .btnCotiz {
-        display: block; }
-    .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena {
-      grid-area: almacena;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      justify-self: start;
-      width: 70%;
-      border-radius: 2px 10px 2px 10px;
-      background-color: transparent;
-      transition: 200ms ease-in-out;
-      position: relative;
-      cursor: pointer; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena::before {
-        content: " ";
-        top: 0;
-        left: 0;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: #da0039;
-        opacity: 0.05;
         transition: 300ms ease all;
-        border-radius: 2px 10px 2px 10px; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__h3-tit {
-        text-decoration: 2px underline #da0037;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__img {
-        width: 60%;
-        height: auto;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__p {
-        font-family: "Montserrat", sans-serif;
-        padding: 0 0.5rem;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__span {
-        font-family: "Montserrat", sans-serif;
-        padding: 0 0.3rem;
-        text-align: left;
-        color: #da0037;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .btnCotiz {
-        display: none;
-        background-color: #da0037;
-        color: #e5e5e5;
-        font-family: "Stick No Bills", sans-serif;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: 0 auto;
-        border-radius: 1px 8px 1px 8px;
-        padding: 0.2rem;
-        box-shadow: 0px 1px 5px 0px #171717;
-        transition: .2s ease-in-out;
         animation-name: btnCotiz;
-        animation-duration: .5s;
+        animation-duration: 0.3s;
         transform: translate(-50%, -50%) scale(1.5, 1.2); }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .btnCotiz:hover {
-          transform: translate(-50%, -50%) scale(1.6, 1.3); }
 
 @keyframes btnCotiz {
   0% {
-    transform: translate(-50%, -50%) scale(4, 1.5); }
+    transform: translate(-50%, -50%) scale(3, 1.5); }
   100% {
     transform: translate(-50%, -50%) scale(1.5, 1.2); } }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena:hover {
+      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio:hover {
         transform: translateY(-1%); }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena:hover::before {
-          opacity: .1; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena:hover > .btnCotiz {
-        display: block; }
-    .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos {
-      grid-area: entregamos;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      justify-self: end;
-      width: 70%;
-      border-radius: 2px 10px 2px 10px;
-      background-color: transparent;
-      transition: 200ms ease-in-out;
-      position: relative;
-      cursor: pointer; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos::before {
-        content: " ";
-        top: 0;
-        left: 0;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: #da0039;
-        opacity: 0.05;
-        transition: 300ms ease all;
-        border-radius: 2px 10px 2px 10px; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__h3-tit {
-        text-decoration: 2px underline #da0037;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__img {
-        width: 60%;
-        height: auto;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__p {
-        font-family: "Montserrat", sans-serif;
-        padding: 0 0.5rem;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__span {
-        font-family: "Montserrat", sans-serif;
-        padding: 0 0.3rem;
-        text-align: left;
-        color: #da0037;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .btnCotiz {
-        display: none;
-        background-color: #da0037;
-        color: #e5e5e5;
-        font-family: "Stick No Bills", sans-serif;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: 0 auto;
-        border-radius: 1px 8px 1px 8px;
-        padding: 0.2rem;
-        box-shadow: 0px 1px 5px 0px #171717;
-        transition: .2s ease-in-out;
-        animation-name: btnCotiz;
-        animation-duration: .5s;
-        transform: translate(-50%, -50%) scale(1.5, 1.2); }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .btnCotiz:hover {
-          transform: translate(-50%, -50%) scale(1.6, 1.3); }
-
-@keyframes btnCotiz {
-  0% {
-    transform: translate(-50%, -50%) scale(4, 1.5); }
-  100% {
-    transform: translate(-50%, -50%) scale(1.5, 1.2); } }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos:hover {
-        transform: translateY(-1%); }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos:hover::before {
-          opacity: .1; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos:hover > .btnCotiz {
-        display: block; }
-    .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte {
-      grid-area: empacarte;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      justify-self: center;
-      width: 70%;
-      border-radius: 2px 10px 2px 10px;
-      background-color: transparent;
-      transition: 200ms ease-in-out;
-      position: relative;
-      cursor: pointer; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte::before {
-        content: " ";
-        top: 0;
-        left: 0;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: #da0039;
-        opacity: 0.05;
-        transition: 300ms ease all;
-        border-radius: 2px 10px 2px 10px; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__h3-tit {
-        text-decoration: 2px underline #da0037;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__img {
-        width: 60%;
-        height: auto;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__p {
-        font-family: "Montserrat", sans-serif;
-        padding: 0 0.5rem;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__span {
-        font-family: "Montserrat", sans-serif;
-        padding: 0 0.3rem;
-        text-align: left;
-        color: #da0037;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .btnCotiz {
-        display: none;
-        background-color: #da0037;
-        color: #e5e5e5;
-        font-family: "Stick No Bills", sans-serif;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: 0 auto;
-        border-radius: 1px 8px 1px 8px;
-        padding: 0.2rem;
-        box-shadow: 0px 1px 5px 0px #171717;
-        transition: .2s ease-in-out;
-        animation-name: btnCotiz;
-        animation-duration: .5s;
-        transform: translate(-50%, -50%) scale(1.5, 1.2); }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .btnCotiz:hover {
-          transform: translate(-50%, -50%) scale(1.6, 1.3); }
-
-@keyframes btnCotiz {
-  0% {
-    transform: translate(-50%, -50%) scale(4, 1.5); }
-  100% {
-    transform: translate(-50%, -50%) scale(1.5, 1.2); } }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte:hover {
-        transform: translateY(-1%); }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte:hover::before {
-          opacity: .1; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte:hover > .btnCotiz {
-        display: block; }
-    .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio {
-      grid-area: almacfrio;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      justify-self: start;
-      width: 70%;
-      border-radius: 2px 10px 2px 10px;
-      background-color: transparent;
-      transition: 200ms ease-in-out;
-      position: relative;
-      cursor: pointer; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio::before {
-        content: " ";
-        top: 0;
-        left: 0;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: #da0039;
-        opacity: 0.05;
-        transition: 300ms ease all;
-        border-radius: 2px 10px 2px 10px; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__h3-tit {
-        text-decoration: 2px underline #da0037;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__img {
-        width: 60%;
-        height: auto;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__p {
-        font-family: "Montserrat", sans-serif;
-        padding: 0 0.5rem;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__span {
-        font-family: "Montserrat", sans-serif;
-        padding: 0 0.3rem;
-        text-align: left;
-        color: #da0037;
-        margin: 0; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .btnCotiz {
-        display: none;
-        background-color: #da0037;
-        color: #e5e5e5;
-        font-family: "Stick No Bills", sans-serif;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: 0 auto;
-        border-radius: 1px 8px 1px 8px;
-        padding: 0.2rem;
-        box-shadow: 0px 1px 5px 0px #171717;
-        transition: .2s ease-in-out;
-        animation-name: btnCotiz;
-        animation-duration: .5s;
-        transform: translate(-50%, -50%) scale(1.5, 1.2); }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .btnCotiz:hover {
-          transform: translate(-50%, -50%) scale(1.6, 1.3); }
-
-@keyframes btnCotiz {
-  0% {
-    transform: translate(-50%, -50%) scale(4, 1.5); }
-  100% {
-    transform: translate(-50%, -50%) scale(1.5, 1.2); } }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio:hover {
-        transform: translateY(-1%); }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio:hover::before {
-          opacity: .1; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio:hover > .btnCotiz {
-        display: block; }
-
-.secJs {
-  text-align: center; }
-  .secJs .btnActiContSerJs {
-    text-decoration: none;
-    background-color: #da0037;
-    color: #e5e5e5;
-    font-weight: bolder;
-    font-family: "Stick No Bills", sans-serif;
-    border: none;
-    border-radius: 1px 8px 1px 8px;
-    padding: 0.2rem 0.3rem;
-    margin-bottom: 20px;
-    box-shadow: 0px 1px 5px 0px #171717;
-    margin-top: 3rem; }
-    .secJs .btnActiContSerJs:hover {
-      transform: scale(1.03, 1.03);
-      transition: 300ms;
-      color: #171717;
-      font-weight: normal;
-      text-decoration: none; }
+        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio:hover::before {
+          opacity: 0.1; }
+        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio:hover .btnCotiz {
+          display: block; }
 
 @media screen and (max-width: 1023px) {
   .main-index__seccion-2 {
@@ -1180,428 +756,9 @@
     .main-index__seccion-2 .main-index__h2-Titulo {
       font-size: 1rem; }
     .main-index__seccion-2 .main-index__div-contenedor-servs {
-      grid-template-areas: "afull millas" "almacena entregamos" "empacarte almacfrio";
+      grid-template-areas: "div1 div2" "div3 div4" "div5 div6";
+      grid-template-columns: auto;
       margin: 0 auto; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull {
-        grid-area: afull;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        justify-self: center;
-        width: 80%;
-        border-radius: 2px 10px 2px 10px;
-        background-color: transparent;
-        transition: 200ms ease-in-out;
-        position: relative;
-        cursor: pointer; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull::before {
-          content: " ";
-          top: 0;
-          left: 0;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background-color: #da0039;
-          opacity: 0.05;
-          transition: 300ms ease all;
-          border-radius: 2px 10px 2px 10px; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__h3-tit {
-          text-decoration: 2px underline #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__img {
-          width: 60%;
-          height: auto;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__p {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.5rem;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__span {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.3rem;
-          text-align: left;
-          color: #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .btnCotiz {
-          display: none;
-          background-color: #da0037;
-          color: #e5e5e5;
-          font-family: "Stick No Bills", sans-serif;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin: 0 auto;
-          border-radius: 1px 8px 1px 8px;
-          padding: 0.2rem;
-          box-shadow: 0px 1px 5px 0px #171717;
-          transition: .2s ease-in-out;
-          animation-name: btnCotiz;
-          animation-duration: .5s;
-          transform: translate(-50%, -50%) scale(1.5, 1.2); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .btnCotiz:hover {
-            transform: translate(-50%, -50%) scale(1.6, 1.3); }
-  @keyframes btnCotiz {
-    0% {
-      transform: translate(-50%, -50%) scale(4, 1.5); }
-    100% {
-      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull:hover {
-          transform: translateY(-1%); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull:hover::before {
-            opacity: .1; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull:hover > .btnCotiz {
-          display: block; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas {
-        grid-area: millas;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        justify-self: center;
-        width: 80%;
-        border-radius: 2px 10px 2px 10px;
-        background-color: transparent;
-        transition: 200ms ease-in-out;
-        position: relative;
-        cursor: pointer; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas::before {
-          content: " ";
-          top: 0;
-          left: 0;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background-color: #da0039;
-          opacity: 0.05;
-          transition: 300ms ease all;
-          border-radius: 2px 10px 2px 10px; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__h3-tit {
-          text-decoration: 2px underline #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__img {
-          width: 60%;
-          height: auto;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__p {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.5rem;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__span {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.3rem;
-          text-align: left;
-          color: #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .btnCotiz {
-          display: none;
-          background-color: #da0037;
-          color: #e5e5e5;
-          font-family: "Stick No Bills", sans-serif;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin: 0 auto;
-          border-radius: 1px 8px 1px 8px;
-          padding: 0.2rem;
-          box-shadow: 0px 1px 5px 0px #171717;
-          transition: .2s ease-in-out;
-          animation-name: btnCotiz;
-          animation-duration: .5s;
-          transform: translate(-50%, -50%) scale(1.5, 1.2); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .btnCotiz:hover {
-            transform: translate(-50%, -50%) scale(1.6, 1.3); }
-  @keyframes btnCotiz {
-    0% {
-      transform: translate(-50%, -50%) scale(4, 1.5); }
-    100% {
-      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas:hover {
-          transform: translateY(-1%); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas:hover::before {
-            opacity: .1; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas:hover > .btnCotiz {
-          display: block; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena {
-        grid-area: almacena;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        justify-self: center;
-        width: 80%;
-        border-radius: 2px 10px 2px 10px;
-        background-color: transparent;
-        transition: 200ms ease-in-out;
-        position: relative;
-        cursor: pointer; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena::before {
-          content: " ";
-          top: 0;
-          left: 0;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background-color: #da0039;
-          opacity: 0.05;
-          transition: 300ms ease all;
-          border-radius: 2px 10px 2px 10px; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__h3-tit {
-          text-decoration: 2px underline #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__img {
-          width: 60%;
-          height: auto;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__p {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.5rem;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__span {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.3rem;
-          text-align: left;
-          color: #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .btnCotiz {
-          display: none;
-          background-color: #da0037;
-          color: #e5e5e5;
-          font-family: "Stick No Bills", sans-serif;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin: 0 auto;
-          border-radius: 1px 8px 1px 8px;
-          padding: 0.2rem;
-          box-shadow: 0px 1px 5px 0px #171717;
-          transition: .2s ease-in-out;
-          animation-name: btnCotiz;
-          animation-duration: .5s;
-          transform: translate(-50%, -50%) scale(1.5, 1.2); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .btnCotiz:hover {
-            transform: translate(-50%, -50%) scale(1.6, 1.3); }
-  @keyframes btnCotiz {
-    0% {
-      transform: translate(-50%, -50%) scale(4, 1.5); }
-    100% {
-      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena:hover {
-          transform: translateY(-1%); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena:hover::before {
-            opacity: .1; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena:hover > .btnCotiz {
-          display: block; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos {
-        grid-area: entregamos;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        justify-self: center;
-        width: 80%;
-        border-radius: 2px 10px 2px 10px;
-        background-color: transparent;
-        transition: 200ms ease-in-out;
-        position: relative;
-        cursor: pointer; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos::before {
-          content: " ";
-          top: 0;
-          left: 0;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background-color: #da0039;
-          opacity: 0.05;
-          transition: 300ms ease all;
-          border-radius: 2px 10px 2px 10px; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__h3-tit {
-          text-decoration: 2px underline #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__img {
-          width: 60%;
-          height: auto;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__p {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.5rem;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__span {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.3rem;
-          text-align: left;
-          color: #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .btnCotiz {
-          display: none;
-          background-color: #da0037;
-          color: #e5e5e5;
-          font-family: "Stick No Bills", sans-serif;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin: 0 auto;
-          border-radius: 1px 8px 1px 8px;
-          padding: 0.2rem;
-          box-shadow: 0px 1px 5px 0px #171717;
-          transition: .2s ease-in-out;
-          animation-name: btnCotiz;
-          animation-duration: .5s;
-          transform: translate(-50%, -50%) scale(1.5, 1.2); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .btnCotiz:hover {
-            transform: translate(-50%, -50%) scale(1.6, 1.3); }
-  @keyframes btnCotiz {
-    0% {
-      transform: translate(-50%, -50%) scale(4, 1.5); }
-    100% {
-      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos:hover {
-          transform: translateY(-1%); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos:hover::before {
-            opacity: .1; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos:hover > .btnCotiz {
-          display: block; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte {
-        grid-area: empacarte;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        justify-self: center;
-        width: 80%;
-        border-radius: 2px 10px 2px 10px;
-        background-color: transparent;
-        transition: 200ms ease-in-out;
-        position: relative;
-        cursor: pointer; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte::before {
-          content: " ";
-          top: 0;
-          left: 0;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background-color: #da0039;
-          opacity: 0.05;
-          transition: 300ms ease all;
-          border-radius: 2px 10px 2px 10px; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__h3-tit {
-          text-decoration: 2px underline #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__img {
-          width: 60%;
-          height: auto;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__p {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.5rem;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__span {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.3rem;
-          text-align: left;
-          color: #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .btnCotiz {
-          display: none;
-          background-color: #da0037;
-          color: #e5e5e5;
-          font-family: "Stick No Bills", sans-serif;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin: 0 auto;
-          border-radius: 1px 8px 1px 8px;
-          padding: 0.2rem;
-          box-shadow: 0px 1px 5px 0px #171717;
-          transition: .2s ease-in-out;
-          animation-name: btnCotiz;
-          animation-duration: .5s;
-          transform: translate(-50%, -50%) scale(1.5, 1.2); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .btnCotiz:hover {
-            transform: translate(-50%, -50%) scale(1.6, 1.3); }
-  @keyframes btnCotiz {
-    0% {
-      transform: translate(-50%, -50%) scale(4, 1.5); }
-    100% {
-      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte:hover {
-          transform: translateY(-1%); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte:hover::before {
-            opacity: .1; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte:hover > .btnCotiz {
-          display: block; }
-      .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio {
-        grid-area: almacfrio;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        justify-self: center;
-        width: 80%;
-        border-radius: 2px 10px 2px 10px;
-        background-color: transparent;
-        transition: 200ms ease-in-out;
-        position: relative;
-        cursor: pointer; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio::before {
-          content: " ";
-          top: 0;
-          left: 0;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background-color: #da0039;
-          opacity: 0.05;
-          transition: 300ms ease all;
-          border-radius: 2px 10px 2px 10px; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__h3-tit {
-          text-decoration: 2px underline #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__img {
-          width: 60%;
-          height: auto;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__p {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.5rem;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__span {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.3rem;
-          text-align: left;
-          color: #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .btnCotiz {
-          display: none;
-          background-color: #da0037;
-          color: #e5e5e5;
-          font-family: "Stick No Bills", sans-serif;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin: 0 auto;
-          border-radius: 1px 8px 1px 8px;
-          padding: 0.2rem;
-          box-shadow: 0px 1px 5px 0px #171717;
-          transition: .2s ease-in-out;
-          animation-name: btnCotiz;
-          animation-duration: .5s;
-          transform: translate(-50%, -50%) scale(1.5, 1.2); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .btnCotiz:hover {
-            transform: translate(-50%, -50%) scale(1.6, 1.3); }
-  @keyframes btnCotiz {
-    0% {
-      transform: translate(-50%, -50%) scale(4, 1.5); }
-    100% {
-      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio:hover {
-          transform: translateY(-1%); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio:hover::before {
-            opacity: .1; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio:hover > .btnCotiz {
-          display: block; }
   .secJs .prudiv .pArr {
     color: #da0037; }
     .secJs .prudiv .pArr.pArrDark {
@@ -1613,10 +770,9 @@
     .main-index__seccion-2 .main-index__div-titulo .main-index__h2-Titulo {
       font-size: 2rem; }
     .main-index__seccion-2 .main-index__div-contenedor-servs {
-      grid-template-areas: "afull" "millas" "almacena" "entregamos" "empacarte" "almacfrio";
+      grid-template-areas: "div1" "div2" "div3" "div4" "div5" "div6";
       margin: 0; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull {
-        grid-area: afull;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1626,69 +782,10 @@
         border-radius: 2px 10px 2px 10px;
         background-color: transparent;
         transition: 200ms ease-in-out;
-        position: relative;
-        cursor: pointer; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull::before {
-          content: " ";
-          top: 0;
-          left: 0;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background-color: #da0039;
-          opacity: 0.05;
-          transition: 300ms ease all;
-          border-radius: 2px 10px 2px 10px; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__h3-tit {
-          text-decoration: 2px underline #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__img {
-          width: 40%;
-          height: auto;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__p {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.5rem;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__span {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.3rem;
-          text-align: left;
-          color: #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .btnCotiz {
-          display: none;
-          background-color: #da0037;
-          color: #e5e5e5;
-          font-family: "Stick No Bills", sans-serif;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin: 0 auto;
-          border-radius: 1px 8px 1px 8px;
-          padding: 0.2rem;
-          box-shadow: 0px 1px 5px 0px #171717;
-          transition: .2s ease-in-out;
-          animation-name: btnCotiz;
-          animation-duration: .5s;
-          transform: translate(-50%, -50%) scale(1.5, 1.2); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .btnCotiz:hover {
-            transform: translate(-50%, -50%) scale(1.6, 1.3); }
-  @keyframes btnCotiz {
-    0% {
-      transform: translate(-50%, -50%) scale(4, 1.5); }
-    100% {
-      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull:hover {
-          transform: translateY(-1%); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull:hover::before {
-            opacity: .1; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull:hover > .btnCotiz {
-          display: block; }
+        position: relative; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull .div-contenedor-servs__img {
           display: none; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas {
-        grid-area: millas;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1698,69 +795,10 @@
         border-radius: 2px 10px 2px 10px;
         background-color: transparent;
         transition: 200ms ease-in-out;
-        position: relative;
-        cursor: pointer; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas::before {
-          content: " ";
-          top: 0;
-          left: 0;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background-color: #da0039;
-          opacity: 0.05;
-          transition: 300ms ease all;
-          border-radius: 2px 10px 2px 10px; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__h3-tit {
-          text-decoration: 2px underline #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__img {
-          width: 40%;
-          height: auto;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__p {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.5rem;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__span {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.3rem;
-          text-align: left;
-          color: #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .btnCotiz {
-          display: none;
-          background-color: #da0037;
-          color: #e5e5e5;
-          font-family: "Stick No Bills", sans-serif;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin: 0 auto;
-          border-radius: 1px 8px 1px 8px;
-          padding: 0.2rem;
-          box-shadow: 0px 1px 5px 0px #171717;
-          transition: .2s ease-in-out;
-          animation-name: btnCotiz;
-          animation-duration: .5s;
-          transform: translate(-50%, -50%) scale(1.5, 1.2); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .btnCotiz:hover {
-            transform: translate(-50%, -50%) scale(1.6, 1.3); }
-  @keyframes btnCotiz {
-    0% {
-      transform: translate(-50%, -50%) scale(4, 1.5); }
-    100% {
-      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas:hover {
-          transform: translateY(-1%); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas:hover::before {
-            opacity: .1; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas:hover > .btnCotiz {
-          display: block; }
+        position: relative; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-millas .div-contenedor-servs__img {
           display: none; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena {
-        grid-area: almacena;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1770,69 +808,10 @@
         border-radius: 2px 10px 2px 10px;
         background-color: transparent;
         transition: 200ms ease-in-out;
-        position: relative;
-        cursor: pointer; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena::before {
-          content: " ";
-          top: 0;
-          left: 0;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background-color: #da0039;
-          opacity: 0.05;
-          transition: 300ms ease all;
-          border-radius: 2px 10px 2px 10px; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__h3-tit {
-          text-decoration: 2px underline #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__img {
-          width: 40%;
-          height: auto;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__p {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.5rem;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__span {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.3rem;
-          text-align: left;
-          color: #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .btnCotiz {
-          display: none;
-          background-color: #da0037;
-          color: #e5e5e5;
-          font-family: "Stick No Bills", sans-serif;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin: 0 auto;
-          border-radius: 1px 8px 1px 8px;
-          padding: 0.2rem;
-          box-shadow: 0px 1px 5px 0px #171717;
-          transition: .2s ease-in-out;
-          animation-name: btnCotiz;
-          animation-duration: .5s;
-          transform: translate(-50%, -50%) scale(1.5, 1.2); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .btnCotiz:hover {
-            transform: translate(-50%, -50%) scale(1.6, 1.3); }
-  @keyframes btnCotiz {
-    0% {
-      transform: translate(-50%, -50%) scale(4, 1.5); }
-    100% {
-      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena:hover {
-          transform: translateY(-1%); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena:hover::before {
-            opacity: .1; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena:hover > .btnCotiz {
-          display: block; }
+        position: relative; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacena .div-contenedor-servs__img {
           display: none; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos {
-        grid-area: entregamos;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1842,69 +821,10 @@
         border-radius: 2px 10px 2px 10px;
         background-color: transparent;
         transition: 200ms ease-in-out;
-        position: relative;
-        cursor: pointer; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos::before {
-          content: " ";
-          top: 0;
-          left: 0;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background-color: #da0039;
-          opacity: 0.05;
-          transition: 300ms ease all;
-          border-radius: 2px 10px 2px 10px; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__h3-tit {
-          text-decoration: 2px underline #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__img {
-          width: 40%;
-          height: auto;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__p {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.5rem;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__span {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.3rem;
-          text-align: left;
-          color: #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .btnCotiz {
-          display: none;
-          background-color: #da0037;
-          color: #e5e5e5;
-          font-family: "Stick No Bills", sans-serif;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin: 0 auto;
-          border-radius: 1px 8px 1px 8px;
-          padding: 0.2rem;
-          box-shadow: 0px 1px 5px 0px #171717;
-          transition: .2s ease-in-out;
-          animation-name: btnCotiz;
-          animation-duration: .5s;
-          transform: translate(-50%, -50%) scale(1.5, 1.2); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .btnCotiz:hover {
-            transform: translate(-50%, -50%) scale(1.6, 1.3); }
-  @keyframes btnCotiz {
-    0% {
-      transform: translate(-50%, -50%) scale(4, 1.5); }
-    100% {
-      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos:hover {
-          transform: translateY(-1%); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos:hover::before {
-            opacity: .1; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos:hover > .btnCotiz {
-          display: block; }
+        position: relative; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-entregamos .div-contenedor-servs__img {
           display: none; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte {
-        grid-area: empacarte;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1914,69 +834,10 @@
         border-radius: 2px 10px 2px 10px;
         background-color: transparent;
         transition: 200ms ease-in-out;
-        position: relative;
-        cursor: pointer; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte::before {
-          content: " ";
-          top: 0;
-          left: 0;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background-color: #da0039;
-          opacity: 0.05;
-          transition: 300ms ease all;
-          border-radius: 2px 10px 2px 10px; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__h3-tit {
-          text-decoration: 2px underline #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__img {
-          width: 40%;
-          height: auto;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__p {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.5rem;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__span {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.3rem;
-          text-align: left;
-          color: #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .btnCotiz {
-          display: none;
-          background-color: #da0037;
-          color: #e5e5e5;
-          font-family: "Stick No Bills", sans-serif;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin: 0 auto;
-          border-radius: 1px 8px 1px 8px;
-          padding: 0.2rem;
-          box-shadow: 0px 1px 5px 0px #171717;
-          transition: .2s ease-in-out;
-          animation-name: btnCotiz;
-          animation-duration: .5s;
-          transform: translate(-50%, -50%) scale(1.5, 1.2); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .btnCotiz:hover {
-            transform: translate(-50%, -50%) scale(1.6, 1.3); }
-  @keyframes btnCotiz {
-    0% {
-      transform: translate(-50%, -50%) scale(4, 1.5); }
-    100% {
-      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte:hover {
-          transform: translateY(-1%); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte:hover::before {
-            opacity: .1; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte:hover > .btnCotiz {
-          display: block; }
+        position: relative; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-empacarte .div-contenedor-servs__img {
           display: none; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio {
-        grid-area: almacfrio;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1986,65 +847,7 @@
         border-radius: 2px 10px 2px 10px;
         background-color: transparent;
         transition: 200ms ease-in-out;
-        position: relative;
-        cursor: pointer; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio::before {
-          content: " ";
-          top: 0;
-          left: 0;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background-color: #da0039;
-          opacity: 0.05;
-          transition: 300ms ease all;
-          border-radius: 2px 10px 2px 10px; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__h3-tit {
-          text-decoration: 2px underline #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__img {
-          width: 40%;
-          height: auto;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__p {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.5rem;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__span {
-          font-family: "Montserrat", sans-serif;
-          padding: 0 0.3rem;
-          text-align: left;
-          color: #da0037;
-          margin: 0; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .btnCotiz {
-          display: none;
-          background-color: #da0037;
-          color: #e5e5e5;
-          font-family: "Stick No Bills", sans-serif;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin: 0 auto;
-          border-radius: 1px 8px 1px 8px;
-          padding: 0.2rem;
-          box-shadow: 0px 1px 5px 0px #171717;
-          transition: .2s ease-in-out;
-          animation-name: btnCotiz;
-          animation-duration: .5s;
-          transform: translate(-50%, -50%) scale(1.5, 1.2); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .btnCotiz:hover {
-            transform: translate(-50%, -50%) scale(1.6, 1.3); }
-  @keyframes btnCotiz {
-    0% {
-      transform: translate(-50%, -50%) scale(4, 1.5); }
-    100% {
-      transform: translate(-50%, -50%) scale(1.5, 1.2); } }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio:hover {
-          transform: translateY(-1%); }
-          .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio:hover::before {
-            opacity: .1; }
-        .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio:hover > .btnCotiz {
-          display: block; }
+        position: relative; }
         .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-almacfrio .div-contenedor-servs__img {
           display: none; } }
 
@@ -2289,15 +1092,12 @@
             display: block;
             color: #171717; }
           .main-seccion__btnRegIng .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__input {
-            color: #da0037;
+            color: #171717;
             width: 70%;
             text-align: center;
             border-radius: 2px 8px 2px 8px;
             box-shadow: 0px 1px 5px 0px #171717;
             resize: none; }
-            .main-seccion__btnRegIng .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__input:hover {
-              transform: scale(1.02, 1.02);
-              transition: 300ms; }
           .main-seccion__btnRegIng .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__label-check {
             color: #e5e5e5;
             font-weight: bolder;
@@ -2578,21 +1378,35 @@ html .body {
           line-height: 30px;
           background-color: none; }
     html .body .main-contacto .contenedorMensajeContacto {
-      display: none; }
-      html .body .main-contacto .contenedorMensajeContacto.contenedorMensajeContactoAfter {
-        display: block;
-        width: 400px;
-        height: auto;
-        border: 2px solid #da0037;
-        border-radius: 3px 10px 3px 10px;
-        background-color: #e5e5e5;
-        padding: 0.5rem;
-        margin: 0 auto;
+      display: none;
+      z-index: 100;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      margin: 0 auto;
+      background-color: transparent;
+      align-content: center; }
+      html .body .main-contacto .contenedorMensajeContacto .divContMensErr {
+        position: absolute;
         text-align: center;
-        transition: 300ms ease-in-out; }
-        html .body .main-contacto .contenedorMensajeContacto.contenedorMensajeContactoAfter:hover {
-          transition: 300ms ease-in-out;
-          transform: translateY(1%); }
+        width: 25%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #da0039;
+        border-radius: 0px 10px 0px 10px; }
+      html .body .main-contacto .contenedorMensajeContacto .divContMensExito {
+        position: absolute;
+        text-align: center;
+        width: 25%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #d2d2d2;
+        border: 1px solid #da0039;
+        border-radius: 0px 10px 0px 10px; }
     html .body .main-contacto .main-contacto__seccion-1 {
       margin-top: 3rem; }
       html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor {
@@ -2613,48 +1427,46 @@ html .body {
             text-align: center;
             margin: 0 auto; }
             html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs {
-              margin-bottom: 2rem; }
+              margin-bottom: 0; }
+              html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs em {
+                color: #da0037; }
+                html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs em.emdark {
+                  color: #e5e5e5; }
               html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .main-contacto__label {
                 display: block;
                 color: #171717; }
                 html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .main-contacto__label.labelsDark {
                   color: #da0037; }
               html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .main-contacto__input {
-                color: #da0037;
+                color: #171717;
                 width: 100%;
                 text-align: center;
                 border-radius: 2px 8px 2px 8px;
                 box-shadow: 0px 1px 5px 0px #171717;
                 resize: none; }
-                html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .main-contacto__input:hover {
-                  transform: scale(1.02, 1.02);
-                  transition: 300ms; }
+                html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .main-contacto__input.main-contacto__input-Dark {
+                  box-shadow: 0px 1px 5px 10px #da0037; }
               html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .main-contacto__select {
-                color: #da0037;
+                color: #171717;
                 width: 100%;
                 text-align: center;
                 border-radius: 2px 8px 2px 8px;
                 box-shadow: 0px 1px 5px 0px #171717;
                 resize: none; }
-                html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .main-contacto__select:hover {
-                  transform: scale(1.02, 1.02);
-                  transition: 300ms; }
               html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .main-contacto__option {
                 text-align: center;
                 border-radius: 2px 8px 2px 8px; }
               html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .main-contacto__textarea {
-                color: #da0037;
+                color: #171717;
                 width: 400px;
                 text-align: center;
                 border-radius: 2px 8px 2px 8px;
                 box-shadow: 0px 1px 5px 0px #171717;
                 resize: none;
                 text-align: left;
+                padding: .5rem;
                 height: 150px;
                 color: #171717; }
-                html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .main-contacto__textarea:hover {
-                  transform: scale(1.02, 1.02);
-                  transition: 300ms; }
               html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .main-contacto__submit {
                 text-decoration: none;
                 background-color: #da0037;
@@ -2763,15 +1575,12 @@ html .body {
                     display: block;
                     color: #171717; }
                   html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__input {
-                    color: #da0037;
+                    color: #171717;
                     width: 70%;
                     text-align: center;
                     border-radius: 2px 8px 2px 8px;
                     box-shadow: 0px 1px 5px 0px #171717;
                     resize: none; }
-                    html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__input:hover {
-                      transform: scale(1.02, 1.02);
-                      transition: 300ms; }
                   html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__label-check {
                     color: #e5e5e5;
                     font-weight: bolder;
@@ -3251,15 +2060,12 @@ html .body {
                 display: block;
                 color: #171717; }
               .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__input {
-                color: #da0037;
+                color: #171717;
                 width: 70%;
                 text-align: center;
                 border-radius: 2px 8px 2px 8px;
                 box-shadow: 0px 1px 5px 0px #171717;
                 resize: none; }
-                .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__input:hover {
-                  transform: scale(1.02, 1.02);
-                  transition: 300ms; }
               .main-nosotros .nosotros-seccion-1 .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__label-check {
                 color: #e5e5e5;
                 font-weight: bolder;
@@ -3453,6 +2259,50 @@ html .body {
         display: block;
         color: #da0037; } }
 
+.main-registro .contenedorMensajeRegistro {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  background-color: transparent;
+  align-content: center; }
+  .main-registro .contenedorMensajeRegistro .divContMensErrReg {
+    position: absolute;
+    text-align: center;
+    width: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #da0039;
+    border-radius: 0px 10px 0px 10px; }
+  .main-registro .contenedorMensajeRegistro .divContMensExitoReg {
+    position: absolute;
+    text-align: center;
+    width: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d2d2d2;
+    border: 1px solid #da0039;
+    border-radius: 0px 10px 0px 10px; }
+  .main-registro .contenedorMensajeRegistro .divContMensErrRegUserAgain {
+    position: absolute;
+    text-align: center;
+    width: 25%;
+    color: #d2d2d2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #171717;
+    border: 1px solid #da0039;
+    border-radius: 0px 10px 0px 10px; }
+    .main-registro .contenedorMensajeRegistro .divContMensErrRegUserAgain p {
+      color: #d2d2d2; }
+
 .main-registro .contButtonDark {
   position: fixed;
   top: 3rem;
@@ -3513,25 +2363,24 @@ html .body {
         text-align: center;
         margin-right: 6rem; }
         .main-registro .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs {
-          margin-bottom: 0.5rem; }
+          margin-bottom: 0; }
           .main-registro .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__label {
             display: block;
-            color: #171717; }
+            color: #171717;
+            margin-top: 0; }
             .main-registro .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__label.labelsDark {
               color: #da0037; }
           .main-registro .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__input {
-            color: #da0037;
+            color: #171717;
             width: 400px;
             text-align: center;
             border-radius: 2px 8px 2px 8px;
             box-shadow: 0px 1px 5px 0px #171717;
             resize: none; }
-            .main-registro .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__input:hover {
-              transform: scale(1.02, 1.02);
-              transition: 300ms; }
           .main-registro .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__input-check-label {
             color: #171717;
-            text-decoration: underline; }
+            text-decoration: underline;
+            cursor: pointer; }
             .main-registro .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__input-check-label:hover {
               color: #da0037; }
             .main-registro .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__input-check-label.termCondDark {
@@ -3539,26 +2388,20 @@ html .body {
               .main-registro .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__input-check-label.termCondDark:hover {
                 color: #da0037; }
           .main-registro .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__select {
-            color: #da0037;
+            color: #171717;
             width: 400px;
             text-align: center;
             border-radius: 2px 8px 2px 8px;
             box-shadow: 0px 1px 5px 0px #171717;
             resize: none; }
-            .main-registro .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__select:hover {
-              transform: scale(1.02, 1.02);
-              transition: 300ms; }
           .main-registro .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__option {
-            color: #da0037;
+            color: #171717;
             width: 0;
             text-align: center;
             border-radius: 2px 8px 2px 8px;
             box-shadow: 0px 1px 5px 0px #171717;
             resize: none;
             text-align: center; }
-            .main-registro .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__option:hover {
-              transform: scale(1.02, 1.02);
-              transition: 300ms; }
           .main-registro .main-registro__seccion-1 .main-resgistro__contennedor-principal .main-registro__contenedor-formulario .main-registro__formulario .main-registro-formulario__divs .main-registro-formulario__submit {
             text-decoration: none;
             background-color: #da0037;
@@ -3681,15 +2524,12 @@ html .body {
                 display: block;
                 color: #171717; }
               .main-registro .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__input {
-                color: #da0037;
+                color: #171717;
                 width: 70%;
                 text-align: center;
                 border-radius: 2px 8px 2px 8px;
                 box-shadow: 0px 1px 5px 0px #171717;
                 resize: none; }
-                .main-registro .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__input:hover {
-                  transform: scale(1.02, 1.02);
-                  transition: 300ms; }
               .main-registro .main-registro__seccion-1 .main-resgistro__contennedor-principal .main__contenedor-modalLogin .main__div-inSesion .modal-dialog .modal-content .main__div-contenido-modal .div-contenido-modal__div-form .div-contenido-modal__form .form__divs .form__label-check {
                 color: #e5e5e5;
                 font-weight: bolder;
@@ -3834,12 +2674,22 @@ html {
       position: inherit;
       height: auto;
       overflow: visible; }
+    html .body .contSpinerIndex .spiner {
+      animation: spiner;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+
+@keyframes spiner {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
   html section[id],
   html div[id] {
     scroll-margin-top: 60px; }
   html h1,
   html h2,
-  html h3 {
+  html h3, html h5 {
     color: #da0037;
     font-family: "Stick No Bills", sans-serif; }
   html p {

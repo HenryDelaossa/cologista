@@ -9,21 +9,13 @@
       font-size: 3rem;
       margin-bottom: 3rem;
     }
-  } 
-  .typed-cursor {
-    color: $colorPrim;
-    font-size: 2rem;
-  }
-  .typed-fade-out {
-    height: 50px;
-  }
-  //grilla de servicios /*grilla de servicios*/
+  } //grilla de servicios /*grilla de servicios*/
   .main-index__div-contenedor-servs {
     display: grid;
     grid-template-areas:
-      "afull millas almacena"
-      "entregamos empacarte almacfrio";
-    grid-template-columns: auto;
+      "div1 div2 div3"
+      "div4 div5 div6";
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-row-gap: 1rem;
     justify-content: center;
@@ -32,39 +24,82 @@
     //servicios, declaracion y estillos
     /*servicios, declaracion y estilos*/
     /*a-full*/
-    .div-contenedor-servs__div-servicio-aFull {
-      @include main-index-contenedor-servicios(afull, end, 70%, 60%);
-    }
-    //millas x hora /*millas x hora*/
-    .div-contenedor-servs__div-servicio-millas {
-      @include main-index-contenedor-servicios(millas, center, 70%, 60%);
-    }
-    //almacena /*almacena*/
-    .div-contenedor-servs__div-servicio-almacena {
-      @include main-index-contenedor-servicios(almacena, start, 70%, 60%);
-    }
-    //entregamos /*enregamos*/
-    .div-contenedor-servs__div-servicio-entregamos {
-      @include main-index-contenedor-servicios(entregamos, end, 70%, 60%);
-    }
-    //empacarte /*empacarte*/
-    .div-contenedor-servs__div-servicio-empacarte {
-      @include main-index-contenedor-servicios(empacarte, center, 70%, 60%);
-    }
-    //almacfrio /*almacfrio*/
-    .div-contenedor-servs__div-servicio-almacfrio {
-      @include main-index-contenedor-servicios(almacfrio, start, 70%, 60%);
+    .div-contenedor-servs__div-servicio {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      justify-self: center;
+      width: 60%;
+      border-radius: 2px 10px 2px 10px;
+      background-color: transparent;
+      transition: 200ms ease-in-out;
+      position: relative;
+      cursor: pointer;
+      &::before {
+        content: " ";
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #da0039;
+        opacity: 0.05;
+        transition: 300ms ease all;
+        border-radius: 2px 10px 2px 10px;
+      }
+      .div-contenedor-servs__h3-tit {
+        text-decoration: 2px underline $colorPrim;
+        margin: 0;
+      }
+      .div-contenedor-servs__img {
+        width: 50%;
+        height: auto;
+        margin: 0;
+      }
+      .parrafoServs {
+        color: $colorSecun;
+        &.parrafoServsDark {
+          color: $colorTerc;
+        }
+      }
+      .btnCotiz {
+        display: none;
+        background-color: $colorPrim;
+        color: $colorTerc;
+        font-family: "Stick No Bills", sans-serif;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: 0 auto;
+        border-radius: 1px 8px 1px 8px;
+        padding: 0.2rem;
+        box-shadow: 0px 1px 5px 0px $colorSecun;
+        transition: 300ms ease all;
+        animation-name: btnCotiz;
+        animation-duration: 0.3s;
+        transform: translate(-50%, -50%) scale(1.5, 1.2);
+      }
+      @keyframes btnCotiz {
+        0% {
+          transform: translate(-50%, -50%) scale(3, 1.5);
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(1.5, 1.2);
+        }
+      }
+      &:hover {
+        transform: translateY(-1%);
+        &::before {
+          opacity: 0.1;
+        }
+        .btnCotiz {
+          display: block;
+        }
+      }
     }
   }
 }
-.secJs {
-  text-align: center;
-  .btnActiContSerJs {
-    @include botones(20px);
-    margin-top: 3rem;
-  }
-}
-
 @media screen and (max-width: 1023px) {
   .main-index__seccion-2 {
     margin-top: 1rem;
@@ -73,33 +108,11 @@
     }
     .main-index__div-contenedor-servs {
       grid-template-areas:
-        "afull millas"
-        "almacena entregamos"
-        "empacarte almacfrio";
+        "div1 div2"
+        "div3 div4"
+        "div5 div6";
+      grid-template-columns: auto;
       margin: 0 auto;
-      .div-contenedor-servs__div-servicio-aFull {
-        @include main-index-contenedor-servicios(afull, center, 80%, 60%);
-      }
-      //millas x hora /*millas x hora*/
-      .div-contenedor-servs__div-servicio-millas {
-        @include main-index-contenedor-servicios(millas, center, 80%, 60%);
-      }
-      //almacena /*almacena*/
-      .div-contenedor-servs__div-servicio-almacena {
-        @include main-index-contenedor-servicios(almacena, center, 80%, 60%);
-      }
-      //entregamos /*enregamos*/
-      .div-contenedor-servs__div-servicio-entregamos {
-        @include main-index-contenedor-servicios(entregamos, center, 80%, 60%);
-      }
-      //empacarte /*empacarte*/
-      .div-contenedor-servs__div-servicio-empacarte {
-        @include main-index-contenedor-servicios(empacarte, center, 80%, 60%);
-      }
-      //almacfrio /*almacfrio*/
-      .div-contenedor-servs__div-servicio-almacfrio {
-        @include main-index-contenedor-servicios(almacfrio, center, 80%, 60%);
-      }
     }
   }
   .secJs {
@@ -124,12 +137,12 @@
     }
     .main-index__div-contenedor-servs {
       grid-template-areas:
-        "afull"
-        "millas"
-        "almacena"
-        "entregamos"
-        "empacarte"
-        "almacfrio";
+        "div1"
+        "div2"
+        "div3"
+        "div4"
+        "div5"
+        "div6";
       margin: 0;
       .div-contenedor-servs__div-servicio-aFull {
         @include main-index-contenedor-servicios(afull, center, 95%, 40%);

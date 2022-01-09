@@ -56,21 +56,35 @@ html {
       }
       .contenedorMensajeContacto {
         display: none;
-        &.contenedorMensajeContactoAfter {
-          display: block;
-          width: 400px;
-          height: auto;
-          border: 2px solid $colorPrim;
-          border-radius: 3px 10px 3px 10px;
-          background-color: $colorTerc;
-          padding: 0.5rem;
-          margin: 0 auto;
+        z-index: 100;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        background-color: transparent;
+        align-content: center;
+        .divContMensErr {
+          position: absolute;
           text-align: center;
-          transition: 300ms ease-in-out;
-          &:hover {
-            transition: 300ms ease-in-out;
-            transform: translateY(1%);
-          }
+          width: 25%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: #da0039;
+          border-radius: 0px 10px 0px 10px;
+        }
+        .divContMensExito {
+          position: absolute;
+          text-align: center;
+          width: 25%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: #d2d2d2;
+          border: 1px solid #da0039;
+          border-radius: 0px 10px 0px 10px;
         }
       }
       .main-contacto__seccion-1 {
@@ -96,7 +110,13 @@ html {
                 text-align: center;
                 margin: 0 auto;
                 .main-contacto__divs {
-                  margin-bottom: 2rem;
+                  margin-bottom: 0;
+                  em {
+                    color: $colorPrim;
+                    &.emdark {
+                      color: $colorTerc;
+                    }
+                  }
                   .main-contacto__label {
                     @include labels;
                     &.labelsDark {
@@ -105,6 +125,9 @@ html {
                   }
                   .main-contacto__input {
                     @include inpt-slct-txtar(100%);
+                    &.main-contacto__input-Dark {
+                      box-shadow: 0px 1px 5px 10px $colorPrim;
+                    }
                   }
                   .main-contacto__select {
                     @include inpt-slct-txtar(100%);
@@ -116,6 +139,7 @@ html {
                   .main-contacto__textarea {
                     @include inpt-slct-txtar(400px);
                     text-align: left;
+                    padding: .5rem;
                     height: 150px;
                     color: $colorSecun;
                   }

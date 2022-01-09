@@ -23,7 +23,7 @@
   <!--link de efectos wow-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- link script fontawesome -->
-	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
   <!--link de mi archivo css-->
   <link rel="stylesheet" type="text/css" href="styles/style.css">
   <!--link de logo de pestaña-->
@@ -71,8 +71,7 @@
             </li>
             <li class="nav-item">
               <!-- Button trigger modal -->
-              <a href="#" type="button" class="btn btn-primary header-nav__liItemBoton" data-bs-toggle="modal"
-                data-bs-target="#staticBackdrop">Mi oficina virtual</a>
+              <a href="#" type="button" class="btn btn-primary header-nav__liItemBoton" id="btnOngresRegistr">iNGRESAR</a>
             </li>
           </ul>
         </div>
@@ -81,6 +80,9 @@
   </header>
   <!--formulario de contacto-->
   <main class="main-registro">
+    <aside id="contenedorMensajeRegistro" class="contenedorMensajeRegistro">
+    </aside>
+    <div class="contMenErrInsSes" style="display: none"></div>
     <div class="contButtonDark" id="contButtonDark">
       <button class="buttonDark" id="buttonDark">
         <span><i class="far fa-sun"></i></span>
@@ -91,52 +93,77 @@
       <div class="main-resgistro__contennedor-principal">
         <div class="main-registro__contenedor-formulario">
           <h1 class="formulario-registro__h1-tit">REGISTRO ⇊</h1>
-          <form class="main-registro__formulario" action="">
-            <div class="main-registro-formulario__divs">
-              <label class="main-registro-formulario__label" for="nombre">Nombre</label>
-              <input class="main-registro-formulario__input" type="text" name="nombre"
-                placeholder="ingresa tu nombre" />
-            </div>
-            <div class="main-registro-formulario__divs">
-              <label class="main-registro-formulario__label" for="apellido">Apellido</label>
-              <input class="main-registro-formulario__input" type="text" required placeholder="ingresa tu apellido" />
-            </div>
-            <div class="main-registro-formulario__divs">
-              <label class="main-registro-formulario__label" for="email">E-mail</label>
-              <input class="main-registro-formulario__input" type="email" required placeholder="ejemplo@gmail.com" />
-            </div>
-            <div class="main-registro-formulario__divs">
-              <label class="main-registro-formulario__label" for="usuario">Usuario</label>
-              <input class="main-registro-formulario__input" type="text" required placeholder="ingresa tu usuario" />
-            </div>
-            <div class="main-registro-formulario__divs">
-              <label class="main-registro-formulario__label" for="password">Contraseña</label>
-              <input class="main-registro-formulario__input" type="password" required placeholder="*******" />
-            </div>
-            <div class="main-registro-formulario__divs">
-              <label class="main-registro-formulario__label" for="password">Repetir contraseña</label>
-              <input class="main-registro-formulario__input" type="password" required placeholder="*******" />
-            </div>
-            <div class="main-registro-formulario__divs">
-              <label class="main-registro-formulario__label" for="pais">Pais</label>
-              <select class="main-registro-formulario__select" name="pais">
-                <option class="main-registro-formulario__option" value="Colombia">COLOMBIA</option>
-                <option class="main-registro-formulario__option" value="Argentina">ARGENTINA</option>
-                <option class="main-registro-formulario__option" value="peru">PERU</option>
-              </select>
-            </div>
-            <div class="main-registro-formulario__divs">
-              <label class="main-registro-formulario__label" for="numero">Telefono</label>
-              <input class="main-registro-formulario__input" type="phone" required placeholder="1234567890" />
-            </div>
-            <div class="main-registro-formulario__divs">
-              <input class="main-registro-formulario__input-check" type="checkbox" id="checkbox" name="checkbox" required />
-              <label class="main-registro-formulario__input-check-label" for="checkbox">terminos y condiciones</label>
-            </div>
-            <div class="main-registro-formulario__divs">
-              <input class="main-registro-formulario__submit" name="submit" type="reset" value="Borar Datos">
-              <input class="main-registro-formulario__submit" name="submit" type="submit" value="Enviar">
-            </div>
+          <form class="main-registro__formulario" id="formularioRegistro" action="">
+            <fieldset id="fieldsetFormReg">
+              <div class="main-registro-formulario__divs">
+                <label class="main-registro-formulario__label" for="nombreReg">Nombre</label>
+                <input id="inputNombreReg" class="main-registro-formulario__input" type="text" name="nombreReg"
+                  placeholder="ingresa tu nombre" />
+                <i class="mensErrorNombreReg"
+                  style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
+              </div>
+              <div class="main-registro-formulario__divs">
+                <label class="main-registro-formulario__label" for="apellido">Apellido</label>
+                <input id="inputapellidoReg" class="main-registro-formulario__input" type="text" name="apellidoReg"
+                  required placeholder="ingresa tu apellido" />
+                <i class="mensErrorapellidoReg"
+                  style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
+              </div>
+              <div class="main-registro-formulario__divs">
+                <label class="main-registro-formulario__label" for="email">E-mail</label>
+                <input id="inputEmailReg" class="main-registro-formulario__input" type="email" name="emailReg" required
+                  placeholder="ejemplo@gmail.com" />
+                <i class="mensErrorEmailReg" style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
+              </div>
+              <div class="main-registro-formulario__divs">
+                <label class="main-registro-formulario__label" for="usuario">Usuario</label>
+                <input id="ínputUsuarioReg" class="main-registro-formulario__input" type="text" name="usuarioReg"
+                  required placeholder="ingresa tu usuario" />
+                <i class="mensErrorUsuarioReg"
+                  style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
+              </div>
+              <div class="main-registro-formulario__divs">
+                <label class="main-registro-formulario__label" for="password">Contraseña</label>
+                <input id="inputcontraseñaReg1" class="main-registro-formulario__input" type="password"
+                  name="contraseñaReg1" required placeholder="*******" />
+                <i class="mensErrorPassword1Reg"
+                  style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
+              </div>
+              <div class="main-registro-formulario__divs">
+                <label class="main-registro-formulario__label" for="password">Repetir contraseña</label>
+                <input id="inputcontraseñaReg2" class="main-registro-formulario__input" type="password"
+                  name="contraseñaReg2" required placeholder="*******" />
+                <i class="mensErrorPassword2Reg"
+                  style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
+              </div>
+              <div class="main-registro-formulario__divs">
+                <label class="main-registro-formulario__label" for="pais">Pais</label>
+                <select id="selectCiudadRegis" class="main-registro-formulario__select" name="pais">
+                  <option class="main-registro-formulario__option" value="Colombia">COLOMBIA</option>
+                  <option class="main-registro-formulario__option" value="Argentina">ARGENTINA</option>
+                  <option class="main-registro-formulario__option" value="peru">PERU</option>
+                </select>
+              </div>
+              <div class="main-registro-formulario__divs">
+                <label class="main-registro-formulario__label" for="numero">Telefono</label>
+                <input id="inputTelefonoReg" class="main-registro-formulario__input" type="phone" name="telefonoReg"
+                  required placeholder="1234567890" />
+                <i class="mensErrorTelefonoReg"
+                  style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
+              </div>
+              <div class="main-registro-formulario__divs">
+                <input class="main-registro-formulario__input-check" type="checkbox" id="checkboxReg" name="checkbox"
+                  required aria-checked="true" />
+                <label id="labelTerm" class="main-registro-formulario__input-check-label" for="checkboxReg">click aqui
+                  para aceptar terminos y condiciones</label>
+                <i class="mensErrorTermCondReg"
+                  style="width: 100%; height: 30px;display: block;margin-bottom: .5rem; color: #da0039"></i>
+              </div>
+              <div class="main-registro-formulario__divs">
+                <input class="main-registro-formulario__submit" type="reset" value="Borar Datos">
+                <input id="btnEnviarReg" class="main-registro-formulario__submit" type="submit" value="Enviar">
+              </div>
+            </fieldset>
           </form>
         </div>
         <!--div informacion-->
@@ -170,51 +197,9 @@
           <div class="main__contenedor-modalLogin">
             <!-- Button trigger modal -->
             <a class="main__botFlot-Reg" href="contacto.html">Contactanos</a>
-            <button type="button" class="main__botFlot-ing btn btn-primary" data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop">
+            <button type="button" class="main__botFlot-ing btn btn-primary" id="btnYaRegRegistr">
               Ya estoy registrado
             </button>
-            <!-- Modal -->
-            <div class="main__div-inSesion modal fade" id="staticBackdrop" data-bs-backdrop="static"
-              data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Mi oficina virtual</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="main__div-contenido-modal modal-body">
-                    <div class="div-contenido-modal__div-tit">
-                      <h3 class="div-contenido-modal__h1-tit">Ingresa tus datos ⇊</h3>
-                    </div>
-                    <div class="div-contenido-modal__div-form">
-                      <form class="div-contenido-modal__form" action="">
-                        <div class="form__divs">
-                          <label class="form__label" for="usuario">Tu Usuario o email</label>
-                          <input class="form__input" type="email" required placeholder="usuario o email" />
-                        </div>
-                        <div class="form__divs">
-                          <label class="form__label" for="password">Tu contraseña</label>
-                          <input class="form__input" type="password" required placeholder="contraseña" />
-                        </div>
-                        <div class="form__divs">
-                          <input class="main-formulario__input-check" type="checkbox" name="checkbox" />
-                          <label class="main-formulario__input-check-label">Guardar datos</label>
-                        </div>
-                        <div class="form__divs submits">
-                          <input class="submit__reset submit" name="submit" type="reset" value="Borar Datos">
-                          <input class="submit__sent submit" name="submit" type="submit" value="Enviar">
-                        </div>
-                        <div>
-                          <span>¿No tienes cuenta?</span>
-                          <a href="registro.html">Registrarme</a>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -257,8 +242,8 @@
       </div>
       <!--div derechos-->
       <div class="footer__div-derechosby">
-        <p class="footer__p-derechos"><span>©Todos los derechos reservados.</span></p> 
-      <p><span class="footer__by">By HenryDelaossa</span></p>
+        <p class="footer__p-derechos"><span>©Todos los derechos reservados.</span></p>
+        <p><span class="footer__by">By HenryDelaossa</span></p>
       </div>
       <!--div redes-->
       <div class="footer__div-redes">
@@ -291,10 +276,6 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"
     integrity="sha384-rY/jv8mMhqDabXSo+UCggqKtdmBfd3qC2/KvyTDNQ6PcUJXaxK1tMepoQda4g5vB"
     crossorigin="anonymous"></script>
-  <!-- animated wow -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-    integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
-    crossorigin="anonymous"></script>
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
     integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
@@ -304,11 +285,17 @@
     new WOW().init();
   </script>
   <!-- mis scripts -->
-  <script src="js/modoDarkLighLocStor.js"></script>
+  <script src="js/mensErrExiIniSes.js"></script>
+  <script src="js/spinner.js"></script>
+  <script src="js/usuarios_nel.js"></script>
+  <script src="js/modalIniSesion.js"></script>
+  <script src="js/showDatesUserReg.js"></script>
+  <script src="js/registro/objFormRegistro.js"></script>
+  <script src="js/contacto/mensajeExitoErr.js"></script>
+  <script src="js/registro/validFormRegist.js"></script>
+  <script src="js/efectScroll.js"></script>
   <script src="js/addDark.js"></script>
-  <script src="js/remdark.js"></script>
   <script src="js/registro/registro.js"></script>
-
 </body>
 
 </html>

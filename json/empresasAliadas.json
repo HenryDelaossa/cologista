@@ -1,0 +1,7 @@
+[
+    {"classCont": "div-cont-img", "classImg":"aliexpress__img", "img": "img/index/empresasAliadas/aliexpress.png", "alt": "aiado-aliexpress"},
+    {"classCont": "div-cont-img", "classImg":"linio__img", "img": "img/index/empresasAliadas/linio.png", "alt": "aliado-linio"},
+    {"classCont": "div-cont-img", "classImg":"shoope__img", "img": "img/index/empresasAliadas/shopee.png", "alt": "aliado-shoope"},
+    {"classCont": "div-cont-img", "classImg":"merc-libre__img", "img": "img/index/empresasAliadas/mercado-libre.png", "alt": "aliado-mercado libre"},
+    {"classCont": "div-cont-img", "classImg":"dafiti__img", "img": "img/index/empresasAliadas/dafiti.png", "alt": "aliado-dafiti"}
+]

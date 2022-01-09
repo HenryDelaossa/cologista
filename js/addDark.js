@@ -36,4 +36,13 @@ function addDark() {
     $("#buttonRegisRightDark").toggleClass("buttonRegisRightDark");
     $("#buttonDark").toggleClass("afterclick");
     $("#btnActiContSerJs").css({border: "1px solid #da0039"});
+    $(".divContFormModal").toggleClass("divContFormModalDark");
+    $(".contModal").toggleClass("contModalDark")
+    $(".spanCloseModal").toggleClass("spanCloseModalDark");
+    if (document.body.classList.contains("bodyDark")) {
+        $("h6").css({color: "#d2d2d2"})
+    } else {
+        $("h6").css({color: "#171717"})
+    }
+    
 }

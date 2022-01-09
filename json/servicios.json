@@ -1,0 +1,8 @@
+[
+    {"tit": "A Full", "img": "img/index/servicios/full.png", "description": "¡Nos encargamos al 100% de la logística para tu tienda o tu ecommerce; de lo único que debes preocuparte es de vender!. Seremos Tu departamento logístico a", "span": "¡nivel nacional!"},
+    {"tit": "MIllas X Hora", "img": "img/index/servicios/mill.png", "description": "Hacemos que tus pedidos lleguen más rápido y más seguro a cada destino de tus clientes en menos de ¡2 horas! dentro de las ciudades principales Recogemos y entregamos ", "span": "donde tú nos pidas!"},
+    {"tit": "Almacena", "img": "img/index/servicios/almac.png", "description": "Almacenamos tus productos o tus insumos bajo excelentes estandares de calidad Contamos con mas de 1.000 m³ de espacio para almacenar tus productos ", "span": "por el tiempo que necesites!"},
+    {"tit": "Entregamos", "img": "img/index/servicios/deli.png", "description": "Nos ponemos la camiseta!, nos encargamos de enrutar y entregar a diario las ordenes a tus clientes finales..", "span": "No hay tope minimo ni maximo de entregas!"},
+    {"tit": "EmpacArte", "img": "img/index/servicios/pack.png", "description": "Hacemos el empaque y el embalaje de tus productos acorde a tus necesidades Contamos con materiales ", "span": "100% biodegradables y muy amigables con el medio ambiente!"},
+    {"tit": "Almacfrio", "img": "img/index/servicios/frio.png", "description": "Almacenamos tus productos perecederos o que requieran de una cadena de frio estricta. Contamos con neveras, refrigeradores industriales y bodegas de frio para mantener y conservar cualquier producto a bajas temperaturas.", "span": "cualquier producto!"}
+]

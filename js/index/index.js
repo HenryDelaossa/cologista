@@ -32,12 +32,13 @@ const btnIngresar = document.querySelectorAll("#btnIngresar")
 const btnFlotIniSes = document.querySelectorAll("#btnFlotInSes");
 btnFlotIniSes.forEach(function(click) {
     click.addEventListener("click", ()=> {
-        modalIniSesion("#body", "1717178d", ".main-index")
+        modalIniSesion("#body", "1717178d", ".main-index");
+        
     }) 
 });
 btnIngresar.forEach(function(click) {
     click.addEventListener("click", ()=> {
-        modalIniSesion("#body", "#1717178d", ".main-index")
+        modalIniSesion("#body", "#1717178d", ".main-index");
     }) 
 });
 // validacion localstorage para vista de datos de usuario en su zona, y ocultar los elementos no necesarios (formulario de registro y de iniciar sesion) cuando haya ingresado a "su zona"

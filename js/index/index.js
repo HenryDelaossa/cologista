@@ -139,7 +139,8 @@ btnConfirmServ.addEventListener("click", (e) => {
 })
 // cargo servicios dinamicamente a travez de llamado (automaticamente por ahora, a futuro a travez de evento en un nuevo boton)
 const servsJson = "/json/servicios.json"
-$.getJSON(servsJson, function(answer, status) {
+$.getJSON(servsJson, function (answer, status) {
+    console.log(status)
     if(status === "success") {
         let servicios = answer
         let f = 0

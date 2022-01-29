@@ -141,7 +141,7 @@ btnConfirmServ.addEventListener("click", (e) => {
 const servsJson = "/json/servicios.json"
 $.getJSON(servsJson, function (answer, status) {
     console.log(status)
-    if(status === "success") {
+    if(status == "success") {
         let servicios = answer
         let f = 0
         for(const datosServs of servicios) {

@@ -138,7 +138,7 @@ btnConfirmServ.addEventListener("click", (e) => {
     }, 5000)
 })
 // cargo servicios dinamicamente a travez de llamado (automaticamente por ahora, a futuro a travez de evento en un nuevo boton)
-const servsJson = "../json/servicios.json";
+const servsJson = "json/servicios.json";
 $(".main-index__seccion-2").append(`<button class="btnservis">Mostrar</button>`);
 $(".btnservis").click(()=> {
     $.getJSON(servsJson, function (answer, status) {
@@ -169,7 +169,7 @@ $(".btnservis").click(()=> {
 })
 
 // cargo imagenes de empresas aliadas dinamicamente a travez de llamado (automaticamente por ahora, a futuro a travez de evento en un nuevo boton)
-const EmpresAliadas = "/json/empresasAliadas.json"
+const EmpresAliadas = "json/empresasAliadas.json"
 $.getJSON(EmpresAliadas, function(answer, status) {
     if(status === "success") {
         let empresasAliadas = answer

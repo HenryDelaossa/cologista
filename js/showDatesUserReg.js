@@ -28,6 +28,7 @@ function showDatesUserOld(contenedor) {
                             <h6 style="font-size: 12px">Usuario: ${JSON.parse(localStorage.getItem("usuarioActivo")).user}</h6>
                             <h6 style="font-size: 12px">nombre: ${JSON.parse(localStorage.getItem("usuarioActivo")).name} ${JSON.parse(localStorage.getItem("usuarioActivo")).lastName} </h6>
                             <h6 style="font-size: 12px">correo: ${JSON.parse(localStorage.getItem("usuarioActivo")).email}</h6>
+                            <b class="ctnHour" style="font-size: 10px"></b>
                         </div>
                         <div class="contlogoutImg" style="margin:15px 80px 0 0">
                             <img src="img/logout.png" alt="logout" style="cursor: pointer" id="logoutImg">
@@ -46,11 +47,14 @@ function showDatesUserOld(contenedor) {
 function actualizHour () {
     let time = new Date();
     let mes = time.getMonth();
-    mes++
+    mes++;
+    if (mes <= 9) mes = "0"+mes;
     let day = time.getDate();
+    if (day <= 9) day = "0"+day;
     // time.getMonth();
     let year = time.getFullYear();
     let hour = time.getHours();
+    if (hour <= 9) hour = "0"+hour;
     let minutes = time.getMinutes();
     if (minutes <= 9) minutes = "0"+minutes;
     let seconds = time.getSeconds();

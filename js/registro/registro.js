@@ -38,36 +38,42 @@ const arrayDatesUser = new Array();
 // array copy para uso local por seguridad usuario
 var copyArrayDatesUser = new Array();
 const formReg = document.getElementById("formularioRegistro");
-const btnEnviarReg = document.querySelector("#btnEnviarReg");
-btnEnviarReg.addEventListener("click", (e) => {
-    e.preventDefault();
-    if (validInpt.nombre && validInpt.apellido && validInpt.correo && validInpt.usuario && validInpt.password && validInpt.telefono && checkTermimnos.checked) {
-        let namee = document.querySelector("#inputNombreReg").value;
-        let lastName = document.querySelector("#inputapellidoReg").value;
-        let email = document.querySelector("#inputEmailReg").value;
-        let user = document.querySelector("#ínputUsuarioReg").value;
-        let password = document.querySelector("#inputcontraseñaReg1").value;
-        let phone = document.querySelector("#inputTelefonoReg").value;
-        let country = document.getElementById("selectCiudadRegis").value;
-        // array arrayDatesUser a base del objeto FormRefistro ()
-        arrayDatesUser.push(new FormRegistro(namee, lastName, email, user, password, phone, country));
-        $(".divContMensErrRegUserAgain").hide()
-        $(".divContMensErrReg").hide()
-        // mensaje modal caso datos correctos
-        mensajeExitoErr("#contenedorMensajeRegistro", `Hola ${arrayDatesUser[0].name} Bienvenido a Cologista, Tu registro ah sido exitoso: enviamos un enlace a tu direccion de email para confirmar tu cuenta.`, "divContMensExitoReg", 6000);
-        // hago una copia en la variable copyarrayDatesUser para proteger la contraseña del usuario, la idea es almacenar en el local storage este array y futuramente obtener datos de ahi y no del original (arrayDatesuser con la info de password) por tanto en localstorage en el valor de password se mostrara "passwordHide" en vez de la contraseña original del usuario
-        copyArrayDatesUser.push(new FormRegistro(namee, lastName, email, user, "passwordHide", phone, country));
-        localStorage.setItem("users", JSON.stringify(copyArrayDatesUser));
-        setTimeout(()=> {
-            formReg.reset();
-            window.location.href = "index.html";
-        }, 7000);
-    } else {
-        $(".divContMensExitoReg").hide()
-        $(".divContMensErrRegUserAgain").hide()
-        mensajeExitoErr("#contenedorMensajeRegistro", `ups, algo no esta bien, por favor verifica que todas las casillas esten correctamente diligenciadas`, "divContMensErrReg", 3000);
-    };
-});
+const btnEnviarReg = document.querySelectorAll(".sbmtReg");
+btnEnviarReg.forEach((click) => {
+    $(click).on("click", function (e) {
+        e.preventDefault();
+        if (validInpt.nombre && validInpt.apellido && validInpt.correo && validInpt.usuario && validInpt.password && validInpt.telefono && checkTermimnos.checked) {
+            let namee = document.querySelector("#inputNombreReg").value;
+            let lastName = document.querySelector("#inputapellidoReg").value;
+            let email = document.querySelector("#inputEmailReg").value;
+            let user = document.querySelector("#ínputUsuarioReg").value;
+            let password = document.querySelector("#inputcontraseñaReg1").value;
+            let phone = document.querySelector("#inputTelefonoReg").value;
+            let country = document.getElementById("selectCiudadRegis").value;
+            // array arrayDatesUser a base del objeto FormRefistro ()
+            arrayDatesUser.push(new FormRegistro(namee, lastName, email, user, password, phone, country));
+            // spinner y mensaje modal caso datos correctos
+            spinner("#body");
+            // hago una copia en la variable copyarrayDatesUser para proteger la contraseña del usuario, la idea es almacenar en el local storage este array y futuramente obtener datos de ahi y no del original (arrayDatesuser con la info de password) por tanto en localstorage en el valor de password se mostrara "passwordHide" en vez de la contraseña original del usuario
+            copyArrayDatesUser.push(new FormRegistro(namee, lastName, email, user, "passwordHide", phone, country));
+            localStorage.setItem("users", JSON.stringify(copyArrayDatesUser));
+            setTimeout(() => {
+                $(".contspinner").hide();
+                $(".divContMensErrReg").hide()
+                mensajeExitoErr("#contenedorMensajeRegistro", `Hola ${arrayDatesUser[0].name} Bienvenido a Cologista, Tu registro ah sido exitoso. en breve seras redirigido a tu zona!.`, "divContMensExitoReg", 5000);
+            }, 1000);
+                    
+            setTimeout(()=> {
+                formReg.reset();
+                window.location.href = "index.html";
+            }, 6100);
+        }
+        if (!validInpt.nombre || !validInpt.apellido || !validInpt.correo || !validInpt.usuario || !validInpt.password || !validInpt.telefono || !checkTermimnos.checked) {
+            $(".divContMensExitoReg").hide();
+            mensajeExitoErr("#contenedorMensajeRegistro", `ups, algo no esta bien, por favor verifica que todas las casillas esten correctamente diligenciadas`, "divContMensErrReg", 3000);
+        };
+    })
+})
 // creando modal de iniciar sesion sobre boton ingresar o iniciar sesion y boton "ya estoy registrado" 
 // este modal antes estaba puesto con bootstrap, ahora lo implemento dinamicamente con js (eh ahorrado muchisimas lineas en html)
 const btnIngresar = document.querySelectorAll("#btnOngresRegistr")

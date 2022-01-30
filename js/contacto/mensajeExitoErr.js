@@ -3,7 +3,7 @@ function mensajeExitoErr (contenedor, textoDeMensaje, clase, tiempoFuera) {
                                 <div class="${clase}">
                                     <p>${textoDeMensaje}</p>
                                 </div>
-                        </div>`).slideDown()
+                        </div>`).slideDown();
     setTimeout(()=> {
         $(contenedor).fadeOut(600)
     },tiempoFuera)

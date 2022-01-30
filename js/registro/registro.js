@@ -51,17 +51,22 @@ btnEnviarReg.addEventListener("click", (e) => {
         let country = document.getElementById("selectCiudadRegis").value;
         // array arrayDatesUser a base del objeto FormRefistro ()
         arrayDatesUser.push(new FormRegistro(namee, lastName, email, user, password, phone, country));
-        $(".divContMensErrRegUserAgain").hide()
-        $(".divContMensErrReg").hide()
-        // mensaje modal caso datos correctos
-        mensajeExitoErr("#contenedorMensajeRegistro", `Hola ${arrayDatesUser[0].name} Bienvenido a Cologista, Tu registro ah sido exitoso: enviamos un enlace a tu direccion de email para confirmar tu cuenta.`, "divContMensExitoReg", 6000);
-        // hago una copia en la variable copyarrayDatesUser para proteger la contraseña del usuario, la idea es almacenar en el local storage este array y futuramente obtener datos de ahi y no del original (arrayDatesuser con la info de password) por tanto en localstorage en el valor de password se mostrara "passwordHide" en vez de la contraseña original del usuario
+         // hago una copia en la variable copyarrayDatesUser para proteger la contraseña del usuario, la idea es almacenar en el local storage este array y futuramente obtener datos de ahi y no del original (arrayDatesuser con la info de password) por tanto en localstorage en el valor de password se mostrara "passwordHide" en vez de la contraseña original del usuario
         copyArrayDatesUser.push(new FormRegistro(namee, lastName, email, user, "passwordHide", phone, country));
         localStorage.setItem("users", JSON.stringify(copyArrayDatesUser));
+        // muestro spinner
+        spinner("#body");
+        $(".divContMensErrRegUserAgain").hide()
+        $(".divContMensErrReg").hide();
+        setTimeout(() => {
+            $(".contspinner").hide();
+            // mensaje modal caso datos correctos
+            mensajeExitoErr("#contenedorMensajeRegistro", `Hola ${arrayDatesUser[0].name} Bienvenido a Cologista, Tu registro ah sido exitoso.<br> en breve seras redirigido a tu zona!.`, "divContMensExitoReg", 5000);
+        },1500);
         setTimeout(()=> {
             formReg.reset();
             window.location.href = "index.html";
-        }, 7000);
+        }, 6700);
     } else {
         $(".divContMensExitoReg").hide()
         $(".divContMensErrRegUserAgain").hide()

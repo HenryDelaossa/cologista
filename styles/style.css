@@ -678,7 +678,7 @@
       margin-bottom: 3rem; }
   .main-index__seccion-2 .main-index__div-contenedor-servs {
     display: grid;
-    grid-template-areas: "div1 div2 div3" "div4 div5 div6";
+    grid-template-areas: "div1 div2 div3" "div4 div5 div6";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-row-gap: 1rem;
@@ -756,7 +756,7 @@
     .main-index__seccion-2 .main-index__h2-Titulo {
       font-size: 1rem; }
     .main-index__seccion-2 .main-index__div-contenedor-servs {
-      grid-template-areas: "div1 div2" "div3 div4" "div5 div6";
+      grid-template-areas: "div1 div2" "div3 div4" "div5 div6";
       grid-template-columns: auto;
       margin: 0 auto; }
   .secJs .prudiv .pArr {
@@ -770,7 +770,7 @@
     .main-index__seccion-2 .main-index__div-titulo .main-index__h2-Titulo {
       font-size: 2rem; }
     .main-index__seccion-2 .main-index__div-contenedor-servs {
-      grid-template-areas: "div1" "div2" "div3" "div4" "div5" "div6";
+      grid-template-areas: "div1" "div2" "div3" "div4" "div5" "div6";
       margin: 0; }
       .main-index__seccion-2 .main-index__div-contenedor-servs .div-contenedor-servs__div-servicio-aFull {
         display: flex;
@@ -1770,7 +1770,7 @@ html .body {
     /*grilla*/ }
     .main-nosotros .nosotros-seccion-1 .nosotros-seccion-1__grilla {
       display: grid;
-      grid-template-areas: "quienesSomos quienesSomos quienesSomos quienesSomos" "mision mision vision vision" "hr hr hr hr" "titValores titValores titValores titValores" "primClientes rendimiento desAmbiental respSocial" "hr1 hr1 hr1 hr1" "titOpiniones titOpiniones titOpiniones titOpiniones" "opinion-1 opinion-1 opinion-1 opinion-1" "opinion-2 opinion-2 opinion-2 opinion-2" "opinion-3 opinion-3 opinion-3 opinion-3";
+      grid-template-areas: "quienesSomos quienesSomos quienesSomos quienesSomos" "mision mision vision vision" "hr hr hr hr" "titValores titValores titValores titValores" "primClientes rendimiento desAmbiental respSocial" "hr1 hr1 hr1 hr1" "titOpiniones titOpiniones titOpiniones titOpiniones" "opinion-1 opinion-1 opinion-1 opinion-1" "opinion-2 opinion-2 opinion-2 opinion-2" "opinion-3 opinion-3 opinion-3 opinion-3";
       grid-template-columns: auto;
       grid-row-gap: 1rem;
       grid-column-gap: 1rem;
@@ -2125,7 +2125,7 @@ html .body {
 
 @media screen and (max-width: 1023px) {
   .main-nosotros .nosotros-seccion-1 .nosotros-seccion-1__grilla {
-    grid-template-areas: "quienesSomos quienesSomos" "mision vision" "hr hr" "titValores titValores" "desAmbiental primClientes" "rendimiento respSocial" "hr1 hr1" "titOpiniones titOpiniones" "opinion-1 opinion-1" "opinion-2 opinion-2" "opinion-3 opinion-3";
+    grid-template-areas: "quienesSomos quienesSomos" "mision vision" "hr hr" "titValores titValores" "desAmbiental primClientes" "rendimiento respSocial" "hr1 hr1" "titOpiniones titOpiniones" "opinion-1 opinion-1" "opinion-2 opinion-2" "opinion-3 opinion-3";
     margin: 0 auto;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -2149,7 +2149,7 @@ html .body {
 
 @media screen and (max-width: 768px) {
   .main-nosotros .nosotros-seccion-1 .nosotros-seccion-1__grilla {
-    grid-template-areas: "quienesSomos" "mision" "vision" "hr" "titValores" "desAmbiental" "primClientes" "rendimiento" "respSocial" "hr1" "titOpiniones" "opinion-1" "opinion-2" "opinion-3";
+    grid-template-areas: "quienesSomos" "mision" "vision" "hr" "titValores" "desAmbiental" "primClientes" "rendimiento" "respSocial" "hr1" "titOpiniones" "opinion-1" "opinion-2" "opinion-3";
     margin: 0 auto;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -2278,7 +2278,8 @@ html .body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #da0039;
-    border-radius: 0px 10px 0px 10px; }
+    border-radius: 0px 10px 0px 10px;
+    box-shadow: 2px 5px 16px 0px #00000020; }
   .main-registro .contenedorMensajeRegistro .divContMensExitoReg {
     position: absolute;
     text-align: center;
@@ -2288,7 +2289,8 @@ html .body {
     transform: translate(-50%, -50%);
     background-color: #d2d2d2;
     border: 1px solid #da0039;
-    border-radius: 0px 10px 0px 10px; }
+    border-radius: 0px 10px 0px 10px;
+    box-shadow: 2px 5px 16px 0px #00000020; }
   .main-registro .contenedorMensajeRegistro .divContMensErrRegUserAgain {
     position: absolute;
     text-align: center;
@@ -2674,16 +2676,36 @@ html {
       position: inherit;
       height: auto;
       overflow: visible; }
-    html .body .contSpinerIndex .spiner {
-      animation: spiner;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite; }
+    html .body .contspinner .spinner {
+      display: inline-block;
+      position: relative;
+      width: 2000px;
+      height: 150px;
+      top: 40%;
+      left: 45%;
+      margin: 0 auto; }
+    html .body .contspinner .spinner div {
+      position: absolute;
+      border: 4px solid #f80000;
+      opacity: 1;
+      border-radius: 3px 10px 3px 10px;
+      animation: spinner 1s cubic-bezier(0, 0.2, 0.8, 1) infinite; }
+    html .body .contspinner .spinner div:nth-child(2) {
+      animation-delay: -0.5s; }
 
-@keyframes spiner {
+@keyframes spinner {
   0% {
-    transform: rotate(0deg); }
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1; }
   100% {
-    transform: rotate(360deg); } }
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0; } }
   html section[id],
   html div[id] {
     scroll-margin-top: 60px; }

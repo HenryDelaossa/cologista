@@ -35,22 +35,56 @@ html {
       height: auto;
       overflow: visible;
     }
-    .contSpinerIndex { 
-      .spiner {
-        animation: spiner ;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
+    .contspinner { 
+      .spinner {
+        display: inline-block;
+        position: relative;
+        width: 2000px;
+        height: 150px;
+        top: 40%;
+        left: 45%;
+        margin: 0 auto;
       }
-    }
-    @keyframes spiner {
-      0%{
-        transform: rotate(0deg);
+      .spinner div {
+        position: absolute;
+        border: 4px solid #f80000;
+        opacity: 1;
+        border-radius:  3px 10px 3px 10px;
+        animation: spinner 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
       }
-      100%{
-        transform: rotate(360deg);
+      .spinner div:nth-child(2) {
+        animation-delay: -0.5s;
+      }
+      @keyframes spinner {
+        0% {
+          top: 36px;
+          left: 36px;
+          width: 0;
+          height: 0;
+          opacity: 1;
+        }
+        100% {
+          top: 0px;
+          left: 0px;
+          width: 72px;
+          height: 72px;
+          opacity: 0;
+        }
       }
       
+      
     }
+    // @keyframes spiner {
+    //   0%{
+    //     transform: rotate(0deg);
+    //     border-left-width: 0%;
+    //   }
+    //   100%{
+    //     transform: rotate(360deg);
+    //     border-left-width: 100%;
+    //   }
+      
+    // }
   }
   section[id],
   div[id] {

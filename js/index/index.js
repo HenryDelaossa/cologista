@@ -65,12 +65,18 @@ if (localStorage.getItem("usuarioActivo")){
 $("#logoutImg").click(()=>{
     localStorage.removeItem("users");
     localStorage.removeItem("usuarioActivo");
-    $(".contDatesUserReg").hide();
-    $("#btnIngresar, #btnFlotInSes, #buttonRegisRightDark, .div__parrafo-a").fadeIn(400);
-    mensErrExiIniSes("#d2d2d2", `Regresa pronto, te esperamos!`, "120");
+    
+    spinner("#body");
+    setTimeout(() => {
+        $(".contspinner").hide();
+        $(".contDatesUserReg").hide();
+        $("#btnIngresar, #btnFlotInSes, #buttonRegisRightDark, .div__parrafo-a").fadeIn(400);
+        mensErrExiIniSes("#d2d2d2", `Regresa pronto, te esperamos!`, "120");
+    }, 1500);
+    
     setTimeout(()=> {
         window.location.reload()
-    },1000)   
+    },4500)   
 }).mouseenter(()=>{$(".psalzona").text("salir")}).mouseout(()=>{$(".psalzona").text("")})
 // escucho evento de tecla esc para cerrar modales 
 window.addEventListener('keyup',function(evt) {
@@ -127,18 +133,20 @@ btnConfirmServ.addEventListener("click", (e) => {
     const arrInfoUltserv = [{dir1: infoinput1, dir2: infoinput2, valor: vbValr }]
     localStorage.setItem("UltimoServicioInfo", JSON.stringify(arrInfoUltserv));
     // muestro datos de mensajero asignado para realizar el servicio (aleatoriamente)
-    tarjetaMensajeroAsignado("#divContMensConfirm", infoinput1 )
+    spinner("#body");
     setTimeout(() => {
+        $(".contspinner").hide();
         $("#inputDirUno, #inputDirDos").val(null);
         $("#inputDirUno, #inputDirDos").prop('disabled', false);
         $("#contNumKmDis, #contValServ").text("")
         $("#submitServmodCalcular").css({display: "inline-block"})
-        $("#submitServmodConfirmar").css({display: "none"})
-        arrDist = []
-    }, 5000)
+        $("#submitServmodConfirmar").css({display: "none"});
+        arrDist = [];
+        tarjetaMensajeroAsignado("#divContMensConfirm", infoinput1 );
+    }, 2000)
 })
 // cargo servicios dinamicamente a travez de llamado (automaticamente por ahora, a futuro a travez de evento en un nuevo boton)
-const servsJson = "/json/servicios.json"
+const servsJson = "json/servicios.json"
 $.getJSON(servsJson, function(answer, status) {
     if(status === "success") {
         let servicios = answer
@@ -150,20 +158,31 @@ $.getJSON(servsJson, function(answer, status) {
                 <h3 class="div-contenedor-servs__h3-tit" id="titAfull">${datosServs.tit}</h3>
                 <img class="div-contenedor-servs__img" src=${datosServs.img} alt="img-servicio_a-Full- cologista">
                 <p >${datosServs.description}<span class="div-contenedor-servs__span" style="color: #da0039" >${datosServs.span}</span></b>
-                <a class="btnCotiz" id="btnCotiz">Cotizar</a>
+                <a class="btnCotiz" id="btnCotiz">proximanente</a>
             </div>`);
         }
-        // accion a boton cotizar
+        // evento a boton cotizar
         const btncotiz = document.querySelectorAll(".btnCotiz")
         btncotiz.forEach((btncoti)=> {
             $(btncoti).click(()=> {
-                $(btncoti).text("Proximamente").css({"background-color": "#d2d2d2", color: "#171717", transition: "600ms"});
+                $(btncoti).text("Cotizar").css({"background-color": "#d2d2d2", color: "#171717", transition: "600ms", "letter-spacing":"5px"});
+                // evento para cuando se de click si el boton dice proximamente
+                let textbtn = btncoti.innerHTML;
+                if (textbtn == "Cotizar") {
+                    $(btncoti).click(()=> {
+                        window.location.href = "contacto.html"
+                    })
+                }
             })
+
+            
         })
+        
+        
     }
 })
 // cargo imagenes de empresas aliadas dinamicamente a travez de llamado (automaticamente por ahora, a futuro a travez de evento en un nuevo boton)
-const EmpresAliadas = "/json/empresasAliadas.json"
+const EmpresAliadas = "json/empresasAliadas.json"
 $.getJSON(EmpresAliadas, function(answer, status) {
     if(status === "success") {
         let empresasAliadas = answer

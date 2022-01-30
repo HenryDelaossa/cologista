@@ -135,7 +135,7 @@ btnConfirmServ.addEventListener("click", (e) => {
         $("#submitServmodCalcular").css({display: "inline-block"})
         $("#submitServmodConfirmar").css({display: "none"})
         arrDist = []
-    }, 5000)
+    }, 2000)
 })
 // cargo servicios dinamicamente a travez de llamado (automaticamente por ahora, a futuro a travez de evento en un nuevo boton)
 const servsJson = "json/servicios.json";

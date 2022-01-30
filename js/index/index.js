@@ -138,31 +138,36 @@ btnConfirmServ.addEventListener("click", (e) => {
     }, 5000)
 })
 // cargo servicios dinamicamente a travez de llamado (automaticamente por ahora, a futuro a travez de evento en un nuevo boton)
-const servsJson = "/json/servicios.json"
-$.getJSON(servsJson, function (answer, status) {
-    console.log(status)
-    if(status == "success") {
-        let servicios = answer
-        let f = 0
-        for(const datosServs of servicios) {
-            f++
-            $(".main-index__div-contenedor-servs").append(
-        `   <div class="div-contenedor-servs__div-servicio" style="grid-area: div${f}; justify-self: center">
-                <h3 class="div-contenedor-servs__h3-tit" id="titAfull">${datosServs.tit}</h3>
-                <img class="div-contenedor-servs__img" src=${datosServs.img} alt="img-servicio_a-Full- cologista">
-                <p >${datosServs.description}<span class="div-contenedor-servs__span" style="color: #da0039" >${datosServs.span}</span></b>
-                <a class="btnCotiz" id="btnCotiz">Cotizar</a>
-            </div>`);
-        }
-        // accion a boton cotizar
-        const btncotiz = document.querySelectorAll(".btnCotiz")
-        btncotiz.forEach((btncoti)=> {
-            $(btncoti).click(()=> {
-                $(btncoti).text("Proximamente").css({"background-color": "#d2d2d2", color: "#171717", transition: "600ms"});
+const servsJson = "/json/servicios.json";
+$(".main-index__div-contenedor-servs").append(`<button class="btnservis">Mostrar</button>`);
+$(".btnservis").click(()=> {
+    $.getJSON(servsJson, function (answer, status) {
+        console.log(status);
+        console.log(answer)
+        if(status == "success") {
+            let servicios = answer
+            let f = 0
+            for(const datosServs of servicios) {
+                f++
+                $(".main-index__div-contenedor-servs").append(
+            `   <div class="div-contenedor-servs__div-servicio" style="grid-area: div${f}; justify-self: center">
+                    <h3 class="div-contenedor-servs__h3-tit" id="titAfull">${datosServs.tit}</h3>
+                    <img class="div-contenedor-servs__img" src=${datosServs.img} alt="img-servicio_a-Full- cologista">
+                    <p >${datosServs.description}<span class="div-contenedor-servs__span" style="color: #da0039" >${datosServs.span}</span></b>
+                    <a class="btnCotiz" id="btnCotiz">Cotizar</a>
+                </div>`);
+            }
+            // accion a boton cotizar
+            const btncotiz = document.querySelectorAll(".btnCotiz")
+            btncotiz.forEach((btncoti)=> {
+                $(btncoti).click(()=> {
+                    $(btncoti).text("Proximamente").css({"background-color": "#d2d2d2", color: "#171717", transition: "600ms"});
+                })
             })
-        })
-    }
+        }
+    })
 })
+
 // cargo imagenes de empresas aliadas dinamicamente a travez de llamado (automaticamente por ahora, a futuro a travez de evento en un nuevo boton)
 const EmpresAliadas = "/json/empresasAliadas.json"
 $.getJSON(EmpresAliadas, function(answer, status) {
@@ -175,3 +180,5 @@ $.getJSON(EmpresAliadas, function(answer, status) {
         }        
     }
 })
+// actualizar fecha y hora
+actualizHour()

@@ -60,9 +60,12 @@ function modalIniSesion(contenedorModInSes, colorFondoModal,contenedorInfoUsuari
                 setTimeout(()=> {
                     $(".contspinner").hide()
                     mensErrExiIniSes("#d2d2d2", `Hola ${users_nel[i].name}, Bienvenido a tu zona`, "1000")
-                    $("#body").css({overflow: "visible"});
-                    window.location.href = "index.html";
+                    $("#body").css({overflow: "visible"})
                 },2000)
+                setTimeout(()=> {
+                    window.location.href = "index.html";
+                    showDatesUserOld(contenedorInfoUsuarioActivo);
+                }, 4200)
             }  
         }
         // mensaje error caso de no coincidir los datos
@@ -71,9 +74,9 @@ function modalIniSesion(contenedorModInSes, colorFondoModal,contenedorInfoUsuari
             $("#submitIniSes").prop("disabled", true)
             $(".mErr").show()
             setTimeout(()=> {
-                $(".mErr").hide();
+                $(".mErr").hide("");
                 $("#submitIniSes").prop("disabled", false)
-            },1500)
+            },2000)
         }
     })     
 }

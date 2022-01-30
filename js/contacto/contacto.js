@@ -104,6 +104,4 @@ $("#logoutImg").click(()=>{
     setTimeout(()=> {
         window.location.href = "index.html";
     },1000)   
-}).mouseenter(()=>{$(".psalzona").text("salir")}).mouseout(()=>{$(".psalzona").text("")});
-// actualizar fecha y hora
-actualizHour()
+}).mouseenter(()=>{$(".psalzona").text("salir")}).mouseout(()=>{$(".psalzona").text("")})

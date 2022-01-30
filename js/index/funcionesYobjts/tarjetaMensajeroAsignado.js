@@ -10,7 +10,7 @@ function tarjetaMensajeroAsignado(contenedor, direccion1) {
                                     <p class="spanfoExt" style=" height: auto; background-color: #171717;color: #d2d2d2; margin: 10px 10px 0 0;  font-size: 10px">En menos de 30 minutos llegara a la direccion uno: ${direccion1.toUpperCase()}, recuerda comunicarte con tu mensajero asignado para mantener mejor comunicacion y coordinacion</p>
                                 </div>
                                 <div class="divNombreFoto" style=" margin-right: 10px;">
-                                    <p class="pNomgitbreMens">${mensajeros[indiceAleat].nombreMens.toUpperCase()} ${mensajeros[indiceAleat].apellidoMens.toUpperCase()}</p>
+                                    <p class="pNombreMens">${mensajeros[indiceAleat].nombreMens.toUpperCase()} ${mensajeros[indiceAleat].apellidoMens.toUpperCase()}</p>
                                     <p class="imgMens"><img src="${mensajeros[indiceAleat].fotoMens}" alt="foto Mensajero Asignado Cologista"></p>
                                 </div>
                                 <div class="divInfoMens">

@@ -80,8 +80,8 @@
   </header>
   <!--formulario de contacto-->
   <main class="main-registro">
-    <div id="contenedorMensajeRegistro" class="contenedorMensajeRegistro">
-    </div>
+    <aside id="contenedorMensajeRegistro" class="contenedorMensajeRegistro">
+    </aside>
     <div class="contMenErrInsSes" style="display: none"></div>
     <div class="contButtonDark" id="contButtonDark">
       <button class="buttonDark" id="buttonDark">
@@ -161,7 +161,7 @@
               </div>
               <div class="main-registro-formulario__divs">
                 <input class="main-registro-formulario__submit" type="reset" value="Borar Datos">
-                <input id="btnEnviarReg" class="main-registro-formulario__submit sbmtReg" type="submit" value="Enviar">
+                <input id="btnEnviarReg" class="main-registro-formulario__submit" type="submit" value="Enviar">
               </div>
             </fieldset>
           </form>
@@ -273,7 +273,9 @@
     </nav>
   </footer>
   <!-- JQUERY  -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha384-rY/jv8mMhqDabXSo+UCggqKtdmBfd3qC2/KvyTDNQ6PcUJXaxK1tMepoQda4g5vB"
+    crossorigin="anonymous"></script>
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
     integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
@@ -283,13 +285,13 @@
     new WOW().init();
   </script>
   <!-- mis scripts -->
-  <script src="js/contacto/mensajeExitoErr.js"></script>
   <script src="js/mensErrExiIniSes.js"></script>
   <script src="js/spinner.js"></script>
   <script src="js/usuarios_nel.js"></script>
   <script src="js/modalIniSesion.js"></script>
   <script src="js/showDatesUserReg.js"></script>
   <script src="js/registro/objFormRegistro.js"></script>
+  <script src="js/contacto/mensajeExitoErr.js"></script>
   <script src="js/registro/validFormRegist.js"></script>
   <script src="js/efectScroll.js"></script>
   <script src="js/addDark.js"></script>

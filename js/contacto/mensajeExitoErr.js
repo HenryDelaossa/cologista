@@ -1,12 +1,11 @@
 function mensajeExitoErr (contenedor, textoDeMensaje, clase, tiempoFuera) {
-    $(contenedor).prepend(`<div>
+    $(contenedor).append(`<div>
                                 <div class="${clase}">
                                     <p>${textoDeMensaje}</p>
                                 </div>
-                        </div>`).show(400);
-    
+                        </div>`).slideDown()
     setTimeout(()=> {
-        $(contenedor).hide()
+        $(contenedor).fadeOut(600)
     },tiempoFuera)
 }
 

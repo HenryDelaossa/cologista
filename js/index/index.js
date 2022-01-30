@@ -135,15 +135,12 @@ btnConfirmServ.addEventListener("click", (e) => {
         $("#submitServmodCalcular").css({display: "inline-block"})
         $("#submitServmodConfirmar").css({display: "none"})
         arrDist = []
-    }, 2000)
+    }, 5000)
 })
 // cargo servicios dinamicamente a travez de llamado (automaticamente por ahora, a futuro a travez de evento en un nuevo boton)
-const servsJson = "json/servicios.json";
-
-$.getJSON(servsJson, function (answer, status) {
-    console.log(status);
-    console.log(answer)
-    if(status == "success") {
+const servsJson = "/json/servicios.json"
+$.getJSON(servsJson, function(answer, status) {
+    if(status === "success") {
         let servicios = answer
         let f = 0
         for(const datosServs of servicios) {
@@ -165,9 +162,8 @@ $.getJSON(servsJson, function (answer, status) {
         })
     }
 })
-
 // cargo imagenes de empresas aliadas dinamicamente a travez de llamado (automaticamente por ahora, a futuro a travez de evento en un nuevo boton)
-const EmpresAliadas = "json/empresasAliadas.json"
+const EmpresAliadas = "/json/empresasAliadas.json"
 $.getJSON(EmpresAliadas, function(answer, status) {
     if(status === "success") {
         let empresasAliadas = answer
@@ -178,5 +174,3 @@ $.getJSON(EmpresAliadas, function(answer, status) {
         }        
     }
 })
-// actualizar fecha y hora
-actualizHour()

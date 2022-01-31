@@ -165,7 +165,7 @@ $.getJSON(servsJson, function(answer, status) {
         const btncotiz = document.querySelectorAll(".btnCotiz")
         btncotiz.forEach((btncoti)=> {
             $(btncoti).click(()=> {
-                $(btncoti).text("Cotizar").css({"background-color": "#d2d2d2", color: "#171717", transition: "600ms", "letter-spacing":"5px"});
+                $(btncoti).text("Cotizar").css({"background-color": "#d2d2d2", color: "#171717", transition: "600ms", "letter-spacing":"3px"});
                 // evento para cuando se de click si el boton dice proximamente
                 let textbtn = btncoti.innerHTML;
                 if (textbtn == "Cotizar") {
@@ -177,8 +177,6 @@ $.getJSON(servsJson, function(answer, status) {
 
             
         })
-        
-        
     }
 })
 // cargo imagenes de empresas aliadas dinamicamente a travez de llamado (automaticamente por ahora, a futuro a travez de evento en un nuevo boton)

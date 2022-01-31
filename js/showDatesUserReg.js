@@ -53,6 +53,7 @@ function ctnrDatesHour () {
     let dia = fecha.getDate();
     let mes = fecha.getMonth();
     mes++
+    if (mes <= 9) mes = "0"+mes
     let anno = fecha.getFullYear();
     let hora = fecha.getHours();
     if (hora <= 9) hora = "0"+hora;

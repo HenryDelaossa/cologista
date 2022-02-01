@@ -100,21 +100,27 @@
           <div class="main-contacto__div-formulario">
             <form class="main-contacto__formulario" id="formContact">
               <div class="main-contacto__divs">
-                <label class="main-contacto__label" for="fullNameInput">Nombre:</label>
-                <input id="fullNameInput" class="main-contacto__input" name="nombre" placeholder="Nombre completo">
-                <i class="mensErrorNombre" style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
+                <label class="main-contacto__label labelNew" for="fullNameInput">
+                  <input id="fullNameInput"  type="text" class="main-contacto__input inptNew" name="nombre" placeholder="Nombre">
+                  <p class="plblNew">Nombre:</p>
+                </label>
+                <i class="mensErrorNombre imen" style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
               </div>
               <div class="main-contacto__divs">
-                <label class="main-contacto__label" for="emialInput">Email:</label>
-                <input id="emialInput" class="main-contacto__input" id="email" name="email" type="email"
+                <label class="main-contacto__label labelNew" for="emialInput">
+                  <input id="emialInput" class="main-contacto__input inptNew" id="email" name="email" type="email"
                   placeholder="ejemplo@email.com">
-                <i class="mensErrorEmail" style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
+                  <p class="plblNew">email:</p>
+                </label>
+                <i class="mensErrorEmail imen" style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
               </div>
               <div class="main-contacto__divs">
-                <label class="main-contacto__label" for="phoneInput">Telefono:</label>
-                <input id="phoneInput" class="main-contacto__input" id="phone" name="phone" type="phone"
+                <label class="main-contacto__label labelNew" for="phoneInput">
+                  <input id="phoneInput" class="main-contacto__input inptNew" id="phone" name="phone" type="phone"
                   placeholder="telefono de contacto" required>
-                <i class="mensErrorPhone" style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
+                  <p class="plblNew">telefono:</p>
+                </label>
+                <i class="mensErrorPhone imen" style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
               </div>
               <div class="main-contacto__divs">
                 <label class="main-contacto__label" for="serviceSelect">Interesado en</label>
@@ -130,10 +136,12 @@
                 </select>
               </div>
               <div class="main-contacto__divs">
-                <label class="main-contacto__label" for="textAreaInput">Mensaje:</label>
-                <textarea id="textAreaInput" class="main-contacto__textarea" id="mensaje" name="mensaje"
+                <label class="main-contacto__label labelNew" for="textAreaInput">
+                  <textarea id="textAreaInput" class="main-contacto__textarea txtAre" id="mensaje" name="mensaje"
                   placeholder="Dejanos un mensaje"></textarea>
-                <i class="mensErrorMensaje" style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
+                  <p class="plblNewTxtar">mensaje:</p>
+                </label>
+                <i class="mensErrorMensaje imen" style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
               </div>
               <div class="main-contacto__divs">
                 <input class="main-contacto__submit" name="submit" type="reset" value="Borar Datos">

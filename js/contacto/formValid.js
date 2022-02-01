@@ -6,7 +6,7 @@ function formValid(e) {
                 $(".mensErrorNombre").text("");
                 campos.nombre = true;
             } else {
-                $(".mensErrorNombre").text("tu nombre no puede estar vacio").css({ color: "#da0039" });
+                $(".mensErrorNombre").text("tu nombre no puede estar vacio").css({ color: "#da0039" , height:"auto"});
                 $("#fullNameInput").css({ "box-shadow": "2px 2px 10px 0px #da0039" });
                 campos.nombre = false;
             }
@@ -17,7 +17,7 @@ function formValid(e) {
                 $(".mensErrorEmail").text("");
                 campos.correo = true;
             } else {
-                $(".mensErrorEmail").text("ingresa un email valido").css({ color: "#da0039" });
+                $(".mensErrorEmail").text("ingresa un email valido").css({ color: "#da0039" , height:"auto"});
                 $("#emialInput").css({ "box-shadow": "2px 2px 10px 0px #da0039" });
                 campos.correo = false;
             }
@@ -28,7 +28,7 @@ function formValid(e) {
                 $("#phoneInput").css({ "box-shadow": "none" });
                 campos.telefono = true;
             } else {
-                $(".mensErrorPhone").text("ingresa un numero de telefono valido, entre 7 y 13 digitos.").css({ color: "#da0039" });
+                $(".mensErrorPhone").text("ingresa un numero de telefono valido, entre 7 y 13 digitos.").css({ color: "#da0039", height:"auto"});
                 $("#phoneInput").css({ "box-shadow": "2px 2px 10px 0px #da0039" });
                 campos.telefono = false;
             }

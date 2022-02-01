@@ -68,7 +68,7 @@ const paramvalidFormRegistTrue  = ( elementoi,textElementiCorrect ,elementoBoxSh
 }
 // caso error
 const paramvalidFormRegistFalse = (elementoi, textElementiError, elementoBoxShadow) => {
-    $(elementoi).text(textElementiError).css({ color: "#da0039" });
+    $(elementoi).text(textElementiError).css({ color: "#da0039", height:"auto"});
     $(elementoBoxShadow).css({ "box-shadow": "2px 2px 10px 0px #da0039" });
 }
 const validInpt = {

@@ -117,11 +117,6 @@ inptslctser.addEventListener("focus", ()=> {
         inptslctser.value = ""
         
     })
-    // click.addEventListener("click", (e)=> {
-    //     console.log("aja")
-    //     let evtSlctOpt = e.target.innerText;
-    //     liSelectServs.value = evtSlctOpt;  
-    // })
 liSelectServs.forEach((click) => {
     click.addEventListener("click", (e) => {
         let textslct = e.target.innerText;

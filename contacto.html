@@ -101,28 +101,32 @@
             <form class="main-contacto__formulario" id="formContact">
               <div class="main-contacto__divs">
                 <label class="main-contacto__label labelNew" for="fullNameInput">
-                  <input id="fullNameInput"  type="text" class="main-contacto__input inptNew" name="nombre" placeholder="Nombre">
+                  <input id="fullNameInput" type="text" class="main-contacto__input inptNew" name="nombre"
+                    placeholder="Nombre">
                   <p class="plblNew">Nombre:</p>
                 </label>
-                <i class="mensErrorNombre imen" style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
+                <i class="mensErrorNombre imen"
+                  style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
               </div>
               <div class="main-contacto__divs">
                 <label class="main-contacto__label labelNew" for="emialInput">
                   <input id="emialInput" class="main-contacto__input inptNew" id="email" name="email" type="email"
-                  placeholder="ejemplo@email.com">
+                    placeholder="ejemplo@email.com">
                   <p class="plblNew">email:</p>
                 </label>
-                <i class="mensErrorEmail imen" style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
+                <i class="mensErrorEmail imen"
+                  style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
               </div>
               <div class="main-contacto__divs">
                 <label class="main-contacto__label labelNew" for="phoneInput">
                   <input id="phoneInput" class="main-contacto__input inptNew" id="phone" name="phone" type="phone"
-                  placeholder="telefono de contacto" required>
+                    placeholder="telefono de contacto" required>
                   <p class="plblNew">telefono:</p>
                 </label>
-                <i class="mensErrorPhone imen" style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
+                <i class="mensErrorPhone imen"
+                  style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
               </div>
-              <div class="main-contacto__divs">
+              <!-- <div class="main-contacto__divs">
                 <label class="main-contacto__label" for="serviceSelect">Interesado en</label>
                 <select id="serviceSelect" class="main-contacto__select">
                   <option class="main-contacto__option" value="empty" name="empty"></option>
@@ -134,14 +138,32 @@
                   <option class="main-contacto__option" value="AlmaCena">AlmaCena</option>
                   <option class="main-contacto__option" value="otrasConsultas">Otros</option>
                 </select>
+              </div> -->
+              <div class="main-contacto__divs">
+                <label class="main-contacto__label labelNew" for="inptslctser">
+                  <input id="inptslctser" class="main-contacto__input inptNew inptslctser" name="select"
+                  type="text" placeholder="seleccionar">
+                  <p class="plblNew">interesado en:</p>
+                </label>
+                <ul class="ulSlctSer">
+                  <li class="liSelectServs">A Full</li>
+                  <li class="liSelectServs">Millas X Hora</li>
+                  <li class="liSelectServs">EmpacArte</li>
+                  <li class="liSelectServs">EntreGamos</li>
+                  <li class="liSelectServs">AlmacFrio</li>
+                  <li class="liSelectServs">AlmaCena</li>
+                  <li class="liSelectServs">Otros</li>
+                </ul>
+
               </div>
               <div class="main-contacto__divs">
                 <label class="main-contacto__label labelNew" for="textAreaInput">
                   <textarea id="textAreaInput" class="main-contacto__textarea txtAre" id="mensaje" name="mensaje"
-                  placeholder="Dejanos un mensaje"></textarea>
+                    placeholder="Dejanos un mensaje"></textarea>
                   <p class="plblNewTxtar">mensaje:</p>
                 </label>
-                <i class="mensErrorMensaje imen" style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
+                <i class="mensErrorMensaje imen"
+                  style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
               </div>
               <div class="main-contacto__divs">
                 <input class="main-contacto__submit" name="submit" type="reset" value="Borar Datos">

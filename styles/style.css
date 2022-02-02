@@ -1415,7 +1415,8 @@ html .body {
         flex-wrap: nowrap; }
         html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario {
           margin-left: 5rem;
-          text-align: center; }
+          text-align: center;
+          width: 33%; }
           html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-titulo {
             width: 100%; }
             html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-titulo .div-titulo__h1-titulo {
@@ -1437,15 +1438,53 @@ html .body {
                 color: #171717; }
                 html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .main-contacto__label.labelsDark {
                   color: #da0037; }
+              html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .ulSlctSer {
+                display: none;
+                list-style-position: unset;
+                padding-right: 2rem; }
+                html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .ulSlctSer .liSelectServs {
+                  position: relative;
+                  display: block;
+                  color: #171717;
+                  font-family: "Stick No Bills", sans-serif;
+                  font-size: 1.2rem;
+                  transition: all 300ms ease; }
+                  html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .ulSlctSer .liSelectServs::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 3px;
+                    left: 0;
+                    width: 0;
+                    height: 3px;
+                    background: #171717;
+                    transition: 300ms; }
+                  html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .ulSlctSer .liSelectServs::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 3px;
+                    right: 0;
+                    width: 0;
+                    height: 3px;
+                    background: #da0037;
+                    transition: 300ms; }
+                  html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .ulSlctSer .liSelectServs:hover {
+                    color: #da0037; }
+                    html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .ulSlctSer .liSelectServs:hover::before {
+                      width: 10%;
+                      transform: translate(400%); }
+                    html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .ulSlctSer .liSelectServs:hover::after {
+                      width: 10%;
+                      transform: translate(-400%); }
               html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .labelNew {
-                position: relative; }
+                position: relative;
+                width: 100%; }
                 html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .labelNew .inptNew {
                   font-size: 1rem;
                   background: #e5e5e5;
                   color: #171717;
                   outline: none;
                   padding: .7rem 1.15rem;
-                  width: 25rem;
+                  width: 100%;
                   border-radius: 2px 12px 2px 12px;
                   border: 1px solid #1717179a;
                   transition: border-color 0.4s ease;
@@ -1480,7 +1519,7 @@ html .body {
                   color: #171717;
                   outline: none;
                   padding: 1rem 1.15rem;
-                  width: 25rem;
+                  width: 100%;
                   height: 120px;
                   border-radius: 3px;
                   border: 1px solid #1717179a;
@@ -1512,19 +1551,6 @@ html .body {
                   color: #171717; }
                 html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .labelNew .txtAre:not(:focus) + .plblNewTxtar {
                   color: #171717; }
-              html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .main-contacto__select {
-                color: #171717;
-                width: 100%;
-                text-align: center;
-                border-radius: 2px 8px 2px 8px;
-                box-shadow: 0px 1px 5px 0px #171717;
-                resize: none;
-                margin-bottom: 1rem;
-                background: #e5e5e5;
-                box-shadow: none; }
-              html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .main-contacto__option {
-                text-align: center;
-                border-radius: 2px 8px 2px 8px; }
               html .body .main-contacto .main-contacto__seccion-1 .main-contacto__article-contenedor .main-contacto__div-tituloFormulario .main-contacto__div-formulario .main-contacto__formulario .main-contacto__divs .main-contacto__submit {
                 text-decoration: none;
                 background-color: #da0037;

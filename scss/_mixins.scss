@@ -68,12 +68,16 @@
 }
 //efecto hover aft bef
 @mixin efectos-menu(
+  $rightAfter,
+  $leftBefore,
   $colorAfter,
   $colorBefore,
   $widthefect,
   $bottombef,
   $bottomaft,
-  $colorlinkHover
+  $colorlinkHover,
+  $translateMas,
+  $translateMenos
 ) {
   position: relative;
   display: block;
@@ -105,11 +109,11 @@
     color: $colorlinkHover;
     &::before {
       width: $widthefect;
-      transform: translate(105%);
+      transform: translate($translateMas);
     }
     &::after {
       width: $widthefect;
-      transform: translate(-100%);
+      transform: translate($translateMenos);
     }
   }
 }

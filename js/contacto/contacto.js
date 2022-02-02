@@ -30,16 +30,18 @@ submitb.addEventListener("click", (e)=> {
     fullName = document.querySelector("#fullNameInput").value;
     email = document.querySelector("#emialInput").value;
     phone = document.querySelector("#phoneInput").value;
-    service = document.querySelector("#serviceSelect").value;
+    service = document.querySelector(".inptslctser").value;
     mssge = document.querySelector("#textAreaInput").value;
-    if (campos.nombre  && campos.correo && campos.telefono && campos.mensaje) {
-        lista.push(new FormContact(fullName, email, phone, service,mssge))
+    if (campos.nombre  && campos.correo && campos.telefono && campos.mensaje && service) {
+        lista.push(new FormContact(fullName, email, phone, service,mssge));
+        $(".divContMensErr").hide()
         mensajeExitoErr("#contenedorMensajeContacto",`Hola ${lista[lista.length-1].fullName}!, tus datos han sido enviados correctamente.\nNos comunicaremos contigo a la mayor brevedad.`, "divContMensExito", 5000)
         setTimeout(function() {
             formContact.reset()
             window.location.reload()
         },5000)
     } else {
+        $(".divContMensExito").hide()
         mensajeExitoErr("#contenedorMensajeContacto","Debes ingresar tu informacion completa al formulario, por favor valida nuevamente e ingresa los datos correctamente", "divContMensErr",3000)
     }
 })
@@ -105,3 +107,35 @@ $("#logoutImg").click(()=>{
         window.location.href = "index.html";
     },1000)   
 }).mouseenter(()=>{$(".psalzona").text("salir")}).mouseout(()=>{$(".psalzona").text("")})
+// evento inner a input, simulando inpiut select para dar mejores stilos a elementos
+const noshowlis = document.getElementById("body");
+const inptslctser = document.querySelector(".inptslctser");
+const liSelectServs = document.querySelectorAll(".liSelectServs")
+
+inptslctser.addEventListener("focus", ()=> {
+        $(".ulSlctSer").slideDown();
+        inptslctser.value = ""
+        
+    })
+    // click.addEventListener("click", (e)=> {
+    //     console.log("aja")
+    //     let evtSlctOpt = e.target.innerText;
+    //     liSelectServs.value = evtSlctOpt;  
+    // })
+liSelectServs.forEach((click) => {
+    click.addEventListener("click", (e) => {
+        let textslct = e.target.innerText;
+        inptslctser.value = textslct;
+        
+        $(".ulSlctSer").slideUp();
+    })
+})
+
+
+
+
+
+
+    
+
+

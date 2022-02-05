@@ -115,7 +115,19 @@
           text-align: center;
           margin-right: 6rem;
           .main-registro-formulario__divs {
-            margin-bottom: 0;
+            .ulSelectPais {
+              display: none;
+              list-style-position: unset;
+              padding-right: 2rem;
+              .liSelectPais {
+                @include efectos-menu(0, 0, $colorPrim, $colorSecun, 10%, 3px, 3px, $colorPrim, 400%, -400%);
+                cursor: pointer;
+              }
+            }
+            .labelNew {
+              @include newInputsDesign(80%, 10%, 10%);
+            }
+            
             .main-registro-formulario__label {
               @include labels;
               margin-top: 0;

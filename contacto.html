@@ -106,7 +106,7 @@
                   <p class="plblNew">Nombre:</p>
                 </label>
                 <i class="mensErrorNombre imen"
-                  style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
+                  style="width: 100%; height: auto;display: block;margin-bottom: .5rem;"></i>
               </div>
               <div class="main-contacto__divs">
                 <label class="main-contacto__label labelNew" for="emialInput">
@@ -115,7 +115,7 @@
                   <p class="plblNew">email:</p>
                 </label>
                 <i class="mensErrorEmail imen"
-                  style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
+                  style="width: 100%; height: auto;display: block;margin-bottom: .5rem;"></i>
               </div>
               <div class="main-contacto__divs">
                 <label class="main-contacto__label labelNew" for="phoneInput">
@@ -124,14 +124,16 @@
                   <p class="plblNew">telefono:</p>
                 </label>
                 <i class="mensErrorPhone imen"
-                  style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
+                  style="width: 100%; height: auto;display: block;margin-bottom: .5rem;"></i>
               </div>
               <div class="main-contacto__divs">
                 <label class="main-contacto__label labelNew" for="inptslctser">
                   <input id="inptslctser" class="main-contacto__input inptNew inptslctser" name="select"
-                  type="text" placeholder="seleccionar">
+                  type="text" placeholder="seleccionar" autocomplete="off" readonly>
                   <p class="plblNew">interesado en:</p>
                 </label>
+                <i class="mensErrorSlectServ imen"
+                  style="width: 100%; height: auto;display: block;margin-bottom: .5rem;"></i>
                 <ul class="ulSlctSer">
                   <li class="liSelectServs">A Full</li>
                   <li class="liSelectServs">Millas X Hora</li>
@@ -150,7 +152,7 @@
                   <p class="plblNewTxtar">mensaje:</p>
                 </label>
                 <i class="mensErrorMensaje imen"
-                  style="width: 100%; height: 15px;display: block;margin-bottom: .5rem;"></i>
+                  style="width: 100%; height: auto;display: block;margin-bottom: .5rem;"></i>
               </div>
               <div class="main-contacto__divs">
                 <input class="main-contacto__submit" name="submit" type="reset" value="Borar Datos">
@@ -273,6 +275,8 @@
     crossorigin="anonymous"></script>
   <script src="js/wow.min.js"></script>
   <!-- mis scripts -->
+  <script src="js/registro/objFormRegistro.js"></script>
+  <script src="js/selects.js"></script>
   <script src="js/mensErrExiIniSes.js"></script>
   <script src="js/spinner.js"></script>
   <script src="js/usuarios_nel.js"></script>

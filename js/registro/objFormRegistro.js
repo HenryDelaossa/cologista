@@ -9,11 +9,21 @@ class FormRegistro {
         this.country = country
     }
 };
+const validInpt = {
+    nombre: false,
+    apellido: false,
+    correo: false,
+    usuario: false,
+    password: false,
+    telefono: false,
+    pais: false
+}
 const validarInputsRegist = {
     nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
     apellido: /^[a-zA-ZÀ-ÿ\s]{1,80}$/,
 	correo: /^(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@(?:[^<>()[\].,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,63}$/,
     usuario: /^[a-zA-Z0-9]{4,16}$/,
     password: /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/,
-	telefono: /^\d{7,13}$/
+	telefono: /^\d{7,13}$/,
+    pais: /^[a-zA-ZÀ-ÿ\s.,;:]{1,50}$/
 }

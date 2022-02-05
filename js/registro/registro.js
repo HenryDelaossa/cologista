@@ -41,14 +41,15 @@ const formReg = document.getElementById("formularioRegistro");
 const btnEnviarReg = document.querySelector("#btnEnviarReg");
 btnEnviarReg.addEventListener("click", (e) => {
     e.preventDefault();
-    if (validInpt.nombre && validInpt.apellido && validInpt.correo && validInpt.usuario && validInpt.password && validInpt.telefono && checkTermimnos.checked) {
+    if (validInpt.nombre && validInpt.apellido && validInpt.correo && validInpt.usuario && validInpt.password  && validInpt.telefono && checkTermimnos.checked && validInpt.pais) {
+        console.log(validInpt.pais)
         let namee = document.querySelector("#inputNombreReg").value;
         let lastName = document.querySelector("#inputapellidoReg").value;
         let email = document.querySelector("#inputEmailReg").value;
         let user = document.querySelector("#ínputUsuarioReg").value;
         let password = document.querySelector("#inputcontraseñaReg1").value;
         let phone = document.querySelector("#inputTelefonoReg").value;
-        let country = document.getElementById("selectCiudadRegis").value;
+        let country = document.getElementById("inptslctPais").value;
         // array arrayDatesUser a base del objeto FormRefistro ()
         arrayDatesUser.push(new FormRegistro(namee, lastName, email, user, password, phone, country));
          // hago una copia en la variable copyarrayDatesUser para proteger la contraseña del usuario, la idea es almacenar en el local storage este array y futuramente obtener datos de ahi y no del original (arrayDatesuser con la info de password) por tanto en localstorage en el valor de password se mostrara "passwordHide" en vez de la contraseña original del usuario
@@ -68,6 +69,7 @@ btnEnviarReg.addEventListener("click", (e) => {
             window.location.href = "index.html";
         }, 6700);
     } else {
+        console.log(validInpt.pais)
         $(".divContMensExitoReg").hide()
         $(".divContMensErrRegUserAgain").hide()
         mensajeExitoErr("#contenedorMensajeRegistro", `ups, algo no esta bien, por favor verifica que todas las casillas esten correctamente diligenciadas`, "divContMensErrReg", 3000);
@@ -123,3 +125,5 @@ $("#logoutImg").click(()=>{
         window.location.href = "index.html";
     },1000)   
 }).mouseenter(()=>{$(".psalzona").text("salir")}).mouseout(()=>{$(".psalzona").text("")})
+// evento inner a input, simulando inpiut select para dar mejores stilos a elementos
+selects(".inptslctPais", ".ulSelectPais", ".liSelectPais", validInpt.pais)

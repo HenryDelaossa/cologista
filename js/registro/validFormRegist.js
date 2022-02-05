@@ -6,7 +6,7 @@ function validFormRegist(e) {
                 paramvalidFormRegistTrue(".mensErrorNombreReg", "","#inputNombreReg")
                 validInpt.nombre = true;
             } else {
-                paramvalidFormRegistFalse(".mensErrorNombreReg", "tu nombre no puede estar vacio", "#inputNombreReg")
+                paramvalidFormRegistFalse(".mensErrorNombreReg", "", "#inputNombreReg")
                 validInpt.nombre = false;
             }
         break;
@@ -15,7 +15,7 @@ function validFormRegist(e) {
                 paramvalidFormRegistTrue(".mensErrorapellidoReg", "","#inputapellidoReg")
                 validInpt.apellido = true;
             } else {
-                paramvalidFormRegistFalse(".mensErrorapellidoReg", "tu apellido no puede estar vacio", "#inputapellidoReg")
+                paramvalidFormRegistFalse(".mensErrorapellidoReg", "", "#inputapellidoReg")
                 validInpt.apellido = false;
             }
         break;
@@ -24,7 +24,7 @@ function validFormRegist(e) {
                 paramvalidFormRegistTrue(".mensErrorEmailReg", "","#inputEmailReg")
                 validInpt.correo = true;
             } else {
-                paramvalidFormRegistFalse(".mensErrorEmailReg", "ingresa un email valido", "#inputEmailReg")
+                paramvalidFormRegistFalse(".mensErrorEmailReg", "", "#inputEmailReg")
                 validInpt.correo = false;
             }
         break;
@@ -71,20 +71,12 @@ const paramvalidFormRegistFalse = (elementoi, textElementiError, elementoBoxShad
     $(elementoi).text(textElementiError).css({ color: "#da0039", height:"auto"});
     $(elementoBoxShadow).css({ "box-shadow": "2px 2px 10px 0px #da0039" });
 }
-const validInpt = {
-    nombre: false,
-    apellido: false,
-    correo: false,
-    usuario: false,
-    password: false,
-    telefono: false
-}
 // funcion validar contraseñas 
 const validContraseñas = () => {
     const contras1 = document.getElementById("inputcontraseñaReg1").value;
     const contras2 = document.getElementById("inputcontraseñaReg2").value;
     if (contras1 !== contras2) {
-        $(".mensErrorPassword2Reg").text("Las contraseñas deben ser totalmente iguales").css({ color: "#da0039" });
+        $(".mensErrorPassword2Reg").text("Las contraseñas no coinciden").css({ color: "#da0039" });
         $("#inputcontraseñaReg2").css({ "box-shadow": "2px 2px 10px 0px #da0039" });
     } else {
         $(".mensErrorPassword2Reg").text("");

@@ -318,7 +318,6 @@
   background-color: transparent;
   transition: 200ms ease-in-out;
   position: relative;
-  
 }
 //mixin valores seccion nosotros.html
 @mixin nosotros-valores($grid-area, $margin-bottom) {
@@ -390,4 +389,72 @@
 @mixin labels {
   display: block;
   color: $colorSecun;
+}
+
+@mixin newInputsDesign ($widthInput, $leftPTxt, $leftFocusp) {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+  .inptNew {
+    font-size: 1rem;
+    background: #e5e5e5;
+    color: $colorSecun;
+    outline: none;
+    padding: 0.7rem 1.15rem;
+    width: $widthInput;
+    border-radius: 2px 12px 2px 12px;
+    border: 1px solid #1717179a;
+    transition: border-color 0.4s ease;
+    text-align: center;
+  }
+  .inptNew:focus, .txtAre:focus {
+    border-color: #da0039;
+    text-align: left;
+  }
+  .inptNew:focus + .plblNew,
+  .inptNew:not(:placeholder-shown) + .plblNew,
+  .txtAre:focus + .plblNewTxtar,
+  .txtAre:not(:placeholder-shown) + .plblNewTxtar{
+    top: 0;
+    left: $leftFocusp;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #171717;
+    transition: 0.3s;
+  }
+  .inptNew:not(:focus) + .plblNew, .txtAre:not(:focus) + .plblNewTxtar  {
+    color: #171717;
+  }
+  .plblNew, .plblNewTxtar {
+    color: #171717;
+    font-size: 1rem;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: $leftPTxt;
+    transform: translateY(-50%);
+    margin-left: 0.8rem;
+    padding: 0;
+    background: #e5e5e5;
+    border-radius: 4px;
+    transition-property: top, font-size, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+  .txtAre {
+    font-size: 1rem;
+    background: #e5e5e5;
+    color: $colorSecun;
+    outline: none;
+    padding: 1rem 1.15rem;
+    width: 100%;
+    height: 120px;
+    border-radius: 3px;
+    border: 1px solid #1717179a;
+    transition: 0.3ms all;
+    transition: border-color 0.4s ease;
+    text-align: center;
+    align-items: center;
+    resize: none;
+  }
 }

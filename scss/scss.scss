@@ -74,6 +74,9 @@ html {
       
       
     }
+    .labeIniSes {
+      @include newInputsDesign (80%, 10%, 10%)
+    }
   }
   section[id],
   div[id] {

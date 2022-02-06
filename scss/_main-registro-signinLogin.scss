@@ -122,21 +122,22 @@
               .liSelectPais {
                 @include efectos-menu(0, 0, $colorPrim, $colorSecun, 10%, 3px, 3px, $colorPrim, 400%, -400%);
                 cursor: pointer;
+                &.liSelectsPaisDark {
+                  color: #d2d2d2;
+                  &:hover {
+                    color: $colorPrim;
+                  }
+                  &::before {
+                    background: #d2d2d2;
+                  }
+                  &::after {
+                    background: #da0039
+                  }
+                }
               }
             }
             .labelNew {
               @include newInputsDesign(80%, 10%, 10%);
-            }
-            
-            .main-registro-formulario__label {
-              @include labels;
-              margin-top: 0;
-              &.labelsDark {
-                color: $colorPrim;
-              }
-            }
-            .main-registro-formulario__input {
-              @include inpt-slct-txtar(400px);
             }
             .main-registro-formulario__input-check-label {
               color: $colorSecun;
@@ -151,13 +152,6 @@
                   color: $colorPrim;
                 }
               }
-            }
-            .main-registro-formulario__select {
-              @include inpt-slct-txtar(400px);
-            }
-            .main-registro-formulario__option {
-              @include inpt-slct-txtar(0);
-              text-align: center;
             }
             .main-registro-formulario__submit {
               @include botones(0px);

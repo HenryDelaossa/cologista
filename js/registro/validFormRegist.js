@@ -3,7 +3,7 @@ function validFormRegist(e) {
     switch (e.target.name) {
         case "nombreReg" :
             if (validarInputsRegist.nombre.test(e.target.value)) {
-                paramvalidFormRegistTrue(".mensErrorNombreReg", "","#inputNombreReg")
+                paramvalidFormRegistTrue(".mensErrorNombreReg", "","#inputNombreReg", "uppercase")
                 validInpt.nombre = true;
             } else {
                 paramvalidFormRegistFalse(".mensErrorNombreReg", "", "#inputNombreReg")
@@ -12,7 +12,7 @@ function validFormRegist(e) {
         break;
         case "apellidoReg":
             if (validarInputsRegist.apellido.test(e.target.value)) { 
-                paramvalidFormRegistTrue(".mensErrorapellidoReg", "","#inputapellidoReg")
+                paramvalidFormRegistTrue(".mensErrorapellidoReg", "","#inputapellidoReg", "uppercase")
                 validInpt.apellido = true;
             } else {
                 paramvalidFormRegistFalse(".mensErrorapellidoReg", "", "#inputapellidoReg")
@@ -21,7 +21,7 @@ function validFormRegist(e) {
         break;
         case "emailReg":
             if (validarInputsRegist.correo.test(e.target.value)) { 
-                paramvalidFormRegistTrue(".mensErrorEmailReg", "","#inputEmailReg")
+                paramvalidFormRegistTrue(".mensErrorEmailReg", "","#inputEmailReg", "unset")
                 validInpt.correo = true;
             } else {
                 paramvalidFormRegistFalse(".mensErrorEmailReg", "", "#inputEmailReg")
@@ -30,7 +30,7 @@ function validFormRegist(e) {
         break;
         case "usuarioReg":
             if (validarInputsRegist.usuario.test(e.target.value)) { 
-                paramvalidFormRegistTrue(".mensErrorUsuarioReg", "","#ínputUsuarioReg")
+                paramvalidFormRegistTrue(".mensErrorUsuarioReg", "","#ínputUsuarioReg", "unset")
                 validInpt.usuario = true;
             } else {
                 paramvalidFormRegistFalse(".mensErrorUsuarioReg", "tu nombre de usuario debe contener entre 4 y 16 caracteres incluyendo letras y numeros.", "#ínputUsuarioReg")
@@ -39,7 +39,7 @@ function validFormRegist(e) {
         break;
         case "contraseñaReg1":
             if (validarInputsRegist.password.test(e.target.value)) { 
-                paramvalidFormRegistTrue(".mensErrorPassword1Reg", "","#inputcontraseñaReg1")
+                paramvalidFormRegistTrue(".mensErrorPassword1Reg", "","#inputcontraseñaReg1", "unset")
                 validInpt.password = true;
             } else {
                 paramvalidFormRegistFalse(".mensErrorPassword1Reg", "La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.", "#inputcontraseñaReg1")
@@ -52,7 +52,7 @@ function validFormRegist(e) {
         break;
         case "telefonoReg":
             if (validarInputsRegist.telefono.test(e.target.value)) { 
-                paramvalidFormRegistTrue(".mensErrorTelefonoReg", "","#inputTelefonoReg")
+                paramvalidFormRegistTrue(".mensErrorTelefonoReg", "","#inputTelefonoReg", "unset")
                 validInpt.telefono = true;
             } else {
                 paramvalidFormRegistFalse(".mensErrorTelefonoReg", "tu telefono debe ser en formato numerico y entre 7 y 14 digitos.", "#inputTelefonoReg")
@@ -62,9 +62,9 @@ function validFormRegist(e) {
     }
 }
 // caso exito
-const paramvalidFormRegistTrue  = ( elementoi,textElementiCorrect ,elementoBoxShadow ) => {
+const paramvalidFormRegistTrue  = ( elementoi,textElementiCorrect ,elementoBoxShadow, uppercase ) => {
         $(elementoi).text(textElementiCorrect);
-        $(elementoBoxShadow).css({ "box-shadow": "none" });
+        $(elementoBoxShadow).css({ "box-shadow": "none", "text-transform":uppercase });
 }
 // caso error
 const paramvalidFormRegistFalse = (elementoi, textElementiError, elementoBoxShadow) => {

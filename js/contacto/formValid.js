@@ -2,7 +2,7 @@ function formValid(e) {
     switch (e.target.name) {
         case "nombre":
             if (ValidacionInputs.nombre.test(e.target.value)) {
-                $("#fullNameInput").css({ "box-shadow": "none" });
+                $("#fullNameInput").css({ "box-shadow": "none", "text-transform":"uppercase" });
                 $(".mensErrorNombre").text("");
                 contendo.nombre = true;
             } else {

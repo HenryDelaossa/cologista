@@ -6,7 +6,7 @@ function showDatesUserReg(contenedor) {
                         <div style="margin-left: 10px">
                             <h5>Bienvenido a tu zona</h5>
                             <h6 style="font-size: 12px">Usuario: ${elnombre[0].user}</h6>
-                            <h6 style="font-size: 12px">nombre: ${elnombre[0].name} ${elnombre[0].lastName} </h6>
+                            <h6 style="font-size: 12px">nombre: <span style="text-transform: uppercase"> ${elnombre[0].name} ${elnombre[0].lastName}</span> </h6>
                             <h6 style="font-size: 12px">correo: ${elnombre[0].email}</h6>
                             <p class="ctnrDatesHour"></p>
                         </div>
@@ -51,6 +51,7 @@ function showDatesUserOld(contenedor) {
 function ctnrDatesHour () {
     let fecha = new Date();
     let dia = fecha.getDate();
+    if (dia <= 9) dia = "0"+dia
     let mes = fecha.getMonth();
     mes++
     if (mes <= 9) mes = "0"+mes

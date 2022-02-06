@@ -1,20 +1,24 @@
 function modalIniSesion(contenedorModInSes, colorFondoModal,contenedorInfoUsuarioActivo ) {
     $("#body").css({ overflow: "hidden" });
-    $(contenedorModInSes).append(`<div id="contModalIniSes" style="display: none; z-index: 110; position:fixed; width: 100%; height: 100%; top: 0; left: 0; margin:0 auto; background-color: #17171770 ">
+    $(contenedorModInSes).prepend(`<div id="contModalIniSes" style="display: none; z-index: 110; position:fixed; width: 100%; height: 100%; top: 0; left: 0; margin:0 auto; background-color: #17171770 ">
                                     <div class="divContFormModalIniSes" id="divContFormModalIniSes">
                                         <div>
                                             <span class="" id="spanCloseModalIniSes">X</span>
                                         </div>
                                         <form class="formModalIniSes">
-                                            <fieldset id="fieldsetIniSesModal"> 
+                                            <fieldset id="fieldsetIniSesModal">
                                                 <h2 class="titMizona">Mi zona</h2>
                                                 <div class="divInputsIniSes">
-                                                    <label class="labeIniSes" id="labelemailIniSes" for="inputemailIniSes" name="labelemailIniSesion">Email</label>
-                                                    <input type="text" name="inputemailIniSesion" class="inputIniSes" id="inputemailIniSes" placeholder="email@email.com" required>
+                                                    <label class="labeIniSes labelNew" id="labelemailIniSes" for="inputemailIniSes" name="labelemailIniSesion">
+                                                    <input type="text" name="inputemailIniSesion" class="inputIniSes inptNew" id="inputemailIniSes" placeholder="email@email.com" required>
+                                                    <p class="plblNew">Email: </p>
+                                                    </label>
                                                 </div>
                                                 <div class="divInputsIniSes">
-                                                    <label class="labeIniSes" id="labelPaswwordIniSes" for="inputPaswwordIniSes" name="labelPaswwordIniSesion">Contraseña</label>
-                                                    <input type="password" name="inputPaswwordIniSesion" class="inputIniSes" id="inputPaswwordIniSes" placeholder="contraseña" required>
+                                                    <label class="labeIniSes labelNew" id="labelPaswwordIniSes" for="inputPaswwordIniSes" name="labelPaswwordIniSesion">
+                                                    <input type="password" name="inputPaswwordIniSesion" class="inputIniSes inptNew" id="inputPaswwordIniSes" placeholder="contraseña" required>
+                                                    <p class="plblNew">Contraseña: </p>
+                                                    </label>
                                                 </div>
                                                 <div class="divInputsIniSes" id="divPassword">
                                                     <button type="reset" class="resetInpIniSes" id="resetInpIniSes">Borrar</button>
@@ -34,9 +38,7 @@ function modalIniSesion(contenedorModInSes, colorFondoModal,contenedorInfoUsuari
     $(".divContFormModalIniSes").css({ display: "none", "background-color": "#e5e5e5", width: "50%", position: "absolute", top: "50%", left: "50%", "border-radius": "5px 20px 5px 20px", transform: "translate(-50%, -50%)", "box-shadow": " 0px 0px 25px 0px #00000050" }).slideDown();
     $("#spanCloseModalIniSes").css({ margin: "5px", cursor: "pointer", transition: "300ms", padding: "10px" }).mouseenter(() => { $("#spanCloseModalIniSes").css({ color: "#da0039", "text-decoration": "underline" }); }).mouseout(() => { $("#spanCloseModalIniSes").css({ color: "#171717", "text-decoration": "none" }); });
     $(".titMizona").css({ "text-align": "center" });
-    $(".labeIniSes").css({ display: "block" });
     $(".divInputsIniSes").css({ margin: "1rem", "text-align": "center" });
-    $(".inputIniSes").css({ width: "80%", "text-align": "center" });
     $(".resetInpIniSes, .submitIniSes").css({ "background-color": "#da0039", color: "#d2d2d2", "font-weight": "bolder", "font-family": "Stick No Bills", border: "none", "border-radius": "1px 8px 1px 8px", "padding": "0.2rem 0.3rem", "box-shadow": "0px 1px 5px 0px #171717" });
     $(".linkRegMod").css({ "text-align": "center" });
     // accion para cerrar modales

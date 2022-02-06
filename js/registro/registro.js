@@ -42,7 +42,6 @@ const btnEnviarReg = document.querySelector("#btnEnviarReg");
 btnEnviarReg.addEventListener("click", (e) => {
     e.preventDefault();
     if (validInpt.nombre && validInpt.apellido && validInpt.correo && validInpt.usuario && validInpt.password  && validInpt.telefono && checkTermimnos.checked && validInpt.pais) {
-        console.log(validInpt.pais)
         let namee = document.querySelector("#inputNombreReg").value;
         let lastName = document.querySelector("#inputapellidoReg").value;
         let email = document.querySelector("#inputEmailReg").value;

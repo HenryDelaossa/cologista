@@ -15,6 +15,9 @@ function addDark() {
     $(".div__parrafo-a-primServ").toggleClass("btnPrimServDark");
     // textos de cajas servicios
     $("p").toggleClass("pDark");
+    // lis selectPais y Servicio
+    $(".liSelectServs").toggleClass("liSelectServsDark")
+    $(".liSelectPais").toggleClass("liSelectsPaisDark")
     // spans
     $(".main-contacto__span-contacto").toggleClass("spanDark");
     $(".span-negocio").toggleClass("span-negocio-dark")
@@ -44,5 +47,6 @@ function addDark() {
     } else {
         $("h6").css({color: "#171717"})
     }
+    
     
 }

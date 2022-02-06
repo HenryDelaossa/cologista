@@ -1,6 +1,3 @@
-
-
-
 function selects(input, contenedorUlLis, lisSelect) {
     const inptslctser = document.querySelector(input);
     const liSelects = document.querySelectorAll(lisSelect);
@@ -10,7 +7,7 @@ function selects(input, contenedorUlLis, lisSelect) {
     });
     liSelects.forEach((click) => {
         click.addEventListener("click", (e) => {
-            let textslct = e.target.innerText;
+            let textslct = e.target.innerText.toUpperCase();
             inptslctser.value = textslct;
             $(contenedorUlLis).hide();
             contendo.servicio = true;

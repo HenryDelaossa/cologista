@@ -118,12 +118,6 @@ html {
                       color: $colorTerc;
                     }
                   }
-                  .main-contacto__label {
-                    @include labels;
-                    &.labelsDark {
-                      color: $colorPrim;
-                    }
-                  }
                   .ulSlctSer {
                     display: none;
                     list-style-position: unset;
@@ -131,10 +125,22 @@ html {
                     .liSelectServs {
                       @include efectos-menu(0, 0, $colorPrim, $colorSecun, 10%, 3px, 3px, $colorPrim, 400%, -400%);
                       cursor: pointer;
+                      &.liSelectServsDark {
+                        color: #d2d2d2;
+                        &:hover {
+                          color: $colorPrim;
+                        }
+                        &::before {
+                          background: #d2d2d2;
+                        }
+                        &::after {
+                          background: #da0039
+                        }
+                      }
                     }
                   }
                   .labelNew {
-                    @include newInputsDesign (100%, 5%, 36%)
+                    @include newInputsDesign (100%, 0, 36%)
                   }
                   
                   .main-contacto__submit {

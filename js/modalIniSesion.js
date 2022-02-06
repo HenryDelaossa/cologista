@@ -54,7 +54,7 @@ function modalIniSesion(contenedorModInSes, colorFondoModal,contenedorInfoUsuari
         inputemailIniSes = document.getElementById("inputemailIniSes").value;
         inputPaswwordIniSes = document.getElementById("inputPaswwordIniSes").value;
         // for (const usuar of users_nel ) {
-        for (let i = 0; i < users_nel.length; i++ ) {
+        for (let i = 0; i < users_nel.length; i++ ) { 
             if (inputemailIniSes === users_nel[i].email && inputPaswwordIniSes === users_nel[i].password) {
                 localStorage.setItem("usuarioActivo", JSON.stringify(users_nel[i]));
                 spinner("#body")

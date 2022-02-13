@@ -136,3 +136,4 @@ $("#logoutImg")
   });
 // evento inner a input, simulando inpiut select para dar mejores stilos a elementos
 selects(".inptslctser", ".ulSlctSer", ".liSelectServs")
+indicatorLeft(".body")

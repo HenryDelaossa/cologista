@@ -126,3 +126,4 @@ $("#logoutImg").click(()=>{
 }).mouseenter(()=>{$(".psalzona").text("salir")}).mouseout(()=>{$(".psalzona").text("")})
 // evento inner a input, simulando inpiut select para dar mejores stilos a elementos
 selects(".inptslctPais", ".ulSelectPais", ".liSelectPais", validInpt.pais)
+indicatorLeft(".body")

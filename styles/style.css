@@ -156,8 +156,6 @@
 
 .main-index {
   margin: 0 0.5rem; }
-  .main-index #contModInisesionn {
-    display: none; }
   .main-index .contButtonDark {
     position: fixed;
     top: 3rem;
@@ -2809,7 +2807,10 @@ html .body {
   box-sizing: border-box; }
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  /* Buttons */
+  /* Up */
+  /* Down */ }
   html .body {
     background-color: #e5e5e5;
     transition: .5s ease all; }
@@ -2914,6 +2915,34 @@ html {
         text-align: center;
         align-items: center;
         resize: none; }
+  html .body::-webkit-scrollbar {
+    width: 16px; }
+  html .body::-webkit-scrollbar-thumb {
+    background-color: #da0039;
+    background-clip: padding-box;
+    border: 1px solid #171717; }
+  html .body::-webkit-scrollbar-track {
+    background-color: #bbbbbb; }
+  html .body::-webkit-scrollbar-button:single-button {
+    background-color: #bbbbbb;
+    display: block;
+    border-style: solid;
+    height: 13px;
+    width: 16px; }
+  html .body::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #171717 transparent;
+    transition: .2s all; }
+  html .body::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+    border-color: transparent transparent #da0037 transparent;
+    transition: .2s all; }
+  html .body::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-width: 8px 8px 0 8px;
+    border-color: #171717 transparent transparent transparent;
+    transition: .2s all; }
+  html .body::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+    border-color: #da0037 transparent transparent transparent;
+    transition: .2s all; }
   html section[id],
   html div[id] {
     scroll-margin-top: 60px; }

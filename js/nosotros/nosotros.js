@@ -66,3 +66,4 @@ $("#logoutImg").click(()=>{
         window.location.href = "index.html";
     },1000)   
 }).mouseenter(()=>{$(".psalzona").text("salir")}).mouseout(()=>{$(".psalzona").text("")})
+indicatorLeft(".body")

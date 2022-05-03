@@ -1,4 +1,8 @@
 # cologista
+
+# Esta pagina web esta hecha usando tecnologia de javascript vanila, jquery, html5, css, sass, boostrap, api.
+
+
 PIDE UN SERVICIO EN "quiero mi primer servicio" / "pedir servicio".
 
 INICIA SESION: 
